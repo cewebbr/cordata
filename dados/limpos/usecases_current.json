@@ -1,0 +1,253 @@
+[
+  {
+    "name": "Três partidos do Centrão controlam mais de R$ 149,6 bilhões do governo Bolsonaro",
+    "url": "https://oglobo.globo.com/politica/tres-partidos-do-centrao-controlam-mais-de-1496-bilhoes-do-governo-bolsonaro-1-25365038",
+    "description": "Matéria jornalística publicada no Jornal O Globo que aponta o número de postos ocupados por integrantes e indicados dos partidos PP, PL e Republicanos na administração federal, juntamente com uma estimativa do montante de recursos direcionados aos respectivos órgãos pelo orçamento federal.",
+    "pub_date": "01/2022",
+    "authors": [
+      "Dimitrius Dantas",
+      "Daniel Gullino",
+      "Bruno Góes"
+    ],
+    "countries": [
+      "Brasil"
+    ],
+    "email": [
+      "bruno.goes@oglobo.com.br",
+      "daniel.gullino@bsb.oglobo.com.br"
+    ],
+    "tags": [
+      "orçamento federal",
+      "orçamento secreto",
+      "bolsonaro",
+      "centrão",
+      "fisiologismo",
+      "presidencialismo de coalizão"
+    ],
+    "url_source": "https://github.com/gabinete-compartilhado-acredito/dados_orcamentarios",
+    "url_image": "https://ogimg.infoglobo.com.br/in/25354165-974-977/FT1086A/96654532_MARIZPA-BRASILIA-13-12-2021-JAIR-BOLSONAROCIRO-NOGUEIRA-Comemoracao-do-dia-do-For.jpg",
+    "comment": null,
+    "type": [
+      "matéria jornalística"
+    ],
+    "topics": [
+      "Administração Pública",
+      "Finanças e Orçamento Público",
+      "Política, Partidos e Eleições"
+    ],
+    "datasets": [
+      {
+        "data_name": "SIGA Brasil",
+        "data_institution": "Senado Federal",
+        "data_url": "https://www12.senado.leg.br/orcamento/sigabrasil",
+        "data_periodical": false
+      },
+      {
+        "data_name": "Orçamento da despesa pública",
+        "data_institution": "CGU",
+        "data_url": "https://portaldatransparencia.gov.br/orcamento/despesas?ordenarPor=ano&direcao=desc",
+        "data_periodical": false
+      },
+      {
+        "data_name": "Plataforma +Brasil",
+        "data_institution": "Ministério da Economia",
+        "data_url": "https://antigo.plataformamaisbrasil.gov.br/download-de-dados",
+        "data_periodical": false
+      }
+    ],
+    "record_date": "2023-09-21"
+  },
+  {
+    "name": "Serenata de amor",
+    "url": "https://serenata.ai",
+    "description": "Um projeto aberto que usa ciência de dados com a finalidade de fiscalizar gastos reembolsados pela Cota para Exercício da Atividade Parlamentar (CEAP), de deputados federais e senadores, feitos em exercício de sua função, e compartilhar as informações de forma acessível a qualquer pessoa.",
+    "pub_date": "06/2016",
+    "authors": [
+      "Open Knowledge Brasil",
+      "Irio Musskopf"
+    ],
+    "countries": [
+      "Brasil"
+    ],
+    "email": [
+      "contato@serenata.ai"
+    ],
+    "tags": [
+      "ceap",
+      "Cota para Exercício da Atividade Parlamentar",
+      "cota parlamentar",
+      "fiscalização",
+      "deputados federais",
+      "senadores",
+      "parlamentares federais"
+    ],
+    "url_source": "https://github.com/okfn-brasil/serenata-de-amor",
+    "url_image": "https://d33wubrfki0l68.cloudfront.net/44a83a2616e2fb7893134c5d92addc1e6d29e20e/05b5d/images/logo.png",
+    "comment": null,
+    "type": [
+      "painel, dashboard ou infográfico",
+      "bot"
+    ],
+    "topics": [
+      "Administração Pública",
+      "Finanças e Orçamento Público",
+      "Transparência"
+    ],
+    "datasets": [
+      {
+        "data_name": "Cota parlamentar",
+        "data_institution": "Câmara dos deputados",
+        "data_url": "https://www.camara.leg.br/cota-parlamentar/",
+        "data_periodical": true
+      },
+      {
+        "data_name": "Informações sobre deputados federais",
+        "data_institution": "Câmara dos deputados",
+        "data_url": "https://www.camara.leg.br/SitCamaraWS/Deputados.asmx",
+        "data_periodical": true
+      },
+      {
+        "data_name": "API de Compras Governamentais",
+        "data_institution": "Ministério da Economia",
+        "data_url": "http://compras.dados.gov.br",
+        "data_periodical": true
+      }
+    ],
+    "record_date": "2023-09-21"
+  },
+  {
+    "name": "Base dos Dados",
+    "url": "https://basedosdados.org/",
+    "description": "Catálogo de conjuntos de dados com alguns conjuntos tratados e disponibilizados no BigQuery, do Google. O projeto também fornece pacotes de Python e R para acesso ao BigQuery diretamente do código.",
+    "pub_date": "09/2020",
+    "authors": [
+      "Instituto Base dos Dados"
+    ],
+    "countries": [
+      "Mundial",
+      "Brasil"
+    ],
+    "email": null,
+    "tags": [
+      "catálogo",
+      "repositório"
+    ],
+    "url_source": "https://github.com/basedosdados",
+    "url_image": "https://avatars.githubusercontent.com/u/71097635?s=200&v=4",
+    "comment": "São muitas bases de dados, não seria possível listar",
+    "type": [
+      "conjunto de dados"
+    ],
+    "topics": [
+      "Agropecuária",
+      "Alimentação",
+      "Administração Pública",
+      "Arte e Cultura",
+      "Atividade industrial, de comércio ou serviços",
+      "Ciência e Tecnologia",
+      "Comunicações",
+      "Consumo",
+      "Dados demográficos",
+      "Defesa",
+      "Direito e Processual Penal",
+      "Direitos Humanos",
+      "Economia",
+      "Educação",
+      "Energia",
+      "Esporte",
+      "Finanças e Orçamento Público",
+      "Imóveis, Habitação e Urbanismo",
+      "Justiça e Direito",
+      "Lazer",
+      "Meio Ambiente",
+      "Multimídia",
+      "Política, Partidos e Eleições",
+      "Previdência e Assistência Social",
+      "Recursos hídricos",
+      "Recursos minerais",
+      "Redes Sociais",
+      "Relações Internacionais",
+      "Religião",
+      "Saúde",
+      "Segurança",
+      "Terras",
+      "Transporte",
+      "Transparência",
+      "Trabalho e Emprego",
+      "Turismo"
+    ],
+    "datasets": [],
+    "record_date": "2023-09-21"
+  },
+  {
+    "name": "Tutorial de dados",
+    "url": "https://github.com/tecMTST/tutorial-de-dados",
+    "description": "Pequenos projetos de análise de dados desenvolvidos em notebooks de Python que podem ser seguidos como tutoriais.",
+    "pub_date": "09/2023",
+    "authors": [
+      "Núcleo de Tecnologia do MTST"
+    ],
+    "countries": [
+      "Brasil"
+    ],
+    "email": [
+      "mtst@nucleodetecnologia.com.br"
+    ],
+    "tags": [
+      "tutorial",
+      "análise de dados",
+      "ciência de dados",
+      "expectativa de vida",
+      "financiamento de campanha",
+      "financiamento eleitoral",
+      "desigualdade",
+      "são paulo"
+    ],
+    "url_source": "https://github.com/tecMTST/tutorial-de-dados",
+    "url_image": "https://nucleodetecnologia.com.br/assets/img/novo-logo-tecnologia.svg",
+    "comment": null,
+    "type": [
+      "material didático",
+      "estudo independente"
+    ],
+    "topics": [
+      "Direitos Humanos",
+      "Imóveis, Habitação e Urbanismo",
+      "Política, Partidos e Eleições",
+      "Saúde"
+    ],
+    "datasets": [
+      {
+        "data_name": "Mortalidade no município de Sâo Paulo",
+        "data_institution": "Prefeitura do Município de São Paulo",
+        "data_url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/saude/epidemiologia_e_informacao/mortalidade/",
+        "data_periodical": false
+      },
+      {
+        "data_name": "População do município de São Paulo, por idade",
+        "data_institution": "SEADE",
+        "data_url": "https://repositorio.seade.gov.br/group/seade-populacao",
+        "data_periodical": false
+      },
+      {
+        "data_name": "Fronteiras dos distritos do município de São Paulo",
+        "data_institution": "Prefeitura do Município de São Paulo",
+        "data_url": "https://geosampa.prefeitura.sp.gov.br",
+        "data_periodical": false
+      },
+      {
+        "data_name": "Prestação de contas eleitorais",
+        "data_institution": "TSE",
+        "data_url": "https://dadosabertos.tse.jus.br/dataset/",
+        "data_periodical": false
+      },
+      {
+        "data_name": "Candidatos eleitorais",
+        "data_institution": "TSE",
+        "data_url": "https://dadosabertos.tse.jus.br/dataset/",
+        "data_periodical": false
+      }
+    ],
+    "record_date": "2023-09-21"
+  }
+]

@@ -1,0 +1,13 @@
+# Arquivos locais
+docs/
+registros/
+
+# Não inclusos
+analises/
+
+# Dados internos
+dados/*
+!dados/limpos
+dados/limpos/*
+!dados/limpos/usecases_current.json
+
