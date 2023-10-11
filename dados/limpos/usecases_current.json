@@ -1,5 +1,6 @@
 [
   {
+    "hash_id": 2507397523,
     "name": "Três partidos do Centrão controlam mais de R$ 149,6 bilhões do governo Bolsonaro",
     "url": "https://oglobo.globo.com/politica/tres-partidos-do-centrao-controlam-mais-de-1496-bilhoes-do-governo-bolsonaro-1-25365038",
     "description": "Matéria jornalística publicada no Jornal O Globo que aponta o número de postos ocupados por integrantes e indicados dos partidos PP, PL e Republicanos na administração federal, juntamente com uma estimativa do montante de recursos direcionados aos respectivos órgãos pelo orçamento federal.",
@@ -55,9 +56,10 @@
         "data_periodical": false
       }
     ],
-    "record_date": "2023-09-21"
+    "record_date": "2023-10-11"
   },
   {
+    "hash_id": 3206104055,
     "name": "Serenata de amor",
     "url": "https://serenata.ai",
     "description": "Um projeto aberto que usa ciência de dados com a finalidade de fiscalizar gastos reembolsados pela Cota para Exercício da Atividade Parlamentar (CEAP), de deputados federais e senadores, feitos em exercício de sua função, e compartilhar as informações de forma acessível a qualquer pessoa.",
@@ -113,9 +115,10 @@
         "data_periodical": true
       }
     ],
-    "record_date": "2023-09-21"
+    "record_date": "2023-10-11"
   },
   {
+    "hash_id": 1108461102,
     "name": "Base dos Dados",
     "url": "https://basedosdados.org/",
     "description": "Catálogo de conjuntos de dados com alguns conjuntos tratados e disponibilizados no BigQuery, do Google. O projeto também fornece pacotes de Python e R para acesso ao BigQuery diretamente do código.",
@@ -177,9 +180,10 @@
       "Turismo"
     ],
     "datasets": [],
-    "record_date": "2023-09-21"
+    "record_date": "2023-10-11"
   },
   {
+    "hash_id": 1191967625,
     "name": "Tutorial de dados",
     "url": "https://github.com/tecMTST/tutorial-de-dados",
     "description": "Pequenos projetos de análise de dados desenvolvidos em notebooks de Python que podem ser seguidos como tutoriais.",
@@ -248,6 +252,6 @@
         "data_periodical": false
       }
     ],
-    "record_date": "2023-09-21"
+    "record_date": "2023-10-11"
   }
 ]
