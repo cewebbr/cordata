@@ -2,8 +2,11 @@
 docs/
 registros/
 
+# Lixo 
+analises/__pycache__
+analises/.ipynb_checkpoints
+
 # Não inclusos
-analises/
 
 # Dados internos
 dados/*
