@@ -15,6 +15,7 @@ O **CORDATA - Catálogo Online de Reúso de Dados Abertos** é um site que lista
     ├── dados                   <- Metadados sobre casos de uso 
     |   ├── brutos              <- Metadados brutos, originais
     |   └── limpos              <- Metadados limpos, corrigidos, padronizados
+	├── imagens                 <- Imagens representativas dos casos de uso
     ├── analises                <- Código de limpeza dos dados (notebooks de python)
     ├── scripts                 <- Rotinas auxiliares
     └── docs                    <- Documentos e registros
