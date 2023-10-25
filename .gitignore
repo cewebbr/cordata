@@ -1,6 +1,8 @@
 # Arquivos locais
 docs/
 registros/
+imagens/*
+!imagens/hash_id_*
 
 # Lixo 
 analises/__pycache__
