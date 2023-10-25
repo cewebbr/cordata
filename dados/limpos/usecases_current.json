@@ -60,7 +60,18 @@
           "data_periodical": false
         }
       ],
-      "record_date": "2023-10-11"
+      "record_date": "2023-10-11",
+      "type_es": [
+        "artículo periodístico"
+      ],
+      "topics_es": [
+        "Administración Pública",
+        "Finanzas y Presupuesto Público",
+        "Política, Partidos, y Elecciones"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
     },
     {
       "hash_id": 3206104055,
@@ -119,7 +130,19 @@
           "data_periodical": true
         }
       ],
-      "record_date": "2023-10-11"
+      "record_date": "2023-10-11",
+      "type_es": [
+        "panel de control o infografía",
+        "bot"
+      ],
+      "topics_es": [
+        "Administración Pública",
+        "Finanzas y Presupuesto Público",
+        "Transparencia"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
     },
     {
       "hash_id": 1108461102,
@@ -184,7 +207,52 @@
         "Turismo"
       ],
       "datasets": [],
-      "record_date": "2023-10-11"
+      "record_date": "2023-10-11",
+      "type_es": [
+        "conjunto de datos"
+      ],
+      "topics_es": [
+        "Agricultura",
+        "Alimentación",
+        "Administración Pública",
+        "Arte y Cultura",
+        "Actividades industriales, comerciales o de servicios",
+        "Ciencia y Tecnología",
+        "Comunicaciones",
+        "Consumo",
+        "Datos demográficos",
+        "Defensa",
+        "Derecho y Procedimiento Penal",
+        "Derechos Humanos",
+        "Economía",
+        "Educación",
+        "Energía",
+        "Deporte",
+        "Finanzas y Presupuesto Público",
+        "Inmobiliario, Vivienda y Urbanismo",
+        "Justicia y Derecho",
+        "Entretenimiento",
+        "Medio ambiente",
+        "Multimedia",
+        "Política, Partidos, y Elecciones",
+        "Bienestar y Asistencia Social",
+        "Recursos hídricos",
+        "Recursos minerales",
+        "Redes Sociales",
+        "Relaciones Internacionales",
+        "Religión",
+        "Salud",
+        "Seguridad",
+        "Tierra",
+        "Transporte",
+        "Transparencia",
+        "Trabajo y Empleo",
+        "Turismo"
+      ],
+      "countries_es": [
+        "Mundial",
+        "Brasil"
+      ]
     },
     {
       "hash_id": 1191967625,
@@ -256,7 +324,20 @@
           "data_periodical": false
         }
       ],
-      "record_date": "2023-10-11"
+      "record_date": "2023-10-11",
+      "type_es": [
+        "material didáctico",
+        "estudio independiente"
+      ],
+      "topics_es": [
+        "Derechos Humanos",
+        "Inmobiliario, Vivienda y Urbanismo",
+        "Política, Partidos, y Elecciones",
+        "Salud"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
     },
     {
       "hash_id": 3196016551,
@@ -323,7 +404,17 @@
           "data_periodical": false
         }
       ],
-      "record_date": "2023-10-25"
+      "record_date": "2023-10-25",
+      "type_es": [
+        "artículo científico o publicación académica"
+      ],
+      "topics_es": [
+        "Derechos Humanos",
+        "Redes Sociales"
+      ],
+      "countries_es": [
+        "Mundial"
+      ]
     },
     {
       "hash_id": 171154266,
@@ -371,7 +462,16 @@
           "data_periodical": true
         }
       ],
-      "record_date": "2023-10-25"
+      "record_date": "2023-10-25",
+      "type_es": [
+        "panel de control o infografía"
+      ],
+      "topics_es": [
+        "Política, Partidos, y Elecciones"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
     },
     {
       "hash_id": 3980998307,
@@ -418,7 +518,19 @@
           "data_periodical": false
         }
       ],
-      "record_date": "2023-10-25"
+      "record_date": "2023-10-25",
+      "type_es": [
+        "artículo periodístico",
+        "estudio independiente"
+      ],
+      "topics_es": [
+        "Datos demográficos",
+        "Derechos Humanos",
+        "Salud"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
     },
     {
       "hash_id": 3338481779,
@@ -463,7 +575,19 @@
           "data_periodical": true
         }
       ],
-      "record_date": "2023-10-25"
+      "record_date": "2023-10-25",
+      "type_es": [
+        "bot"
+      ],
+      "topics_es": [
+        "Agricultura",
+        "Alimentación",
+        "Medio ambiente",
+        "Salud"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
     },
     {
       "hash_id": 3610997668,
@@ -540,7 +664,18 @@
           "data_periodical": false
         }
       ],
-      "record_date": "2023-10-25"
+      "record_date": "2023-10-25",
+      "type_es": [
+        "artículo científico o publicación académica"
+      ],
+      "topics_es": [
+        "Agricultura",
+        "Finanzas y Presupuesto Público",
+        "Medio ambiente"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
     },
     {
       "hash_id": 2828213759,
@@ -578,19 +713,28 @@
       ],
       "datasets": [
         {
-          "data_name": NaN,
+          "data_name": null,
           "data_institution": "Brasil.io",
           "data_url": "http://brasil.io/",
           "data_periodical": true
         },
         {
-          "data_name": NaN,
+          "data_name": null,
           "data_institution": "DataSUS",
           "data_url": "https://datasus.saude.gov.br/",
           "data_periodical": true
         }
       ],
-      "record_date": "2023-10-25"
+      "record_date": "2023-10-25",
+      "type_es": [
+        "aplicación o plataforma"
+      ],
+      "topics_es": [
+        "Salud"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
     }
   ]
 }
