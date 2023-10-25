@@ -474,7 +474,7 @@
       ]
     },
     {
-      "hash_id": 3980998307,
+      "hash_id": 4006395846,
       "name": "Vidas desiguais na cidade de São Paulo",
       "url": "https://diplomatique.org.br/vidas-desiguais-na-cidade-de-sao-paulo/",
       "description": "Em 2017, a rede Nossa São Paulo publicou um mapa da desigualdade comparando os diferentes distritos da cidade de São Paulo em termos de diversos indicadores sociais. Uma das desigualdades encontradas foi a diferença estarrecedora de quase 24 anos entre as expectativas de vida dos distritos melhor e pior colocados (79,4 anos no Jardim Paulista e 55,7 no Jardim Ângela). Nosso objetivo nesta análise foi discriminar como as diferentes causas de morte contribuem para essa diferença, atribuindo um \"número de anos subtraídos\" a cada uma.",
@@ -514,7 +514,7 @@
         {
           "data_name": "Mortalidade no municipio de Sao Paulo",
           "data_institution": "Prefeitura de São Paulo; DataSUS",
-          "data_url": "http://www.prefeitura.sp.gov.br/cidade/secretarias/saude/epidemiologia_e_informacao/mortalidade/;2;2",
+          "data_url": "http://www.prefeitura.sp.gov.br/cidade/secretarias/saude/epidemiologia_e_informacao/mortalidade/",
           "data_periodical": false
         }
       ],
@@ -590,15 +590,14 @@
       ]
     },
     {
-      "hash_id": 3610997668,
+      "hash_id": 3561964102,
       "name": "O desmonte da Amazônia",
       "url": "http://fundacaotidesetubal.org.br/publicacoes/i-premio-orcamento-publico-garantia-de-direitos-e-combate-as-desigualdades-artigos-vencedores",
       "description": "O desmatamento da floresta amazônica voltou a crescer com grande velocidade em 2019, mantendo essa tendência nos anos seguintes. Buscando compreender melhor as causas desse aumento, analisamos sua relação com possíveis variáveis explicativas no período de 2010 a 2021: orçamento federal dedicado; número de servidores do IBAMA; quantidade de chuvas na região; e preços da soja, milho e do boi gordo. \r\n\r\nPara estimarmos a contribuição de cada variável para o desmatamento, utilizamos métodos como o teste de causalidade de Granger, o método SHAP e a validação cruzada de modelos preditivos de machine learning. Nossa análise também serviu como teste da eficácia das Operações de Garantia da Lei e da Ordem (GLOs) ambientais.",
       "pub_date": "10/2021",
       "authors": [
         "Henrique S. Xavier",
-        "Pepe Tonin",
-        "Gabinete Compartilhado Acredito"
+        "Pepe Tonin"
       ],
       "countries": [
         "Brasil"
