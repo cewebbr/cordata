@@ -1,8 +1,83 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""
+Functions for cleaning and preparing data in CORDATA
+Copyright (C) 2023  Henrique S. Xavier
+Contact: hsxavier@gmail.com
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+"""
+
 import pandas as pd
 import numpy as np
+from zlib import crc32
 
 import xavy.dataframes as xd
 
+
+# Tags associated to dummy columns:
+
+topic_names = {'topics_agropecuaria': 'Agropecuária',
+ 'topics_alimentacao': 'Alimentação',
+ 'topics_administracao_publica': 'Administração Pública',
+ 'topics_arte_e_cultura': 'Arte e Cultura',
+ 'topics_atividade_industrial_de_comercio_ou_servicos': 'Atividade industrial, de comércio ou serviços',
+ 'topics_ciencia_e_tecnologia': 'Ciência e Tecnologia',
+ 'topics_comunicacoes': 'Comunicações',
+ 'topics_consumo': 'Consumo',
+ 'topics_dados_demograficos': 'Dados demográficos',
+ 'topics_defesa': 'Defesa',
+ 'topics_direito_e_processual_penal': 'Direito e Processual Penal',
+ 'topics_direitos_humanos': 'Direitos Humanos',
+ 'topics_economia': 'Economia',
+ 'topics_educacao': 'Educação',
+ 'topics_energia': 'Energia',
+ 'topics_esporte': 'Esporte',
+ 'topics_financas_e_orcamento_publico': 'Finanças e Orçamento Público',
+ 'topics_imoveis_habitacao_e_urbanismo': 'Imóveis, Habitação e Urbanismo',
+ 'topics_justica_e_direito': 'Justiça e Direito',
+ 'topics_lazer': 'Lazer',
+ 'topics_meio_ambiente': 'Meio Ambiente',
+ 'topics_multimidia': 'Multimídia',
+ 'topics_politica_partidos_e_eleicoes': 'Política, Partidos e Eleições',
+ 'topics_previdencia_e_assistencia_social': 'Previdência e Assistência Social',
+ 'topics_recursos_hidricos': 'Recursos hídricos',
+ 'topics_recursos_minerais': 'Recursos minerais',
+ 'topics_redes_sociais': 'Redes Sociais',
+ 'topics_relacoes_internacionais': 'Relações Internacionais',
+ 'topics_religiao': 'Religião',
+ 'topics_saude': 'Saúde',
+ 'topics_seguranca': 'Segurança',
+ 'topics_terras': 'Terras',
+ 'topics_transporte': 'Transporte',
+ 'topics_transparencia': 'Transparência',
+ 'topics_trabalho_e_emprego': 'Trabalho e Emprego',
+ 'topics_turismo': 'Turismo'}
+
+type_names = {'type_artigo': 'artigo científico ou publicação acadêmica',
+ 'type_materia_jornalistica': 'matéria jornalística',
+ 'type_aplicativo_plataforma': 'aplicativo ou plataforma',
+ 'type_painel': 'painel, dashboard ou infográfico',
+ 'type_conjunto_de_dados': 'conjunto de dados',
+ 'type_material': 'material didático',
+ 'type_estudo': 'estudo independente',
+ 'type_bot': 'bot',
+ 'type_outro': 'outro'}
+
+
+# Functions:
 
 def rename_first_data_cols(df):
     """
@@ -215,3 +290,98 @@ def series2transposed_df(series):
     Returns a DataFrame.
     """
     return pd.DataFrame({0:series}).transpose()
+
+
+def get_translator(translation_df, fields_regex, lower=False):
+    """
+    Create a dict from portuguese to spanish to be used 
+    to translate certain text fields.
+    
+    Parameters
+    ----------
+    translation_df : DataFrame
+        Table with text field names 'campo' and the textual
+        content 'texto_pt' (in portuguese) and 'texto_es' 
+        in spanish.
+    fields_regex : str
+        Regular expression representing the text fields to
+        be used.
+    lower : bool
+        Whether to put everything to lower case.
+        
+    Returns
+    -------
+    mapper : dict
+        A translation from portuguese to spanish for the 
+        fields specified by `fields_regex`.
+    """
+    
+    # Select subset of translations:
+    sel_df = translation_df.loc[translation_df['campo'].str.contains(fields_regex)].copy()
+
+    # Put to lowercase:
+    if lower == True:
+        sel_df['texto_pt'] = sel_df['texto_pt'].str.lower()
+        sel_df['texto_es'] = sel_df['texto_es'].str.lower()
+    
+    # Create translation dict:
+    mapper = sel_df[['texto_pt', 'texto_es']].set_index('texto_pt').to_dict()['texto_es']
+    
+    return mapper
+
+
+def hash_string(string, prefix=''):
+    """
+    Takes a `string` as input, remove `prefix` from it and turns it into a hash.
+    """
+    name   = string.replace(prefix, '')
+    return crc32(bytes(name, 'utf-8'))
+
+
+def build_hash_id(df):
+    """
+    Return an int Series with hashes build from the 
+    content in each line in `df`.
+    """
+    
+    return df.astype(str).sum(axis=1).apply(hash_string)
+
+
+def embed_metadata(data, metadata, data_key="data", meta_key="metadata"):
+    """
+    Create a new dict with keys `meta_key` and `data_key` pointing
+    to values `metadata` and `data`, respectively.
+    
+    Returns a dict.
+    """
+    
+    all_data = {meta_key: metadata, data_key: data}
+    
+    return all_data
+
+
+def add_translation(case_json, type_map, topic_map, country_map):
+    """
+    Add entries (in place) to dict `case_json` containing translations for
+    the type, topic and country of the usecase.
+    
+    Parameters
+    ----------
+    case_json : dict
+        Data about one usecase.
+    type_map : dict
+        Mapping from portuguese to spanish for possible 
+        usecase types.
+    topic_map : dict
+        Mapping from portuguese to spanish for possible 
+        usecase types.
+    country_map : dict
+        Mapping from portuguese to spanish for possible 
+        usecase types.
+    """
+    
+    case_json['type_es']      = [type_map[k] for k in case_json['type']]
+    case_json['topics_es']    = [topic_map[k] for k in case_json['topics']]
+    case_json['countries_es'] = [country_map[k] for k in case_json['countries']]
+    
+    return case_json
