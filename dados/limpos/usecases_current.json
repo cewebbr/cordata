@@ -803,6 +803,128 @@
       "countries_es": [
         "Brasil"
       ]
+    },
+    {
+      "hash_id": 2766310307,
+      "name": "Brasil Real Oficial",
+      "url": "https://brenocosta.substack.com/",
+      "description": "Newsletter que faz uma curadoria diária das matérias do Diário Oficial da União (DOU) e adiciona explicações sobre seus conteúdos. Saiba quais são os atos de governo oficiais e que estão escondidos nas letras miúdas e no juridiquês hermético do DOU. Todo dia, uma lista completa do que de fato está mudando no Brasil, para além de discursos e tweets.",
+      "pub_date": "01/2019",
+      "authors": [
+        "Breno Costa"
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "email": null,
+      "tags": [
+        "diário oficial da união",
+        "newsletter",
+        "boletim",
+        "fiscalização",
+        "acompanhamento",
+        "dou",
+        "jornalismo"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_2766310307.png",
+      "comment": "Data de publicação na web foi aproximada. Esse é um caso interessante pois utiliza textos como dado aberto e não é uma aplicação, e sim um trabalho manual do jornalista Breno Costa.",
+      "type": [
+        "conjunto de dados",
+        "outro"
+      ],
+      "topics": [
+        "Agropecuária",
+        "Alimentação",
+        "Administração Pública",
+        "Arte e Cultura",
+        "Atividade industrial, de comércio ou serviços",
+        "Ciência e Tecnologia",
+        "Comunicações",
+        "Consumo",
+        "Dados demográficos",
+        "Defesa",
+        "Direito e Processual Penal",
+        "Direitos Humanos",
+        "Economia",
+        "Educação",
+        "Energia",
+        "Esporte",
+        "Finanças e Orçamento Público",
+        "Imóveis, Habitação e Urbanismo",
+        "Justiça e Direito",
+        "Lazer",
+        "Meio Ambiente",
+        "Multimídia",
+        "Política, Partidos e Eleições",
+        "Previdência e Assistência Social",
+        "Recursos hídricos",
+        "Recursos minerais",
+        "Redes Sociais",
+        "Relações Internacionais",
+        "Religião",
+        "Saúde",
+        "Segurança",
+        "Terras",
+        "Transporte",
+        "Transparência",
+        "Trabalho e Emprego",
+        "Turismo"
+      ],
+      "datasets": [
+        {
+          "data_name": "Diário Oficial da União",
+          "data_institution": "Imprensa Nacional",
+          "data_url": "https://www.in.gov.br/leiturajornal",
+          "data_periodical": true
+        }
+      ],
+      "record_date": "2023-10-27",
+      "type_es": [
+        "conjunto de datos",
+        "otros"
+      ],
+      "topics_es": [
+        "Agricultura",
+        "Alimentación",
+        "Administración Pública",
+        "Arte y Cultura",
+        "Actividades industriales, comerciales o de servicios",
+        "Ciencia y Tecnología",
+        "Comunicaciones",
+        "Consumo",
+        "Datos demográficos",
+        "Defensa",
+        "Derecho y Procedimiento Penal",
+        "Derechos Humanos",
+        "Economía",
+        "Educación",
+        "Energía",
+        "Deporte",
+        "Finanzas y Presupuesto Público",
+        "Inmobiliario, Vivienda y Urbanismo",
+        "Justicia y Derecho",
+        "Entretenimiento",
+        "Medio ambiente",
+        "Multimedia",
+        "Política, Partidos, y Elecciones",
+        "Bienestar y Asistencia Social",
+        "Recursos hídricos",
+        "Recursos minerales",
+        "Redes Sociales",
+        "Relaciones Internacionales",
+        "Religión",
+        "Salud",
+        "Seguridad",
+        "Tierra",
+        "Transporte",
+        "Transparencia",
+        "Trabajo y Empleo",
+        "Turismo"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
     }
   ]
 }
