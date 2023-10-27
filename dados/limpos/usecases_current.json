@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_update": "2023-10-25"
+    "last_update": "2023-10-27"
   },
   "data": [
     {
@@ -30,7 +30,7 @@
         "presidencialismo de coalizão"
       ],
       "url_source": "https://github.com/gabinete-compartilhado-acredito/dados_orcamentarios",
-      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_2507397523.png",
+      "url_image": "https://ogimg.infoglobo.com.br/in/25354165-974-977/FT1086A/96654532_MARIZPA-BRASILIA-13-12-2021-JAIR-BOLSONAROCIRO-NOGUEIRA-Comemoracao-do-dia-do-For.jpg",
       "comment": null,
       "type": [
         "matéria jornalística"
@@ -99,7 +99,7 @@
         "parlamentares federais"
       ],
       "url_source": "https://github.com/okfn-brasil/serenata-de-amor",
-      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_3206104055.png",
+      "url_image": "https://d33wubrfki0l68.cloudfront.net/44a83a2616e2fb7893134c5d92addc1e6d29e20e/05b5d/images/logo.png",
       "comment": null,
       "type": [
         "painel, dashboard ou infográfico",
@@ -163,7 +163,7 @@
         "repositório"
       ],
       "url_source": "https://github.com/basedosdados",
-      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_1108461102.png",
+      "url_image": "https://avatars.githubusercontent.com/u/71097635?s=200&v=4",
       "comment": "São muitas bases de dados, não seria possível listar",
       "type": [
         "conjunto de dados"
@@ -280,7 +280,7 @@
         "são paulo"
       ],
       "url_source": "https://github.com/tecMTST/tutorial-de-dados",
-      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_1191967625.png",
+      "url_image": "https://nucleodetecnologia.com.br/assets/img/novo-logo-tecnologia.svg",
       "comment": null,
       "type": [
         "material didático",
@@ -362,8 +362,8 @@
         "discurso de ódio",
         "redes sociais"
       ],
-      "url_source": "https://",
-      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_3196016551.png",
+      "url_source": null,
+      "url_image": "https://www.thefire.org/sites/default/files/styles/515x386/public/2019/03/28160356/hate-speech.jpg",
       "comment": "Existe mais um conjunto de dados abertos utilizado quenão foi informado por falta de espaço.",
       "type": [
         "artigo científico ou publicação acadêmica"
@@ -388,7 +388,7 @@
         {
           "data_name": "Overview of the Evalita 2018 Task on Automatic Misogyny Identification (AMI)",
           "data_institution": "Elisabetta Fersini; Debora Nozza; Paolo Rosso",
-          "data_url": "https://",
+          "data_url": null,
           "data_periodical": false
         },
         {
@@ -405,15 +405,15 @@
         }
       ],
       "record_date": "2023-10-25",
+      "countries_es": [
+        "Mundial"
+      ],
       "type_es": [
         "artículo científico o publicación académica"
       ],
       "topics_es": [
         "Derechos Humanos",
         "Redes Sociales"
-      ],
-      "countries_es": [
-        "Mundial"
       ]
     },
     {
@@ -439,8 +439,8 @@
         "proposições",
         "temas"
       ],
-      "url_source": "https://",
-      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_171154266.png",
+      "url_source": null,
+      "url_image": "https://upload.wikimedia.org/wikipedia/pt/thumb/8/89/Acredito_fundobranco.png/800px-Acredito_fundobranco.png",
       "comment": null,
       "type": [
         "painel, dashboard ou infográfico"
@@ -474,7 +474,7 @@
       ]
     },
     {
-      "hash_id": 4006395846,
+      "hash_id": 3980998307,
       "name": "Vidas desiguais na cidade de São Paulo",
       "url": "https://diplomatique.org.br/vidas-desiguais-na-cidade-de-sao-paulo/",
       "description": "Em 2017, a rede Nossa São Paulo publicou um mapa da desigualdade comparando os diferentes distritos da cidade de São Paulo em termos de diversos indicadores sociais. Uma das desigualdades encontradas foi a diferença estarrecedora de quase 24 anos entre as expectativas de vida dos distritos melhor e pior colocados (79,4 anos no Jardim Paulista e 55,7 no Jardim Ângela). Nosso objetivo nesta análise foi discriminar como as diferentes causas de morte contribuem para essa diferença, atribuindo um \"número de anos subtraídos\" a cada uma.",
@@ -499,7 +499,7 @@
         "desigualdade"
       ],
       "url_source": "https://henriquexavier.net/vidas_desiguais.html",
-      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_4006395846.png",
+      "url_image": "https://henriquexavier.net/images/vidas_desiguais_pic.jpg",
       "comment": null,
       "type": [
         "matéria jornalística",
@@ -514,7 +514,7 @@
         {
           "data_name": "Mortalidade no municipio de Sao Paulo",
           "data_institution": "Prefeitura de São Paulo; DataSUS",
-          "data_url": "http://www.prefeitura.sp.gov.br/cidade/secretarias/saude/epidemiologia_e_informacao/mortalidade/",
+          "data_url": "http://www.prefeitura.sp.gov.br/cidade/secretarias/saude/epidemiologia_e_informacao/mortalidade/;2;2",
           "data_periodical": false
         }
       ],
@@ -555,8 +555,8 @@
         "veneno",
         "contaminação"
       ],
-      "url_source": "https://",
-      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_3338481779.png",
+      "url_source": null,
+      "url_image": "https://pbs.twimg.com/profile_images/1128369238555668480/xF4UC5Hx_400x400.png",
       "comment": null,
       "type": [
         "bot"
@@ -590,7 +590,7 @@
       ]
     },
     {
-      "hash_id": 3561964102,
+      "hash_id": 3610997668,
       "name": "O desmonte da Amazônia",
       "url": "http://fundacaotidesetubal.org.br/publicacoes/i-premio-orcamento-publico-garantia-de-direitos-e-combate-as-desigualdades-artigos-vencedores",
       "description": "O desmatamento da floresta amazônica voltou a crescer com grande velocidade em 2019, mantendo essa tendência nos anos seguintes. Buscando compreender melhor as causas desse aumento, analisamos sua relação com possíveis variáveis explicativas no período de 2010 a 2021: orçamento federal dedicado; número de servidores do IBAMA; quantidade de chuvas na região; e preços da soja, milho e do boi gordo. \r\n\r\nPara estimarmos a contribuição de cada variável para o desmatamento, utilizamos métodos como o teste de causalidade de Granger, o método SHAP e a validação cruzada de modelos preditivos de machine learning. Nossa análise também serviu como teste da eficácia das Operações de Garantia da Lei e da Ordem (GLOs) ambientais.",
@@ -621,7 +621,7 @@
         "aprendizado de máquina"
       ],
       "url_source": "https://github.com/gabinete-compartilhado-acredito/desmatamento",
-      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_3561964102.png",
+      "url_image": "https://henriquexavier.net/images/desmatamento_banner.png",
       "comment": null,
       "type": [
         "artigo científico ou publicação acadêmica"
@@ -702,7 +702,7 @@
         "streamlit"
       ],
       "url_source": "https://github.com/ImpulsoGov/farolcovid",
-      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_2828213759.png",
+      "url_image": "https://i.imgur.com/GLLjEYm.png",
       "comment": "Os dados exatos utilizados pela plataforma não foram informados. Apenas foram informados as instituições responsáveis.",
       "type": [
         "aplicativo ou plataforma"
@@ -712,13 +712,13 @@
       ],
       "datasets": [
         {
-          "data_name": null,
+          "data_name": NaN,
           "data_institution": "Brasil.io",
           "data_url": "http://brasil.io/",
           "data_periodical": true
         },
         {
-          "data_name": null,
+          "data_name": NaN,
           "data_institution": "DataSUS",
           "data_url": "https://datasus.saude.gov.br/",
           "data_periodical": true
@@ -730,6 +730,75 @@
       ],
       "topics_es": [
         "Salud"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 2978085734,
+      "name": "Repasse dos Municípios",
+      "url": "http://repasse.ufabc.edu.br",
+      "description": "Uma ferramenta para visualização das transferências do governo federal para os municípios brasileiros. As transferências são apresentadas de acordo com a destinação (saúde, educação, segurança, etc.) e mostradas comparativamente entre municípios. Todos os municípios do Brasil estão incluídos na base de dados do Repasse. O objetivo é a auditoria simplificada da destinação dos recursos financeiros oriundos da União.",
+      "pub_date": "07/2015",
+      "authors": [
+        "William Siqueira",
+        "ICMC-USP",
+        "UFABC"
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "email": [
+        "william.fatecsjc@gmail.com"
+      ],
+      "tags": [
+        "repasse",
+        "orçamento",
+        "verba pública",
+        "municípios",
+        "api",
+        "dashboard"
+      ],
+      "url_source": "https://github.com/TapiocaAberta/repasse-server",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_2978085734.png",
+      "comment": "Informações deduzidas a partir das obtidas na Web. Podem haver incorreções.",
+      "type": [
+        "painel, dashboard ou infográfico",
+        "conjunto de dados"
+      ],
+      "topics": [
+        "Administração Pública",
+        "Finanças e Orçamento Público"
+      ],
+      "datasets": [
+        {
+          "data_name": "Metadados da Base Siconv",
+          "data_institution": "Ministério da Gestão e da Inovação em Serviços Públicos",
+          "data_url": "https://dados.gov.br/dados/conjuntos-dados/siconvmetadados",
+          "data_periodical": null
+        },
+        {
+          "data_name": "SICONV",
+          "data_institution": "CGU",
+          "data_url": "https://portaldatransparencia.gov.br/download-de-dados/convenios",
+          "data_periodical": null
+        },
+        {
+          "data_name": null,
+          "data_institution": "IBGE",
+          "data_url": "https://dados.gov.br/dados/organizacoes/visualizar/instituto-brasileiro-de-geografia-e-estatistica-ibge",
+          "data_periodical": null
+        }
+      ],
+      "record_date": "2023-10-27",
+      "type_es": [
+        "panel de control o infografía",
+        "conjunto de datos"
+      ],
+      "topics_es": [
+        "Administración Pública",
+        "Finanzas y Presupuesto Público"
       ],
       "countries_es": [
         "Brasil"
