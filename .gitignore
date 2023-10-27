@@ -12,6 +12,7 @@ analises/.ipynb_checkpoints
 
 # Dados internos
 dados/*
+!dados/brutos
 !dados/limpos
 dados/limpos/*
 !dados/limpos/usecases_current.json
