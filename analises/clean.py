@@ -267,7 +267,7 @@ def data_info_dict_list(usecase_df, max_datasets):
     
     # Hard-coded:
     required_data_info = ['data_name', 'data_institution', 'data_url']
-    periodical_labels  = {1:True, 2:False}
+    periodical_labels  = {0: None, 1:True, 2:False}
     
     # Get table of used datasets:
     datasets_df = parse_usecase_datasets(usecase_df, max_datasets)
@@ -275,7 +275,7 @@ def data_info_dict_list(usecase_df, max_datasets):
     datasets_df.dropna(how='all', subset=required_data_info, inplace=True)
 
     # Translation of the periodicity of the data collection:
-    datasets_df['data_periodical'] = (datasets_df['data_periodical']).astype(int).map(periodical_labels)
+    datasets_df['data_periodical'] = (datasets_df['data_periodical']).fillna(0).astype(int).map(periodical_labels)
 
     # Format as a list of dicts:
     dict_list = datasets_df.to_dict(orient='records')
