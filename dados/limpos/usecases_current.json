@@ -712,13 +712,13 @@
       ],
       "datasets": [
         {
-          "data_name": NaN,
+          "data_name": null,
           "data_institution": "Brasil.io",
           "data_url": "http://brasil.io/",
           "data_periodical": true
         },
         {
-          "data_name": NaN,
+          "data_name": null,
           "data_institution": "DataSUS",
           "data_url": "https://datasus.saude.gov.br/",
           "data_periodical": true
