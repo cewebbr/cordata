@@ -4,807 +4,6 @@
   },
   "data": [
     {
-      "hash_id": 2507397523,
-      "name": "Três partidos do Centrão controlam mais de R$ 149,6 bilhões do governo Bolsonaro",
-      "url": "https://oglobo.globo.com/politica/tres-partidos-do-centrao-controlam-mais-de-1496-bilhoes-do-governo-bolsonaro-1-25365038",
-      "description": "Matéria jornalística publicada no Jornal O Globo que aponta o número de postos ocupados por integrantes e indicados dos partidos PP, PL e Republicanos na administração federal, juntamente com uma estimativa do montante de recursos direcionados aos respectivos órgãos pelo orçamento federal.",
-      "pub_date": "01/2022",
-      "authors": [
-        "Dimitrius Dantas",
-        "Daniel Gullino",
-        "Bruno Góes"
-      ],
-      "countries": [
-        "Brasil"
-      ],
-      "email": [
-        "bruno.goes@oglobo.com.br",
-        "daniel.gullino@bsb.oglobo.com.br"
-      ],
-      "tags": [
-        "orçamento federal",
-        "orçamento secreto",
-        "bolsonaro",
-        "centrão",
-        "fisiologismo",
-        "presidencialismo de coalizão"
-      ],
-      "url_source": "https://github.com/gabinete-compartilhado-acredito/dados_orcamentarios",
-      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_2507397523.png",
-      "comment": null,
-      "type": [
-        "matéria jornalística"
-      ],
-      "topics": [
-        "Administração Pública",
-        "Finanças e Orçamento Público",
-        "Política, Partidos e Eleições"
-      ],
-      "datasets": [
-        {
-          "data_name": "SIGA Brasil",
-          "data_institution": "Senado Federal",
-          "data_url": "https://www12.senado.leg.br/orcamento/sigabrasil",
-          "data_periodical": false
-        },
-        {
-          "data_name": "Orçamento da despesa pública",
-          "data_institution": "CGU",
-          "data_url": "https://portaldatransparencia.gov.br/orcamento/despesas?ordenarPor=ano&direcao=desc",
-          "data_periodical": false
-        },
-        {
-          "data_name": "Plataforma +Brasil",
-          "data_institution": "Ministério da Economia",
-          "data_url": "https://antigo.plataformamaisbrasil.gov.br/download-de-dados",
-          "data_periodical": false
-        }
-      ],
-      "record_date": "2023-10-11",
-      "type_es": [
-        "artículo periodístico"
-      ],
-      "topics_es": [
-        "Administración Pública",
-        "Finanzas y Presupuesto Público",
-        "Política, Partidos, y Elecciones"
-      ],
-      "countries_es": [
-        "Brasil"
-      ]
-    },
-    {
-      "hash_id": 3206104055,
-      "name": "Serenata de amor",
-      "url": "https://serenata.ai",
-      "description": "Um projeto aberto que usa ciência de dados com a finalidade de fiscalizar gastos reembolsados pela Cota para Exercício da Atividade Parlamentar (CEAP), de deputados federais e senadores, feitos em exercício de sua função, e compartilhar as informações de forma acessível a qualquer pessoa.",
-      "pub_date": "06/2016",
-      "authors": [
-        "Open Knowledge Brasil",
-        "Irio Musskopf"
-      ],
-      "countries": [
-        "Brasil"
-      ],
-      "email": [
-        "contato@serenata.ai"
-      ],
-      "tags": [
-        "ceap",
-        "Cota para Exercício da Atividade Parlamentar",
-        "cota parlamentar",
-        "fiscalização",
-        "deputados federais",
-        "senadores",
-        "parlamentares federais"
-      ],
-      "url_source": "https://github.com/okfn-brasil/serenata-de-amor",
-      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_3206104055.png",
-      "comment": null,
-      "type": [
-        "painel, dashboard ou infográfico",
-        "bot"
-      ],
-      "topics": [
-        "Administração Pública",
-        "Finanças e Orçamento Público",
-        "Transparência"
-      ],
-      "datasets": [
-        {
-          "data_name": "Cota parlamentar",
-          "data_institution": "Câmara dos deputados",
-          "data_url": "https://www.camara.leg.br/cota-parlamentar/",
-          "data_periodical": true
-        },
-        {
-          "data_name": "Informações sobre deputados federais",
-          "data_institution": "Câmara dos deputados",
-          "data_url": "https://www.camara.leg.br/SitCamaraWS/Deputados.asmx",
-          "data_periodical": true
-        },
-        {
-          "data_name": "API de Compras Governamentais",
-          "data_institution": "Ministério da Economia",
-          "data_url": "http://compras.dados.gov.br",
-          "data_periodical": true
-        }
-      ],
-      "record_date": "2023-10-11",
-      "type_es": [
-        "panel de control o infografía",
-        "bot"
-      ],
-      "topics_es": [
-        "Administración Pública",
-        "Finanzas y Presupuesto Público",
-        "Transparencia"
-      ],
-      "countries_es": [
-        "Brasil"
-      ]
-    },
-    {
-      "hash_id": 1108461102,
-      "name": "Base dos Dados",
-      "url": "https://basedosdados.org/",
-      "description": "Catálogo de conjuntos de dados com alguns conjuntos tratados e disponibilizados no BigQuery, do Google. O projeto também fornece pacotes de Python e R para acesso ao BigQuery diretamente do código.",
-      "pub_date": "09/2020",
-      "authors": [
-        "Instituto Base dos Dados"
-      ],
-      "countries": [
-        "Mundial",
-        "Brasil"
-      ],
-      "email": null,
-      "tags": [
-        "catálogo",
-        "repositório"
-      ],
-      "url_source": "https://github.com/basedosdados",
-      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_1108461102.png",
-      "comment": "São muitas bases de dados, não seria possível listar",
-      "type": [
-        "conjunto de dados"
-      ],
-      "topics": [
-        "Agropecuária",
-        "Alimentação",
-        "Administração Pública",
-        "Arte e Cultura",
-        "Atividade industrial, de comércio ou serviços",
-        "Ciência e Tecnologia",
-        "Comunicações",
-        "Consumo",
-        "Dados demográficos",
-        "Defesa",
-        "Direito e Processual Penal",
-        "Direitos Humanos",
-        "Economia",
-        "Educação",
-        "Energia",
-        "Esporte",
-        "Finanças e Orçamento Público",
-        "Imóveis, Habitação e Urbanismo",
-        "Justiça e Direito",
-        "Lazer",
-        "Meio Ambiente",
-        "Multimídia",
-        "Política, Partidos e Eleições",
-        "Previdência e Assistência Social",
-        "Recursos hídricos",
-        "Recursos minerais",
-        "Redes Sociais",
-        "Relações Internacionais",
-        "Religião",
-        "Saúde",
-        "Segurança",
-        "Terras",
-        "Transporte",
-        "Transparência",
-        "Trabalho e Emprego",
-        "Turismo"
-      ],
-      "datasets": [],
-      "record_date": "2023-10-11",
-      "type_es": [
-        "conjunto de datos"
-      ],
-      "topics_es": [
-        "Agricultura",
-        "Alimentación",
-        "Administración Pública",
-        "Arte y Cultura",
-        "Actividades industriales, comerciales o de servicios",
-        "Ciencia y Tecnología",
-        "Comunicaciones",
-        "Consumo",
-        "Datos demográficos",
-        "Defensa",
-        "Derecho y Procedimiento Penal",
-        "Derechos Humanos",
-        "Economía",
-        "Educación",
-        "Energía",
-        "Deporte",
-        "Finanzas y Presupuesto Público",
-        "Inmobiliario, Vivienda y Urbanismo",
-        "Justicia y Derecho",
-        "Entretenimiento",
-        "Medio ambiente",
-        "Multimedia",
-        "Política, Partidos, y Elecciones",
-        "Bienestar y Asistencia Social",
-        "Recursos hídricos",
-        "Recursos minerales",
-        "Redes Sociales",
-        "Relaciones Internacionales",
-        "Religión",
-        "Salud",
-        "Seguridad",
-        "Tierra",
-        "Transporte",
-        "Transparencia",
-        "Trabajo y Empleo",
-        "Turismo"
-      ],
-      "countries_es": [
-        "Mundial",
-        "Brasil"
-      ]
-    },
-    {
-      "hash_id": 1191967625,
-      "name": "Tutorial de dados",
-      "url": "https://github.com/tecMTST/tutorial-de-dados",
-      "description": "Pequenos projetos de análise de dados desenvolvidos em notebooks de Python que podem ser seguidos como tutoriais.",
-      "pub_date": "09/2023",
-      "authors": [
-        "Núcleo de Tecnologia do MTST"
-      ],
-      "countries": [
-        "Brasil"
-      ],
-      "email": [
-        "mtst@nucleodetecnologia.com.br"
-      ],
-      "tags": [
-        "tutorial",
-        "análise de dados",
-        "ciência de dados",
-        "expectativa de vida",
-        "financiamento de campanha",
-        "financiamento eleitoral",
-        "desigualdade",
-        "são paulo"
-      ],
-      "url_source": "https://github.com/tecMTST/tutorial-de-dados",
-      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_1191967625.png",
-      "comment": null,
-      "type": [
-        "material didático",
-        "estudo independente"
-      ],
-      "topics": [
-        "Direitos Humanos",
-        "Imóveis, Habitação e Urbanismo",
-        "Política, Partidos e Eleições",
-        "Saúde"
-      ],
-      "datasets": [
-        {
-          "data_name": "Mortalidade no município de Sâo Paulo",
-          "data_institution": "Prefeitura do Município de São Paulo",
-          "data_url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/saude/epidemiologia_e_informacao/mortalidade/",
-          "data_periodical": false
-        },
-        {
-          "data_name": "População do município de São Paulo, por idade",
-          "data_institution": "SEADE",
-          "data_url": "https://repositorio.seade.gov.br/group/seade-populacao",
-          "data_periodical": false
-        },
-        {
-          "data_name": "Fronteiras dos distritos do município de São Paulo",
-          "data_institution": "Prefeitura do Município de São Paulo",
-          "data_url": "https://geosampa.prefeitura.sp.gov.br",
-          "data_periodical": false
-        },
-        {
-          "data_name": "Prestação de contas eleitorais",
-          "data_institution": "TSE",
-          "data_url": "https://dadosabertos.tse.jus.br/dataset/",
-          "data_periodical": false
-        },
-        {
-          "data_name": "Candidatos eleitorais",
-          "data_institution": "TSE",
-          "data_url": "https://dadosabertos.tse.jus.br/dataset/",
-          "data_periodical": false
-        }
-      ],
-      "record_date": "2023-10-11",
-      "type_es": [
-        "material didáctico",
-        "estudio independiente"
-      ],
-      "topics_es": [
-        "Derechos Humanos",
-        "Inmobiliario, Vivienda y Urbanismo",
-        "Política, Partidos, y Elecciones",
-        "Salud"
-      ],
-      "countries_es": [
-        "Brasil"
-      ]
-    },
-    {
-      "hash_id": 3196016551,
-      "name": "Toxic, Hateful, Offensive or Abusive? What Are We Really Classifying? An Empirical Analysis of Hate Speech Datasets",
-      "url": "https://aclanthology.org/2020.lrec-1.838/",
-      "description": "O campo da detecção automática de discurso de ódio e conceitos relacionados tem suscitado muito interesse nos últimos anos. Diferentes conjuntos de dados foram anotados e classificados por meio da aplicação de diferentes algoritmos de aprendizado de máquina. No entanto, poucos esforços foram feitos para esclarecer as categorias aplicadas e homogeneizar os diferentes conjuntos de dados. Nosso estudo atende a essa demanda. Analisamos seis conjuntos de dados diferentes disponíveis publicamente neste campo no que diz respeito à sua similaridade e compatibilidade. Conduzimos dois experimentos diferentes. Primeiro, tentamos tornar os conjuntos de dados compatíveis e representar as classes do conjunto de dados como vetores de palavras de texto rápido, analisando a semelhança entre diferentes classes de maneira intra e interconjunto de dados. Em segundo lugar, submetemos os conjuntos de dados escolhidos ao classificador Perspective API Toxicity, obtendo diferentes desempenhos dependendo das categorias e dos conjuntos de dados. Uma das principais conclusões destas experiências é que muitas definições diferentes estão a ser utilizadas para conceitos equivalentes, o que torna incompatíveis a maioria dos conjuntos de dados disponíveis publicamente. Com base em nossa análise, fornecemos diretrizes para futuras coletas e anotações de conjuntos de dados.",
-      "pub_date": "05/2020",
-      "authors": [
-        "Paula Fortuna",
-        "Juan Soler",
-        "Leo Wanner"
-      ],
-      "countries": [
-        "Mundial"
-      ],
-      "email": [
-        "paulatfortuna@gmail.com",
-        "juan.soler@upf.edu",
-        "leo.wanner@upf.edu"
-      ],
-      "tags": [
-        "discurso de ódio",
-        "redes sociais"
-      ],
-      "url_source": "https://",
-      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_3196016551.png",
-      "comment": "Existe mais um conjunto de dados abertos utilizado quenão foi informado por falta de espaço.",
-      "type": [
-        "artigo científico ou publicação acadêmica"
-      ],
-      "topics": [
-        "Direitos Humanos",
-        "Redes Sociais"
-      ],
-      "datasets": [
-        {
-          "data_name": "Automated Hate Speech Detection and the Problem of Offensive Language",
-          "data_institution": "Thomas Davidson et al.",
-          "data_url": "https://github.com/t-davidson/hate-speech-and-offensive-language",
-          "data_periodical": false
-        },
-        {
-          "data_name": "Hate Speech Twitter annotations",
-          "data_institution": "Zeerak Waseem; Dirk Hovy",
-          "data_url": "https://github.com/zeeraktalat/hatespeech",
-          "data_periodical": false
-        },
-        {
-          "data_name": "Overview of the Evalita 2018 Task on Automatic Misogyny Identification (AMI)",
-          "data_institution": "Elisabetta Fersini; Debora Nozza; Paolo Rosso",
-          "data_url": "https://",
-          "data_periodical": false
-        },
-        {
-          "data_name": "HatEval",
-          "data_institution": "Valerio Basile et al.",
-          "data_url": "http://hatespeech.di.unito.it/hateval.html",
-          "data_periodical": false
-        },
-        {
-          "data_name": "Toxic Comment Classification Challenge",
-          "data_institution": "Jigsaw/Conversation AI",
-          "data_url": "https://www.kaggle.com/competitions/jigsaw-toxic-comment-classification-challenge/data",
-          "data_periodical": false
-        }
-      ],
-      "record_date": "2023-10-25",
-      "type_es": [
-        "artículo científico o publicación académica"
-      ],
-      "topics_es": [
-        "Derechos Humanos",
-        "Redes Sociales"
-      ],
-      "countries_es": [
-        "Mundial"
-      ]
-    },
-    {
-      "hash_id": 171154266,
-      "name": "Painel de Temas da Câmara dos deputados",
-      "url": "https://lookerstudio.google.com/u/0/reporting/1dstcE9vqfyVreNkMWc9xPomHUFE3Wvu_/page/jper",
-      "description": "Um painel que mostra as proposições apresentadas por Deputados Federais dentro de diversos temas, anos, partidos e estados.",
-      "pub_date": "08/2019",
-      "authors": [
-        "Gabinete Compartilhado Acredito"
-      ],
-      "countries": [
-        "Brasil"
-      ],
-      "email": [
-        "contato@movimentoacredito.com",
-        "hsxavier@gmail.com"
-      ],
-      "tags": [
-        "deputados federais",
-        "atividade legislativa",
-        "câmara dos deputados",
-        "proposições",
-        "temas"
-      ],
-      "url_source": "https://",
-      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_171154266.png",
-      "comment": null,
-      "type": [
-        "painel, dashboard ou infográfico"
-      ],
-      "topics": [
-        "Política, Partidos e Eleições"
-      ],
-      "datasets": [
-        {
-          "data_name": "Proposições",
-          "data_institution": "Câmara dos Deputados",
-          "data_url": "https://dadosabertos.camara.leg.br/swagger/api.html",
-          "data_periodical": true
-        },
-        {
-          "data_name": "Deputados",
-          "data_institution": "Câmara dos Deputados",
-          "data_url": "https://dadosabertos.camara.leg.br/swagger/api.html",
-          "data_periodical": true
-        }
-      ],
-      "record_date": "2023-10-25",
-      "type_es": [
-        "panel de control o infografía"
-      ],
-      "topics_es": [
-        "Política, Partidos, y Elecciones"
-      ],
-      "countries_es": [
-        "Brasil"
-      ]
-    },
-    {
-      "hash_id": 4006395846,
-      "name": "Vidas desiguais na cidade de São Paulo",
-      "url": "https://diplomatique.org.br/vidas-desiguais-na-cidade-de-sao-paulo/",
-      "description": "Em 2017, a rede Nossa São Paulo publicou um mapa da desigualdade comparando os diferentes distritos da cidade de São Paulo em termos de diversos indicadores sociais. Uma das desigualdades encontradas foi a diferença estarrecedora de quase 24 anos entre as expectativas de vida dos distritos melhor e pior colocados (79,4 anos no Jardim Paulista e 55,7 no Jardim Ângela). Nosso objetivo nesta análise foi discriminar como as diferentes causas de morte contribuem para essa diferença, atribuindo um \"número de anos subtraídos\" a cada uma.",
-      "pub_date": "04/2018",
-      "authors": [
-        "Henrique S. Xavier",
-        "Raphael Ximenes",
-        "Sérgio Helene"
-      ],
-      "countries": [
-        "Brasil"
-      ],
-      "email": [
-        "hsxavier@gmail.com"
-      ],
-      "tags": [
-        "causa mortis",
-        "expectativa de vida",
-        "idade média ao morrer",
-        "datasus",
-        "são paulo",
-        "desigualdade"
-      ],
-      "url_source": "https://henriquexavier.net/vidas_desiguais.html",
-      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_4006395846.png",
-      "comment": null,
-      "type": [
-        "matéria jornalística",
-        "estudo independente"
-      ],
-      "topics": [
-        "Dados demográficos",
-        "Direitos Humanos",
-        "Saúde"
-      ],
-      "datasets": [
-        {
-          "data_name": "Mortalidade no municipio de Sao Paulo",
-          "data_institution": "Prefeitura de São Paulo; DataSUS",
-          "data_url": "http://www.prefeitura.sp.gov.br/cidade/secretarias/saude/epidemiologia_e_informacao/mortalidade/",
-          "data_periodical": false
-        }
-      ],
-      "record_date": "2023-10-25",
-      "type_es": [
-        "artículo periodístico",
-        "estudio independiente"
-      ],
-      "topics_es": [
-        "Datos demográficos",
-        "Derechos Humanos",
-        "Salud"
-      ],
-      "countries_es": [
-        "Brasil"
-      ]
-    },
-    {
-      "hash_id": 3338481779,
-      "name": "Robotox",
-      "url": "https://twitter.com/orobotox",
-      "description": "Robotox é um bot do Twitter que publica todos os novos produtos agrotóxicos que forem liberados no mercado brasileiro. As informações compartilhadas são públicas e extraídas do Diário Oficial da União.",
-      "pub_date": "04/2019",
-      "authors": [
-        "Agência Pública",
-        "Repórter Brasil"
-      ],
-      "countries": [
-        "Brasil"
-      ],
-      "email": [
-        "contato@reporterbrasil.org.br",
-        "contato@apublica.org"
-      ],
-      "tags": [
-        "agrotóxicos",
-        "defensivos agrícolas",
-        "veneno",
-        "contaminação"
-      ],
-      "url_source": "https://",
-      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_3338481779.png",
-      "comment": null,
-      "type": [
-        "bot"
-      ],
-      "topics": [
-        "Agropecuária",
-        "Alimentação",
-        "Meio Ambiente",
-        "Saúde"
-      ],
-      "datasets": [
-        {
-          "data_name": "Diário Oficial da União",
-          "data_institution": "Imprensa Nacional",
-          "data_url": "https://github.com/Imprensa-Nacional/inlabs",
-          "data_periodical": true
-        }
-      ],
-      "record_date": "2023-10-25",
-      "type_es": [
-        "bot"
-      ],
-      "topics_es": [
-        "Agricultura",
-        "Alimentación",
-        "Medio ambiente",
-        "Salud"
-      ],
-      "countries_es": [
-        "Brasil"
-      ]
-    },
-    {
-      "hash_id": 3561964102,
-      "name": "O desmonte da Amazônia",
-      "url": "http://fundacaotidesetubal.org.br/publicacoes/i-premio-orcamento-publico-garantia-de-direitos-e-combate-as-desigualdades-artigos-vencedores",
-      "description": "O desmatamento da floresta amazônica voltou a crescer com grande velocidade em 2019, mantendo essa tendência nos anos seguintes. Buscando compreender melhor as causas desse aumento, analisamos sua relação com possíveis variáveis explicativas no período de 2010 a 2021: orçamento federal dedicado; número de servidores do IBAMA; quantidade de chuvas na região; e preços da soja, milho e do boi gordo. \r\n\r\nPara estimarmos a contribuição de cada variável para o desmatamento, utilizamos métodos como o teste de causalidade de Granger, o método SHAP e a validação cruzada de modelos preditivos de machine learning. Nossa análise também serviu como teste da eficácia das Operações de Garantia da Lei e da Ordem (GLOs) ambientais.",
-      "pub_date": "10/2021",
-      "authors": [
-        "Henrique S. Xavier",
-        "Pepe Tonin"
-      ],
-      "countries": [
-        "Brasil"
-      ],
-      "email": [
-        "hsxavier@gmail.com"
-      ],
-      "tags": [
-        "desmatamento",
-        "amazônia",
-        "prodes",
-        "floresta amazônica",
-        "orçamento federal",
-        "ibama",
-        "servidores",
-        "soja",
-        "milho",
-        "boi",
-        "gado",
-        "machine learning",
-        "aprendizado de máquina"
-      ],
-      "url_source": "https://github.com/gabinete-compartilhado-acredito/desmatamento",
-      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_3561964102.png",
-      "comment": null,
-      "type": [
-        "artigo científico ou publicação acadêmica"
-      ],
-      "topics": [
-        "Agropecuária",
-        "Finanças e Orçamento Público",
-        "Meio Ambiente"
-      ],
-      "datasets": [
-        {
-          "data_name": "Incrementos de desmatamento na Amazônia Legal",
-          "data_institution": "INPE",
-          "data_url": "http://terrabrasilis.dpi.inpe.br/app/dashboar d/deforestation/biomes/legal_amazon/increments",
-          "data_periodical": false
-        },
-        {
-          "data_name": "Orçamento Federal - SIGA Brasil",
-          "data_institution": "Senado Federal",
-          "data_url": "https://www12.senado.leg.br/orcamento/sigabrasil",
-          "data_periodical": false
-        },
-        {
-          "data_name": "Servidores do IBAMA - Painel Estatístico de Pessoal",
-          "data_institution": "Ministério da Economia",
-          "data_url": "http://painel.pep.planejamento.gov.br",
-          "data_periodical": false
-        },
-        {
-          "data_name": "Dados meteorológicos históricos",
-          "data_institution": "INMET",
-          "data_url": "https://porta l.inmet.gov.br/dadoshistoricos",
-          "data_periodical": false
-        },
-        {
-          "data_name": "Preço de commodities agrícolas",
-          "data_institution": "ESALQ",
-          "data_url": "https://www.cepea.esalq.usp.br/br/consultas-ao-banco-de-dados-do-site.aspx",
-          "data_periodical": false
-        }
-      ],
-      "record_date": "2023-10-25",
-      "type_es": [
-        "artículo científico o publicación académica"
-      ],
-      "topics_es": [
-        "Agricultura",
-        "Finanzas y Presupuesto Público",
-        "Medio ambiente"
-      ],
-      "countries_es": [
-        "Brasil"
-      ]
-    },
-    {
-      "hash_id": 2828213759,
-      "name": "Farol Covid",
-      "url": "https://farolcovid.coronacidades.org/",
-      "description": "O Farol Covid é uma iniciativa da plataforma CoronaCidades que oferece uma análise inteligente de dados abertos para mostrar a situação do coronavírus em cada cidade brasileira. Em sua nova versão, a ferramenta avalia o nível de alerta em cada estado, regional de saúde e município em 5 dimensões: como a doença está se espalhando no território; qual a capacidade do poder público de detectar os casos; capacidade de respostas do sistema de saúde; qual a situação do sistema de saúde e risco de colapso; e qual a qualidade das medições de casos feitas pelos governos.",
-      "pub_date": "03/2020",
-      "authors": [
-        "Impulso",
-        "Instituto de Estudos para Políticas de Saúde (IEPS)",
-        "Instituto Arapyaú"
-      ],
-      "countries": [
-        "Brasil"
-      ],
-      "email": [
-        "contato@impulsogov.org"
-      ],
-      "tags": [
-        "coronavírus",
-        "covid-19",
-        "covid",
-        "pandemia",
-        "aplicativo web",
-        "streamlit"
-      ],
-      "url_source": "https://github.com/ImpulsoGov/farolcovid",
-      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_2828213759.png",
-      "comment": "Os dados exatos utilizados pela plataforma não foram informados. Apenas foram informados as instituições responsáveis.",
-      "type": [
-        "aplicativo ou plataforma"
-      ],
-      "topics": [
-        "Saúde"
-      ],
-      "datasets": [
-        {
-          "data_name": null,
-          "data_institution": "Brasil.io",
-          "data_url": "http://brasil.io/",
-          "data_periodical": true
-        },
-        {
-          "data_name": null,
-          "data_institution": "DataSUS",
-          "data_url": "https://datasus.saude.gov.br/",
-          "data_periodical": true
-        }
-      ],
-      "record_date": "2023-10-25",
-      "type_es": [
-        "aplicación o plataforma"
-      ],
-      "topics_es": [
-        "Salud"
-      ],
-      "countries_es": [
-        "Brasil"
-      ]
-    },
-    {
-      "hash_id": 2978085734,
-      "name": "Repasse dos Municípios",
-      "url": "http://repasse.ufabc.edu.br",
-      "description": "Uma ferramenta para visualização das transferências do governo federal para os municípios brasileiros. As transferências são apresentadas de acordo com a destinação (saúde, educação, segurança, etc.) e mostradas comparativamente entre municípios. Todos os municípios do Brasil estão incluídos na base de dados do Repasse. O objetivo é a auditoria simplificada da destinação dos recursos financeiros oriundos da União.",
-      "pub_date": "07/2015",
-      "authors": [
-        "William Siqueira",
-        "ICMC-USP",
-        "UFABC"
-      ],
-      "countries": [
-        "Brasil"
-      ],
-      "email": [
-        "william.fatecsjc@gmail.com"
-      ],
-      "tags": [
-        "repasse",
-        "orçamento",
-        "verba pública",
-        "municípios",
-        "api",
-        "dashboard"
-      ],
-      "url_source": "https://github.com/TapiocaAberta/repasse-server",
-      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_2978085734.png",
-      "comment": "Informações deduzidas a partir das obtidas na Web. Podem haver incorreções.",
-      "type": [
-        "painel, dashboard ou infográfico",
-        "conjunto de dados"
-      ],
-      "topics": [
-        "Administração Pública",
-        "Finanças e Orçamento Público"
-      ],
-      "datasets": [
-        {
-          "data_name": "Metadados da Base Siconv",
-          "data_institution": "Ministério da Gestão e da Inovação em Serviços Públicos",
-          "data_url": "https://dados.gov.br/dados/conjuntos-dados/siconvmetadados",
-          "data_periodical": null
-        },
-        {
-          "data_name": "SICONV",
-          "data_institution": "CGU",
-          "data_url": "https://portaldatransparencia.gov.br/download-de-dados/convenios",
-          "data_periodical": null
-        },
-        {
-          "data_name": null,
-          "data_institution": "IBGE",
-          "data_url": "https://dados.gov.br/dados/organizacoes/visualizar/instituto-brasileiro-de-geografia-e-estatistica-ibge",
-          "data_periodical": null
-        }
-      ],
-      "record_date": "2023-10-27",
-      "type_es": [
-        "panel de control o infografía",
-        "conjunto de datos"
-      ],
-      "topics_es": [
-        "Administración Pública",
-        "Finanzas y Presupuesto Público"
-      ],
-      "countries_es": [
-        "Brasil"
-      ]
-    },
-    {
       "hash_id": 2766310307,
       "name": "Brasil Real Oficial",
       "url": "https://brenocosta.substack.com/",
@@ -921,6 +120,807 @@
         "Transparencia",
         "Trabajo y Empleo",
         "Turismo"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 2978085734,
+      "name": "Repasse dos Municípios",
+      "url": "http://repasse.ufabc.edu.br",
+      "description": "Uma ferramenta para visualização das transferências do governo federal para os municípios brasileiros. As transferências são apresentadas de acordo com a destinação (saúde, educação, segurança, etc.) e mostradas comparativamente entre municípios. Todos os municípios do Brasil estão incluídos na base de dados do Repasse. O objetivo é a auditoria simplificada da destinação dos recursos financeiros oriundos da União.",
+      "pub_date": "07/2015",
+      "authors": [
+        "William Siqueira",
+        "ICMC-USP",
+        "UFABC"
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "email": [
+        "william.fatecsjc@gmail.com"
+      ],
+      "tags": [
+        "repasse",
+        "orçamento",
+        "verba pública",
+        "municípios",
+        "api",
+        "dashboard"
+      ],
+      "url_source": "https://github.com/TapiocaAberta/repasse-server",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_2978085734.png",
+      "comment": "Informações deduzidas a partir das obtidas na Web. Podem haver incorreções.",
+      "type": [
+        "painel, dashboard ou infográfico",
+        "conjunto de dados"
+      ],
+      "topics": [
+        "Administração Pública",
+        "Finanças e Orçamento Público"
+      ],
+      "datasets": [
+        {
+          "data_name": "Metadados da Base Siconv",
+          "data_institution": "Ministério da Gestão e da Inovação em Serviços Públicos",
+          "data_url": "https://dados.gov.br/dados/conjuntos-dados/siconvmetadados",
+          "data_periodical": null
+        },
+        {
+          "data_name": "SICONV",
+          "data_institution": "CGU",
+          "data_url": "https://portaldatransparencia.gov.br/download-de-dados/convenios",
+          "data_periodical": null
+        },
+        {
+          "data_name": null,
+          "data_institution": "IBGE",
+          "data_url": "https://dados.gov.br/dados/organizacoes/visualizar/instituto-brasileiro-de-geografia-e-estatistica-ibge",
+          "data_periodical": null
+        }
+      ],
+      "record_date": "2023-10-27",
+      "type_es": [
+        "panel de control o infografía",
+        "conjunto de datos"
+      ],
+      "topics_es": [
+        "Administración Pública",
+        "Finanzas y Presupuesto Público"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 2828213759,
+      "name": "Farol Covid",
+      "url": "https://farolcovid.coronacidades.org/",
+      "description": "O Farol Covid é uma iniciativa da plataforma CoronaCidades que oferece uma análise inteligente de dados abertos para mostrar a situação do coronavírus em cada cidade brasileira. Em sua nova versão, a ferramenta avalia o nível de alerta em cada estado, regional de saúde e município em 5 dimensões: como a doença está se espalhando no território; qual a capacidade do poder público de detectar os casos; capacidade de respostas do sistema de saúde; qual a situação do sistema de saúde e risco de colapso; e qual a qualidade das medições de casos feitas pelos governos.",
+      "pub_date": "03/2020",
+      "authors": [
+        "Impulso",
+        "Instituto de Estudos para Políticas de Saúde (IEPS)",
+        "Instituto Arapyaú"
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "email": [
+        "contato@impulsogov.org"
+      ],
+      "tags": [
+        "coronavírus",
+        "covid-19",
+        "covid",
+        "pandemia",
+        "aplicativo web",
+        "streamlit"
+      ],
+      "url_source": "https://github.com/ImpulsoGov/farolcovid",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_2828213759.png",
+      "comment": "Os dados exatos utilizados pela plataforma não foram informados. Apenas foram informados as instituições responsáveis.",
+      "type": [
+        "aplicativo ou plataforma"
+      ],
+      "topics": [
+        "Saúde"
+      ],
+      "datasets": [
+        {
+          "data_name": null,
+          "data_institution": "Brasil.io",
+          "data_url": "http://brasil.io/",
+          "data_periodical": true
+        },
+        {
+          "data_name": null,
+          "data_institution": "DataSUS",
+          "data_url": "https://datasus.saude.gov.br/",
+          "data_periodical": true
+        }
+      ],
+      "record_date": "2023-10-25",
+      "type_es": [
+        "aplicación o plataforma"
+      ],
+      "topics_es": [
+        "Salud"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 3561964102,
+      "name": "O desmonte da Amazônia",
+      "url": "http://fundacaotidesetubal.org.br/publicacoes/i-premio-orcamento-publico-garantia-de-direitos-e-combate-as-desigualdades-artigos-vencedores",
+      "description": "O desmatamento da floresta amazônica voltou a crescer com grande velocidade em 2019, mantendo essa tendência nos anos seguintes. Buscando compreender melhor as causas desse aumento, analisamos sua relação com possíveis variáveis explicativas no período de 2010 a 2021: orçamento federal dedicado; número de servidores do IBAMA; quantidade de chuvas na região; e preços da soja, milho e do boi gordo. \r\n\r\nPara estimarmos a contribuição de cada variável para o desmatamento, utilizamos métodos como o teste de causalidade de Granger, o método SHAP e a validação cruzada de modelos preditivos de machine learning. Nossa análise também serviu como teste da eficácia das Operações de Garantia da Lei e da Ordem (GLOs) ambientais.",
+      "pub_date": "10/2021",
+      "authors": [
+        "Henrique S. Xavier",
+        "Pepe Tonin"
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "email": [
+        "hsxavier@gmail.com"
+      ],
+      "tags": [
+        "desmatamento",
+        "amazônia",
+        "prodes",
+        "floresta amazônica",
+        "orçamento federal",
+        "ibama",
+        "servidores",
+        "soja",
+        "milho",
+        "boi",
+        "gado",
+        "machine learning",
+        "aprendizado de máquina"
+      ],
+      "url_source": "https://github.com/gabinete-compartilhado-acredito/desmatamento",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_3561964102.png",
+      "comment": null,
+      "type": [
+        "artigo científico ou publicação acadêmica"
+      ],
+      "topics": [
+        "Agropecuária",
+        "Finanças e Orçamento Público",
+        "Meio Ambiente"
+      ],
+      "datasets": [
+        {
+          "data_name": "Incrementos de desmatamento na Amazônia Legal",
+          "data_institution": "INPE",
+          "data_url": "http://terrabrasilis.dpi.inpe.br/app/dashboar d/deforestation/biomes/legal_amazon/increments",
+          "data_periodical": false
+        },
+        {
+          "data_name": "Orçamento Federal - SIGA Brasil",
+          "data_institution": "Senado Federal",
+          "data_url": "https://www12.senado.leg.br/orcamento/sigabrasil",
+          "data_periodical": false
+        },
+        {
+          "data_name": "Servidores do IBAMA - Painel Estatístico de Pessoal",
+          "data_institution": "Ministério da Economia",
+          "data_url": "http://painel.pep.planejamento.gov.br",
+          "data_periodical": false
+        },
+        {
+          "data_name": "Dados meteorológicos históricos",
+          "data_institution": "INMET",
+          "data_url": "https://porta l.inmet.gov.br/dadoshistoricos",
+          "data_periodical": false
+        },
+        {
+          "data_name": "Preço de commodities agrícolas",
+          "data_institution": "ESALQ",
+          "data_url": "https://www.cepea.esalq.usp.br/br/consultas-ao-banco-de-dados-do-site.aspx",
+          "data_periodical": false
+        }
+      ],
+      "record_date": "2023-10-25",
+      "type_es": [
+        "artículo científico o publicación académica"
+      ],
+      "topics_es": [
+        "Agricultura",
+        "Finanzas y Presupuesto Público",
+        "Medio ambiente"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 3338481779,
+      "name": "Robotox",
+      "url": "https://twitter.com/orobotox",
+      "description": "Robotox é um bot do Twitter que publica todos os novos produtos agrotóxicos que forem liberados no mercado brasileiro. As informações compartilhadas são públicas e extraídas do Diário Oficial da União.",
+      "pub_date": "04/2019",
+      "authors": [
+        "Agência Pública",
+        "Repórter Brasil"
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "email": [
+        "contato@reporterbrasil.org.br",
+        "contato@apublica.org"
+      ],
+      "tags": [
+        "agrotóxicos",
+        "defensivos agrícolas",
+        "veneno",
+        "contaminação"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_3338481779.png",
+      "comment": null,
+      "type": [
+        "bot"
+      ],
+      "topics": [
+        "Agropecuária",
+        "Alimentação",
+        "Meio Ambiente",
+        "Saúde"
+      ],
+      "datasets": [
+        {
+          "data_name": "Diário Oficial da União",
+          "data_institution": "Imprensa Nacional",
+          "data_url": "https://github.com/Imprensa-Nacional/inlabs",
+          "data_periodical": true
+        }
+      ],
+      "record_date": "2023-10-25",
+      "type_es": [
+        "bot"
+      ],
+      "topics_es": [
+        "Agricultura",
+        "Alimentación",
+        "Medio ambiente",
+        "Salud"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 4006395846,
+      "name": "Vidas desiguais na cidade de São Paulo",
+      "url": "https://diplomatique.org.br/vidas-desiguais-na-cidade-de-sao-paulo/",
+      "description": "Em 2017, a rede Nossa São Paulo publicou um mapa da desigualdade comparando os diferentes distritos da cidade de São Paulo em termos de diversos indicadores sociais. Uma das desigualdades encontradas foi a diferença estarrecedora de quase 24 anos entre as expectativas de vida dos distritos melhor e pior colocados (79,4 anos no Jardim Paulista e 55,7 no Jardim Ângela). Nosso objetivo nesta análise foi discriminar como as diferentes causas de morte contribuem para essa diferença, atribuindo um \"número de anos subtraídos\" a cada uma.",
+      "pub_date": "04/2018",
+      "authors": [
+        "Henrique S. Xavier",
+        "Raphael Ximenes",
+        "Sérgio Helene"
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "email": [
+        "hsxavier@gmail.com"
+      ],
+      "tags": [
+        "causa mortis",
+        "expectativa de vida",
+        "idade média ao morrer",
+        "datasus",
+        "são paulo",
+        "desigualdade"
+      ],
+      "url_source": "https://henriquexavier.net/vidas_desiguais.html",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_4006395846.png",
+      "comment": null,
+      "type": [
+        "matéria jornalística",
+        "estudo independente"
+      ],
+      "topics": [
+        "Dados demográficos",
+        "Direitos Humanos",
+        "Saúde"
+      ],
+      "datasets": [
+        {
+          "data_name": "Mortalidade no municipio de Sao Paulo",
+          "data_institution": "Prefeitura de São Paulo; DataSUS",
+          "data_url": "http://www.prefeitura.sp.gov.br/cidade/secretarias/saude/epidemiologia_e_informacao/mortalidade/",
+          "data_periodical": false
+        }
+      ],
+      "record_date": "2023-10-25",
+      "type_es": [
+        "artículo periodístico",
+        "estudio independiente"
+      ],
+      "topics_es": [
+        "Datos demográficos",
+        "Derechos Humanos",
+        "Salud"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 171154266,
+      "name": "Painel de Temas da Câmara dos deputados",
+      "url": "https://lookerstudio.google.com/u/0/reporting/1dstcE9vqfyVreNkMWc9xPomHUFE3Wvu_/page/jper",
+      "description": "Um painel que mostra as proposições apresentadas por Deputados Federais dentro de diversos temas, anos, partidos e estados.",
+      "pub_date": "08/2019",
+      "authors": [
+        "Gabinete Compartilhado Acredito"
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "email": [
+        "contato@movimentoacredito.com",
+        "hsxavier@gmail.com"
+      ],
+      "tags": [
+        "deputados federais",
+        "atividade legislativa",
+        "câmara dos deputados",
+        "proposições",
+        "temas"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_171154266.png",
+      "comment": null,
+      "type": [
+        "painel, dashboard ou infográfico"
+      ],
+      "topics": [
+        "Política, Partidos e Eleições"
+      ],
+      "datasets": [
+        {
+          "data_name": "Proposições",
+          "data_institution": "Câmara dos Deputados",
+          "data_url": "https://dadosabertos.camara.leg.br/swagger/api.html",
+          "data_periodical": true
+        },
+        {
+          "data_name": "Deputados",
+          "data_institution": "Câmara dos Deputados",
+          "data_url": "https://dadosabertos.camara.leg.br/swagger/api.html",
+          "data_periodical": true
+        }
+      ],
+      "record_date": "2023-10-25",
+      "type_es": [
+        "panel de control o infografía"
+      ],
+      "topics_es": [
+        "Política, Partidos, y Elecciones"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 3196016551,
+      "name": "Toxic, Hateful, Offensive or Abusive? What Are We Really Classifying? An Empirical Analysis of Hate Speech Datasets",
+      "url": "https://aclanthology.org/2020.lrec-1.838/",
+      "description": "O campo da detecção automática de discurso de ódio e conceitos relacionados tem suscitado muito interesse nos últimos anos. Diferentes conjuntos de dados foram anotados e classificados por meio da aplicação de diferentes algoritmos de aprendizado de máquina. No entanto, poucos esforços foram feitos para esclarecer as categorias aplicadas e homogeneizar os diferentes conjuntos de dados. Nosso estudo atende a essa demanda. Analisamos seis conjuntos de dados diferentes disponíveis publicamente neste campo no que diz respeito à sua similaridade e compatibilidade. Conduzimos dois experimentos diferentes. Primeiro, tentamos tornar os conjuntos de dados compatíveis e representar as classes do conjunto de dados como vetores de palavras de texto rápido, analisando a semelhança entre diferentes classes de maneira intra e interconjunto de dados. Em segundo lugar, submetemos os conjuntos de dados escolhidos ao classificador Perspective API Toxicity, obtendo diferentes desempenhos dependendo das categorias e dos conjuntos de dados. Uma das principais conclusões destas experiências é que muitas definições diferentes estão a ser utilizadas para conceitos equivalentes, o que torna incompatíveis a maioria dos conjuntos de dados disponíveis publicamente. Com base em nossa análise, fornecemos diretrizes para futuras coletas e anotações de conjuntos de dados.",
+      "pub_date": "05/2020",
+      "authors": [
+        "Paula Fortuna",
+        "Juan Soler",
+        "Leo Wanner"
+      ],
+      "countries": [
+        "Mundial"
+      ],
+      "email": [
+        "paulatfortuna@gmail.com",
+        "juan.soler@upf.edu",
+        "leo.wanner@upf.edu"
+      ],
+      "tags": [
+        "discurso de ódio",
+        "redes sociais"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_3196016551.png",
+      "comment": "Existe mais um conjunto de dados abertos utilizado quenão foi informado por falta de espaço.",
+      "type": [
+        "artigo científico ou publicação acadêmica"
+      ],
+      "topics": [
+        "Direitos Humanos",
+        "Redes Sociais"
+      ],
+      "datasets": [
+        {
+          "data_name": "Automated Hate Speech Detection and the Problem of Offensive Language",
+          "data_institution": "Thomas Davidson et al.",
+          "data_url": "https://github.com/t-davidson/hate-speech-and-offensive-language",
+          "data_periodical": false
+        },
+        {
+          "data_name": "Hate Speech Twitter annotations",
+          "data_institution": "Zeerak Waseem; Dirk Hovy",
+          "data_url": "https://github.com/zeeraktalat/hatespeech",
+          "data_periodical": false
+        },
+        {
+          "data_name": "Overview of the Evalita 2018 Task on Automatic Misogyny Identification (AMI)",
+          "data_institution": "Elisabetta Fersini; Debora Nozza; Paolo Rosso",
+          "data_url": "https://",
+          "data_periodical": false
+        },
+        {
+          "data_name": "HatEval",
+          "data_institution": "Valerio Basile et al.",
+          "data_url": "http://hatespeech.di.unito.it/hateval.html",
+          "data_periodical": false
+        },
+        {
+          "data_name": "Toxic Comment Classification Challenge",
+          "data_institution": "Jigsaw/Conversation AI",
+          "data_url": "https://www.kaggle.com/competitions/jigsaw-toxic-comment-classification-challenge/data",
+          "data_periodical": false
+        }
+      ],
+      "record_date": "2023-10-25",
+      "type_es": [
+        "artículo científico o publicación académica"
+      ],
+      "topics_es": [
+        "Derechos Humanos",
+        "Redes Sociales"
+      ],
+      "countries_es": [
+        "Mundial"
+      ]
+    },
+    {
+      "hash_id": 1191967625,
+      "name": "Tutorial de dados",
+      "url": "https://github.com/tecMTST/tutorial-de-dados",
+      "description": "Pequenos projetos de análise de dados desenvolvidos em notebooks de Python que podem ser seguidos como tutoriais.",
+      "pub_date": "09/2023",
+      "authors": [
+        "Núcleo de Tecnologia do MTST"
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "email": [
+        "mtst@nucleodetecnologia.com.br"
+      ],
+      "tags": [
+        "tutorial",
+        "análise de dados",
+        "ciência de dados",
+        "expectativa de vida",
+        "financiamento de campanha",
+        "financiamento eleitoral",
+        "desigualdade",
+        "são paulo"
+      ],
+      "url_source": "https://github.com/tecMTST/tutorial-de-dados",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_1191967625.png",
+      "comment": null,
+      "type": [
+        "material didático",
+        "estudo independente"
+      ],
+      "topics": [
+        "Direitos Humanos",
+        "Imóveis, Habitação e Urbanismo",
+        "Política, Partidos e Eleições",
+        "Saúde"
+      ],
+      "datasets": [
+        {
+          "data_name": "Mortalidade no município de Sâo Paulo",
+          "data_institution": "Prefeitura do Município de São Paulo",
+          "data_url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/saude/epidemiologia_e_informacao/mortalidade/",
+          "data_periodical": false
+        },
+        {
+          "data_name": "População do município de São Paulo, por idade",
+          "data_institution": "SEADE",
+          "data_url": "https://repositorio.seade.gov.br/group/seade-populacao",
+          "data_periodical": false
+        },
+        {
+          "data_name": "Fronteiras dos distritos do município de São Paulo",
+          "data_institution": "Prefeitura do Município de São Paulo",
+          "data_url": "https://geosampa.prefeitura.sp.gov.br",
+          "data_periodical": false
+        },
+        {
+          "data_name": "Prestação de contas eleitorais",
+          "data_institution": "TSE",
+          "data_url": "https://dadosabertos.tse.jus.br/dataset/",
+          "data_periodical": false
+        },
+        {
+          "data_name": "Candidatos eleitorais",
+          "data_institution": "TSE",
+          "data_url": "https://dadosabertos.tse.jus.br/dataset/",
+          "data_periodical": false
+        }
+      ],
+      "record_date": "2023-10-11",
+      "type_es": [
+        "material didáctico",
+        "estudio independiente"
+      ],
+      "topics_es": [
+        "Derechos Humanos",
+        "Inmobiliario, Vivienda y Urbanismo",
+        "Política, Partidos, y Elecciones",
+        "Salud"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 1108461102,
+      "name": "Base dos Dados",
+      "url": "https://basedosdados.org/",
+      "description": "Catálogo de conjuntos de dados com alguns conjuntos tratados e disponibilizados no BigQuery, do Google. O projeto também fornece pacotes de Python e R para acesso ao BigQuery diretamente do código.",
+      "pub_date": "09/2020",
+      "authors": [
+        "Instituto Base dos Dados"
+      ],
+      "countries": [
+        "Mundial",
+        "Brasil"
+      ],
+      "email": null,
+      "tags": [
+        "catálogo",
+        "repositório"
+      ],
+      "url_source": "https://github.com/basedosdados",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_1108461102.png",
+      "comment": "São muitas bases de dados, não seria possível listar",
+      "type": [
+        "conjunto de dados"
+      ],
+      "topics": [
+        "Agropecuária",
+        "Alimentação",
+        "Administração Pública",
+        "Arte e Cultura",
+        "Atividade industrial, de comércio ou serviços",
+        "Ciência e Tecnologia",
+        "Comunicações",
+        "Consumo",
+        "Dados demográficos",
+        "Defesa",
+        "Direito e Processual Penal",
+        "Direitos Humanos",
+        "Economia",
+        "Educação",
+        "Energia",
+        "Esporte",
+        "Finanças e Orçamento Público",
+        "Imóveis, Habitação e Urbanismo",
+        "Justiça e Direito",
+        "Lazer",
+        "Meio Ambiente",
+        "Multimídia",
+        "Política, Partidos e Eleições",
+        "Previdência e Assistência Social",
+        "Recursos hídricos",
+        "Recursos minerais",
+        "Redes Sociais",
+        "Relações Internacionais",
+        "Religião",
+        "Saúde",
+        "Segurança",
+        "Terras",
+        "Transporte",
+        "Transparência",
+        "Trabalho e Emprego",
+        "Turismo"
+      ],
+      "datasets": [],
+      "record_date": "2023-10-11",
+      "type_es": [
+        "conjunto de datos"
+      ],
+      "topics_es": [
+        "Agricultura",
+        "Alimentación",
+        "Administración Pública",
+        "Arte y Cultura",
+        "Actividades industriales, comerciales o de servicios",
+        "Ciencia y Tecnología",
+        "Comunicaciones",
+        "Consumo",
+        "Datos demográficos",
+        "Defensa",
+        "Derecho y Procedimiento Penal",
+        "Derechos Humanos",
+        "Economía",
+        "Educación",
+        "Energía",
+        "Deporte",
+        "Finanzas y Presupuesto Público",
+        "Inmobiliario, Vivienda y Urbanismo",
+        "Justicia y Derecho",
+        "Entretenimiento",
+        "Medio ambiente",
+        "Multimedia",
+        "Política, Partidos, y Elecciones",
+        "Bienestar y Asistencia Social",
+        "Recursos hídricos",
+        "Recursos minerales",
+        "Redes Sociales",
+        "Relaciones Internacionales",
+        "Religión",
+        "Salud",
+        "Seguridad",
+        "Tierra",
+        "Transporte",
+        "Transparencia",
+        "Trabajo y Empleo",
+        "Turismo"
+      ],
+      "countries_es": [
+        "Mundial",
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 3206104055,
+      "name": "Serenata de amor",
+      "url": "https://serenata.ai",
+      "description": "Um projeto aberto que usa ciência de dados com a finalidade de fiscalizar gastos reembolsados pela Cota para Exercício da Atividade Parlamentar (CEAP), de deputados federais e senadores, feitos em exercício de sua função, e compartilhar as informações de forma acessível a qualquer pessoa.",
+      "pub_date": "06/2016",
+      "authors": [
+        "Open Knowledge Brasil",
+        "Irio Musskopf"
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "email": [
+        "contato@serenata.ai"
+      ],
+      "tags": [
+        "ceap",
+        "Cota para Exercício da Atividade Parlamentar",
+        "cota parlamentar",
+        "fiscalização",
+        "deputados federais",
+        "senadores",
+        "parlamentares federais"
+      ],
+      "url_source": "https://github.com/okfn-brasil/serenata-de-amor",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_3206104055.png",
+      "comment": null,
+      "type": [
+        "painel, dashboard ou infográfico",
+        "bot"
+      ],
+      "topics": [
+        "Administração Pública",
+        "Finanças e Orçamento Público",
+        "Transparência"
+      ],
+      "datasets": [
+        {
+          "data_name": "Cota parlamentar",
+          "data_institution": "Câmara dos deputados",
+          "data_url": "https://www.camara.leg.br/cota-parlamentar/",
+          "data_periodical": true
+        },
+        {
+          "data_name": "Informações sobre deputados federais",
+          "data_institution": "Câmara dos deputados",
+          "data_url": "https://www.camara.leg.br/SitCamaraWS/Deputados.asmx",
+          "data_periodical": true
+        },
+        {
+          "data_name": "API de Compras Governamentais",
+          "data_institution": "Ministério da Economia",
+          "data_url": "http://compras.dados.gov.br",
+          "data_periodical": true
+        }
+      ],
+      "record_date": "2023-10-11",
+      "type_es": [
+        "panel de control o infografía",
+        "bot"
+      ],
+      "topics_es": [
+        "Administración Pública",
+        "Finanzas y Presupuesto Público",
+        "Transparencia"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 2507397523,
+      "name": "Três partidos do Centrão controlam mais de R$ 149,6 bilhões do governo Bolsonaro",
+      "url": "https://oglobo.globo.com/politica/tres-partidos-do-centrao-controlam-mais-de-1496-bilhoes-do-governo-bolsonaro-1-25365038",
+      "description": "Matéria jornalística publicada no Jornal O Globo que aponta o número de postos ocupados por integrantes e indicados dos partidos PP, PL e Republicanos na administração federal, juntamente com uma estimativa do montante de recursos direcionados aos respectivos órgãos pelo orçamento federal.",
+      "pub_date": "01/2022",
+      "authors": [
+        "Dimitrius Dantas",
+        "Daniel Gullino",
+        "Bruno Góes"
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "email": [
+        "bruno.goes@oglobo.com.br",
+        "daniel.gullino@bsb.oglobo.com.br"
+      ],
+      "tags": [
+        "orçamento federal",
+        "orçamento secreto",
+        "bolsonaro",
+        "centrão",
+        "fisiologismo",
+        "presidencialismo de coalizão"
+      ],
+      "url_source": "https://github.com/gabinete-compartilhado-acredito/dados_orcamentarios",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_2507397523.png",
+      "comment": null,
+      "type": [
+        "matéria jornalística"
+      ],
+      "topics": [
+        "Administração Pública",
+        "Finanças e Orçamento Público",
+        "Política, Partidos e Eleições"
+      ],
+      "datasets": [
+        {
+          "data_name": "SIGA Brasil",
+          "data_institution": "Senado Federal",
+          "data_url": "https://www12.senado.leg.br/orcamento/sigabrasil",
+          "data_periodical": false
+        },
+        {
+          "data_name": "Orçamento da despesa pública",
+          "data_institution": "CGU",
+          "data_url": "https://portaldatransparencia.gov.br/orcamento/despesas?ordenarPor=ano&direcao=desc",
+          "data_periodical": false
+        },
+        {
+          "data_name": "Plataforma +Brasil",
+          "data_institution": "Ministério da Economia",
+          "data_url": "https://antigo.plataformamaisbrasil.gov.br/download-de-dados",
+          "data_periodical": false
+        }
+      ],
+      "record_date": "2023-10-11",
+      "type_es": [
+        "artículo periodístico"
+      ],
+      "topics_es": [
+        "Administración Pública",
+        "Finanzas y Presupuesto Público",
+        "Política, Partidos, y Elecciones"
       ],
       "countries_es": [
         "Brasil"
