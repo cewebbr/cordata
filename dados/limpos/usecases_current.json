@@ -7,7 +7,7 @@
       "hash_id": 2978085734,
       "name": "Repasse dos Municípios",
       "url": "http://repasse.ufabc.edu.br",
-      "description": "Uma ferramenta para visualização das transferências do governo federal para os municípios brasileiros. As transferências são apresentadas de acordo com a destinação (saúde, educação, segurança, etc.) e mostradas comparativamente entre municípios. Todos os municípios do Brasil estão incluídos na base de dados do Repasse. O objetivo é a auditoria simplificada da destinação dos recursos financeiros oriundos da União.",
+      "description": "Uma ferramenta para visualização das transferências do governo federal para os municípios brasileiros. As transferências são apresentadas de acordo com a destinação (saúde, educação, segurança etc.) e mostradas comparativamente entre municípios. Todos os municípios do Brasil estão incluídos na base de dados do Repasse. O objetivo é a auditoria simplificada da destinação dos recursos financeiros oriundos da União.",
       "pub_date": "07/2015",
       "authors": [
         "Fundação Universidade Federal do ABC - UFABC",
@@ -236,7 +236,7 @@
       "hash_id": 3338481779,
       "name": "Robotox",
       "url": "https://twitter.com/orobotox",
-      "description": "Robotox é um bot do Twitter que publica todos os novos produtos agrotóxicos que forem liberados no mercado brasileiro. As informações compartilhadas são públicas e extraídas do Diário Oficial da União.",
+      "description": "Robotox é um bot do X (ex-Twitter) que publica todos os novos produtos agrotóxicos que forem liberados no mercado brasileiro. As informações compartilhadas são públicas e extraídas do Diário Oficial da União.",
       "pub_date": "04/2019",
       "authors": [
         "Agência Pública",
@@ -361,7 +361,7 @@
       "hash_id": 171154266,
       "name": "Painel de Temas da Câmara dos deputados",
       "url": "https://lookerstudio.google.com/u/0/reporting/1dstcE9vqfyVreNkMWc9xPomHUFE3Wvu_/page/jper",
-      "description": "Um painel que mostra as proposições apresentadas por Deputados Federais dentro de diversos temas, anos, partidos e estados.",
+      "description": "Um painel que mostra as proposições apresentadas por deputados federais dentro de diversos temas, anos, partidos e estados.",
       "pub_date": "08/2019",
       "authors": [
         "Gabinete Compartilhado Acredito"
