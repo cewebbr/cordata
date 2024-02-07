@@ -97,14 +97,13 @@
         "legislativo",
         "eleitor"
       ],
-      "url_source": null,
+      "url_source": 'https://',
       "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_1092493666.png",
       "comment": "Por envolver dados sensíveis (posicionamentos políticos), mantemos os repositórios do github privados, mas pretendemos gradualmente torná-los públicos, adotando as devidas medidas de segurança. Caso haja necessidade, podemos conceder acesso a vocês.",
       "type": [
         "aplicativo ou plataforma"
       ],
       "topics": [
-        "Dados Estratégicos",
         "Governo e Política",
         "Justiça e Legislação"
       ],
@@ -166,7 +165,7 @@
       ],
       "url_source": "https://osdadosvirais.dataprivacybr.org/",
       "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_3061861584.png",
-      "comment": null,
+      "comment": "Nome original do conjunto de dados fornecido pelo cadastrante, que foi considerado muito longo e alterado: 'Repositório de documentos voltados para transparência pública na aquisição de tecnologias para combate à COVID-19 no Brasil. Existem contratos, pedidos de acesso à informação, pareceres, entre outros, sobre estados, distrito federal e municípios com mais de 100 mil habitantes.'",
       "type": [
         "painel, dashboard ou infográfico"
       ],
@@ -177,8 +176,7 @@
       ],
       "datasets": [
         {
-          "data_name": "Repositório de documentos voltados para transparência pública na aquisição de tecnologias para combate à COVID-19 no Brasil. Existem contratos, pedidos de acesso à informação, pareceres, entre outros, sobre estados, distrito federal e municípios com mais de 100 mil habitantes.",
-          "data_institution": "Data Privacy Brasil",
+          "data_name": "Repositório de contratos, pedidos via LAI, entre outros",
           "data_url": "https://docs.google.com/spreadsheets/d/1Wgf7gIHUV5rWU2o_RNyCwJ0uFGC2mwDoBWUED1E0v-w/edit#gid=0",
           "data_periodical": false
         }
