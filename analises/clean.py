@@ -22,14 +22,62 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import pandas as pd
 import numpy as np
+import json
 from zlib import crc32
+from glob import glob
+from collections import defaultdict
 
 import xavy.dataframes as xd
 
 
 # Tags associated to dummy columns:
+topic_names = {'topics_agricultura_extrativismo_pesca': 'Agricultura, extrativismo e pesca',
+ 'topics_assistencia_desenvolvimento_social': 'Assistência e Desenvolvimento Social',
+ 'topics_ciencia_informacao_comunicacao': 'Ciência, Informação e Comunicação',
+ 'topics_comercio_servicos_turismo': 'Comércio, Serviços e Turismo',
+ 'topics_cultura_lazer_esporte': 'Cultura, Lazer e Esporte',
+ 'topics_dados_estrategicos': 'Dados Estratégicos',
+ 'topics_defesa_seguranca': 'Defesa e Segurança',
+ 'topics_economia_financas': 'Economia e Finanças',
+ 'topics_educacao': 'Educação',
+ 'topics_energia': 'Energia',
+ 'topics_equipamentos_publicos': 'Equipamentos Públicos',
+ 'topics_geografia': 'Geografia',
+ 'topics_governo_politica': 'Governo e Política',
+ 'topics_habitacao_saneamento_urbanismo': 'Habitação, Saneamento e Urbanismo',
+ 'topics_industria': 'Indústria',
+ 'topics_justica_legislacao': 'Justiça e Legislação',
+ 'topics_meio_ambiente': 'Meio Ambiente',
+ 'topics_plano_plurianual': 'Plano Plurianual',
+ 'topics_relacoes_internacionais': 'Relações Internacionais',
+ 'topics_saude': 'Saúde',
+ 'topics_trabalho': 'Trabalho',
+ 'topics_transportes_transito': 'Transportes e Trânsito'}
 
-topic_names = {'topics_agropecuaria': 'Agropecuária',
+wrong_topic_names = {'topics_agropecuaria': 'Agricultura, extrativismo e pesca',
+ 'topics_alimentacao': 'Assistência e Desenvolvimento Social',
+ 'topics_administracao_publica': 'Ciência, Informação e Comunicação',
+ 'topics_arte_e_cultura': 'Comércio, Serviços e Turismo',
+ 'topics_atividade_industrial_de_comercio_ou_servicos': 'Cultura, Lazer e Esporte',
+ 'topics_ciencia_e_tecnologia': 'Dados Estratégicos',
+ 'topics_comunicacoes': 'Defesa e Segurança',
+ 'topics_consumo': 'Economia e Finanças',
+ 'topics_dados_demograficos': 'Educação',
+ 'topics_defesa': 'Energia',
+ 'topics_direito_e_processual_penal': 'Equipamentos Públicos',
+ 'topics_direitos_humanos': 'Geografia',
+ 'topics_economia': 'Governo e Política',
+ 'topics_educacao': 'Habitação, Saneamento e Urbanismo',
+ 'topics_energia': 'Indústria',
+ 'topics_esporte': 'Justiça e Legislação',
+ 'topics_financas_e_orcamento_publico': 'Meio Ambiente',
+ 'topics_imoveis_habitacao_e_urbanismo': 'Plano Plurianual',
+ 'topics_justica_e_direito': 'Relações Internacionais',
+ 'topics_lazer': 'Saúde',
+ 'topics_meio_ambiente': 'Trabalho',
+ 'topics_multimidia': 'Transportes e Trânsito'}
+
+old_topic_names = {'topics_agropecuaria': 'Agropecuária',
  'topics_alimentacao': 'Alimentação',
  'topics_administracao_publica': 'Administração Pública',
  'topics_arte_e_cultura': 'Arte e Cultura',
@@ -360,6 +408,19 @@ def embed_metadata(data, metadata, data_key="data", meta_key="metadata"):
     return all_data
 
 
+def translate_list_elements(l, translator):
+    """
+    Translate every element in list `l` using `translator`
+    (dict or equivalent). If `l` is None, return None.
+    """
+    # Guard against None:
+    if l == None:
+        return None
+    # Translate each element in list:
+    else:
+        return [translator[a] for a in l]
+    
+
 def add_translation(case_json, type_map, topic_map, country_map):
     """
     Add entries (in place) to dict `case_json` containing translations for
@@ -382,6 +443,58 @@ def add_translation(case_json, type_map, topic_map, country_map):
     
     case_json['type_es']      = [type_map[k] for k in case_json['type']]
     case_json['topics_es']    = [topic_map[k] for k in case_json['topics']]
-    case_json['countries_es'] = [country_map[k] for k in case_json['countries']]
+    case_json['countries_es'] = translate_list_elements(case_json['countries'], country_map)
     
     return case_json
+
+
+def load_json(filename):
+    """
+    Load a JSON stored in `filename`.
+    Returns a dict.
+    """
+    with open(filename, 'r') as f:
+        data = json.load(f)
+    
+    return data
+
+
+def load_institution_identifier(json_pattern):
+    """
+    Creates a default dict that translates institution
+    names listed in CGU's Portal Brasileiro de Dados 
+    Abertos to their IDs.
+    
+    Parameters
+    ----------
+    json_pattern : str
+        File pattern for glob function indicating 
+        JSON files containing a list of institution
+        data, including their name and ID.
+    
+    Returns
+    -------
+    inst2id : defaultdict
+        The translator.  If the name is not found,
+        the default dict returns None.    
+    """
+    
+    # Load institution names:
+    inst_files = glob(json_pattern)
+    institutions = []
+    ids = []
+    for f in inst_files:
+        institutions += [(i['titulo'], i['id']) for i in load_json(f)]
+    
+    # Sort list:
+    institutions = sorted(institutions)
+    
+    # Security check: no repeated names:
+    names = {i[0] for i in institutions}
+    assert len(names) == len(institutions)
+    
+    # Create translator (name > ID):
+    inst_dict = dict(institutions)
+    inst2id = defaultdict(lambda: None, inst_dict)
+    
+    return inst2id
