@@ -1,8 +1,201 @@
 {
   "metadata": {
-    "last_update": "2024-01-03"
+    "last_update": "2024-02-07"
   },
   "data": [
+    {
+      "hash_id": 2994367502,
+      "name": "BERTimbau",
+      "url": "https://github.com/neuralmind-ai/portuguese-bert/",
+      "description": "BERTimbau é um grande modelo de linguagem (Large Language Model, LLM), de arquitetura BERT, pré-treinado para português brasileiro que alcança desempenhos de última geração em três tarefas downstream de Processamento de Linguagem Natural (NLP): reconhecimento de entidade nomeada, similaridade textual de frase e reconhecimento de implicação textual. Está disponível em dois tamanhos: Base e Grande.",
+      "pub_date": "01/2020",
+      "authors": [
+        "NeuralMind Inteligência Artificial",
+        "Fábio Souza",
+        "Rodrigo Nogueira",
+        "Roberto Lotufo"
+      ],
+      "authors_id": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "email": [
+        "contato@neuralmind.ai"
+      ],
+      "tags": [
+        "inteligência artificial",
+        "aprendizado de máquina",
+        "nlp",
+        "pln",
+        "llm"
+      ],
+      "url_source": "https://huggingface.co/neuralmind/bert-base-portuguese-cased",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_2994367502.png",
+      "comment": null,
+      "type": [
+        "artigo científico ou publicação acadêmica",
+        "aplicativo ou plataforma"
+      ],
+      "topics": [
+        "Ciência, Informação e Comunicação"
+      ],
+      "datasets": [
+        {
+          "data_name": "BrWaC (Brazilian Portuguese Web as Corpus)",
+          "data_institution": "UFRGS",
+          "data_url": "https://www.inf.ufrgs.br/pln/wiki/index.php?title=BrWaC",
+          "data_periodical": false
+        }
+      ],
+      "record_date": "2024-02-07",
+      "type_es": [
+        "artículo científico o publicación académica",
+        "aplicación o plataforma"
+      ],
+      "topics_es": [
+        "Ciencia, Información y Comunicación"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 1092493666,
+      "name": "Aplicativo Democracia Beta",
+      "url": "https://onelink.to/bgmk2n",
+      "description": "Desenvolvemos o app Democracia Beta para tornar a participação do cidadão na política fácil e objetiva. O aplicativo coleta informações de fontes públicas e oficiais para apresentar as atividades de Deputados Federais, Senadores e do Presidente da República, possibilitando que o cidadão acompanhe e fiscalize os seus Representantes. \n\nInteligência Artificial (ChatPDF) ajuda a entender melhor Projetos de Lei e Propostas de Emenda à Constituição, levantando prós e contras da Proposição. E o usuário pode expressar sua opinião nas atividades dos seus Representantes, escolhendo entre \"gostei\",  \"não gostei\" ou \"me abstenho\", e apenas ele terá acesso a suas manifestações. Para garantir um posicionamento mais isento, o político em questão permanece oculto antes da escolha, sendo revelado assim que a decisão é tomada, juntamente com o resultado geral anônimo dos posicionamentos da comunidade. \n\nNa aba Resultados, o usuário tem acesso aos seus rankings de Representantes e Partidos baseados nos seus posicionamentos, possibilitando que ele identifique aqueles que melhor o representam. Também é possível ver os rankings da comunidade como um todo.",
+      "pub_date": "10/2022",
+      "authors": [
+        "Associação Democracia Beta"
+      ],
+      "authors_id": [
+        null
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "email": [
+        "contato@democraciabeta.org",
+        "democraciabeta@gmail.com"
+      ],
+      "tags": [
+        "democracia",
+        "voto",
+        "transparência",
+        "política",
+        "cidadão",
+        "lei",
+        "congresso",
+        "deputado",
+        "senador",
+        "presidente",
+        "legislativo",
+        "eleitor"
+      ],
+      "url_source": null,
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_1092493666.png",
+      "comment": "Por envolver dados sensíveis (posicionamentos políticos), mantemos os repositórios do github privados, mas pretendemos gradualmente torná-los públicos, adotando as devidas medidas de segurança. Caso haja necessidade, podemos conceder acesso a vocês.",
+      "type": [
+        "aplicativo ou plataforma"
+      ],
+      "topics": [
+        "Dados Estratégicos",
+        "Governo e Política",
+        "Justiça e Legislação"
+      ],
+      "datasets": [
+        {
+          "data_name": "Dados Abertos do Senado Federal",
+          "data_institution": "Senado Federal",
+          "data_url": "https://legis.senado.leg.br/dadosabertos/docs/ui/index.html#/",
+          "data_periodical": true
+        },
+        {
+          "data_name": "Dados Abertos da Câmara dos Deputados",
+          "data_institution": "Câmara dos Deputados",
+          "data_url": "https://dadosabertos.camara.leg.br/swagger/api.html",
+          "data_periodical": true
+        },
+        {
+          "data_name": "Dados Abertos do Governo Federal",
+          "data_institution": "Governo Federal",
+          "data_url": "https://api.portaldatransparencia.gov.br/",
+          "data_periodical": true
+        }
+      ],
+      "record_date": "2024-02-07",
+      "type_es": [
+        "aplicación o plataforma"
+      ],
+      "topics_es": [
+        "Datos Estratégicos",
+        "Gobierno y Política",
+        "Justicia y Legislación"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 3061861584,
+      "name": "Dados Virais",
+      "url": "https://osdadosvirais.dataprivacybr.org/",
+      "description": "Mapeamento de tecnologias que realizam tratamento de dados pessoais e foram adquiridas pelo poder público para combate à pandemia da COVID-19 entre 2020 e 2021.\n\nNo Brasil, diferentes esferas de governo desenvolveram e adquiriram tecnologias para mitigar riscos e danos relacionados à COVID-19. Aplicativos, inteligência artificial, câmeras com diversas funcionalidades e bancos de dados foram utilizados em todo o território nacional para monitorar a evolução da pandemia e evitar novos contágios. Por outro lado, há pouca transparência sobre como essas soluções tecnológicas funcionam e quais são seus possíveis impactos em relação à privacidade e à segurança dos cidadãos. Diante disso, a Associação Data Privacy Brasil de Pesquisa criou o projeto Dados Virais, com o objetivo de mapear as tecnologias digitais baseadas no uso de dados pessoais adotadas durante o período de calamidade pública, sistematizando informações derivadas de um conjunto amplo, fragmentado e multifacetado de iniciativas.\n\nOs resultados apresentam um panorama geral de utilização dessas tecnologias, as localidades e áreas de abrangência, os atores envolvidos em tais arranjos e as principais funcionalidades associadas à sua utilização. Os principais achados estão apresentados abaixo: Mapeamos tecnologias adotadas por governos municipais, estaduais e federal. Os resultados apontam 253 casos de iniciativas de enfrentamento à COVID-19 envolvendo o uso de tecnologias baseadas em alguma forma de uso de dados pessoais. Esses casos estão distribuídos em: → 24 estados, com 100 tecnologias adotadas. → 77 municípios, com 131 tecnologias adotadas. → 22 produtos com abrangência nacional, adotados pela União ou por outras unidades federativas.",
+      "pub_date": "07/2021",
+      "authors": [
+        "Data Privacy Brasil"
+      ],
+      "authors_id": [
+        null
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "email": [
+        "pedro.saliba@dataprivacybr.org"
+      ],
+      "tags": [
+        "proteção de dados",
+        "covid-19",
+        "vigilância"
+      ],
+      "url_source": "https://osdadosvirais.dataprivacybr.org/",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_3061861584.png",
+      "comment": null,
+      "type": [
+        "painel, dashboard ou infográfico"
+      ],
+      "topics": [
+        "Ciência, Informação e Comunicação",
+        "Justiça e Legislação",
+        "Saúde"
+      ],
+      "datasets": [
+        {
+          "data_name": "Repositório de documentos voltados para transparência pública na aquisição de tecnologias para combate à COVID-19 no Brasil. Existem contratos, pedidos de acesso à informação, pareceres, entre outros, sobre estados, distrito federal e municípios com mais de 100 mil habitantes.",
+          "data_institution": "Data Privacy Brasil",
+          "data_url": "https://docs.google.com/spreadsheets/d/1Wgf7gIHUV5rWU2o_RNyCwJ0uFGC2mwDoBWUED1E0v-w/edit#gid=0",
+          "data_periodical": false
+        }
+      ],
+      "record_date": "2024-02-07",
+      "type_es": [
+        "panel de control o infografía"
+      ],
+      "topics_es": [
+        "Ciencia, Información y Comunicación",
+        "Justicia y Legislación",
+        "Salud"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
     {
       "hash_id": 2766310307,
       "name": "Brasil Real Oficial",
@@ -776,9 +969,9 @@
       "description": "Um projeto aberto que usa ciência de dados com a finalidade de fiscalizar gastos reembolsados pela Cota para Exercício da Atividade Parlamentar (CEAP), de deputados federais e senadores, feitos em exercício de sua função, e compartilhar as informações de forma acessível a qualquer pessoa. Como desdobramento da Operação Serenata de Amor, foram lançadas várias iniciativas que estendem a ideia original de usar tecnologia e dados abertos para ampliar o acesso à informação e fortalecer a democracia. Um exemplo é o Querido Diário, que atua pela transparência na esfera municipal. Também foi criada a Rede de Embaixadoras que colabora para espalhar o conceito de inovação cívica pelo país.",
       "pub_date": "06/2016",
       "authors": [
-          "Open Knowledge Brasil",
-	  "Data Science Brigade",
-          "Irio Musskopf"
+        "Open Knowledge Brasil",
+        "Data Science Brigade",
+        "Irio Musskopf"
       ],
       "authors_id": [
         null,
