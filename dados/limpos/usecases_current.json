@@ -176,7 +176,8 @@
       ],
       "datasets": [
         {
-          "data_name": "Repositório de contratos, pedidos via LAI, entre outros",
+            "data_name": "Repositório de contratos, pedidos via LAI, entre outros",
+	    "data_institution": "Data Privacy Brasil",
           "data_url": "https://docs.google.com/spreadsheets/d/1Wgf7gIHUV5rWU2o_RNyCwJ0uFGC2mwDoBWUED1E0v-w/edit#gid=0",
           "data_periodical": false
         }
