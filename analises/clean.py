@@ -114,12 +114,22 @@ old_topic_names = {'topics_agropecuaria': 'Agropecuária',
  'topics_trabalho_e_emprego': 'Trabalho e Emprego',
  'topics_turismo': 'Turismo'}
 
-type_names = {'type_artigo': 'artigo científico ou publicação acadêmica',
+old_type_names = {'type_artigo': 'artigo científico ou publicação acadêmica',
  'type_materia_jornalistica': 'matéria jornalística',
  'type_aplicativo_plataforma': 'aplicativo ou plataforma',
  'type_painel': 'painel, dashboard ou infográfico',
  'type_conjunto_de_dados': 'conjunto de dados',
  'type_material': 'material didático',
+ 'type_estudo': 'estudo independente',
+ 'type_bot': 'bot',
+ 'type_outro': 'outro'}
+
+type_names = {'type_artigo': 'artigo científico ou publicação acadêmica',
+ 'type_materia_jornalistica': 'matéria jornalística',
+ 'type_aplicativo_plataforma': 'aplicativo ou plataforma',
+ 'type_painel': 'painel, dashboard ou infográfico',
+ 'type_conjunto_de_dados': 'conjunto de dados',
+ 'type_inteligencia_artificial': 'inteligência artificial',
  'type_estudo': 'estudo independente',
  'type_bot': 'bot',
  'type_outro': 'outro'}
