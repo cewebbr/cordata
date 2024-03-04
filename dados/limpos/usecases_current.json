@@ -599,7 +599,7 @@
       "hash_id": 2828213759,
       "name": "Farol Covid",
       "url": "https://farolcovid.coronacidades.org/",
-      "description": "O Farol Covid é uma iniciativa da plataforma CoronaCidades que oferece uma análise inteligente de dados abertos para mostrar a situação do coronavírus em cada cidade brasileira. Em sua nova versão, a ferramenta avalia o nível de alerta em cada estado, regional de saúde e município em 5 dimensões: como a doença está se espalhando no território; qual a capacidade do poder público de detectar os casos; capacidade de respostas do sistema de saúde; qual a situação do sistema de saúde e risco de colapso; e qual a qualidade das medições de casos feitas pelos governos.",
+      "description": "O Farol Covid é uma iniciativa da plataforma CoronaCidades que oferece uma análise inteligente de dados abertos para mostrar a situação do coronavírus em cada cidade brasileira. Em sua nova versão, a ferramenta avalia o nível de alerta em cada estado, regional de saúde e município em 5 dimensões: como a doença está se espalhando no território; qual a capacidade do poder público de detectar os casos; capacidade de respostas do sistema de saúde; qual a situação do sistema de saúde e risco de colapso; e qual a qualidade das medições de casos feitas pelos governos. Atualmente, após a pandemia, o Farol Covid não está mais sendo atualizado.",
       "pub_date": "03/2020",
       "authors": [
         "Impulso",
