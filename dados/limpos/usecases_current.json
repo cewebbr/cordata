@@ -1,8 +1,210 @@
 {
   "metadata": {
-    "last_update": "2024-03-01"
+    "last_update": "2024-04-15"
   },
   "data": [
+    {
+      "hash_id": 4112078854,
+      "name": "Resultados eleitorais georreferenciados por municípios",
+      "url": "https://centrodametropole.fflch.usp.br/pt-br/node/13051",
+      "description": "Uma base cartográfica georreferenciada em formato shapefile contendo os resultados eleitorais do ano de 2022 dos 5568 municípios do Brasil, mais o Distrito Federal e o Distrito Estadual de Fernando de Noronha. Acompanha uma tabela em formato excel com os dados descritos. É possível saber como os cidadãos de cada município brasileiro votaram para presidente, senador, deputado federal, governador e deputado estadual ou distrital, por partido, votos brancos e nulos e abstenção.",
+      "pub_date": "02/2023",
+      "authors": [
+        "Centro de Estudos da Metropole"
+      ],
+      "authors_id": [
+        null
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "email": [
+        "centrodametropole@usp.br"
+      ],
+      "tags": [
+        "eleições",
+        "votos",
+        "dados georreferenciados"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_4112078854.png",
+      "comment": "Caso informado pelo Ceweb. O caso apenas informa que utilizou dados do TSE e TREs. O dado exato utilizado foi inferido a partir das informações providas no novo conjunto de dados. Não foi informado de onde veio os dados georreferenciados.",
+      "type": [
+        "conjunto de dados"
+      ],
+      "topics": [
+        "Geografia",
+        "Governo e Política"
+      ],
+      "datasets": [
+        {
+          "data_name": "Resultados eleitorais de 2022",
+          "data_institution": "TSE",
+          "data_url": "https://dadosabertos.tse.jus.br/dataset/resultados-2022",
+          "data_periodical": false
+        }
+      ],
+      "record_date": "2024-04-15",
+      "type_es": [
+        "conjunto de datos"
+      ],
+      "topics_es": [
+        "Geografía",
+        "Gobierno y Política"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 305585732,
+      "name": "DataMPE Brasil Data Explorer",
+      "url": "https://datampe.sebrae.com.br/data-explorer",
+      "description": "Painel interativo no qual é possível consultar de maneira simples dados de diversos setores econômicos e regiões do Brasil. O objetivo é prover dados e informação que possam auxiliar no desenvolvimento de pequenos negócios no Brasil. O painel disponibiliza cerca de 24 bases de dados em variados temas.",
+      "pub_date": "10/2023",
+      "authors": [
+        "SEBRAE",
+        "Datawheel"
+      ],
+      "authors_id": [
+        null,
+        null
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "email": [
+        "apoiodados@sebrae.com.br"
+      ],
+      "tags": [
+        "população",
+        "desenvolvimento",
+        "complexidade econômica",
+        "empresas",
+        "crédito",
+        "consumo",
+        "importações",
+        "exportações"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_305585732.png",
+      "comment": "O caso ainda utiliza muitas outras bases de dados, tanto abertas quando fechadas. Esse caso foi cadastrado pelo Ceweb.",
+      "type": [
+        "painel, dashboard ou infográfico"
+      ],
+      "topics": [
+        "Agricultura, extrativismo e pesca",
+        "Comércio, Serviços e Turismo",
+        "Dados Estratégicos",
+        "Economia e Finanças",
+        "Educação",
+        "Indústria",
+        "Relações Internacionais",
+        "Trabalho"
+      ],
+      "datasets": [
+        {
+          "data_name": "RAIS - Relação Anual de Informações Sociais",
+          "data_institution": "Ministério da Economia",
+          "data_url": "http://",
+          "data_periodical": false
+        },
+        {
+          "data_name": "Dados de crédito de Pessoa Jurídica do Banco Central",
+          "data_institution": null,
+          "data_url": "https://dadosabertos.bcb.gov.br/",
+          "data_periodical": false
+        },
+        {
+          "data_name": "Chegada de Turistas Internacionais",
+          "data_institution": "Ministério do Turismo",
+          "data_url": "https://dados.turismo.gov.br/pt_BR/dataset/chegada-de-turistas-internacionais",
+          "data_periodical": false
+        },
+        {
+          "data_name": "Estatísticas de Comércio Exterior",
+          "data_institution": "Ministério do Desenvolvimento, Indústria, Comércio e Serviços",
+          "data_url": "https://www.gov.br/mdic/pt-br/assuntos/comercio-exterior/estatisticas/base-de-dados-bruta",
+          "data_periodical": true
+        },
+        {
+          "data_name": "Índice Sebrae de Desenvolvimento Econômico Local  - ISDEL",
+          "data_institution": "SEBRAE",
+          "data_url": "https://www.isdel-sebrae.com/territorios",
+          "data_periodical": false
+        }
+      ],
+      "record_date": "2024-04-15",
+      "type_es": [
+        "panel de control o infografía"
+      ],
+      "topics_es": [
+        "Agricultura, Extractivismo y Pesca",
+        "Comercio, Servicios y Turismo",
+        "Datos Estratégicos",
+        "Economía y Finanzas",
+        "Educación",
+        "Industria",
+        "Relaciones Internacionales",
+        "Trabajo"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 742694612,
+      "name": "Minha Receita",
+      "url": "https://docs.minhareceita.org/",
+      "description": "Pela Lei de Acesso à Informação, os dados de CNPJ devem ser públicos e acessíveis por máquina. A Receita Federal oferece esses dados escondidos atrás de um CAPTCHA ou espalhados em diversos arquivos CSV separados, dificultando a consulta de todas as informações sobre um CNPJ qualquer. O código do \"Minha Receita\" torna esses dados ainda mais acessíveis ao consolidar todas as informações em um banco de dados único e ao fornecer uma uma API web para a consulta de dados de um CNPJ.",
+      "pub_date": "06/2019",
+      "authors": [
+        "Eduardo Cuducos"
+      ],
+      "authors_id": [
+        null
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "email": null,
+      "tags": [
+        "cnpj",
+        "empresas",
+        "sócios",
+        "cadastro nacional de pessoa jurídica",
+        "api"
+      ],
+      "url_source": "https://github.com/cuducos/minha-receita",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_742694612.png",
+      "comment": "Caso de uso coletado pelo Ceweb. Se trata de uma API que disponibiliza os dados do CNPJ em uma estrutura mais amigável e acessível.",
+      "type": [
+        "aplicativo ou plataforma",
+        "conjunto de dados"
+      ],
+      "topics": [
+        "Economia e Finanças"
+      ],
+      "datasets": [
+        {
+          "data_name": "Cadastro Nacional de Pessoa Jurídica (CNPJ)",
+          "data_institution": "Receita Federal",
+          "data_url": "https://dados.gov.br/dados/conjuntos-dados/cadastro-nacional-da-pessoa-juridica---cnpj",
+          "data_periodical": true
+        }
+      ],
+      "record_date": "2024-04-15",
+      "type_es": [
+        "aplicación o plataforma",
+        "conjunto de datos"
+      ],
+      "topics_es": [
+        "Economía y Finanzas"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
     {
       "hash_id": 889903064,
       "name": "Amazônia Minada",
