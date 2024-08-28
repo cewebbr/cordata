@@ -1,8 +1,62 @@
 {
   "metadata": {
-    "last_update": "2024-04-15"
+    "last_update": "2024-08-28"
   },
   "data": [
+    {
+      "hash_id": 3799964393,
+      "name": "Agenda Transparente",
+      "url": "https://agendas.fiquemsabendo.com.br",
+      "description": "O Agenda Transparente é uma plataforma de busca e monitoramento de compromissos das autoridades do Poder Executivo brasileiro.",
+      "pub_date": "05/2022",
+      "authors": [
+        "Fiquem Sabendo"
+      ],
+      "authors_id": [
+        null
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "email": [
+        "agendatransparente@fiquemsabendo.com.br"
+      ],
+      "tags": [
+        "agenda",
+        "administração direta",
+        "administração indireta",
+        "poder executivo",
+        "federal",
+        "autoridades"
+      ],
+      "url_source": null,
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_3799964393.png",
+      "comment": null,
+      "type": [
+        "aplicativo ou plataforma"
+      ],
+      "topics": [
+        "Governo e Política"
+      ],
+      "datasets": [
+        {
+          "data_name": "Agenda Pública de Autoridades do Poder Executivo Federal",
+          "data_institution": "CGU",
+          "data_url": "https://dados.gov.br/dados/conjuntos-dados/agenda-publica-de-autoridades-do-poder-executivo-federal",
+          "data_periodical": true
+        }
+      ],
+      "record_date": "2024-08-28",
+      "type_es": [
+        "aplicación o plataforma"
+      ],
+      "topics_es": [
+        "Gobierno y Política"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
     {
       "hash_id": 4112078854,
       "name": "Resultados eleitorais georreferenciados por municípios",
