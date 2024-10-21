@@ -1,8 +1,212 @@
 {
   "metadata": {
-    "last_update": "2024-08-28"
+    "last_update": "2024-10-21"
   },
   "data": [
+    {
+      "hash_id": 2723352845,
+      "name": "Diários do Clima",
+      "url": "https://diariosdoclima.org.br",
+      "description": "Plataforma capaz de agregar dados de políticas ambientais para auxiliar na pesquisa dos atos publicados por municípios brasileiros.",
+      "pub_date": "08/2021",
+      "authors": [
+        "Agência Eco Nordeste",
+        "Open Knowledge Brasil",
+        "Agência Envolverde",
+        "InfoAmazonia",
+        "(((o)))eco",
+        "Projeto #Colabora"
+      ],
+      "authors_id": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "email": [
+        "contato@ok.org.br"
+      ],
+      "tags": [
+        "diário oficial",
+        "dados abertos municipais",
+        "meio ambiente",
+        ""
+      ],
+      "url_source": "https://github.com/okfn-brasil/diarios-do-clima-frontend",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_2723352845.png",
+      "comment": null,
+      "type": [
+        "aplicativo ou plataforma"
+      ],
+      "topics": [
+        "Governo e Política",
+        "Meio Ambiente"
+      ],
+      "datasets": [
+        {
+          "data_name": "Conteúdo completo dos diários oficiais de cada município disponível no Querido Diário em formato XML, agrupados por ano.",
+          "data_institution": "Open Knowledge Brasil",
+          "data_url": "https://queridodiario.ok.org.br/dados",
+          "data_periodical": true
+        }
+      ],
+      "record_date": "2024-10-21",
+      "type_es": [
+        "aplicación o plataforma"
+      ],
+      "topics_es": [
+        "Gobierno y Política",
+        "Medio Ambiente"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 2471608684,
+      "name": "Querido Diário",
+      "url": "https://queridodiario.ok.org.br/",
+      "description": "O projeto Querido Diário (QD) propõe classificar, contextualizar e expandir a informação contida nos diários oficiais do poder executivo municipal brasileiro, tornando-os disponíveis de forma a permitir sua visualização em formato aberto e amigável. A iniciativa inclui duas implementações técnicas principais: uma plataforma (https://queridodiario.ok.org.br/) para visualizar a informação contida nos diários em formato aberto e uma API aberta (https://queridodiario.ok.org.br/api/docs), que permite a integração das informações com outros sistemas e aplicações.",
+      "pub_date": "08/2019",
+      "authors": [
+        "Open Knowledge Brasil"
+      ],
+      "authors_id": [
+        null
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "email": [
+        "queridodiario@ok.org.br"
+      ],
+      "tags": [
+        "diário oficial municipal",
+        "dados abertos municipais",
+        ""
+      ],
+      "url_source": "https://github.com/okfn-brasil/querido-diario",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_2471608684.png",
+      "comment": "As fontes originais dos dados são as prefeituras das cidades cadastradas na plataforma. Esse número cresce continuamente, conforme novos códigos para coletar dados de mais municípios são integrados ao código do Querido Diário.",
+      "type": [
+        "aplicativo ou plataforma",
+        "painel, dashboard ou infográfico",
+        "conjunto de dados"
+      ],
+      "topics": [
+        "Assistência e Desenvolvimento Social",
+        "Ciência, Informação e Comunicação",
+        "Comércio, Serviços e Turismo",
+        "Cultura, Lazer e Esporte",
+        "Dados Estratégicos",
+        "Defesa e Segurança",
+        "Economia e Finanças",
+        "Educação",
+        "Equipamentos Públicos",
+        "Governo e Política",
+        "Habitação, Saneamento e Urbanismo",
+        "Meio Ambiente",
+        "Plano Plurianual",
+        "Saúde",
+        "Transportes e Trânsito"
+      ],
+      "datasets": [
+        {
+          "data_name": "Conteúdo completo dos diários oficiais de cada município disponível no Querido Diário em formato XML, agrupados por ano.",
+          "data_institution": "Diversas instituições",
+          "data_url": null,
+          "data_periodical": true
+        }
+      ],
+      "record_date": "2024-10-21",
+      "type_es": [
+        "aplicación o plataforma",
+        "panel de control o infografía",
+        "conjunto de datos"
+      ],
+      "topics_es": [
+        "Asistencia y Desarrollo Social",
+        "Ciencia, Información y Comunicación",
+        "Comercio, Servicios y Turismo",
+        "Cultura, Entretenimiento y Deporte",
+        "Datos Estratégicos",
+        "Defensa y Seguridad",
+        "Economía y Finanzas",
+        "Educación",
+        "Equipamiento Público",
+        "Gobierno y Política",
+        "Vivienda, Saneamiento y Urbanismo",
+        "Medio Ambiente",
+        "Plan Plurianual",
+        "Salud",
+        "Transporte y Tráfico"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 2283375359,
+      "name": "Iluminando App BR",
+      "url": "https://www.iluminando.app.br/",
+      "description": "Um sistema que coleta, através do Whatsapp, demandas de manutenção em iluminação pública nos municípios brasileiros. As demandas são encaminhadas para a empresa responsável e os dados colhidos são disponibilizados de maneira aberta no site do projeto.",
+      "pub_date": "08/2022",
+      "authors": [
+        "Henrique Schiavo"
+      ],
+      "authors_id": [
+        null
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "email": [
+        "operacao@iluminando.app.br"
+      ],
+      "tags": [
+        "iluminação pública"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_2283375359.png",
+      "comment": null,
+      "type": [
+        "conjunto de dados",
+        "bot"
+      ],
+      "topics": [
+        "Equipamentos Públicos"
+      ],
+      "datasets": [
+        {
+          "data_name": "Coordenadas e endereços – Nominatim",
+          "data_institution": "OpenStreetMap Foundation",
+          "data_url": "https://nominatim.openstreetmap.org/",
+          "data_periodical": true
+        },
+        {
+          "data_name": "Horários do nascer e pôr do Sol",
+          "data_institution": "Sunrise-Sunset.org",
+          "data_url": "https://api.sunrise-sunset.org/",
+          "data_periodical": true
+        }
+      ],
+      "record_date": "2024-10-21",
+      "type_es": [
+        "conjunto de datos",
+        "bot"
+      ],
+      "topics_es": [
+        "Equipamiento Público"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
     {
       "hash_id": 3799964393,
       "name": "Agenda Transparente",
@@ -19,7 +223,7 @@
         "Brasil"
       ],
       "email": [
-        "agendatransparente@fiquemsabendo.com.br"
+        "agendas@fiquemsabendo.com.br"
       ],
       "tags": [
         "agenda",
