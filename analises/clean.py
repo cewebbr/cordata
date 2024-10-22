@@ -222,8 +222,10 @@ def split_semicolons(series, delimiter=';'):
     stripped = series.str.replace(regex, ';', regex=True)
     # Split terms:
     splitted = stripped.str.split(';')
+    # Drop empty entries:
+    notempty = splitted.apply(lambda l: l if l == None else list(filter(lambda s: len(s) > 0, l)))
     
-    return splitted
+    return notempty
 
 
 def options_to_list(df, col_names):
