@@ -165,7 +165,7 @@
         {
           "data_name": "Malha municipal",
           "data_institution": "IBGE",
-          "data_url": "https://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais/15774-malhas.html",
+          "data_url": "http://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais/15774-malhas.html",
           "data_periodical": false
         },
         {
@@ -247,7 +247,7 @@
         {
           "data_name": "Atlas do Desenvolvimento Humano nas Regiões Metropolitanas Brasileiras",
           "data_institution": "Atlas Brasil",
-          "data_url": "https://www.atlasbrasil.org.br/acervo/biblioteca",
+          "data_url": "http://www.atlasbrasil.org.br/acervo/biblioteca",
           "data_periodical": false
         },
         {
