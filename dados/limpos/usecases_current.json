@@ -1,8 +1,295 @@
 {
   "metadata": {
-    "last_update": "2024-10-21"
+    "last_update": "2024-10-22"
   },
   "data": [
+    {
+      "hash_id": 658789426,
+      "name": "SmartLab",
+      "url": "https://smartlabbr.org",
+      "description": "A iniciativa SmarlLab surgiu para construir conhecimento relevante para políticas públicas de promoção do trabalho decente com o uso de um recurso público de baixíssimo custo: dados públicos abertos.\r\nA iniciativa conjunta do MPT e da OIT Brasil deu origem à Plataforma SmartLab, que tem fortalecido a cooperação com organizações governamentais, não-governamentais e internacionais que atuam na promoção dessa agenda e que precisam de informações para tomar decisões sobre as ações que desenvolvem. Por meio de Observatórios Digitais, a plataforma beneficia também a comunidade científica, que passa a ter acesso a informações com facilidade sem precedentes para pesquisa. Além disso, o fluxo público de informações para tomada de decisões baseadas em evidências e orientadas para resultados beneficia a sociedade civil em geral.",
+      "pub_date": "04/2017",
+      "authors": [
+        "Ministério Público do Trabalho (MPT)",
+        "Organização Internacional do Trabalho (OIT)"
+      ],
+      "authors_id": [
+        null,
+        null
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "email": null,
+      "tags": [
+        "trabalho descente",
+        "saúde no trabalho",
+        "segurança no trabalho",
+        "trabalho infantil",
+        "trabalho escravo",
+        "tráfico de pessoas",
+        "diversidade",
+        "desigualdade",
+        "seguridade social",
+        "emprego"
+      ],
+      "url_source": "https://github.com/smartlab-br",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_658789426.png",
+      "comment": "Projeto catalogado pela equipe do Ceweb. Ele ainda utiliza muitos outros dados que não foram infomados aqui.",
+      "type": [
+        "painel, dashboard ou infográfico"
+      ],
+      "topics": [
+        "Assistência e Desenvolvimento Social",
+        "Dados Estratégicos",
+        "Saúde",
+        "Trabalho"
+      ],
+      "datasets": [
+        {
+          "data_name": "Cadastro Geral de Empregados e Desempregados (Novo CAGED)",
+          "data_institution": "Ministério do Trabalho e Emprego",
+          "data_url": "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/estatisticas-trabalho/novo-caged",
+          "data_periodical": true
+        },
+        {
+          "data_name": "Relação Anual de Informações Sociais (RAIS)",
+          "data_institution": "Ministério do Trabalho e Emprego",
+          "data_url": "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/estatisticas-trabalho/rais",
+          "data_periodical": true
+        },
+        {
+          "data_name": "Censo demográfico",
+          "data_institution": "IBGE",
+          "data_url": "https://sidra.ibge.gov.br/pesquisa/censo-demografico",
+          "data_periodical": false
+        },
+        {
+          "data_name": "Índice de Desenvolvimento da Educação Básica (Ideb)",
+          "data_institution": "INEP",
+          "data_url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/ideb/resultados",
+          "data_periodical": null
+        },
+        {
+          "data_name": "Radar SIT - Painel de Informações e Estatísticas da Inspeção do Trabalho no Brasil",
+          "data_institution": "Escola Nacional de Inspeção do Trabalho (ENIT)",
+          "data_url": "https://sit.trabalho.gov.br/radar/",
+          "data_periodical": true
+        }
+      ],
+      "record_date": "2024-10-22",
+      "type_es": [
+        "panel de control o infografía"
+      ],
+      "topics_es": [
+        "Asistencia y Desarrollo Social",
+        "Datos Estratégicos",
+        "Salud",
+        "Trabajo"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 4231990403,
+      "name": "FluxSUS",
+      "url": "https://fluxsus.iepsdata.org.br",
+      "description": "O objetivo desta plataforma é fornecer visualizações de dados a respeito das taxas de retenção, de atração e de fluxos de pacientes entre municípios brasileiros de 2010 a 2023, a partir do Sistema de Informações Hospitalares do SUS (SIHSUS). Espera-se que este projeto possa incentivar pesquisas sobre o processo de regionalização da saúde no SUS, além de promover tomadas de decisão por parte dos gestores de saúde pública.",
+      "pub_date": "09/2023",
+      "authors": [
+        "Gabriely Rangel (IME-USP)",
+        "Fabio Kon (IME-USP)",
+        "Luciano da Fontoura Costa (IFSC-USP)",
+        "Rubens Kon (CSEB-USP)",
+        "Ligia Barrozo (FFLCH-USP)",
+        "Rudi Rocha (FGV/EAESP e IEPS)",
+        "Beatriz Rache (IEPS)",
+        "Maria Cristina Franceschini (IEPS)",
+        "Matías Mrejen (IEPS)",
+        "Helena Arruda (IEPS)",
+        "Leonardo Rosa (IEPS)",
+        "Frederica Padilha (IEPS)",
+        "Agatha Eleone (IEPS)",
+        "Arthur Aguillar (IEPS)"
+      ],
+      "authors_id": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "email": [
+        "iepsdata@ieps.org.br"
+      ],
+      "tags": [
+        "regionalização",
+        "sus",
+        "desigualdade social",
+        "fluxo de pacientes",
+        "painel",
+        "dashboard",
+        "internações",
+        "hospitais"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_4231990403.png",
+      "comment": "Existe mais uma fonte de dados citada pelo projeto: Causas de Urgência Médica (https://icdcodelookup.com/icd-10/common-codes/emergency-dept)\r\nCaso coletado pelo Ceweb.",
+      "type": [
+        "painel, dashboard ou infográfico"
+      ],
+      "topics": [
+        "Dados Estratégicos",
+        "Saúde"
+      ],
+      "datasets": [
+        {
+          "data_name": "Internações hospitalares do SIHSUS",
+          "data_institution": "DataSUS",
+          "data_url": "https://datasus.saude.gov.br/transferencia-de-arquivos/",
+          "data_periodical": false
+        },
+        {
+          "data_name": "Malha municipal",
+          "data_institution": "IBGE",
+          "data_url": "https://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais/15774-malhas.html",
+          "data_periodical": false
+        },
+        {
+          "data_name": "Macrorregiões e Regiões de Saúde",
+          "data_institution": "CONASEMS",
+          "data_url": "https://www.conasems.org.br/painel/macrorregioes-e-regioes-de-saude/",
+          "data_periodical": false
+        },
+        {
+          "data_name": "Causas evitáveis - Measuring the health of nations: analysis of mortality amenable to health care",
+          "data_institution": "National Library of Medicine",
+          "data_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC261807/",
+          "data_periodical": false
+        },
+        {
+          "data_name": "Causas Sensíveis à Atenção Primária (ICSAP)",
+          "data_institution": "Ministério da Saúde",
+          "data_url": "https://bvsms.saude.gov.br/bvs/saudelegis/sas/2008/prt0221_17_04_2008.html",
+          "data_periodical": false
+        }
+      ],
+      "record_date": "2024-10-22",
+      "type_es": [
+        "panel de control o infografía"
+      ],
+      "topics_es": [
+        "Datos Estratégicos",
+        "Salud"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 3317482484,
+      "name": "IEPS Data",
+      "url": "https://iepsdata.org.br/",
+      "description": "Apesar de ricos e granulares, os dados de saúde existentes estão dispersos em sistemas de informação diferentes, o que dificulta consultas e cruzamentos de dados importantes. O IEPS Data reúne indicadores de diversos temas desde 2010 e disponibiliza visualizações, documentações e bases de dados prontas para download. O objetivo é que gestores, comunicadores, pesquisadores e a população em geral acessem e entendam a saúde de seus locais de interesse.",
+      "pub_date": "07/2022",
+      "authors": [
+        "Instituto de Estudos para Políticas de Saúde (IEPS)"
+      ],
+      "authors_id": [
+        null
+      ],
+      "countries": [
+        "Brasil"
+      ],
+      "email": [
+        "iepsdata@ieps.org.br"
+      ],
+      "tags": [
+        "indicadores",
+        "demografia",
+        "painel",
+        "infográfico",
+        "vacinação",
+        "idh",
+        "mortalidade",
+        "natalidade",
+        "atenção primária",
+        "saúde suplementar",
+        "planos de saúde"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_3317482484.png",
+      "comment": "O projeto IEPS Data consulta muitas outras bases de dados, especialmente de saúde. Mas não podemos colocar todas elas aqui.",
+      "type": [
+        "painel, dashboard ou infográfico",
+        "conjunto de dados"
+      ],
+      "topics": [
+        "Assistência e Desenvolvimento Social",
+        "Dados Estratégicos",
+        "Educação",
+        "Saúde"
+      ],
+      "datasets": [
+        {
+          "data_name": "Atlas do Desenvolvimento Humano nas Regiões Metropolitanas Brasileiras",
+          "data_institution": "Atlas Brasil",
+          "data_url": "https://www.atlasbrasil.org.br/acervo/biblioteca",
+          "data_periodical": false
+        },
+        {
+          "data_name": "Dados do Programa Nacional de Imunizações (PNI)",
+          "data_institution": "DATASUS",
+          "data_url": "http://tabnet.datasus.gov.br/cgi/dhdat.exe?bd_pni/cpnibr.def",
+          "data_periodical": false
+        },
+        {
+          "data_name": "Beneficiários de Planos de Saúde",
+          "data_institution": "ANS",
+          "data_url": "https://www.ans.gov.br/anstabnet/cgi-bin/dh?dados/tabnet_02.def",
+          "data_periodical": false
+        },
+        {
+          "data_name": "Sistema de Informações sobre Orçamento Público em Saúde (SIOPS)",
+          "data_institution": "DATASUS",
+          "data_url": "http://siops-asp.datasus.gov.br/cgi/tabcgi.exe?SIOPS/SerHist/ESTADO/indicuf.def",
+          "data_periodical": false
+        },
+        {
+          "data_name": null,
+          "data_institution": "IPEA",
+          "data_url": "http://www.ipeadata.gov.br/Default.aspx",
+          "data_periodical": false
+        }
+      ],
+      "record_date": "2024-10-22",
+      "type_es": [
+        "panel de control o infografía",
+        "conjunto de datos"
+      ],
+      "topics_es": [
+        "Asistencia y Desarrollo Social",
+        "Datos Estratégicos",
+        "Educación",
+        "Salud"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
     {
       "hash_id": 2723352845,
       "name": "Diários do Clima",
@@ -34,8 +321,7 @@
       "tags": [
         "diário oficial",
         "dados abertos municipais",
-        "meio ambiente",
-        ""
+        "meio ambiente"
       ],
       "url_source": "https://github.com/okfn-brasil/diarios-do-clima-frontend",
       "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_2723352845.png",
@@ -87,8 +373,7 @@
       ],
       "tags": [
         "diário oficial municipal",
-        "dados abertos municipais",
-        ""
+        "dados abertos municipais"
       ],
       "url_source": "https://github.com/okfn-brasil/querido-diario",
       "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_2471608684.png",
