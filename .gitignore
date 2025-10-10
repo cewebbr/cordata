@@ -9,6 +9,7 @@ analises/__pycache__
 analises/.ipynb_checkpoints
 
 # Não inclusos
+codigo/env
 
 # Dados internos
 dados/*
