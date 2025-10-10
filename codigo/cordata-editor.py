@@ -10,6 +10,7 @@ from pathlib import Path
 
 # === CONFIG ===
 DATA_FILE = "data/usecases_current.json"
+TEMP_FILE = "data/usecases_temp.json"
 
 # Lists for controlled vocabularies
 TYPE_OPTIONS = [
@@ -56,9 +57,24 @@ COUNTRY_OPTIONS = [
 ]
 
 # === LOAD DATA ===
-if "data" not in st.session_state:
-    st.session_state["data"] = json.loads(Path(DATA_FILE).read_text(encoding="utf-8"))
-usecases = st.session_state["data"]["data"]
+# First load, keep unchanged:
+#if "orig_data" not in st.session_state:    
+#    st.session_state["orig_data"] = json.loads(Path(DATA_FILE).read_text(encoding="utf-8"))
+#    data = cp.deepcopy(st.session_state["orig_data"])
+#    with open(TEMP_FILE, 'w') as f:
+#        json.dump(data, f, indent=1)
+# Cycle load: 
+#data = json.loads(Path(TEMP_FILE).read_text(encoding="utf-8"))
+data = json.loads(Path(TEMP_FILE).read_text(encoding="utf-8"))
+usecases = data["data"]
+
+def save_data(path=TEMP_FILE):
+    """
+    Save current data dict to `path` (str).
+    """
+    with open(path, 'w') as f:
+        json.dump(data, f, indent=1, ensure_ascii=False)
+
 
 # === GUI ===
 st.title("Editor de casos do CORDATA")
@@ -100,8 +116,13 @@ uc["comment"] = st.text_area("Comentários internos:", uc.get('comment', ''), he
 
 # Datasets
 st.markdown("### Datasets")
+#if 'datasets' not in st.session_state:
+#    st.session_state['datasets'] = cp.deepcopy(uc['datasets'])
+#datasets = st.session_state['datasets']
+datasets = uc['datasets']
+
 rm_dataset_btn = []
-for i, ds in enumerate(uc.get("datasets", [])):
+for i, ds in enumerate(datasets):
     with st.expander(f"Dataset {i+1}"):
         # Dataset metadata:
         ds["data_name"] = st.text_input("Nome do conjunto:", ds.get("data_name", ""), key=f"name_{i}")
@@ -115,20 +136,40 @@ for i, ds in enumerate(uc.get("datasets", [])):
             key=f"periodical_{i}"
         )
         # Option to remove this dataset:
-        def rm_dataset():
-            uc['datasets'].pop(i)
+        def rm_dataset(index=i):
+            uc['datasets'].pop(index)
+            save_data()
         rm_dataset_btn.append(rm_dataset)
         st.button("❌  Remover", key=f'rm-dataset_{i}', on_click=rm_dataset_btn[i])
 
 
 # Option to add new dataset
-st.button("➕ Adicionar conjunto de dados",
-          on_click=(lambda: uc['datasets'].append({"data_name": "", "data_institution": "", "data_url": "", "data_periodical": None}))
-          )
-    
+def append_dataset():
+    datasets.append({"data_name": "", "data_institution": "", "data_url": "", "data_periodical": None})
+    save_data()
+
+st.button("➕ Adicionar conjunto de dados", on_click=append_dataset)
 
 # Save
 if st.button("💾 Save changes"):
-    Path(DATA_FILE).write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+    #Path(DATA_FILE).write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
     st.success("Changes saved successfully!")
 
+uc['datasets'] = datasets
+print(json.dumps(uc, indent=1))
+print('')
+
+# Save current edition of the file:
+#with open(TEMP_FILE, 'w') as f:
+#    json.dump(data, f, indent=1, ensure_ascii=False)
+
+x = 10   # global variable
+
+def f():
+    y = x   # local variable gets value of x
+    print("Inside f before change:", y)
+
+f()
+
+x = 20     # change global x
+f()
