@@ -9,6 +9,10 @@ import requests
 from streamlit_tags import st_tags
 from datetime import datetime
 from pathlib import Path
+import os
+
+# Move current working directory to the script’s directory
+os.chdir(pathlib.Path(__file__).parent)
 
 # === CONFIG ===
 DATA_FILE  = "data/usecases_current.json"
