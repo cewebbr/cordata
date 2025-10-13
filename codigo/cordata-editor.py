@@ -12,7 +12,7 @@ from pathlib import Path
 import os
 
 # Move current working directory to the script’s directory
-os.chdir(pathlib.Path(__file__).parent)
+os.chdir(Path(__file__).parent)
 
 # === CONFIG ===
 DATA_FILE  = "data/usecases_current.json"
