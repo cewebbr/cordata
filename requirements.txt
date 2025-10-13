@@ -1,3 +1,5 @@
 jupyterlab==3.5.0
 numpy==1.23.5
 pandas==1.5.1
+streamlit==1.40.1
+streamlit-tags==1.2.8
