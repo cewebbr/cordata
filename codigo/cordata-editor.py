@@ -2,148 +2,95 @@
 # http://localhost:8501
 # -*- coding: utf-8 -*-
 
+# External imports:
 import json
-import copy as cp
 import streamlit as st
-import requests
 from streamlit_tags import st_tags
 from datetime import datetime
 from pathlib import Path
 import os
 
+# Internal imports:
+import config as cf
+import dataops as io
+import auxiliar as aux
+
 # Move current working directory to the script’s directory
 os.chdir(Path(__file__).parent)
 
-# === CONFIG ===
-DATA_FILE  = "data/usecases_current.json"
-TEMP_FILE  = "data/usecases_temp.json"
-EMPTY_FILE = "data/usecases_empty.json"
-ENTRY_MODEL = "data/entry_model.json"
 
-# Lists for controlled vocabularies
-TYPE_OPTIONS = [
-    "aplicativo ou plataforma",
-    "artigo científico ou publicação acadêmica",
-    "bot",
-    "conjunto de dados",
-    "estudo independente",
-    "inteligência artificial",
-    "matéria jornalística",
-    "painel, dashboard ou infográfico",
-    "outro"
-    ]
-
-TOPIC_OPTIONS = [
-    "Agricultura, extrativismo e pesca",
-    "Assistência e Desenvolvimento Social",
-    "Ciência, Informação e Comunicação",
-    "Comércio, Serviços e Turismo",
-    "Cultura, Lazer e Esporte",
-    "Dados Estratégicos",
-    "Defesa e Segurança",
-    "Economia e Finanças",
-    "Educação",
-    "Energia",
-    "Equipamentos Públicos",
-    "Gênero e Raça",
-    "Geografia",
-    "Governo e Política",
-    "Habitação, Saneamento e Urbanismo",
-    "Indústria",
-    "Justiça e Legislação",
-    "Meio Ambiente",
-    "Plano Plurianual",
-    "Relações Internacionais",
-    "Religião",
-    "Saúde",
-    "Trabalho",
-    "Transportes e Trânsito"
-]
-
-COUNTRY_OPTIONS = [
-    "Brasil", "Mundial", "Argentina", "Chile", "Colômbia", "México", "Espanha"
-]
-
-def download_data():
-    """
-    Download CORDATA data currently up on the website.
-    """
-    url = 'https://raw.githubusercontent.com/cewebbr/cordata/refs/heads/main/dados/limpos/usecases_current.json'
-    response = requests.get(url)
-    status = response.status_code
-    if status == 200:
-        content = response.content.decode()
-        data = json.loads(content)
-        st.success('Dados carregados com sucesso')
-        return data
-    else:
-        st.error(f'Falha no carregamento dos dados (status code {status})')
-
-def save_data(path=TEMP_FILE):
-    """
-    Save current data dict to `path` (str).
-    """
-    with open(path, 'w') as f:
-        json.dump(data, f, indent=1, ensure_ascii=False)
-
-def load_data(path):
-    """
-    Load JSON from file at `path` (str).
-    """
-    return json.loads(Path(path).read_text(encoding="utf-8"))
-
+#################
+### Functions ###
+#################
 
 @st.dialog('Adicionar novo caso')
-def add_new_case():
+def add_new_case(data):
     """
     Create a new usecase, add it to dataset and
     show it for edition.
     """
     # Ask for new usecase name:
     name = st.text_input("Nome:")
-    if st.button("Criar!"):
+    if st.button("🚀 Criar!"):
         # Create new usecase:
-        uc = load_data(ENTRY_MODEL)
+        uc = io.load_data(cf.ENTRY_MODEL)
         uc['name'] = name
         # Insert in dataset:
+        usecases = data["data"]
         usecases.insert(0, uc)
-        save_data(TEMP_FILE)
+        io.save_data(data, cf.TEMP_FILE)
         # Set to show it:
         st.session_state['idx_init'] = 0
         st.rerun()
 
+
+############
+### Init ###
+############
+
 # Initialization of session variables:
 if 'idx_init' not in st.session_state:
     st.session_state['idx_init'] = None
+# Load list of location names:
+if 'localities' not in st.session_state:
+    mun = aux.read_lines('data/municipios.csv')
+    st.session_state['localities'] = {'countries': cf.COUNTRY_OPTIONS, 'fed_units': cf.UF_OPTIONS, 'municipalities': mun}
 
-# Sidebar:
+################
+### Controls ###
+################
+
+# Sidebar header:
 st.sidebar.image('img/logo-cordata.png', width=200)
 
-
-# === LOAD DATA ===
 # Replace local data with the one from the repo:
 if st.sidebar.button('🐙 Carregar do Github'):
-    data = download_data()
-    save_data()
+    data = io.download_data()
+    io.save_data(data)
     st.session_state['idx_init'] = None
 
 # Remove all data from the app:
 if st.sidebar.button('🗑️ Limpar a base'):
-    data = load_data(EMPTY_FILE)
-    save_data()
+    data = io.load_data(cf.EMPTY_FILE)
+    io.save_data(data)
     st.success('Todos os casos de uso foram removidos')
+
 # Load local data:
-data = load_data(TEMP_FILE)
+data = io.load_data(cf.TEMP_FILE)
 usecases = data["data"]
 
 # Select usecase:
 names = [uc['name'] for uc in usecases]
 idx = st.sidebar.selectbox("Selecione o caso de uso:", range(len(usecases)), format_func=lambda i: names[i], 
-                           index=st.session_state['idx_init'], on_change=save_data)
+                           index=st.session_state['idx_init'], on_change=io.save_data, kwargs={'data': data})
 
 # Add new usecase:
-st.sidebar.button('➕ Adicionar novo caso', on_click=add_new_case)
+st.sidebar.button('➕ Adicionar novo caso', on_click=add_new_case, kwargs={'data': data})
 
+
+######################
+### Usecase editor ###
+######################
 
 if idx != None:
     uc = usecases[idx]
@@ -164,24 +111,29 @@ if idx != None:
     )
     uc["pub_date"] = pub_date.strftime("%m/%Y")
     uc['authors'] = st_tags(label='Autor:', value=uc.get('authors', []))
-    uc["countries"] = st.multiselect("Countries", COUNTRY_OPTIONS, default=uc.get("countries", []))
+
+    geo_fmt = aux.translate_dict({None:'(vazio)'})
+    uc['geo_level'] = st.radio("Nível de cobertura geográfica:",
+                options=cf.GEOLEVEL_OPTIONS,
+                index=cf.GEOLEVEL_OPTIONS.index(uc.get("geo_level")),
+                horizontal=True, format_func=(lambda x: geo_fmt[x]))
+    geolevel = uc['geo_level']
+    if geolevel in cf.GEOLEVEL_KEYS.keys():
+        gkey = cf.GEOLEVEL_KEYS[geolevel]
+        uc[gkey] = st.multiselect(geolevel + ':', st.session_state['localities'][gkey], default=uc.get(gkey, []))
+        
     uc['email'] = st_tags(label='Email de contato:', value=uc.get('email', []))
-    uc["type"] = st.multiselect("Type", TYPE_OPTIONS, default=uc.get("type", []))
-    uc["topics"] = st.multiselect("Topics", TOPIC_OPTIONS, default=uc.get("topics", []))
+    uc["type"] = st.multiselect("Type", cf.TYPE_OPTIONS, default=uc.get("type", []))
+    uc["topics"] = st.multiselect("Topics", cf.TOPIC_OPTIONS, default=uc.get("topics", []))
     uc['tags'] = st_tags(label='Tags:', value=uc.get('tags', []))
     uc["url_source"] = st.text_input("Código fonte:", uc.get("url_source", ""))
     uc["url_image"] = st.text_input("Link para imagem:", uc.get("url_image", ""))
     uc["comment"] = st.text_area("Comentários internos:", uc.get('comment', ''), height=200)
 
-    # Automatic fields:
-    #uc["record_date"]
 
+    ### Datasets ###
 
-    # Datasets
     st.markdown("### Datasets")
-    #if 'datasets' not in st.session_state:
-    #    st.session_state['datasets'] = cp.deepcopy(uc['datasets'])
-    #datasets = st.session_state['datasets']
     datasets = uc['datasets']
 
     rm_dataset_btn = []
@@ -201,28 +153,43 @@ if idx != None:
             # Option to remove this dataset:
             def rm_dataset(index=i):
                 uc['datasets'].pop(index)
-                save_data()
+                io.save_data(data)
             rm_dataset_btn.append(rm_dataset)
             st.button("❌  Remover", key=f'rm-dataset_{i}', on_click=rm_dataset_btn[i])
 
 
     # Option to add new dataset
-    def append_dataset():
+    def append_dataset(data):
         datasets.append({"data_name": "", "data_institution": "", "data_url": "", "data_periodical": None})
-        save_data()
+        io.save_data(data)
 
-    st.button("➕ Adicionar conjunto de dados", on_click=append_dataset)
+    st.button("➕ Adicionar conjunto de dados", on_click=append_dataset, kwargs={'data': data})
 
-    # Save
+
+    ### Usecase final ###
+
+    # Save button:
     if st.button("💾 Salvar"):
-        save_data()
+        io.save_data(data)
         st.success("Dados salvos com sucesso!")
 
+
+#################
+### App final ###
+#################
 
 st.sidebar.download_button('⬇️ Baixar dados', json.dumps(data, indent=1, ensure_ascii=False), file_name='usecases_current.json')
 
     #uc['datasets'] = datasets
     #print(json.dumps(uc, indent=1))
     #print('')
+
+
+########################
+### Dataset metadata ###
+########################
+
+st.sidebar.write('\# casos cadastrados: {:}'.format(len(usecases)))
+
 
 print('\n>> Run!')
