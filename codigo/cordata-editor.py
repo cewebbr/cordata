@@ -2,6 +2,25 @@
 # http://localhost:8501
 # -*- coding: utf-8 -*-
 
+"""
+CORDATA EDITOR (Content Management System)
+Copyright (C) 2025 Henrique Xavier
+Contact: contato@henriquexavier.net
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+"""
+
 # External imports:
 import json
 import streamlit as st
@@ -121,7 +140,7 @@ if idx != None:
     if geolevel in cf.GEOLEVEL_KEYS.keys():
         gkey = cf.GEOLEVEL_KEYS[geolevel]
         uc[gkey] = st.multiselect(geolevel + ':', st.session_state['localities'][gkey], default=uc.get(gkey, []))
-        
+
     uc['email'] = st_tags(label='Email de contato:', value=uc.get('email', []))
     uc["type"] = st.multiselect("Type", cf.TYPE_OPTIONS, default=uc.get("type", []))
     uc["topics"] = st.multiselect("Topics", cf.TOPIC_OPTIONS, default=uc.get("topics", []))
