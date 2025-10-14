@@ -66,10 +66,7 @@ if 'localities' not in st.session_state:
 st.sidebar.image('img/logo-cordata.png', width=200)
 
 # Replace local data with the one from the repo:
-if st.sidebar.button('🐙 Carregar do Github'):
-    data = io.download_data()
-    io.save_data(data)
-    st.session_state['idx_init'] = None
+st.sidebar.button('🐙 Carregar do Github', on_click=io.load_from_github)
 
 # Remove all data from the app:
 if st.sidebar.button('🗑️ Limpar a base'):
