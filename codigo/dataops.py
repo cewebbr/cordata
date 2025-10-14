@@ -2,6 +2,7 @@ import requests
 import json
 import streamlit as st
 from pathlib import Path
+from datetime import datetime
 
 import config as cf
 
@@ -49,7 +50,8 @@ def append_dataset(data, datasets):
         List of datasets used by the usecase. It must be a 
         reference to a list inside a usecase inside `data`.
     """
-    datasets.append({"data_name": "", "data_institution": "", "data_url": "https://", "data_periodical": None})
+    dataset = load_data(cf.DATASET_MODEL)
+    datasets.append(dataset)
     save_data(data)
 
 
@@ -65,6 +67,7 @@ def add_new_case(data):
         # Create new usecase:
         uc = load_data(cf.ENTRY_MODEL)
         uc['name'] = name
+        uc['record_date'] = datetime.today().strftime('%Y-%m-%d')
         # Insert in dataset:
         usecases = data["data"]
         usecases.insert(0, uc)
