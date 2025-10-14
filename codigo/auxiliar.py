@@ -18,6 +18,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 
 import streamlit as st
+from datetime import datetime
 
 class translate_dict(dict):
     """
@@ -35,6 +36,33 @@ def read_lines(path):
     with open(path, 'r') as file:
         lines = [line.rstrip() for line in file]
     return lines
+
+
+def read_date(date_str, date_fmts=['%m/%Y', '%d/%m/%Y']):
+    """
+    Parse date from `date_str` (str) using the first 
+    format in `date_fmts` (list of str) that works.
+    """
+
+    # Forward None:
+    if date_str == None:
+        return None
+
+    success = False
+    for fmt in date_fmts:
+        print(fmt)
+        try:
+            date = datetime.strptime(date_str, fmt).date()
+            success = True
+        except:
+            pass
+        if success == True:
+            break
+    if success == True:
+        return date
+    else:
+        raise Exception("Weird date format '{:}'".format(date_str))
+    
 
 def html(html_code):
     """

@@ -42,25 +42,7 @@ os.chdir(Path(__file__).parent)
 ### Functions ###
 #################
 
-@st.dialog('Adicionar novo caso')
-def add_new_case(data):
-    """
-    Create a new usecase, add it to dataset and
-    show it for edition.
-    """
-    # Ask for new usecase name:
-    name = st.text_input("Nome:")
-    if st.button("🚀 Criar!"):
-        # Create new usecase:
-        uc = io.load_data(cf.ENTRY_MODEL)
-        uc['name'] = name
-        # Insert in dataset:
-        usecases = data["data"]
-        usecases.insert(0, uc)
-        io.save_data(data, cf.TEMP_FILE)
-        # Set to show it:
-        st.session_state['idx_init'] = 0
-        st.rerun()
+
 
 
 ############
@@ -104,7 +86,7 @@ idx = st.sidebar.selectbox("Selecione o caso de uso:", range(len(usecases)), for
                            index=st.session_state['idx_init'], on_change=io.save_data, kwargs={'data': data})
 
 # Add new usecase:
-st.sidebar.button('➕ Adicionar novo caso', on_click=add_new_case, kwargs={'data': data})
+st.sidebar.button('➕ Adicionar novo caso', on_click=io.add_new_case, args=(data,))
 
 
 ######################
@@ -123,12 +105,14 @@ if idx != None:
 
     # Optional fields:
     uc["description"] = st.text_area("Descrição:", uc.get('description', ''), height=200)
-    pub_date = st.date_input(
-        "Data de publicação:",
-        datetime.strptime(uc.get("pub_date", "01/2000"), "%m/%Y").date() if uc.get("pub_date") else datetime.today().date(),
-        format="DD/MM/YYYY"
-    )
-    uc["pub_date"] = pub_date.strftime("%m/%Y")
+
+    known_pub_date = st.checkbox("Data de publicação conhecida", value=(uc['pub_date'] != None))
+    if known_pub_date == True:
+        pub_date = st.date_input("Data de publicação:", aux.read_date(uc.get("pub_date")), format="DD/MM/YYYY")            
+        uc["pub_date"] = None if pub_date == None else pub_date.strftime("%m/%Y")
+    else:
+        uc["pub_date"] = None
+    
     uc['authors'] = st_tags(label='Autor:', value=uc.get('authors', []))
 
     geo_fmt = aux.translate_dict({None:'(vazio)'})
@@ -176,11 +160,8 @@ if idx != None:
             rm_dataset_btn.append(rm_dataset)
             st.button("❌  Remover", key=f'rm-dataset_{i}', on_click=rm_dataset_btn[i])
 
-    # Option to add new dataset
-    def append_dataset(data, datasets):
-        datasets.append({"data_name": "", "data_institution": "", "data_url": "", "data_periodical": None})
-        io.save_data(data)
-    st.button("➕ Adicionar conjunto de dados", on_click=append_dataset, args=(data, datasets))
+    # Option to add new dataset        
+    st.button("➕ Adicionar conjunto de dados", on_click=io.append_dataset, args=(data, datasets))
 
 
     ### Usecase final ###
@@ -193,11 +174,7 @@ if idx != None:
         st.success("Dados salvos com sucesso!")
 
     # Remove button:
-    def remove_usecase(data, idx):
-        usecases = data["data"]
-        usecases.pop(idx)
-        io.save_data(data)
-    st.button("❌  Remover caso de uso", on_click=remove_usecase, args=(data, idx))
+    st.button("❌  Remover caso de uso", on_click=io.remove_usecase, args=(data, idx))
 
 
 
