@@ -42,7 +42,8 @@ os.chdir(Path(__file__).parent)
 ### Functions ###
 #################
 
-
+# Display format for options including None:
+none_fmt = aux.translate_dict({None:'(vazio)'})
 
 
 ############
@@ -99,13 +100,15 @@ if idx != None:
     # Editing the selected usecase:
     st.subheader(f"{uc.get('name')}")
 
-    # Mandatory fields:
+    ### Mandatory fields ###
+
     uc["name"] = st.text_input("Nome:", uc.get("name", ""))
     uc["url"] = st.text_input("Link:", uc.get("url", ""))
 
-    # Optional fields:
-    uc["description"] = st.text_area("Descrição:", uc.get('description', ''), height=200)
+    ### Optional fields ###
 
+    uc["description"] = st.text_area("Descrição:", uc.get('description', ''), height=200)
+    # Data de publicação:
     known_pub_date = st.checkbox("Data de publicação conhecida", value=(uc['pub_date'] != None))
     if known_pub_date == True:
         pub_date = st.date_input("Data de publicação:", aux.read_date(uc.get("pub_date")), format="DD/MM/YYYY")            
@@ -114,12 +117,11 @@ if idx != None:
         uc["pub_date"] = None
     
     uc['authors'] = st_tags(label='Autor:', value=uc.get('authors', []))
-
-    geo_fmt = aux.translate_dict({None:'(vazio)'})
+    # Nível de cobertura geográfica:
     uc['geo_level'] = st.radio("Nível de cobertura geográfica:",
                 options=cf.GEOLEVEL_OPTIONS,
                 index=cf.GEOLEVEL_OPTIONS.index(uc.get("geo_level")),
-                horizontal=True, format_func=(lambda x: geo_fmt[x]))
+                horizontal=True, format_func=(lambda x: none_fmt[x]))
     geolevel = uc['geo_level']
     if geolevel in cf.GEOLEVEL_KEYS.keys():
         gkey = cf.GEOLEVEL_KEYS[geolevel]
@@ -145,12 +147,14 @@ if idx != None:
             # Dataset metadata:
             ds["data_name"] = st.text_input("Nome do conjunto:", ds.get("data_name", ""), key=f"name_{i}")
             ds["data_institution"] = st.text_input("Instituição responsável:", ds.get("data_institution", ""), key=f"inst_{i}")
-            ds["data_url"] = st.text_input("Link:", ds.get("data_url", ""), key=f"url_{i}")
+            ds["data_url"] = st.text_input("Link:", ds.get("data_url", ""), key=f"url_{i}")            
+            ds['data_license'] = st.selectbox('Licença:', options=cf.LICENSE_OPTIONS, key=f"license_{i}", 
+                                              index=aux.nindex(cf.LICENSE_OPTIONS, ds.get("data_license")))
             ds["data_periodical"] = st.radio("Uso periódico?",
                 options=[True, False, None],
                 index=[True, False, None].index(ds.get("data_periodical")),
                 horizontal=True,
-                format_func=(lambda x: {True:'Sim', False:'Não',None:'(vazio)'}[x]),
+                format_func=(lambda x: {True:'Sim', False:'Não', None:'(vazio)'}[x]),
                 key=f"periodical_{i}"
             )
             # Option to remove this dataset:
