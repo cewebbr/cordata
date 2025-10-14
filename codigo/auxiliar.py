@@ -17,6 +17,8 @@ You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 
+import streamlit as st
+
 class translate_dict(dict):
     """
     A dict that returns the key used if no translation was provided for it.
@@ -33,3 +35,9 @@ def read_lines(path):
     with open(path, 'r') as file:
         lines = [line.rstrip() for line in file]
     return lines
+
+def html(html_code):
+    """
+    Place `html_code` (str) in the Streamlit app.
+    """
+    st.write(html_code, unsafe_allow_html=True)

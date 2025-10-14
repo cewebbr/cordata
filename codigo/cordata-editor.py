@@ -142,8 +142,8 @@ if idx != None:
         uc[gkey] = st.multiselect(geolevel + ':', st.session_state['localities'][gkey], default=uc.get(gkey, []))
 
     uc['email'] = st_tags(label='Email de contato:', value=uc.get('email', []))
-    uc["type"] = st.multiselect("Type", cf.TYPE_OPTIONS, default=uc.get("type", []))
-    uc["topics"] = st.multiselect("Topics", cf.TOPIC_OPTIONS, default=uc.get("topics", []))
+    uc["type"] = st.multiselect("Tipo de caso:", cf.TYPE_OPTIONS, default=uc.get("type", []))
+    uc["topics"] = st.multiselect("Temas tratados no caso:", cf.TOPIC_OPTIONS, default=uc.get("topics", []))
     uc['tags'] = st_tags(label='Tags:', value=uc.get('tags', []))
     uc["url_source"] = st.text_input("Código fonte:", uc.get("url_source", ""))
     uc["url_image"] = st.text_input("Link para imagem:", uc.get("url_image", ""))
@@ -152,7 +152,7 @@ if idx != None:
 
     ### Datasets ###
 
-    st.markdown("### Datasets")
+    st.markdown("#### Conjuntos de dados")
     datasets = uc['datasets']
 
     rm_dataset_btn = []
@@ -176,21 +176,29 @@ if idx != None:
             rm_dataset_btn.append(rm_dataset)
             st.button("❌  Remover", key=f'rm-dataset_{i}', on_click=rm_dataset_btn[i])
 
-
     # Option to add new dataset
-    def append_dataset(data):
+    def append_dataset(data, datasets):
         datasets.append({"data_name": "", "data_institution": "", "data_url": "", "data_periodical": None})
         io.save_data(data)
-
-    st.button("➕ Adicionar conjunto de dados", on_click=append_dataset, kwargs={'data': data})
+    st.button("➕ Adicionar conjunto de dados", on_click=append_dataset, args=(data, datasets))
 
 
     ### Usecase final ###
+
+    aux.html('<hr>')
 
     # Save button:
     if st.button("💾 Salvar"):
         io.save_data(data)
         st.success("Dados salvos com sucesso!")
+
+    # Remove button:
+    def remove_usecase(data, idx):
+        usecases = data["data"]
+        usecases.pop(idx)
+        io.save_data(data)
+    st.button("❌  Remover caso de uso", on_click=remove_usecase, args=(data, idx))
+
 
 
 #################
