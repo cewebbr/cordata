@@ -62,7 +62,19 @@ def read_date(date_str, date_fmts=['%m/%Y', '%d/%m/%Y']):
         return date
     else:
         raise Exception("Weird date format '{:}'".format(date_str))
+
     
+def nindex(options, sel):
+    """
+    Return position of `sel` (obj) in `options` (list).
+    If `sel` is None, return None.
+    """    
+    # None forward:
+    if sel == None:
+        return None
+    # Return position of option
+    return options.index(sel)
+
 
 def html(html_code):
     """
