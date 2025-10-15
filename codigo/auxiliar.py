@@ -28,6 +28,13 @@ class translate_dict(dict):
         return key
     
 
+def gen_uckey(uckey):
+    """
+    Return a standardized key for usecase widgets.
+    """
+    return 'uc_' + uckey
+
+
 def read_lines(path):
     """
     Read strings from file at `path` (str or Path) and 
@@ -50,7 +57,6 @@ def read_date(date_str, date_fmts=['%m/%Y', '%d/%m/%Y']):
 
     success = False
     for fmt in date_fmts:
-        print(fmt)
         try:
             date = datetime.strptime(date_str, fmt).date()
             success = True
@@ -63,7 +69,7 @@ def read_date(date_str, date_fmts=['%m/%Y', '%d/%m/%Y']):
     else:
         raise Exception("Weird date format '{:}'".format(date_str))
 
-    
+
 def nindex(options, sel):
     """
     Return position of `sel` (obj) in `options` (list).
@@ -76,8 +82,12 @@ def nindex(options, sel):
     return options.index(sel)
 
 
-def html(html_code):
+def html(html_code, sidebar=False):
     """
     Place `html_code` (str) in the Streamlit app.
+    If `sidebar` is True, place it in the sidebar.
     """
-    st.write(html_code, unsafe_allow_html=True)
+    if sidebar == True:
+        st.sidebar.write(html_code, unsafe_allow_html=True)
+    else:
+        st.write(html_code, unsafe_allow_html=True)

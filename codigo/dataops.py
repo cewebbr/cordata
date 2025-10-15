@@ -5,7 +5,7 @@ from pathlib import Path
 from datetime import datetime
 
 import config as cf
-
+import auxiliar as aux
 
 def download_data(url):
     """
@@ -114,4 +114,19 @@ def remove_usecase(data, idx):
         usecases = data["data"]
         usecases.pop(idx)
         save_data(data)
+        st.rerun()
+
+
+@st.dialog('Desfazer modificações')
+def reset_usecase(idx):
+    """
+    Erase records of widgets' states used to edit the usecase.
+    """
+    st.write('As edições neste caso de uso serão substituídas pelas informações salvas anteriormente. Deseja continuar?')
+    if st.button('Confirmar'):
+        # Load saved usecase data:
+        data = load_data(cf.TEMP_FILE)
+        uc = data['data'][idx]
+        st.session_state['usecase_status'] = uc.get('status', 'Em revisão')
+        usecase_widgets = list(filter(lambda x: x[:8] == 'usecase_', st.session_state.keys()))
         st.rerun()

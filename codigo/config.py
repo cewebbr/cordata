@@ -77,4 +77,11 @@ GEOLEVEL_OPTIONS = ['Não se aplica', 'Mundial', 'Países', 'Unidades federativa
 
 GEOLEVEL_KEYS = {'Países':'countries', 'Unidades federativas':'fed_units', 'Municípios':'municipalities'}
 
-STATUS_OPTIONS = ['Removido', 'Em revisão', 'Em validação', 'Publicado']
+STATUS_OPTIONS = ['Oculto', 'Em revisão', 'Em validação', 'Publicado']
+
+WIDGET_LABEL = {'name': 'Nome:', 
+                'url': 'Link:', 
+                'description': 'Descrição:', 
+                'authors': 'Autor:', 
+                'geo_level': 'Nível de cobertura geográfica:'
+                }
