@@ -3,6 +3,7 @@ docs/
 registros/
 imagens/*
 !imagens/hash_id_*
+!imagens/generic_usecase_banner.png
 
 # Lixo 
 analises/__pycache__
