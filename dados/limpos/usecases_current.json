@@ -1765,7 +1765,7 @@
         null,
         null
       ],
-      "countries": null,
+      "countries": ["Mundial"],
       "email": [
         "paulatfortuna@gmail.com",
         "juan.soler@upf.edu",
@@ -1933,7 +1933,7 @@
       "authors_id": [
         null
       ],
-      "countries": null,
+	"countries": ["Mundial", "Brasil"],
       "email": null,
       "tags": [
         "catálogo",
