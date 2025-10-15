@@ -12,20 +12,13 @@ def download_data(url):
     Download CORDATA data from an `url` (str) address pointing to a 
     JSON file.
     """
-    print('entrou')
     response = requests.get(url)
-    print('baixou')
     status = response.status_code
-    print('statou')
     if status == 200:
-        print('deu bom')
         content = response.content.decode()
         data = json.loads(content)
-        #st.success('Dados carregados com sucesso')
-        print('vai retornar')
         return data
     else:
-        print('falhou')
         st.error(f'Falha no carregamento dos dados (status code {status})')
 
 
@@ -33,15 +26,10 @@ def download_data(url):
 def load_from_github():
     st.write('ATENÇÃO! Todos os casos de uso atualmente cadastrados neste app serão apagados, sendo substituídos pelos do Github. Deseja continuar?')
     if st.button('Confirmar'):
-        print('confirmou')
         data = download_data('https://raw.githubusercontent.com/cewebbr/cordata/refs/heads/main/dados/limpos/usecases_current.json')
-        print('baixou')
         save_data(data)
-        print('salvou')
         st.session_state['idx_init'] = None
-        print('sessou')
         st.rerun()
-        print('rerodou')
 
 
 def save_data(data, path=cf.TEMP_FILE):
