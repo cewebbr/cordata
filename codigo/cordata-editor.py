@@ -127,7 +127,6 @@ if idx != None:
     uc['tags'] = st_tags(label='Tags:', value=uc.get('tags', []))
     uc["url_source"] = st.text_input("Código fonte:", uc.get("url_source", ""))
     uc["url_image"] = st.text_input("Link para imagem:", uc.get("url_image", ""))
-    uc["comment"] = st.text_area("Comentários internos:", uc.get('comment', ''), height=200)
 
 
     ### Datasets ###
@@ -161,8 +160,21 @@ if idx != None:
     # Option to add new dataset        
     st.button("➕ Adicionar conjunto de dados", on_click=io.append_dataset, args=(data, datasets))
 
+    ### Usecase internal data ###
 
-    ### Usecase final ###
+    st.markdown("#### Registros internos")
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.markdown('**ID:** {:}'.format(uc['hash_id']))
+    with col2:
+        st.markdown('**Data de registro:** {:}'.format(uc.get('record_date', '(vazio)')))
+    with col3:
+        st.markdown('**Última modificação:** {:}'.format(uc.get('modified_date', '(vazio)')))
+    uc["comment"] = st.text_area("Comentários internos:", uc.get('comment', ''), height=200)
+    uc["status"] = st.radio("Status do caso:", options=cf.STATUS_OPTIONS, horizontal=True,
+                            index=cf.STATUS_OPTIONS.index(ds.get("status", "Em revisão")))
+
+    ### Usecase operations ###
 
     aux.html('<hr>')
 

@@ -76,3 +76,5 @@ UF_OPTIONS = ['AC', 'AL', 'AM', 'AP', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MG', 
 GEOLEVEL_OPTIONS = ['Não se aplica', 'Mundial', 'Países', 'Unidades federativas', 'Municípios', None]
 
 GEOLEVEL_KEYS = {'Países':'countries', 'Unidades federativas':'fed_units', 'Municípios':'municipalities'}
+
+STATUS_OPTIONS = ['Removido', 'Em revisão', 'Em validação', 'Publicado']
