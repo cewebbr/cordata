@@ -108,7 +108,8 @@ if idx != None:
 
     ### Optional fields ###
     uckey = 'description'
-    uc[uckey] = st.text_area(label=cf.WIDGET_LABEL[uckey], value=uc.get(uckey, uc_v0[uckey]), key=aux.gen_uckey(uckey), height=200)
+    #uc[uckey] = st.text_area(label=cf.WIDGET_LABEL[uckey], value=uc.get(uckey, uc_v0[uckey]), key=aux.gen_uckey(uckey), height=200)
+    uc[uckey] = st.text_area(label=cf.WIDGET_LABEL[uckey], value=uc.get(uckey, uc_v0[uckey]), height=200)
     # Data de publicação:
     known_pub_date = st.checkbox("Data de publicação conhecida", value=(uc['pub_date'] != None))
     if known_pub_date == True:
@@ -125,7 +126,8 @@ if idx != None:
     uc[uckey] = st.radio(label=cf.WIDGET_LABEL[uckey],
                 options=cf.GEOLEVEL_OPTIONS,
                 index=cf.GEOLEVEL_OPTIONS.index(uc.get(uckey, uc_v0[uckey])),
-                horizontal=True, format_func=(lambda x: none_fmt[x]), key=aux.gen_uckey(uckey))
+                horizontal=True, format_func=(lambda x: none_fmt[x]))
+    #            horizontal=True, format_func=(lambda x: none_fmt[x]), key=aux.gen_uckey(uckey))
     geolevel = uc[uckey]
     if geolevel in cf.GEOLEVEL_KEYS.keys():
         gkey = cf.GEOLEVEL_KEYS[geolevel]
@@ -182,9 +184,9 @@ if idx != None:
         st.markdown('**Data de registro:** {:}'.format(uc.get('record_date', '(vazio)')))
     with modified_col:
         st.markdown('**Última modificação:** {:}'.format(uc.get('modified_date', '(vazio)')))
-    uc["comment"] = st.text_area("Comentários internos:", uc.get('comment', ''), height=200, key='usecase_comment')
+    uc["comment"] = st.text_area("Comentários internos:", uc.get('comment', ''), height=200)
     uc["status"] = st.radio("Status do caso:", options=cf.STATUS_OPTIONS, horizontal=True,
-                            index=cf.STATUS_OPTIONS.index(uc.get("status", "Em revisão")), key='usecase_status')
+                            index=cf.STATUS_OPTIONS.index(uc.get("status", "Em revisão")))
 
     ### Usecase operations ###
 
