@@ -118,7 +118,8 @@ if idx != None:
         uc["pub_date"] = None
     
     uckey = 'authors'
-    uc[uckey] = st_tags(label=cf.WIDGET_LABEL[uckey], value=tags_fmt(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(uckey))
+    #uc[uckey] = st_tags(label=cf.WIDGET_LABEL[uckey], value=tags_fmt(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(uckey))
+    uc[uckey] = st_tags(label=cf.WIDGET_LABEL[uckey], value=tags_fmt(uc.get(uckey, uc_v0[uckey])))
     # Nível de cobertura geográfica:
     uckey = 'geo_level'
     uc[uckey] = st.radio(label=cf.WIDGET_LABEL[uckey],
@@ -130,10 +131,12 @@ if idx != None:
         gkey = cf.GEOLEVEL_KEYS[geolevel]
         uc[gkey] = st.multiselect(geolevel + ':', st.session_state['localities'][gkey], default=uc.get(gkey, uc_v0[gkey]), key=aux.gen_uckey(gkey))
 
-    uc['email'] = st_tags(label='Email de contato:', value=tags_fmt(uc.get('email', [])), key='usecase_email')
+    #uc['email'] = st_tags(label='Email de contato:', value=tags_fmt(uc.get('email', [])), key='usecase_email')
+    uc['email'] = st_tags(label='Email de contato:', value=tags_fmt(uc.get('email', [])))
     uc["type"] = st.multiselect("Tipo de caso:", cf.TYPE_OPTIONS, default=uc.get("type", []), key='usecase_type')
     uc["topics"] = st.multiselect("Temas tratados no caso:", cf.TOPIC_OPTIONS, default=uc.get("topics", []), key='usecase_topics')
-    uc['tags'] = st_tags(label='Tags:', value=tags_fmt(uc.get('tags', [])), key='usecase_tags')
+    #uc['tags'] = st_tags(label='Tags:', value=tags_fmt(uc.get('tags', [])), key='usecase_tags')
+    uc['tags'] = st_tags(label='Tags:', value=tags_fmt(uc.get('tags', [])))
     uc["url_source"] = st.text_input("Código fonte:", uc.get("url_source", ""), key='usecase_url_source')
     uc["url_image"] = st.text_input("Link para imagem:", uc.get("url_image", ""), key='usecase_url_image')
     st.image(uc["url_image"])
