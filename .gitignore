@@ -12,6 +12,7 @@ codigo/__pycache__
 
 # Não inclusos
 codigo/env
+codigo/data/usecases_temp.json
 
 # Dados internos
 dados/*
