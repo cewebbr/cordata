@@ -104,22 +104,20 @@ if idx != None:
 
     ### Mandatory fields ###
     for uckey in ['name', 'url']:
-        uc[uckey] = st.text_input(label=cf.WIDGET_LABEL[uckey], value=uc.get(uckey, uc_v0[uckey]), key=aux.gen_uckey(uckey))
+        uc[uckey] = st.text_input(label=cf.WIDGET_LABEL[uckey], value=uc.get(uckey, uc_v0[uckey]))
 
     ### Optional fields ###
     uckey = 'description'
-    #uc[uckey] = st.text_area(label=cf.WIDGET_LABEL[uckey], value=uc.get(uckey, uc_v0[uckey]), key=aux.gen_uckey(uckey), height=200)
     uc[uckey] = st.text_area(label=cf.WIDGET_LABEL[uckey], value=uc.get(uckey, uc_v0[uckey]), height=200)
     # Data de publicação:
     known_pub_date = st.checkbox("Data de publicação conhecida", value=(uc['pub_date'] != None))
     if known_pub_date == True:
-        pub_date = st.date_input("Data de publicação:", aux.read_date(uc.get("pub_date")), format="DD/MM/YYYY", key='usecase_pub_date')            
+        pub_date = st.date_input("Data de publicação:", aux.read_date(uc.get("pub_date")), format="DD/MM/YYYY")            
         uc["pub_date"] = None if pub_date == None else pub_date.strftime("%m/%Y")
     else:
         uc["pub_date"] = None
     
     uckey = 'authors'
-    #uc[uckey] = st_tags(label=cf.WIDGET_LABEL[uckey], value=tags_fmt(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(uckey))
     uc[uckey] = st_tags(label=cf.WIDGET_LABEL[uckey], value=tags_fmt(uc.get(uckey, uc_v0[uckey])))
     # Nível de cobertura geográfica:
     uckey = 'geo_level'
@@ -127,20 +125,17 @@ if idx != None:
                 options=cf.GEOLEVEL_OPTIONS,
                 index=cf.GEOLEVEL_OPTIONS.index(uc.get(uckey, uc_v0[uckey])),
                 horizontal=True, format_func=(lambda x: none_fmt[x]))
-    #            horizontal=True, format_func=(lambda x: none_fmt[x]), key=aux.gen_uckey(uckey))
     geolevel = uc[uckey]
     if geolevel in cf.GEOLEVEL_KEYS.keys():
         gkey = cf.GEOLEVEL_KEYS[geolevel]
-        uc[gkey] = st.multiselect(geolevel + ':', st.session_state['localities'][gkey], default=uc.get(gkey, uc_v0[gkey]), key=aux.gen_uckey(gkey))
+        uc[gkey] = st.multiselect(geolevel + ':', st.session_state['localities'][gkey], default=uc.get(gkey, uc_v0[gkey]))
 
-    #uc['email'] = st_tags(label='Email de contato:', value=tags_fmt(uc.get('email', [])), key='usecase_email')
     uc['email'] = st_tags(label='Email de contato:', value=tags_fmt(uc.get('email', [])))
-    uc["type"] = st.multiselect("Tipo de caso:", cf.TYPE_OPTIONS, default=uc.get("type", []), key='usecase_type')
-    uc["topics"] = st.multiselect("Temas tratados no caso:", cf.TOPIC_OPTIONS, default=uc.get("topics", []), key='usecase_topics')
-    #uc['tags'] = st_tags(label='Tags:', value=tags_fmt(uc.get('tags', [])), key='usecase_tags')
+    uc["type"] = st.multiselect("Tipo de caso:", cf.TYPE_OPTIONS, default=uc.get("type", []))
+    uc["topics"] = st.multiselect("Temas tratados no caso:", cf.TOPIC_OPTIONS, default=uc.get("topics", []))
     uc['tags'] = st_tags(label='Tags:', value=tags_fmt(uc.get('tags', [])))
-    uc["url_source"] = st.text_input("Código fonte:", uc.get("url_source", ""), key='usecase_url_source')
-    uc["url_image"] = st.text_input("Link para imagem:", uc.get("url_image", ""), key='usecase_url_image')
+    uc["url_source"] = st.text_input("Código fonte:", uc.get("url_source", ""))
+    uc["url_image"] = st.text_input("Link para imagem:", uc.get("url_image", ""))
     st.image(uc["url_image"])
 
     ### Datasets ###
