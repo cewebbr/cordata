@@ -69,10 +69,7 @@ st.sidebar.image('img/logo-cordata.png', width=200)
 st.sidebar.button('🐙 Carregar do Github', on_click=io.load_from_github)
 
 # Remove all data from the app:
-if st.sidebar.button('🗑️ Limpar a base'):
-    data = io.load_data(cf.EMPTY_FILE)
-    io.save_data(data)
-    st.success('Todos os casos de uso foram removidos')
+st.sidebar.button('🗑️ Limpar a base', on_click=io.erase_usecases)
 
 # Load local data:
 data = io.load_data(cf.TEMP_FILE)

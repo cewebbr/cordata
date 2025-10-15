@@ -47,6 +47,15 @@ def load_data(path):
     return json.loads(Path(path).read_text(encoding="utf-8"))
 
 
+@st.dialog('Limpar a base')
+def erase_usecases():
+    st.write('ATENÇÃO! Todos os casos de uso atualmente cadastrados neste app serão apagados. Deseja continuar?')
+    if st.button('Confirmar'):
+        data = load_data(cf.EMPTY_FILE)
+        save_data(data)
+        st.rerun()
+
+
 def append_dataset(data, datasets):
     """
     Add a new dataset to those used by a usecase.
