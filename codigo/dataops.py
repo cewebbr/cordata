@@ -96,6 +96,7 @@ def add_new_case(data):
         uc = load_data(cf.ENTRY_MODEL)
         uc['name'] = name
         uc['record_date'] = datetime.today().strftime('%Y-%m-%d')
+        uc['hash_id'] = aux.hash_string(uc['name'] + uc['record_date'])
         # Insert in dataset:
         usecases = data["data"]
         usecases.insert(0, uc)

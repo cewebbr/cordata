@@ -84,7 +84,17 @@ STATUS_OPTIONS = ['Oculto', 'Em revisão', 'Em validação', 'Publicado']
 
 WIDGET_LABEL = {'name': 'Nome:', 
                 'url': 'Link:', 
-                'description': 'Descrição:', 
-                'authors': 'Autor:', 
-                'geo_level': 'Nível de cobertura geográfica:'
+                'description': 'Descrição:',
+                'known_pub': 'Data de publicação conhecida',
+                'pub_date': 'Data de publicação:', 
+                'authors': 'Autor:',
+                'email': 'Email de contato:',
+                'geo_level': 'Nível de cobertura geográfica:',
+                'type': 'Tipo de caso:',
+                'topics': 'Temas tratados no caso:',
+                'tags': 'Tags:',
+                'url_source': 'Código fonte:',
+                'url_image': 'Link para imagem:',
+                'comment': 'Comentários internos:',
+                'status': 'Status do caso:'
                 }

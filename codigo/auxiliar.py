@@ -19,6 +19,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import streamlit as st
 from datetime import datetime
+from zlib import crc32
 
 import config as cf
 
@@ -30,11 +31,11 @@ class translate_dict(dict):
         return key
     
 
-def gen_uckey(uckey):
+def gen_uckey(hash, uckey):
     """
     Return a standardized key for usecase widgets.
     """
-    return 'uc_' + uckey
+    return 'uc_{:}_{:}'.format(hash, uckey)
 
 
 def read_lines(path):
@@ -116,3 +117,11 @@ def log(message, prefix='[LOG]', log_time=True):
         else:
             output = '{:} {:}'.format(prefix, message)
         print(output)
+
+
+def hash_string(string, prefix=''):
+    """
+    Takes a `string` as input, remove `prefix` from it and turns it into a hash.
+    """
+    name   = string.replace(prefix, '')
+    return crc32(bytes(name, 'utf-8'))

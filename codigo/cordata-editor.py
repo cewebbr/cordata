@@ -62,10 +62,14 @@ def tags_fmt(x):
 # Initialization of session variables:
 if 'idx_init' not in st.session_state:
     st.session_state['idx_init'] = None
-# Load list of location names:
-if 'localities' not in st.session_state:
+# Load list of options for multiselect widgets:
+if 'sel_opts' not in st.session_state:
     mun = aux.read_lines('data/municipios.csv')
-    st.session_state['localities'] = {'countries': cf.COUNTRY_OPTIONS, 'fed_units': cf.UF_OPTIONS, 'municipalities': mun}
+    st.session_state['sel_opts'] = {'countries': cf.COUNTRY_OPTIONS, 
+                                    'fed_units': cf.UF_OPTIONS, 
+                                    'municipalities': mun,
+                                    'type': cf.TYPE_OPTIONS,
+                                    'topics': cf.TOPIC_OPTIONS}
 # Load usecase default values:
 if 'uc_defaults' not in st.session_state:
     st.session_state['uc_defaults'] = io.load_data(cf.ENTRY_MODEL)
@@ -108,45 +112,52 @@ st.sidebar.button('➕ Adicionar novo caso', on_click=io.add_new_case, args=(dat
 
 if idx != None:
     uc = usecases[idx]
+    hash = uc['hash_id']
 
     # Editing the selected usecase:
     st.subheader(f"{uc.get('name')}")
 
     ### Mandatory fields ###
     for uckey in ['name', 'url']:
-        uc[uckey] = st.text_input(label=cf.WIDGET_LABEL[uckey], value=uc.get(uckey, uc_v0[uckey]))
+        uc[uckey] = st.text_input(label=cf.WIDGET_LABEL[uckey], value=uc.get(uckey, uc_v0[uckey]), key=aux.gen_uckey(hash, uckey))
 
     ### Optional fields ###
     uckey = 'description'
-    uc[uckey] = st.text_area(label=cf.WIDGET_LABEL[uckey], value=uc.get(uckey, uc_v0[uckey]), height=200)
+    uc[uckey] = st.text_area(label=cf.WIDGET_LABEL[uckey], value=uc.get(uckey, uc_v0[uckey]), key=aux.gen_uckey(hash, uckey), height=200)
     # Data de publicação:
-    known_pub_date = st.checkbox("Data de publicação conhecida", value=(uc['pub_date'] != None))
+    uckey = 'known_pub'
+    known_pub_date = st.checkbox(label=cf.WIDGET_LABEL[uckey], value=(uc['pub_date'] != None), key=aux.gen_uckey(hash, uckey))
+    uckey = 'pub_date'
     if known_pub_date == True:
-        pub_date = st.date_input("Data de publicação:", aux.read_date(uc.get("pub_date")), format="DD/MM/YYYY")            
-        uc["pub_date"] = None if pub_date == None else pub_date.strftime("%m/%Y")
+        pub_date = st.date_input(label=cf.WIDGET_LABEL[uckey], value=aux.read_date(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash, uckey), 
+                                 format="DD/MM/YYYY")            
+        uc[uckey] = None if pub_date == None else pub_date.strftime("%m/%Y")
     else:
-        uc["pub_date"] = None
+        uc[uckey] = None
     
     uckey = 'authors'
-    uc[uckey] = st_tags(label=cf.WIDGET_LABEL[uckey], value=tags_fmt(uc.get(uckey, uc_v0[uckey])))
+    uc[uckey] = st_tags(label=cf.WIDGET_LABEL[uckey], value=tags_fmt(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash, uckey))
     # Nível de cobertura geográfica:
     uckey = 'geo_level'
     uc[uckey] = st.radio(label=cf.WIDGET_LABEL[uckey],
                 options=cf.GEOLEVEL_OPTIONS,
-                index=cf.GEOLEVEL_OPTIONS.index(uc.get(uckey, uc_v0[uckey])),
+                index=cf.GEOLEVEL_OPTIONS.index(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash, uckey),
                 horizontal=True, format_func=(lambda x: none_fmt[x]))
     geolevel = uc[uckey]
     if geolevel in cf.GEOLEVEL_KEYS.keys():
         gkey = cf.GEOLEVEL_KEYS[geolevel]
-        uc[gkey] = st.multiselect(geolevel + ':', st.session_state['localities'][gkey], default=uc.get(gkey, uc_v0[gkey]))
-
-    uc['email'] = st_tags(label='Email de contato:', value=tags_fmt(uc.get('email', [])))
-    uc["type"] = st.multiselect("Tipo de caso:", cf.TYPE_OPTIONS, default=uc.get("type", []))
-    uc["topics"] = st.multiselect("Temas tratados no caso:", cf.TOPIC_OPTIONS, default=uc.get("topics", []))
-    uc['tags'] = st_tags(label='Tags:', value=tags_fmt(uc.get('tags', [])))
-    uc["url_source"] = st.text_input("Código fonte:", uc.get("url_source", ""))
-    uc["url_image"] = st.text_input("Link para imagem:", uc.get("url_image", ""))
-    st.image(uc["url_image"])
+        uc[gkey] = st.multiselect(label=geolevel + ':', options=st.session_state['sel_opts'][gkey], 
+                                  default=uc.get(gkey, uc_v0[gkey]), key=aux.gen_uckey(hash, gkey))
+    uckey = 'email'
+    uc[uckey] = st_tags(label=cf.WIDGET_LABEL[uckey], value=tags_fmt(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash, uckey))
+    for uckey in ['type', 'topics']:
+        uc[uckey] = st.multiselect(label=cf.WIDGET_LABEL[uckey], options=st.session_state['sel_opts'][uckey], 
+                                   default=uc.get(uckey, []), key=aux.gen_uckey(hash, uckey))
+    uckey = 'tags'
+    uc[uckey] = st_tags(label=cf.WIDGET_LABEL[uckey], value=tags_fmt(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash, uckey))
+    for uckey in ['url_source', 'url_image']:
+        uc[uckey] = st.text_input(label=cf.WIDGET_LABEL[uckey], value=uc.get(uckey, uc_v0[uckey]), key=aux.gen_uckey(hash, uckey))
+    st.image(uc['url_image'])
 
     ### Datasets ###
 
@@ -189,10 +200,11 @@ if idx != None:
         st.markdown('**Data de registro:** {:}'.format(uc.get('record_date', '(vazio)')))
     with modified_col:
         st.markdown('**Última modificação:** {:}'.format(uc.get('modified_date', '(vazio)')))
-    uc["comment"] = st.text_area("Comentários internos:", uc.get('comment', ''), height=200)
-    gkey = 'status'
-    uc[gkey] = st.radio("Status do caso:", options=cf.STATUS_OPTIONS, horizontal=True,
-                        index=cf.STATUS_OPTIONS.index(uc.get(gkey, uc_v0[gkey])))
+    uckey = 'comment'
+    uc[uckey] = st.text_area(label=cf.WIDGET_LABEL[uckey], value=uc.get(uckey, uc_v0[uckey]), key=aux.gen_uckey(hash, uckey), height=200)
+    uckey = 'status'
+    uc[uckey] = st.radio(cf.WIDGET_LABEL[uckey], options=cf.STATUS_OPTIONS, horizontal=True,
+                        index=cf.STATUS_OPTIONS.index(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash, uckey))
 
     ### Usecase operations ###
 
