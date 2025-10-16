@@ -20,6 +20,7 @@ def download_data(url):
         return data
     else:
         st.error(f'Falha no carregamento dos dados (status code {status})')
+    #aux.log('Ran download_data')
 
 
 @st.dialog('Carregar dados do Github')
@@ -38,22 +39,27 @@ def save_data(data, path=cf.TEMP_FILE):
     """
     with open(path, 'w') as f:
         json.dump(data, f, indent=1, ensure_ascii=False)
+    #aux.log('Saved data to {:}'.format(path))
 
 
 def load_data(path):
     """
     Load JSON from file at `path` (str).
     """
+    #aux.log('Will load data from {:}'.format(path))
     return json.loads(Path(path).read_text(encoding="utf-8"))
 
 
 @st.dialog('Limpar a base')
 def erase_usecases():
+    aux.log('Entered erase_usecases dialog')
     st.write('ATENÇÃO! Todos os casos de uso atualmente cadastrados neste app serão apagados. Deseja continuar?')
     if st.button('Confirmar'):
+        aux.log('Entered erase_usecases confirm area')
         data = load_data(cf.EMPTY_FILE)
         save_data(data)
         st.rerun()
+    aux.log('Finished erase_usecases dialog')
 
 
 def append_dataset(data, datasets):
@@ -69,6 +75,7 @@ def append_dataset(data, datasets):
         List of datasets used by the usecase. It must be a 
         reference to a list inside a usecase inside `data`.
     """
+    #aux.log('Will append dataset to usecase')
     dataset = load_data(cf.DATASET_MODEL)
     datasets.append(dataset)
     save_data(data)
@@ -80,9 +87,11 @@ def add_new_case(data):
     Create a new usecase, add it to dataset and
     show it for edition.
     """
+    aux.log('Entered add_new_case dialog')
     # Ask for new usecase name:
     name = st.text_input("Nome:")
     if st.button("🚀 Criar!"):
+        aux.log('Entered add_new_case confirm area')
         # Create new usecase:
         uc = load_data(cf.ENTRY_MODEL)
         uc['name'] = name
@@ -94,7 +103,7 @@ def add_new_case(data):
         # Set to show it:
         st.session_state['idx_init'] = 0
         st.rerun()
-
+    aux.log('Finished add_new_case dialog')
 
 @st.dialog('Remover caso de uso')
 def remove_usecase(data, idx):
@@ -109,13 +118,16 @@ def remove_usecase(data, idx):
     idx : int
         Position in list of usecases `data['data]`.
     """
+    aux.log('Entered remove_usecase dialog')
     st.write('Todas as informações a respeito deste caso de uso serão perdidas.')
     if st.button('Confirmar'):
+        aux.log('Entered remove_usecase confirm area')
         usecases = data["data"]
         usecases.pop(idx)
         save_data(data)
+        st.session_state['idx_init'] = None
         st.rerun()
-
+    aux.log('Finished remove_usecase dialog')
 
 @st.dialog('Desfazer modificações')
 def reset_usecase(idx):

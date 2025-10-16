@@ -20,6 +20,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 import streamlit as st
 from datetime import datetime
 
+import config as cf
+
 class translate_dict(dict):
     """
     A dict that returns the key used if no translation was provided for it.
@@ -91,3 +93,26 @@ def html(html_code, sidebar=False):
         st.sidebar.write(html_code, unsafe_allow_html=True)
     else:
         st.write(html_code, unsafe_allow_html=True)
+
+
+def log(message, prefix='[LOG]', log_time=True):
+    """
+    Print message to terminal.
+
+    Parameters
+    ----------
+    message : str
+        The message to print.
+    prefix : str
+        Prefix added to message (followed by a whitespace)
+        to identify the logging.
+    log_time : bool
+        Whether to add date and time of the message or not.
+    """
+    if cf.LOG == True:
+        if log_time == True:
+            t = datetime.today().strftime('%Y-%m-%d %H:%M:%S')
+            output = '{:} {:} == {:}'.format(prefix, t, message)
+        else:
+            output = '{:} {:}'.format(prefix, message)
+        print(output)

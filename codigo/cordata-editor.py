@@ -34,6 +34,9 @@ import config as cf
 import dataops as io
 import auxiliar as aux
 
+# Logging:
+aux.log('Started app run')
+
 # Move current working directory to the script’s directory
 os.chdir(Path(__file__).parent)
 
@@ -54,6 +57,8 @@ def tags_fmt(x):
 ### Init ###
 ############
 
+#aux.log('Entered Init section')
+
 # Initialization of session variables:
 if 'idx_init' not in st.session_state:
     st.session_state['idx_init'] = None
@@ -70,6 +75,8 @@ uc_v0 = st.session_state['uc_defaults']
 ### Controls ###
 ################
 
+#aux.log('Entered app controls')
+
 # Sidebar header:
 st.sidebar.image('img/logo-cordata.png', width=200)
 
@@ -84,13 +91,16 @@ data = io.load_data(cf.TEMP_FILE)
 usecases = data["data"]
 
 # Select usecase:
+#aux.log('Will run usecase select box')
 names = [uc['name'] for uc in usecases]
 idx = st.sidebar.selectbox("Selecione o caso de uso:", range(len(usecases)), format_func=lambda i: names[i], 
                            index=st.session_state['idx_init'], on_change=io.save_data, kwargs={'data': data})
+#aux.log('Ran usecase select box')
 
 # Add new usecase:
 st.sidebar.button('➕ Adicionar novo caso', on_click=io.add_new_case, args=(data,))
 
+#aux.log('Ended app controls')
 
 ######################
 ### Usecase editor ###
@@ -196,8 +206,8 @@ if idx != None:
     with remove_col:
         st.button("❌  Remover caso de uso", on_click=io.remove_usecase, args=(data, idx))
     # Reset button:
-    with reset_col:
-        st.button("🔄 Desfazer edições", on_click=io.reset_usecase, args=(idx,))
+    #with reset_col:
+    #    st.button("🔄 Desfazer edições", on_click=io.reset_usecase, args=(idx,))
 
 
 #################
@@ -219,4 +229,5 @@ aux.html('<hr>', sidebar=True)
 st.sidebar.markdown('**\# casos cadastrados:** {:}'.format(len(usecases)))
 st.sidebar.markdown('**Última atualização**: {:}'.format(data['metadata']['last_update']))
 
-print('\n>> Run!')
+# Logging:
+aux.log('Finished app run')
