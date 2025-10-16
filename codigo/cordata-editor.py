@@ -190,8 +190,9 @@ if idx != None:
     with modified_col:
         st.markdown('**Última modificação:** {:}'.format(uc.get('modified_date', '(vazio)')))
     uc["comment"] = st.text_area("Comentários internos:", uc.get('comment', ''), height=200)
-    uc["status"] = st.radio("Status do caso:", options=cf.STATUS_OPTIONS, horizontal=True,
-                            index=cf.STATUS_OPTIONS.index(uc.get("status", "Em revisão")))
+    gkey = 'status'
+    uc[gkey] = st.radio("Status do caso:", options=cf.STATUS_OPTIONS, horizontal=True,
+                        index=cf.STATUS_OPTIONS.index(uc.get(gkey, uc_v0[gkey])))
 
     ### Usecase operations ###
 
@@ -200,6 +201,7 @@ if idx != None:
     # Save button:
     with save_col:
         if st.button("💾 Salvar"):
+            aux.log('Entrou no Salvar caso de uso')
             io.save_data(data)
             st.success("Dados salvos com sucesso!")
     # Remove button:
