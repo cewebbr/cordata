@@ -31,11 +31,27 @@ class translate_dict(dict):
         return key
     
 
-def gen_uckey(hash, uckey):
+def gen_uckey(hash, prop, idx=0):
     """
     Return a standardized key for usecase widgets.
+
+    Parameters
+    ----------
+    hash : int
+        ID of the usecase.
+    prop : str
+        Name of the usecase property.
+    idx : int
+        Index of an entry part of property
+        (e.g. for datasets used by a usecase).
+    
+    Returns
+    -------
+    uckey : str
+        Unique key for that usecase and property 
+        (and entry in the case of datasets).
     """
-    return 'uc_{:}_{:}'.format(hash, uckey)
+    return 'uc_{:}_{:}_{:}'.format(hash, prop, idx)
 
 
 def read_lines(path):

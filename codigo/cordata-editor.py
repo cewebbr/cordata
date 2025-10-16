@@ -74,6 +74,10 @@ if 'sel_opts' not in st.session_state:
 if 'uc_defaults' not in st.session_state:
     st.session_state['uc_defaults'] = io.load_data(cf.ENTRY_MODEL)
 uc_v0 = st.session_state['uc_defaults']
+# Load datasets default values:
+if 'ds_defaults' not in st.session_state:
+    st.session_state['ds_defaults'] = io.load_data(cf.DATASET_MODEL)
+ds_v0 = st.session_state['ds_defaults']
 
 ################
 ### Controls ###
@@ -168,18 +172,16 @@ if idx != None:
     for i, ds in enumerate(datasets):
         with st.expander(f"Dataset {i+1}"):
             # Dataset metadata:
-            ds["data_name"] = st.text_input("Nome do conjunto:", ds.get("data_name", ""), key=f"usecase_data_name_{i}")
-            ds["data_institution"] = st.text_input("Instituição responsável:", ds.get("data_institution", ""), key=f"usecase_data_inst_{i}")
-            ds["data_url"] = st.text_input("Link:", ds.get("data_url", ""), key=f"usecase_data_url_{i}")            
-            ds['data_license'] = st.selectbox('Licença:', options=cf.LICENSE_OPTIONS, key=f"usecase_data_license_{i}", 
-                                              index=aux.nindex(cf.LICENSE_OPTIONS, ds.get("data_license")))
-            ds["data_periodical"] = st.radio("Uso periódico?",
-                options=[True, False, None],
-                index=[True, False, None].index(ds.get("data_periodical")),
-                horizontal=True,
-                format_func=(lambda x: {True:'Sim', False:'Não', None:'(vazio)'}[x]),
-                key=f"usecase_data_periodical_{i}"
-            )
+            for dkey in ['data_name', 'data_institution', 'data_url']:
+                ds[dkey] = st.text_input(label=cf.WIDGET_LABEL[dkey], value=ds.get(dkey, ds_v0[dkey]), key=aux.gen_uckey(hash, dkey, i))
+            dkey = 'data_license'
+            ds[dkey] = st.selectbox(label=cf.WIDGET_LABEL[dkey], options=cf.LICENSE_OPTIONS, key=aux.gen_uckey(hash, dkey, i), 
+                                    index=aux.nindex(cf.LICENSE_OPTIONS, ds.get(dkey, ds_v0[dkey])))
+            dkey = 'data_periodical'
+            ds[dkey] = st.radio(label=cf.WIDGET_LABEL[dkey], options=[True, False, None],
+                                index=[True, False, None].index(ds.get(dkey, ds_v0[dkey])), 
+                                key=aux.gen_uckey(hash, dkey, i), horizontal=True, 
+                                format_func=(lambda x: {True:'Sim', False:'Não', None:'(vazio)'}[x]))
             # Option to remove this dataset:
             def rm_dataset(index=i):
                 uc['datasets'].pop(index)
@@ -193,6 +195,7 @@ if idx != None:
     ### Usecase internal data ###
 
     st.markdown("#### Registros internos")
+    # Non editable fields:
     id_col, record_col, modified_col = st.columns(3)
     with id_col:
         st.markdown('**ID:** {:}'.format(uc['hash_id']))
@@ -200,6 +203,7 @@ if idx != None:
         st.markdown('**Data de registro:** {:}'.format(uc.get('record_date', '(vazio)')))
     with modified_col:
         st.markdown('**Última modificação:** {:}'.format(uc.get('modified_date', '(vazio)')))
+    # Editable fields:
     uckey = 'comment'
     uc[uckey] = st.text_area(label=cf.WIDGET_LABEL[uckey], value=uc.get(uckey, uc_v0[uckey]), key=aux.gen_uckey(hash, uckey), height=200)
     uckey = 'status'

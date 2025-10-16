@@ -96,5 +96,10 @@ WIDGET_LABEL = {'name': 'Nome:',
                 'url_source': 'Código fonte:',
                 'url_image': 'Link para imagem:',
                 'comment': 'Comentários internos:',
-                'status': 'Status do caso:'
+                'status': 'Status do caso:',
+                'data_name': 'Nome do conjunto:',
+                'data_institution': 'Instituição responsável:',
+                'data_url': 'Link:',
+                'data_license': 'Licença:',
+                'data_periodical': "Uso periódico?"
                 }
