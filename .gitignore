@@ -22,3 +22,5 @@ dados/*
 dados/limpos/*
 !dados/limpos/usecases_current.json
 
+# Privados
+codigo/.streamlit/secrets.toml
