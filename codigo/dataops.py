@@ -33,6 +33,17 @@ def load_from_github():
         st.rerun()
 
 
+@st.dialog('Subir dados locais')
+def upload_data():
+    st.write('ATENÇÃO! Todos os casos de uso atualmente cadastrados neste app serão apagados, sendo substituídos pelos do arquivo selecionado.')
+    uploaded_file = st.file_uploader(label='Escolha o arquivo para carregar', type='json')
+    if uploaded_file is not None:
+        data = json.load(uploaded_file)
+        save_data(data)
+        st.session_state['idx_init'] = None
+        st.rerun()
+
+
 def std_data(data):
     """
     Standardize data in place.

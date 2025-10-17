@@ -96,6 +96,9 @@ st.sidebar.image('img/logo-cordata.png', width=200)
 # Replace local data with the one from the repo:
 st.sidebar.button('🐙 Carregar do Github', on_click=io.load_from_github)
 
+# Upload data from local:
+st.sidebar.button('⬆️ Subir dados locais', on_click=io.upload_data)
+
 # Remove all data from the app:
 st.sidebar.button('🗑️ Limpar a base', on_click=io.erase_usecases)
 
