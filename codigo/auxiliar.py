@@ -20,7 +20,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 import streamlit as st
 from datetime import datetime
 from zlib import crc32
-import pandas as pd
+import numpy as np
+import csv
 
 import config as cf
 
@@ -159,6 +160,44 @@ def edit_control():
         st.rerun()
 
 
+def read_csv_as_dict(filename, delimiter=",", skip_header=True):
+    """
+    Read a CSV file and return a dict of NumPy arrays (one per column).
+
+    Parameters
+    ----------
+    filename : str
+        Path to the CSV file.
+    delimiter : str, optional
+        Field delimiter (default ',').
+    skip_header : bool, optional
+        If True, assumes the first line contains column headers.
+
+    Returns
+    -------
+    dict[str, np.ndarray]
+        A dictionary mapping column names to NumPy arrays.
+    """
+    with open(filename, newline="", encoding="utf-8") as f:
+        reader = csv.reader(f, delimiter=delimiter)
+        header = next(reader) if skip_header else None
+        rows = [row for row in reader]
+
+    # Convert to NumPy array for easy slicing
+    data = np.array(rows, dtype=object)  # use object to handle mixed types
+
+    # Infer header if not present
+    if header is None:
+        header = [f"col{i}" for i in range(data.shape[1])]
+
+    # Try to convert each column to numeric if possible
+    result = {}
+    for i, name in enumerate(header):
+        result[name] = data[:, i]
+
+    return result
+
+
 @st.cache_data
 def load_translations(path='data/translations.csv', from_l='ptbr', to_l='es'):
     """
@@ -167,7 +206,8 @@ def load_translations(path='data/translations.csv', from_l='ptbr', to_l='es'):
     with the translations from language `from_l` (str)
     to `to_l` (str). 
     """
-    translations_df = pd.read_csv(path)
+    #translations_df = pd.read_csv(path)
+    translations_df = read_csv_as_dict(path)
     translation_dict = dict(zip(translations_df[from_l], translations_df[to_l]))
     print(translation_dict)
     return translation_dict
