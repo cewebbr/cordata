@@ -33,12 +33,47 @@ def load_from_github():
         st.rerun()
 
 
+def std_data(data):
+    """
+    Standardize data in place.
+    """
+    usecases = data['data']
+    # Loop over usecases:
+    for uc in usecases:
+        # Set other empty information descriptions to None:
+        for k in ['url', 'description', 'url_source', 'comment']:
+            if uc[k] == "":
+                uc[k] = None
+        for ds in uc['datasets']:
+            for k in ['data_name', 'data_institution', 'data_url']:
+                if ds[k] == "":
+                    ds[k] = None
+            # Set dataset url to None (checked that works better on frontend):
+            if ds['data_url'] in {'http://', 'https://'}:
+                ds[k] = None            
+        for k in ['authors', 'email', 'countries', 'fed_units', 'municipalities', 'type', 'topics', 'tags']:
+            if uc[k] == []:
+                uc[k] = None
+        # Set country as Brasil for more granular cases:
+        if uc['geo_level'] in {'Unidades federativas', 'Municípios'}:
+            uc['countries'] = ['Brasil']
+        # Set empty links to https:// to avoid (possible) frontend error:
+        for k in ['url', 'url_source']:
+            if uc[k] == None:
+                uc[k] = 'https://'
+
+
 def save_data(data, path=cf.TEMP_FILE):
     """
     Save `data` (dict) to `path` (str) if edit controls
     are enabled.
     """
     if st.session_state['login'] == True:
+        # Standardize data:
+        std_data(data)
+        # Set update date to now:
+        data['metadata']['last_update'] = datetime.today().strftime('%Y-%m-%d')
+        # Save data:
         with open(path, 'w') as f:
             json.dump(data, f, indent=1, ensure_ascii=False)
         #aux.log('Saved data to {:}'.format(path))

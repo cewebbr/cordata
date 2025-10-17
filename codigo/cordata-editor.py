@@ -153,10 +153,20 @@ if idx != None:
                 index=cf.GEOLEVEL_OPTIONS.index(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash, uckey),
                 horizontal=True, format_func=(lambda x: none_fmt[x]))
     geolevel = uc[uckey]
+    # Seletor de localidades (se nível comportar):
     if geolevel in cf.GEOLEVEL_KEYS.keys():
         gkey = cf.GEOLEVEL_KEYS[geolevel]
         uc[gkey] = st.multiselect(label=geolevel + ':', options=st.session_state['sel_opts'][gkey], 
                                   default=uc.get(gkey, uc_v0[gkey]), key=aux.gen_uckey(hash, gkey))
+        # Erase information of other previously set levels:
+        for gk in cf.GEOLEVEL_KEYS.values():
+            if gk != gkey:
+                uc[gk] = None
+    # Erase locality information if geo_level does not support:
+    else:
+        for gkey in cf.GEOLEVEL_KEYS.values():
+            uc[gkey] = None
+
     uckey = 'email'
     uc[uckey] = st_tags(label=cf.WIDGET_LABEL[uckey], value=tags_fmt(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash, uckey))
     for uckey in ['type', 'topics']:
