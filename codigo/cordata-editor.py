@@ -106,6 +106,11 @@ st.sidebar.button('🗑️ Limpar a base', on_click=io.erase_usecases)
 data = io.load_data(cf.TEMP_FILE)
 usecases = data["data"]
 
+# Baixar dados:
+st.sidebar.download_button('⬇️ Baixar dados', json.dumps(data, indent=1, ensure_ascii=False), file_name='usecases_current.json')
+
+aux.html('<hr>', sidebar=True)
+
 # Select usecase:
 #aux.log('Will run usecase select box')
 names = [uc['name'] for uc in usecases]
@@ -244,17 +249,6 @@ if idx != None:
     # Reset button:
     #with reset_col:
     #    st.button("🔄 Desfazer edições", on_click=io.reset_usecase, args=(idx,))
-
-
-#################
-### App final ###
-#################
-
-st.sidebar.download_button('⬇️ Baixar dados', json.dumps(data, indent=1, ensure_ascii=False), file_name='usecases_current.json')
-
-    #uc['datasets'] = datasets
-    #print(json.dumps(uc, indent=1))
-    #print('')
 
 
 ########################
