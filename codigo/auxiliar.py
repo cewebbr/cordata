@@ -149,7 +149,7 @@ def edit_control():
     Admin access dialog that asks for password to
     enable edit permission.
     """
-    entry = st.text_input(label='Digite a senha:')
+    entry = st.text_input(label='Digite a senha:', type='password')
     if st.button('🚪 Entrar') == True:
         if entry == st.secrets['PWD']:
             st.session_state['login'] = True
