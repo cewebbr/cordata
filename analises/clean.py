@@ -43,7 +43,7 @@ topic_names = {'topics_agricultura_extrativismo_pesca': 'Agricultura, extrativis
  'topics_energia': 'Energia',
  'topics_equipamentos_publicos': 'Equipamentos Públicos',
  'topics_geografia': 'Geografia',
- 'topics_genero_raca': 'Gênero e Raça',
+#dat 'topics_genero_raca': 'Gênero e Raça',
  'topics_governo_politica': 'Governo e Política',
  'topics_habitacao_saneamento_urbanismo': 'Habitação, Saneamento e Urbanismo',
  'topics_industria': 'Indústria',
@@ -51,7 +51,7 @@ topic_names = {'topics_agricultura_extrativismo_pesca': 'Agricultura, extrativis
  'topics_meio_ambiente': 'Meio Ambiente',
  'topics_plano_plurianual': 'Plano Plurianual',
  'topics_relacoes_internacionais': 'Relações Internacionais',
- 'topics_religiao': 'Religião',
+# 'topics_religiao': 'Religião',
  'topics_saude': 'Saúde',
  'topics_trabalho': 'Trabalho',
  'topics_transportes_transito': 'Transportes e Trânsito'}
@@ -269,6 +269,9 @@ def data_info_dict_list(usecase_df, max_datasets):
     # Translation of the periodicity of the data collection:
     datasets_df['data_periodical'] = (datasets_df['data_periodical']).fillna(0).astype(int).map(periodical_labels)
 
+    # Add missing column (data_license):
+    datasets_df['data_license'] = None
+    
     # Format as a list of dicts:
     dict_list = datasets_df.to_dict(orient='records')
     
