@@ -141,3 +141,18 @@ def hash_string(string, prefix=''):
     """
     name   = string.replace(prefix, '')
     return crc32(bytes(name, 'utf-8'))
+
+
+@st.dialog('Controle de edição')
+def edit_control():
+    """
+    Admin access dialog that asks for password to
+    enable edit permission.
+    """
+    entry = st.text_input(label='Digite a senha:')
+    if st.button('🚪 Entrar') == True:
+        if entry == st.secrets['PWD']:
+            st.session_state['login'] = True
+        else:
+            st.session_state['login'] = False
+        st.rerun()

@@ -79,6 +79,11 @@ if 'ds_defaults' not in st.session_state:
     st.session_state['ds_defaults'] = io.load_data(cf.DATASET_MODEL)
 ds_v0 = st.session_state['ds_defaults']
 
+# Login:
+if 'login' not in st.session_state:
+    aux.edit_control()
+
+
 ################
 ### Controls ###
 ################
@@ -246,6 +251,8 @@ st.sidebar.download_button('⬇️ Baixar dados', json.dumps(data, indent=1, ens
 aux.html('<hr>', sidebar=True)
 st.sidebar.markdown('**\# casos cadastrados:** {:}'.format(len(usecases)))
 st.sidebar.markdown('**Última atualização**: {:}'.format(data['metadata']['last_update']))
+if st.session_state['login'] == True:
+    st.sidebar.write('✏️ Edição permitida')
 
 # Logging:
 aux.log('Finished app run')

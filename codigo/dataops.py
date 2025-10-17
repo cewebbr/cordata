@@ -35,11 +35,13 @@ def load_from_github():
 
 def save_data(data, path=cf.TEMP_FILE):
     """
-    Save `data` (dict) to `path` (str).
+    Save `data` (dict) to `path` (str) if edit controls
+    are enabled.
     """
-    with open(path, 'w') as f:
-        json.dump(data, f, indent=1, ensure_ascii=False)
-    #aux.log('Saved data to {:}'.format(path))
+    if st.session_state['login'] == True:
+        with open(path, 'w') as f:
+            json.dump(data, f, indent=1, ensure_ascii=False)
+        #aux.log('Saved data to {:}'.format(path))
 
 
 def load_data(path):
