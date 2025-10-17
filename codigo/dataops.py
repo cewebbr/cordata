@@ -63,14 +63,46 @@ def std_data(data):
                 uc[k] = 'https://'
 
 
+def make_derived_data(data):
+    """
+    Compute data fields given others:
+    - Translate type, topics and countries;
+    - Assign author IDs for CGU (FAKE FOR NOW!)
+    """
+    # Hard-coded:
+    fields2translate = [('type', 'type_es'), ('topics', 'topics_es'), ('countries', 'countries_es')]
+    translate = aux.load_translations()
+
+    # Loop over usecases:
+    usecases = data['data']
+    for uc in usecases:
+        # Translate (loop over fields requiring translation):
+        for ptbr, es in fields2translate:
+            if uc[ptbr] != None:
+                # Loop over items in list:
+                translations = []
+                for entry in uc[ptbr]:
+                    translations.append(translate[entry])
+                # Assign translations to key:
+                uc[es] = translations
+            else:
+                uc[es] = None
+        # Lookup author IDs from CGU compatibility (FAKE FOR NOW!):
+        if uc['authors'] != None:
+            uc['authors_id'] = [None] * len(uc['authors'])
+        else:
+            uc['authors_id'] = None
+
+
 def save_data(data, path=cf.TEMP_FILE):
     """
     Save `data` (dict) to `path` (str) if edit controls
     are enabled.
     """
-    if st.session_state['login'] == True:
-        # Standardize data:
+    if st.session_state['allow_edit'] == True:
+        # Standardize data and derive other fields:
         std_data(data)
+        make_derived_data(data)
         # Set update date to now:
         data['metadata']['last_update'] = datetime.today().strftime('%Y-%m-%d')
         # Save data:

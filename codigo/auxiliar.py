@@ -20,6 +20,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 import streamlit as st
 from datetime import datetime
 from zlib import crc32
+import pandas as pd
 
 import config as cf
 
@@ -152,7 +153,22 @@ def edit_control():
     entry = st.text_input(label='Digite a senha:', type='password')
     if st.button('🚪 Entrar') == True:
         if entry == st.secrets['PWD']:
-            st.session_state['login'] = True
+            st.session_state['allow_edit'] = True
         else:
-            st.session_state['login'] = False
+            st.session_state['allow_edit'] = False
         st.rerun()
+
+
+@st.cache_data
+def load_translations(path='data/translations.csv', from_l='ptbr', to_l='es'):
+    """
+    Load translations for terms used in the data from 
+    CSV file stored in `path` (str) and return a dict 
+    with the translations from language `from_l` (str)
+    to `to_l` (str). 
+    """
+    translations_df = pd.read_csv(path)
+    translation_dict = dict(zip(translations_df[from_l], translations_df[to_l]))
+    print(translation_dict)
+    return translation_dict
+
