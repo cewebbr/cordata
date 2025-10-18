@@ -238,7 +238,7 @@
         null
       ],
       "geo_level": null,
-      "countries": null,
+      "countries": ["Brasil"],
       "fed_units": null,
       "municipalities": null,
       "email": null,
@@ -1963,7 +1963,7 @@
         null
       ],
       "geo_level": "Países",
-      "countries": null,
+      "countries": ["Mundial"],
       "fed_units": null,
       "municipalities": null,
       "email": [
@@ -3568,7 +3568,7 @@
         null
       ],
       "geo_level": "Mundial",
-      "countries": null,
+      "countries": ["Mundial"],
       "fed_units": null,
       "municipalities": null,
       "email": null,
@@ -5046,7 +5046,7 @@
         null
       ],
       "geo_level": "Mundial",
-      "countries": null,
+      "countries": ["Mundial"],
       "fed_units": null,
       "municipalities": null,
       "email": [
@@ -5216,7 +5216,7 @@
         null
       ],
       "geo_level": "Mundial",
-      "countries": null,
+      "countries": ["Mundial"],
       "fed_units": null,
       "municipalities": null,
       "email": null,
