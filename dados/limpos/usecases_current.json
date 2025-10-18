@@ -3306,8 +3306,8 @@
       "url": "https://vermelho.org.br/coluna/o-filme-da-cia-que-preparou-o-golpe-de-64-no-brasil/",
       "description": "Com a abertura dos arquivos sigilosos do assassinato de John F. Kennedy, temos as provas documentais de que São Paulo, Brasília, Rio de Janeiro, Recife e Porto Alegre abrigavam bases secretas da CIA na década de 1960, para fazer espionagem no território brasileiro. Mas antes dos documentos agora revelados, já possuíamos uma prova eloquente da preparação do golpe no Brasil: o filme documentário “Brazil: The Troubled Land”. Ele interpretava a luta pela terra em Pernambuco, e foi realizado para a rede de televisão norte-americana ABC, com imagens de 1961.",
       "pub_date": "03/2025",
-      "authors": null,
-      "authors_id": null,
+	"authors": ["Urariano Mota", "Vermelho"],
+	"authors_id": [null, null],
       "geo_level": "Municípios",
       "countries": [
         "Brasil"
