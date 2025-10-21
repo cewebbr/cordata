@@ -82,11 +82,11 @@ def std_data(data):
         for k in ['authors', 'email', 'countries', 'fed_units', 'municipalities', 'type', 'topics', 'tags']:
             if uc[k] == []:
                 uc[k] = None
-        # Set country as Brasil for more granular cases:
-        if uc['geo_level'] in {'Unidades federativas', 'Municípios'}:
-            uc['countries'] = ['Brasil']
+        # Set country as Brasil and UFs from municipalities for more granular cases:
         if uc['geo_level'] == 'Municípios':
             uc['fed_units'] = mun2uf(uc['municipalities'])
+        if uc['geo_level'] in {'Unidades federativas', 'Municípios'}:
+            uc['countries'] = ['Brasil']
         # Set empty links to https:// to avoid (possible) frontend error:
         for k in ['url', 'url_source']:
             if uc[k] == None:
