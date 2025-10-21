@@ -135,7 +135,7 @@ if idx != None:
     st.subheader(f"{uc.get('name')}")
 
     ### Mandatory fields ###
-    for uckey in ['name', 'url']:
+    for uckey in ['name', 'url', 'url_archive']:
         uc[uckey] = st.text_input(label=cf.WIDGET_LABEL[uckey], value=uc.get(uckey, uc_v0[uckey]), key=aux.gen_uckey(hash, uckey))
 
     ### Optional fields ###

@@ -44,6 +44,23 @@ def upload_data():
         st.rerun()
 
 
+def mun2uf(mun_list):
+    """
+    List the federative units mentioned in a list of 
+    municipalities `mun_list` (list of str).
+
+    Example input:  ['Autazes (AM)', 'Fonte Boa (AM)', 'Melgaço (PA)']
+    Example output: ['AM', 'PA']
+    """
+    
+    # Forward None:
+    if mun_list == None:
+        return None
+    # Translate municipalities to UFs:
+    uf_list = list(set([m[-3:-1] for m in mun_list]))
+    return uf_list
+
+
 def std_data(data):
     """
     Standardize data in place.
@@ -68,6 +85,8 @@ def std_data(data):
         # Set country as Brasil for more granular cases:
         if uc['geo_level'] in {'Unidades federativas', 'Municípios'}:
             uc['countries'] = ['Brasil']
+        if uc['geo_level'] == 'Municípios':
+            uc['fed_units'] = mun2uf(uc['municipalities'])
         # Set empty links to https:// to avoid (possible) frontend error:
         for k in ['url', 'url_source']:
             if uc[k] == None:

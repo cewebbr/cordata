@@ -83,7 +83,8 @@ GEOLEVEL_KEYS = {'Países':'countries', 'Unidades federativas':'fed_units', 'Mun
 STATUS_OPTIONS = ['Oculto', 'Em revisão', 'Em validação', 'Publicado']
 
 WIDGET_LABEL = {'name': 'Nome:', 
-                'url': 'Link:', 
+                'url': 'Link:',
+                'url_archive': 'Link para cópia arquivada:', 
                 'description': 'Descrição:',
                 'known_pub': 'Data de publicação conhecida',
                 'pub_date': 'Data de publicação:', 
