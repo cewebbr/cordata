@@ -1,0 +1,8 @@
+[server]
+port = 8502
+headless = true
+
+[browser]
+serverAddress = "vps62263.publiccloud.com.br"
+serverPort = 8502
+gatherUsageStats = false
