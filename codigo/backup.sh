@@ -2,7 +2,7 @@
 # To run on locaweb VPS.
 
 # Hard-coded:
-bkp_prefix=usecases_test_
+bkp_prefix=usecases_bkp_
 bkp_suffix=.json
 src=/home/admin/ceweb/projetos/cordata/codigo/data/usecases_temp.json
 target=/home/admin/ceweb/projetos/cordata/dados/backups
