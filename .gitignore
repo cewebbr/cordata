@@ -9,6 +9,7 @@ imagens/*
 analises/__pycache__
 analises/.ipynb_checkpoints
 codigo/__pycache__
+codigo/nohup.out
 
 # Não inclusos
 codigo/env
