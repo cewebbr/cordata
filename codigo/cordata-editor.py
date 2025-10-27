@@ -49,6 +49,9 @@ os.chdir(Path(__file__).parent)
 none_fmt = aux.translate_dict({None:'(vazio)'})
 
 def tags_fmt(x):
+    """
+    Return empty list if `x` is None.
+    """
     if x == None:
         return []
     return x
@@ -69,7 +72,8 @@ if 'sel_opts' not in st.session_state:
                                     'fed_units': cf.UF_OPTIONS, 
                                     'municipalities': mun,
                                     'type': cf.TYPE_OPTIONS,
-                                    'topics': cf.TOPIC_OPTIONS}
+                                    'topics': cf.TOPIC_OPTIONS,
+                                    'data_format': cf.FORMAT_OPTIONS}
 # Load usecase default values:
 if 'uc_defaults' not in st.session_state:
     st.session_state['uc_defaults'] = io.load_data(cf.ENTRY_MODEL)
@@ -200,6 +204,9 @@ if idx != None:
             dkey = 'data_license'
             ds[dkey] = st.selectbox(label=cf.WIDGET_LABEL[dkey], options=cf.LICENSE_OPTIONS, key=aux.gen_uckey(hash, dkey, i), 
                                     index=aux.nindex(cf.LICENSE_OPTIONS, ds.get(dkey, ds_v0[dkey])))
+            dkey = 'data_format'
+            ds[dkey] = st.multiselect(label=cf.WIDGET_LABEL[dkey], options=st.session_state['sel_opts'][dkey], 
+                                      default=ds.get(dkey, []), key=aux.gen_uckey(hash, dkey, i))
             dkey = 'data_periodical'
             ds[dkey] = st.radio(label=cf.WIDGET_LABEL[dkey], options=[True, False, None],
                                 index=[True, False, None].index(ds.get(dkey, ds_v0[dkey])), 
