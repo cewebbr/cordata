@@ -21,7 +21,8 @@
       "datasets": [],
       "record_date": null,
       "modified_date": null,
-      "status": "Em revisão",
+      "status_published": false,
+      "status_review": true,
       "type_es": null,
       "topics_es": null,
       "countries_es": null

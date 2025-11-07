@@ -82,7 +82,10 @@ GEOLEVEL_OPTIONS = ['Não se aplica', 'Mundial', 'Países', 'Unidades federativa
 
 GEOLEVEL_KEYS = {'Países':'countries', 'Unidades federativas':'fed_units', 'Municípios':'municipalities'}
 
-STATUS_OPTIONS = ['Oculto', 'Em revisão', 'Em validação', 'Publicado']
+#STATUS_OPTIONS = ['Oculto', 'Em revisão', 'Em validação', 'Publicado']
+STATUS_OPTIONS = [True, False]
+STATUS_DISPLAY = {'status_published': {True: 'Publicado', False: 'Oculto'},
+                  'status_review':    {True: 'Revisar',   False: 'Finalizado'}}
 
 WIDGET_LABEL = {'name': 'Nome:', 
                 'url': 'Link:',
@@ -100,6 +103,8 @@ WIDGET_LABEL = {'name': 'Nome:',
                 'url_image': 'Link para imagem:',
                 'comment': 'Comentários internos:',
                 'status': 'Status do caso:',
+                'status_published': 'Visibilidade do caso:',
+                'status_review': 'Necessidade de revisão:',
                 'data_name': 'Nome do conjunto:',
                 'data_institution': 'Instituição responsável:',
                 'data_url': 'Link:',

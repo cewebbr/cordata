@@ -236,9 +236,17 @@ if idx != None:
     # Editable fields:
     uckey = 'comment'
     uc[uckey] = st.text_area(label=cf.WIDGET_LABEL[uckey], value=uc.get(uckey, uc_v0[uckey]), key=aux.gen_uckey(hash, uckey), height=200)
-    uckey = 'status'
-    uc[uckey] = st.radio(cf.WIDGET_LABEL[uckey], options=cf.STATUS_OPTIONS, horizontal=True,
-                        index=cf.STATUS_OPTIONS.index(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash, uckey))
+    #uckey = 'status'
+    #uc[uckey] = st.radio(cf.WIDGET_LABEL[uckey], options=cf.STATUS_OPTIONS, horizontal=True,
+    #                    index=cf.STATUS_OPTIONS.index(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash, uckey))
+    status_list = ['status_published', 'status_review']
+    status_cols = st.columns(len(status_list))
+    for i, uckey in enumerate(status_list):
+        with status_cols[i]:
+            uc[uckey] = st.radio(cf.WIDGET_LABEL[uckey], options=cf.STATUS_OPTIONS, horizontal=True,
+                        index=cf.STATUS_OPTIONS.index(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash, uckey),
+                        format_func=(lambda x: cf.STATUS_DISPLAY[uckey][x]))
+
 
     ### Usecase operations ###
 
