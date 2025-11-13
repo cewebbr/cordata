@@ -1,8 +1,298 @@
 {
  "metadata": {
-  "last_update": "2025-11-10"
+  "last_update": "2025-11-13"
  },
  "data": [
+  {
+   "hash_id": 273749399,
+   "name": "Petroleiras criam ‘cortina de fumaça’ para viabilizar exploração na costa amazônica do Brasil",
+   "url": "https://infoamazonia.org/2025/04/03/petroleiras-criam-cortina-de-fumaca-para-viabilizar-exploracao-na-costa-amazonica-do-brasil/",
+   "url_archive": "https://archive.ph/yp7SX",
+   "description": "A reportagem faz parte do especial \"Até a Última Gota\", uma investigação jornalística transfronteiriça e multidisciplinar que percorreu a Amazônia ao longo de quase um ano para entender os impactos — passados, presentes e futuros — da exploração petrolífera no maior bioma tropical do planeta.",
+   "pub_date": "04/2025",
+   "authors": [
+    "Juliana Mori",
+    "Flávia Milhorance",
+    "Carolina Dantas",
+    "Fábio Bispo",
+    "Pilar Puentes",
+    "Aramís Castro",
+    "Emilia Paz Y Miño",
+    "Isabela Ponce",
+    "Victor Moriyama",
+    "Diego Lucero",
+    "Juan Carlos Contreras",
+    "Marco Garro",
+    "Catalina Lobo-Guerrero",
+    "Nelly Luna Amancio",
+    "Renata Hirota",
+    "Carolina Passos",
+    "Marilia Ferrari",
+    "Victoria Sacagami",
+    "Amanda Gedra",
+    "Joubert Marques",
+    "Juan Ortiz",
+    "Matt Sandy",
+    "Juliana Horta",
+    "Rafael Fagundes",
+    "Luiza Toledo",
+    "Oscar Parra",
+    "Stefano Wrobleski"
+   ],
+   "authors_id": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "geo_level": "Unidades federativas",
+   "countries": [
+    "Brasil"
+   ],
+   "fed_units": [
+    "PA",
+    "AP"
+   ],
+   "municipalities": null,
+   "email": null,
+   "type": [
+    "matéria jornalística"
+   ],
+   "topics": [
+    "Agricultura, extrativismo e pesca",
+    "Meio Ambiente",
+    "Indústria",
+    "Economia e Finanças"
+   ],
+   "tags": [
+    "Costa Amazônica",
+    "extração de petróleo",
+    "setor petrolífero"
+   ],
+   "url_source": "https://",
+   "url_image": "https://infoamazonia.org/wp-content/uploads/2025/03/m2-img4.jpg",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "datasets": [
+    {
+     "data_name": "Poços Perfurados no País",
+     "data_institution": "Agência Nacional do Petróleo, Gás Natural e Biocombustíveis",
+     "data_url": "https://cdp.anp.gov.br/ords/r/cdp_apex/consulta-dados-publicos-cdp/consulta-de-po%C3%A7os?session=1141073382744",
+     "data_license": "Inexistente",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": false
+    }
+   ],
+   "record_date": "2025-11-12",
+   "modified_date": null,
+   "status_published": true,
+   "status_review": false,
+   "type_es": [
+    "artículo periodístico"
+   ],
+   "topics_es": [
+    "Agricultura, Extractivismo y Pesca",
+    "Medio Ambiente",
+    "Industria",
+    "Economía y Finanzas"
+   ],
+   "countries_es": [
+    "Brasil"
+   ]
+  },
+  {
+   "hash_id": 866649000,
+   "name": "Análise dos Dados do ENEM 2023 para Cursos Selecionados — Spark & Power BI",
+   "url": "https://github.com/marianatiele/rdata_Enem2023",
+   "url_archive": "https://",
+   "description": "Este projeto tem como objetivo explorar e visualizar os dados do Exame Nacional do Ensino Médio (ENEM) 2023 com foco em seis cursos de alto interesse, utilizando PySpark para e Power BI para criar dashboards interativos. A análise permite verificar quantos aprovados foram por cotas, a distribuição por estado, médias de notas, perfil dos candidatos e outras informações relevantes para apoiar estudantes e pesquisadores.",
+   "pub_date": null,
+   "authors": null,
+   "authors_id": null,
+   "geo_level": null,
+   "countries": null,
+   "fed_units": null,
+   "municipalities": null,
+   "email": null,
+   "type": null,
+   "topics": [
+    "Educação"
+   ],
+   "tags": [
+    "SISU",
+    "ENEM"
+   ],
+   "url_source": "https://",
+   "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+   "comment": null,
+   "datasets": [
+    {
+     "data_name": " SiSU - cursos, vagas e candidatos",
+     "data_institution": "Universidade Federal Fluminense",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/sisu-cursos-vagas-e-candidatos",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Indicadores sobre SISU - Sistema de Seleção Unificada",
+     "data_institution": "Ministério da Educação",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/sisu-sistema-de-selecao-unificada",
+     "data_license": "ODbL",
+     "data_format": [
+      "XML",
+      "JSON"
+     ],
+     "data_periodical": false
+    }
+   ],
+   "record_date": "2025-11-12",
+   "modified_date": null,
+   "status_published": false,
+   "status_review": true,
+   "type_es": null,
+   "topics_es": [
+    "Educación"
+   ],
+   "countries_es": null
+  },
+  {
+   "hash_id": 2136819096,
+   "name": "Análise de Leitos Hospitalares e de UTI",
+   "url": "https://app.powerbi.com/view?r=eyJrIjoiZDI3MTZlMGEtM2ExNS00MjBmLWIyMGItYmZmNDJjYmI4YjA0IiwidCI6IjU1ODY3OGY0LTMxN2MtNDRhZC1iMDkyLTkyMDM1ZDk3ZTBiYyJ9",
+   "url_archive": "https://",
+   "description": null,
+   "pub_date": null,
+   "authors": [
+    "PEDRO TELES"
+   ],
+   "authors_id": [
+    null
+   ],
+   "geo_level": "Países",
+   "countries": [
+    "Brasil"
+   ],
+   "fed_units": null,
+   "municipalities": null,
+   "email": null,
+   "type": [
+    "painel, dashboard ou infográfico"
+   ],
+   "topics": [
+    "Saúde"
+   ],
+   "tags": [
+    "usuário do SUS",
+    "Unidades de Saúde",
+    "UTI",
+    "UTI Pediátrica",
+    "Leitos"
+   ],
+   "url_source": "https://",
+   "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+   "comment": null,
+   "datasets": [
+    {
+     "data_name": "Hospitais e Leitos",
+     "data_institution": "Ministério da Saúde",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/hospitais-e-leitos",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV",
+      "JSON",
+      "XML"
+     ],
+     "data_periodical": null
+    },
+    {
+     "data_name": "Sistema de Informações sobre Orçamentos Públicos em Saúde - SIOPS",
+     "data_institution": "Ministério da Saúde",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/siops",
+     "data_license": "Inexistente",
+     "data_format": [
+      "API"
+     ],
+     "data_periodical": null
+    }
+   ],
+   "record_date": "2025-11-12",
+   "modified_date": null,
+   "status_published": false,
+   "status_review": true,
+   "type_es": [
+    "panel de control o infografía"
+   ],
+   "topics_es": [
+    "Salud"
+   ],
+   "countries_es": [
+    "Brasil"
+   ]
+  },
+  {
+   "hash_id": 2460286514,
+   "name": "AnacDataSearch",
+   "url": "https://datasearch.anac.gov.br/DataSearch/",
+   "url_archive": "https://",
+   "description": "Mais informações sobre o Projeto de Aprimoramento da Governança de Informações Digitais (AGID) e para incluir conjunto de dados envie email: governancadados@anac.gov.br",
+   "pub_date": null,
+   "authors": null,
+   "authors_id": null,
+   "geo_level": null,
+   "countries": null,
+   "fed_units": null,
+   "municipalities": null,
+   "email": null,
+   "type": [
+    "aplicativo ou plataforma"
+   ],
+   "topics": [
+    "Transportes e Trânsito"
+   ],
+   "tags": null,
+   "url_source": "https://",
+   "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+   "comment": null,
+   "datasets": [],
+   "record_date": "2025-11-12",
+   "modified_date": null,
+   "status_published": false,
+   "status_review": true,
+   "type_es": [
+    "aplicación o plataforma"
+   ],
+   "topics_es": [
+    "Transporte y Tráfico"
+   ],
+   "countries_es": null
+  },
   {
    "hash_id": 944893125,
    "name": "A CONSTRUÇÃO DE UM DATA WAREHOUSE UTILIZANDO OS INDICADORES EDUCACIONAIS DO INEP",
@@ -252,42 +542,40 @@
      "data_institution": "Global Energy Monitor",
      "data_url": "https://globalenergymonitor.org/projects/global-oil-gas-extraction-tracker/summary-tables/",
      "data_license": "CC-BY",
-     "data_periodical": false
+     "data_periodical": false,
+     "data_format": [
+      "XLSX"
+     ]
     },
     {
-     "data_name": "Atividades Petrolíferas na Amazônia",
+     "data_name": "Atividades Petrolíferas no Território Amazônico",
      "data_institution": "Instituto Internacional Arayara",
      "data_url": "https://monitor.amazonialivredepetroleo.org/",
      "data_license": "CC BY-NC-ND",
-     "data_periodical": false
+     "data_periodical": false,
+     "data_format": [
+      "XLSX"
+     ]
     },
     {
-     "data_name": "Extração de Óleo e Gas",
-     "data_institution": "Global Energy Monitor",
-     "data_url": "https://globalenergymonitor.org/wp-content/uploads/2024/03/GEM-global-oil-and-gas-extraction-tracker-March-2024.pdf",
-     "data_license": "CC-BY",
-     "data_periodical": false
-    },
-    {
-     "data_name": "Cobertura de Terra - Guiana",
-     "data_institution": "Global Forest Watch",
-     "data_url": "https://www.globalforestwatch.org/map/country/GUY/?mainMap=eyJzaG93QW5hbHlzaXMiOnRydWV9&map=eyJjZW50ZXIiOnsibGF0Ijo1LjYyMTg3NzA4MzA0MjAwNCwibG5nIjotNTkuNzAyNjY0NzkwMjQxfSwiem9vbSI6Ni43MzQxNDM1MDQ4NjIyNTUsImNhbkJvdW5kIjpmYWxzZSwiZGF0YXNldHMiOlt7ImRhdGFzZXQiOiJ0cm9waWNhbC10cmVlLWNvdmVyIiwib3BhY2l0eSI6MSwidmlzaWJpbGl0eSI6dHJ1ZSwibGF5ZXJzIjpbInRyb3BpY2FsLXRyZWUtY292ZXItaGVjdGFyZSJdfSx7ImRhdGFzZXQiOiJ1bWQtc295LXBsYW50ZWQtYXJlYSIsIm9wYWNpdHkiOjEsInZpc2liaWxpdHkiOnRydWUsImxheWVycyI6WyJ1bWQtc295LXBsYW50ZWQtYXJlYSJdfSx7ImRhdGFzZXQiOiJ0cmVlLXBsYW50YXRpb25zIiwib3BhY2l0eSI6MSwidmlzaWJpbGl0eSI6dHJ1ZSwibGF5ZXJzIjpbInRyZWUtcGxhbnRhdGlvbnMiXX0seyJkYXRhc2V0IjoiZ2xvYmFsLXBlYXRsYW5kIiwib3BhY2l0eSI6MSwidmlzaWJpbGl0eSI6dHJ1ZSwibGF5ZXJzIjpbImdsb2JhbC1wZWF0bGFuZCJdfSx7ImRhdGFzZXQiOiJnbG9iYWwtbWFuZ3JvdmUtZXh0ZW50Iiwib3BhY2l0eSI6MSwidmlzaWJpbGl0eSI6dHJ1ZSwibGF5ZXJzIjpbImdsb2JhbC1tYW5ncm92ZS1leHRlbnQtMjAxNiJdfSx7ImRhdGFzZXQiOiJmb3Jlc3QtbGFuZHNjYXBlLWludGVncml0eS1pbmRleCIsIm9wYWNpdHkiOjEsInZpc2liaWxpdHkiOnRydWUsImxheWVycyI6WyJmb3Jlc3QtbGFuZHNjYXBlLWludGVncml0eS1pbmRleC0yMDIxIl19LHsiZGF0YXNldCI6InBvbGl0aWNhbC1ib3VuZGFyaWVzIiwibGF5ZXJzIjpbImRpc3B1dGVkLXBvbGl0aWNhbC1ib3VuZGFyaWVzIiwicG9saXRpY2FsLWJvdW5kYXJpZXMiXSwiYm91bmRhcnkiOnRydWUsIm9wYWNpdHkiOjEsInZpc2liaWxpdHkiOnRydWV9LHsiZGF0YXNldCI6InRyZWUtY292ZXItbG9zcyIsImxheWVycyI6WyJ0cmVlLWNvdmVyLWxvc3MiXSwib3BhY2l0eSI6MSwidmlzaWJpbGl0eSI6dHJ1ZSwidGltZWxpbmVQYXJhbXMiOnsic3RhcnREYXRlIjoiMjAwMS0wMS0wMSIsImVuZERhdGUiOiIyMDIzLTEyLTMxIiwidHJpbUVuZERhdGUiOiIyMDIzLTEyLTMxIn0sInBhcmFtcyI6eyJ0aHJlc2hvbGQiOjMwLCJ2aXNpYmlsaXR5Ijp0cnVlLCJhZG1fbGV2ZWwiOiJhZG0wIn19XX0%3D&mapMenu=eyJtZW51U2VjdGlvbiI6ImRhdGFzZXRzIiwiZGF0YXNldENhdGVnb3J5IjoibGFuZENvdmVyIn0%3D&mapPrompts=eyJvcGVuIjp0cnVlLCJzdGVwc0tleSI6InN1YnNjcmliZVRvQXJlYSJ9",
-     "data_license": "CC-BY",
-     "data_periodical": false
-    },
-    {
-     "data_name": "PIB Equador",
+     "data_name": "Valor agregado bruto petróleo e não petróleo",
      "data_institution": "Banco Central del Ecuador",
      "data_url": "https://contenido.bce.fin.ec/documentos/informacioneconomica/cuentasnacionales/ix_cuentasnacionalestrimestrales.html#",
      "data_license": "Inexistente",
-     "data_periodical": false
+     "data_periodical": false,
+     "data_format": [
+      "XLSX"
+     ]
     },
     {
-     "data_name": "Densidade Populacional - Equador",
+     "data_name": "Densidade Populacional do Equador",
      "data_institution": "Kontur",
      "data_url": "https://data.humdata.org/dataset/kontur-population-ecuador",
      "data_license": "CC-BY",
-     "data_periodical": false
+     "data_periodical": false,
+     "data_format": [
+      "GPKG"
+     ]
     }
    ],
    "record_date": "2025-10-23",
@@ -308,8 +596,8 @@
     "Colombia",
     "Perú"
    ],
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false
   },
   {
    "hash_id": 2971011416,
@@ -351,12 +639,14 @@
    "comment": "Cadastrado por Jacqueline (Ceweb.br).",
    "datasets": [
     {
-     "data_name": "Fogo",
+     "data_name": "Total mensal queimado",
      "data_institution": "MapBiomas",
      "data_url": "https://brasil.mapbiomas.org/",
      "data_license": "CC-BY",
      "data_periodical": false,
-     "data_format": []
+     "data_format": [
+      "CSV"
+     ]
     }
    ],
    "record_date": "2025-10-23",
@@ -370,8 +660,8 @@
    "countries_es": [
     "Brasil"
    ],
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false
   },
   {
    "hash_id": 2872151602,
@@ -413,32 +703,35 @@
    "comment": "Cadastrado por Jacqueline (Ceweb.br).",
    "datasets": [
     {
-     "data_name": "Evasão Escolar",
-     "data_institution": "IBGE",
-     "data_url": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/42083-educacao-infantil-cresce-em-2023-e-retoma-patamar-pre-pandemia",
-     "data_license": "CC BY-ND",
-     "data_periodical": false
-    },
-    {
-     "data_name": "Idade das mães ao dar à luz - Maranhão",
+     "data_name": "Nascim p/resid.mãe por Idade da mãe segundo UF",
      "data_institution": "SUS",
      "data_url": "http://tabnet.datasus.gov.br/cgi/tabcgi.exe?sinasc/cnv/nvuf.def",
-     "data_license": "CC BY-ND",
-     "data_periodical": false
+     "data_license": "Inexistente",
+     "data_periodical": false,
+     "data_format": [
+      "CSV"
+     ]
     },
     {
-     "data_name": "Gravidez na Adolescência e Evasão Escolar - PNAD Contínua 2ºTri/2023",
+     "data_name": "Evasão Escolar",
      "data_institution": "IBGE",
      "data_url": "https://www.ibge.gov.br/estatisticas/downloads-estatisticas.html?caminho=Trabalho_e_Rendimento/Pesquisa_Nacional_por_Amostra_de_Domicilios_continua/Trimestral/Microdados/2023",
-     "data_license": "CC BY-ND",
-     "data_periodical": false
+     "data_license": "Inexistente",
+     "data_periodical": false,
+     "data_format": [
+      "TXT"
+     ]
     },
     {
-     "data_name": "Pesquisa Nacional de Saúde do Escolar ",
+     "data_name": "Saúde Sexual e Reprodutiva",
      "data_institution": "IBGE",
      "data_url": "https://www.ibge.gov.br/estatisticas/sociais/educacao/9134-pesquisa-nacional-de-saude-do-escolar.html?=&t=downloads",
-     "data_license": "CC BY-ND",
-     "data_periodical": false
+     "data_license": "Inexistente",
+     "data_periodical": false,
+     "data_format": [
+      "ODS",
+      "XLSX"
+     ]
     }
    ],
    "record_date": "2025-10-23",
@@ -454,8 +747,8 @@
    "countries_es": [
     "Brasil"
    ],
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false
   },
   {
    "hash_id": 2444779873,
@@ -495,14 +788,15 @@
    ],
    "url_source": "https://",
    "url_image": "https://static.wixstatic.com/media/698f97_6e8312d3a8494eb09482607564386e20~mv2.jpg/v1/fill/w_800,h_561,al_c,q_85,enc_avif,quality_auto/698f97_6e8312d3a8494eb09482607564386e20~mv2.jpg",
-   "comment": null,
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\nOcultado porque a fonte de dados não atende aos nossos critérios de formato. Trata-se de um relatório.",
    "datasets": [
     {
      "data_name": "Mercado Cinematrográfico - Informe Anual (2023)",
      "data_institution": "ANCINE",
      "data_url": "https://www.gov.br/ancine/pt-br/oca/publicacoes/arquivos.pdf/informe-mercado-cinematografico-2023.pdf",
      "data_license": "CC BY-ND",
-     "data_periodical": false
+     "data_periodical": false,
+     "data_format": []
     }
    ],
    "record_date": "2025-10-23",
@@ -517,7 +811,7 @@
     "Brasil"
    ],
    "status_published": false,
-   "status_review": true
+   "status_review": false
   },
   {
    "hash_id": 3610702494,
@@ -555,21 +849,30 @@
    ],
    "url_source": "https://",
    "url_image": "https://marcozero.org/wp-content/uploads/2025/03/laqueaduras-1024x576.jpg",
-   "comment": null,
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
    "datasets": [
     {
      "data_name": "Laqueaduras em Pernambuco",
      "data_institution": "SUS",
      "data_url": "https://docs.google.com/spreadsheets/d/1TKvjHOZufk3krXp5MFHRVIvOngwoavTp8hCEt8UC6GU/edit?gid=1669985953#gid=1669985953",
      "data_license": "CC0",
-     "data_periodical": false
+     "data_periodical": false,
+     "data_format": [
+      "XLSX"
+     ]
     },
     {
-     "data_name": "Censo 2022",
+     "data_name": "População residente por Cor ou Raça",
      "data_institution": "IBGE",
-     "data_url": "https://www.ibge.gov.br/cidades-e-estados/pe.html",
-     "data_license": "CC BY-ND",
-     "data_periodical": false
+     "data_url": "https://sidra.ibge.gov.br/pesquisa/censo-demografico/demografico-2022/universo-populacao-por-cor-ou-raca",
+     "data_license": "Inexistente",
+     "data_periodical": false,
+     "data_format": [
+      "XLSX",
+      "ODS",
+      "Outro",
+      "CSV"
+     ]
     }
    ],
    "record_date": "2025-10-23",
@@ -584,8 +887,8 @@
    "countries_es": [
     "Brasil"
    ],
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false
   },
   {
    "hash_id": 287538597,
@@ -635,14 +938,10 @@
      "data_institution": "Polícia Federal (PF)",
      "data_url": "https://dados.gov.br/dados/conjuntos-dados/sinarm---sistema-nacional-de-armas",
      "data_license": "CC0",
-     "data_periodical": false
-    },
-    {
-     "data_name": "Registros de Caçadores, Atiradores e Colecionadores (CACs)",
-     "data_institution": "Polícia Federal (PF)",
-     "data_url": "Lei de Acesso à Informação (LAI)",
-     "data_license": "Inexistente",
-     "data_periodical": false
+     "data_periodical": false,
+     "data_format": [
+      "CSV"
+     ]
     }
    ],
    "record_date": "2025-10-23",
@@ -658,8 +957,8 @@
    "countries_es": [
     "Brasil"
    ],
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false
   },
   {
    "hash_id": 2040854826,
@@ -705,14 +1004,15 @@
    ],
    "url_source": "https://",
    "url_image": "https://www.generonumero.media/wp-content/uploads/2025/05/Marcelo-Camargo-Agencia-Brasil.png",
-   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\nOcultado porque a fonte de dados não atende aos nossos critérios de formato. Trata-se de um relatório.",
    "datasets": [
     {
      "data_name": "Perfil das pessoas submetidas à revista vexatória",
      "data_institution": "Agenda Nacional pelo Desencarceramento; Conectas Direitos Humanos; Instituto de Defesa do Direito de Defesa; Instituto Terra Trabalho e Cidadania; Núcleo Especializado de Situação Carcerária da Defensoria Pública do Estado de São Paulo; Pastoral Carcerária Nacional; Rede Justiça Criminal",
      "data_url": "https://www.conectas.org/wp-content/uploads/2022/03/Relatorio-revista-vexatoria-ultima-versao.pdf",
      "data_license": "CC-BY",
-     "data_periodical": false
+     "data_periodical": false,
+     "data_format": []
     }
    ],
    "record_date": "2025-10-23",
@@ -728,7 +1028,7 @@
     "Brasil"
    ],
    "status_published": false,
-   "status_review": true
+   "status_review": false
   },
   {
    "hash_id": 795274084,
@@ -769,22 +1069,18 @@
     "médicos especialistas"
    ],
    "url_source": "https://",
-   "url_image": "https://s2-oglobo.glbimg.com/9vI8vySPZkVJdLa2SkhmLnu49bU=/0x0:1600x773/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2025/8/Y/8zCyoHRVqGNZs7mBNlag/whatsapp-image-2025-03-17-at-14.15.39.jpeg",
+   "url_image": "https://live.staticflickr.com/3909/14516235546_0c18795d74_b.jpg",
    "comment": "Cadastrado por Jacqueline (Ceweb.br).",
    "datasets": [
     {
-     "data_name": "Médicos Especialistas por Município",
+     "data_name": "Recursos Humanos - Profissionais",
      "data_institution": "Ministério da Saúde",
-     "data_url": "https://cnes.datasus.gov.br/pages/downloads/arquivosBaseDados.jsp",
-     "data_license": "CC BY-ND",
-     "data_periodical": false
-    },
-    {
-     "data_name": "Fila de Cirurgias e Consultas",
-     "data_institution": "Sistema Nacional de Regulação (SISREG)",
-     "data_url": "Lei de Acesso à Informação (LAI)",
+     "data_url": "https://datasus.saude.gov.br/cnes-recursos-humanos-a-partir-de-agosto-de-2007-ocupacoes-classificadas-pela-cbo-2002",
      "data_license": "Inexistente",
-     "data_periodical": false
+     "data_periodical": false,
+     "data_format": [
+      "CSV"
+     ]
     }
    ],
    "record_date": "2025-10-22",
@@ -799,8 +1095,8 @@
    "countries_es": [
     "Brasil"
    ],
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false
   },
   {
    "hash_id": 1873779585,
@@ -837,56 +1133,23 @@
    ],
    "url_source": "https://",
    "url_image": "https://i0.wp.com/oeco.org.br/wp-content/uploads/2025/02/Massacre-Invisivel_oeco_16.jpg?w=1920&ssl=1",
-   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\nOcultado porque as fonte de dados não atende aos nossos critérios de formato. Tratam-se artigos científicos e documentos.",
    "datasets": [
-    {
-     "data_name": "Afogamentos de animais selvagens",
-     "data_institution": "Diego Gallego-García; José Hernán Sarasola (Biological Conservation)",
-     "data_url": "https://www.sciencedirect.com/science/article/abs/pii/S0006320724002763",
-     "data_license": "Inexistente",
-     "data_periodical": false
-    },
-    {
-     "data_name": "Animais afogados",
-     "data_institution": "Yuriana Gómez-Ortiz; Hublester Domínguez-Vega​; Leroy Soria-Díaz; Tamara Rubio-Blanco; Claudia C. Astudillo-Sánchez; Victor Mundo; Armando Sunny (PeerJ)",
-     "data_url": "https://peerj.com/articles/17818/",
-     "data_license": "CC-BY",
-     "data_periodical": false
-    },
-    {
-     "data_name": "Irrigação Mundial",
-     "data_institution": "FAO",
-     "data_url": "https://openknowledge.fao.org/server/api/core/bitstreams/02e5f498-eb5d-4a08-b501-b3e05fdefc57/content",
-     "data_license": "CC-BY",
-     "data_periodical": false
-    },
-    {
-     "data_name": "Mortes de Mamíferos em Canais na Espanha",
-     "data_institution": "Salvador Peris; Javier Morales (European Journal of Wildlife Research)",
-     "data_url": "https://link.springer.com/article/10.1007/s10344-004-0045-0",
-     "data_license": "Inexistente",
-     "data_periodical": false
-    },
-    {
-     "data_name": "Mortes de Anfíbios em Canais na Espanha",
-     "data_institution": "Pablo García (Animal Biodiversity and Conservation)",
-     "data_url": "https://www.researchgate.net/publication/215798071_Mortality_of_vertebrates_in_irrigation_canals_in_an_area_of_west-central_Spain",
-     "data_license": "CC-BY",
-     "data_periodical": false
-    },
     {
      "data_name": "Mamíferos e Carnívoros Afogados em Canais",
      "data_institution": "Rita Azedo; Ana Ilhéu;  Sara Santos; Pedro G. Vaz (Basic and Applied Ecology)",
      "data_url": "https://www.sciencedirect.com/science/article/pii/S143917912200024X",
      "data_license": "Inexistente",
-     "data_periodical": false
+     "data_periodical": false,
+     "data_format": []
     },
     {
      "data_name": "Efeitos das Fontes Artificiais de Água nas Savanas",
      "data_institution": "Morati Mpalo; Lenyeletse Vincent Basupi; Gizaw Mengistu Tsidu (Land)",
      "data_url": "https://www.mdpi.com/2073-445X/13/5/690",
      "data_license": "CC-BY",
-     "data_periodical": false
+     "data_periodical": false,
+     "data_format": []
     }
    ],
    "record_date": "2025-10-22",
@@ -899,7 +1162,7 @@
    ],
    "countries_es": null,
    "status_published": false,
-   "status_review": true
+   "status_review": false
   },
   {
    "hash_id": 2534603141,
@@ -927,7 +1190,7 @@
     "licenciamento ambiental"
    ],
    "url_source": "https://",
-   "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_2534603141.png",
+   "url_image": "https://live.staticflickr.com/65535/50020731162_5f7ca81a7a_b.jpg",
    "comment": "Cadastrado por Jacqueline (Ceweb.br).",
    "type": [
     "matéria jornalística"
@@ -941,53 +1204,24 @@
    ],
    "datasets": [
     {
-     "data_name": "Agropecuária e Água",
+     "data_name": "Agropecuária - Uso Agrícola",
      "data_institution": "MapBiomas",
-     "data_url": "https://brasil.mapbiomas.org/",
+     "data_url": "https://plataforma.brasil.mapbiomas.org/agriculture/agriculture_agricultural_use?tl[id]=38&tl[themeKey]=agriculture&tl[subthemeKey]=agriculture_agricultural_use&tl[pixelValues][]=47&tl[pixelValues][]=46&tl[pixelValues][]=35&tl[pixelValues][]=48&tl[pixelValues][]=20&tl[pixelValues][]=39&tl[pixelValues][]=41&tl[pixelValues][]=62&tl[pixelValues][]=40&tl[legendKey]=agriculture_agricultural_use_mapbiomas_agricultural_use&tl[year]=2024&t[regionKey]=brazil&t[ids][]=1-1-1&t[divisionCategoryId]=4",
      "data_periodical": false,
-     "data_license": null
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV"
+     ]
     },
     {
-     "data_name": "Uso da Água na Agricultura Irrigada",
-     "data_institution": "Agência Nacional de Águas (ANA)",
-     "data_url": "https://www.gov.br/ana/pt-br/assuntos/noticias-e-eventos/noticias/estudo-da-ana-aponta-em-45-potencial-de-expansao-da-irrigacao-no-brasil-ate-2030/ana_atlasirrigacao-usodaaguanaagriculturairrigada.pdf/view",
-     "data_periodical": false,
-     "data_license": null
-    },
-    {
-     "data_name": "Óbitos de animais em canais de irrigação",
-     "data_institution": "Ministério do Meio Ambiente; ICMBio; IBAMA; órgãos estaduais: BA; CE; DF; ES; GO; MT; MG; SP; RS; TO",
-     "data_url": "https://news.fiquemsabendo.com.br/p/da-chuva-ao-asfalto-impactos-climaticos?open=false#%C2%A7massacre-invisivel-orgaos-ambientais-nao-monitoram-mortandade-de-animais-silvestres-em-valas-de-irrigacao",
-     "data_periodical": false,
-     "data_license": null
-    },
-    {
-     "data_name": "Projeto Público de Irrigação Jaíba",
-     "data_institution": "Companhia de Desenvolvimento dos Vales do São Francisco e do Parnaíba (CODEVASF)",
-     "data_url": "https://www.codevasf.gov.br/assuntos/agricultura-irrigada/projetos-de-irrigacao/em-producao/jaiba",
-     "data_periodical": false,
-     "data_license": null
-    },
-    {
-     "data_name": "Projeto Público de Irrigação Baixio de Irecê",
-     "data_institution": "Companhia de Desenvolvimento dos Vales do São Francisco e do Parnaíba (CODEVASF)",
-     "data_url": "https://www.codevasf.gov.br/assuntos/agricultura-irrigada/projetos-de-irrigacao/em-producao/baixio-de-irece",
-     "data_periodical": false,
-     "data_license": null
-    },
-    {
-     "data_name": "Planos de Redução de Impactos sobre a Biodiversidade",
-     "data_institution": "ICMBio",
-     "data_url": "https://oeco.org.br/reportagens/brasil-precisa-intensificar-o-controle-ambiental-da-irrigacao-agricola/",
-     "data_periodical": false,
-     "data_license": null
-    },
-    {
-     "data_name": "Plano Nacional de Adaptação à Mudança do Clima (2015)",
-     "data_institution": "Ministério do Meio Ambiente",
-     "data_url": "https://www.mds.gov.br/webarquivos/arquivo/seguranca_alimentar/caisan/Publicacao/Caisan_Nacional/PlanoNacionaldeAdaptacaoaMudancadoClima_Junho2015.pdf",
-     "data_periodical": false,
-     "data_license": null
+     "data_name": "Superfície d'água",
+     "data_institution": "MapBiomas",
+     "data_url": "https://plataforma.brasil.mapbiomas.org/water/water_water_surface?tl[id]=98&tl[themeKey]=water&tl[subthemeKey]=water_water_surface&tl[pixelValues][]=1&tl[legendKey]=water_water_surface_mapbiomas_water_surface&tl[year]=2024&t[regionKey]=brazil&t[ids][]=1-1-1&t[divisionCategoryId]=4",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": false
     }
    ],
    "record_date": "2025-10-22",
@@ -999,9 +1233,9 @@
     "Justicia y Legislación",
     "Medio Ambiente"
    ],
-   "url_archive": "https://",
-   "status_published": false,
-   "status_review": true
+   "url_archive": "https://archive.ph/48U2u",
+   "status_published": true,
+   "status_review": false
   },
   {
    "hash_id": 1211230457,
@@ -1031,7 +1265,7 @@
     "oeste da bahia"
    ],
    "url_source": "https://",
-   "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_1211230457.png",
+   "url_image": "https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA0L2ZsNTEwNDAxNDU0MjItcHVibGljLWltYWdlLWtvbnVnYTRoLmpwZw.jpg",
    "comment": "Cadastrado por Jacqueline (Ceweb.br).",
    "type": [
     "matéria jornalística"
@@ -1044,28 +1278,14 @@
    ],
    "datasets": [
     {
-     "data_name": "Óbitos de animais em canais de irrigação",
-     "data_institution": "Ministério do Meio Ambiente; ICMBio; IBAMA; órgãos estaduais: BA; CE; DF; ES; GO; MT; MG; SP; RS; TO",
-     "data_url": "https://docs.google.com/document/d/1iZOhoElwPzczi0v3hIxex400KYOq7y-v/edit",
-     "data_periodical": false,
-     "data_license": null,
-     "data_format": []
-    },
-    {
-     "data_name": "Desmatamento e apropriação da água no Oeste da Bahia",
-     "data_institution": "Instituto Mãos da Terra; UFBA",
-     "data_url": "https://www.imaterra.org/livro-desmatamento-agua-oeste",
-     "data_periodical": false,
-     "data_license": null,
-     "data_format": []
-    },
-    {
-     "data_name": "Água",
+     "data_name": "Séries temporais anuais de área irrigada por método",
      "data_institution": "MapBiomas",
-     "data_url": "https://brasil.mapbiomas.org/",
+     "data_url": "https://bacias.mapbiomas.org/",
      "data_periodical": false,
-     "data_license": null,
-     "data_format": []
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV"
+     ]
     }
    ],
    "record_date": "2025-10-22",
@@ -1076,9 +1296,9 @@
    "topics_es": [
     "Medio Ambiente"
    ],
-   "url_archive": "https://",
-   "status_published": false,
-   "status_review": true
+   "url_archive": "https://archive.ph/OG9HS",
+   "status_published": true,
+   "status_review": false
   },
   {
    "hash_id": 2259811141,
@@ -1111,7 +1331,7 @@
     "microclima"
    ],
    "url_source": "https://",
-   "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_2259811141.png",
+   "url_image": "https://images.adsttc.com/media/images/62ab/40ce/45e0/bb54/ce55/f89e/large_jpg/solucoes-baseadas-na-natureza-para-adaptacao-em-cidades-o-que-sao-e-por-que-implementa-las_6.jpg?1655390422",
    "comment": "Cadastrado por Jacqueline (Ceweb.br).",
    "type": [
     "matéria jornalística"
@@ -1130,14 +1350,36 @@
      "data_institution": "Prefeitura Municipal de São Paulo",
      "data_url": "https://drive.prefeitura.sp.gov.br/cidade/secretarias/upload/subprefeituras/SMSUB/Mapeamento%20-%20Jardins%20de%20Chuva%202022_.pdf",
      "data_periodical": false,
-     "data_license": null
+     "data_license": "Inexistente",
+     "data_format": [
+      "PDF"
+     ]
     },
     {
-     "data_name": "Alagamentos e Inundações",
+     "data_name": "Alagamento",
      "data_institution": "Secretaria Municipal de Urbanismo e Licenciamento (SMUL)",
      "data_url": "https://geosampa.prefeitura.sp.gov.br/",
      "data_periodical": false,
-     "data_license": null
+     "data_license": "CC BY-SA",
+     "data_format": [
+      "SHP",
+      "KML",
+      "JSON",
+      "GPKG"
+     ]
+    },
+    {
+     "data_name": "Inundação",
+     "data_institution": "Secretaria Municipal de Urbanismo e Licenciamento (SMUL)",
+     "data_url": "https://geosampa.prefeitura.sp.gov.br/",
+     "data_license": "CC BY-SA",
+     "data_format": [
+      "SHP",
+      "KML",
+      "JSON",
+      "GPKG"
+     ],
+     "data_periodical": false
     }
    ],
    "record_date": "2025-10-22",
@@ -1150,9 +1392,9 @@
     "Gobierno y Política",
     "Medio Ambiente"
    ],
-   "url_archive": "https://",
-   "status_published": false,
-   "status_review": true
+   "url_archive": "https://web.archive.org/web/20251111183438/https://oeco.org.br/reportagens/os-jardins-que-podem-aumentar-a-resiliencia-climatica-e-reduzir-alagamentos-em-sao-paulo/",
+   "status_published": true,
+   "status_review": false
   },
   {
    "hash_id": 560930643,
@@ -1180,8 +1422,8 @@
     "emendas parlamentares"
    ],
    "url_source": "https://",
-   "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_560930643.png",
-   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "url_image": "https://editoraelefante.com.br/wp-content/uploads/2024/06/image-from-rawpixel-id-5941608-jpeg-scaled-1014x487.jpg",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\nOcultado porque não usaram os dados disponíveis no site da CGU como fonte, mas fez \"a extração e análise de metadados de grande volume de documentos\".",
    "type": [
     "matéria jornalística"
    ],
@@ -1200,7 +1442,10 @@
      "data_institution": "CGU",
      "data_url": "https://portaldatransparencia.gov.br/emendas/consulta",
      "data_periodical": false,
-     "data_license": null
+     "data_license": "Inexistente",
+     "data_format": [
+      "CSV"
+     ]
     }
    ],
    "record_date": "2025-10-22",
@@ -1214,9 +1459,9 @@
     "Justicia y Legislación",
     "Medio Ambiente"
    ],
-   "url_archive": "https://",
+   "url_archive": "https://archive.ph/TrXBo",
    "status_published": false,
-   "status_review": true
+   "status_review": false
   },
   {
    "hash_id": 3068193784,
@@ -1276,13 +1521,14 @@
    ],
    "url_source": "https://",
    "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_3068193784.png",
-   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\nOcultado porque a fonte de dados não atende aos nossos critérios de formato.",
    "type": [
     "matéria jornalística"
    ],
    "topics": [
     "Governo e Política",
-    "Trabalho"
+    "Trabalho",
+    "Gênero e Raça"
    ],
    "countries_es": [
     "Brasil"
@@ -1293,14 +1539,8 @@
      "data_institution": "Fundação Biblioteca Nacional",
      "data_url": "https://hemeroteca-pdf.bn.gov.br/235296/per235296_1864_00617.pdf",
      "data_periodical": false,
-     "data_license": null
-    },
-    {
-     "data_name": "Panorama - União dos Palmares",
-     "data_institution": "IBGE",
-     "data_url": "https://cidades.ibge.gov.br/brasil/al/uniao-dos-palmares/panorama",
-     "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     }
    ],
    "record_date": "2025-10-22",
@@ -1310,11 +1550,12 @@
    ],
    "topics_es": [
     "Gobierno y Política",
-    "Trabajo"
+    "Trabajo",
+    "Género y raza"
    ],
-   "url_archive": "https://",
+   "url_archive": "https://archive.ph/iYzGd",
    "status_published": false,
-   "status_review": true
+   "status_review": false
   },
   {
    "hash_id": 1709125189,
@@ -1373,14 +1614,15 @@
    ],
    "url_source": "https://",
    "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_1709125189.png",
-   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\nOcultado porque as fontes de dados não atendem aos nossos critérios de formato.",
    "type": [
     "matéria jornalística"
    ],
    "topics": [
     "Economia e Finanças",
     "Governo e Política",
-    "Trabalho"
+    "Trabalho",
+    "Gênero e Raça"
    ],
    "countries_es": [
     "Brasil"
@@ -1419,11 +1661,12 @@
    "topics_es": [
     "Economía y Finanzas",
     "Gobierno y Política",
-    "Trabajo"
+    "Trabajo",
+    "Género y raza"
    ],
    "status_published": false,
-   "status_review": true,
-   "url_archive": "https://"
+   "status_review": false,
+   "url_archive": "https://archive.ph/Y1wFp"
   },
   {
    "hash_id": 2051931585,
@@ -1479,12 +1722,13 @@
    ],
    "url_source": "https://",
    "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_2051931585.png",
-   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\nOcultado porque as fontes de dados não atendem aos nossos critérios de formato.",
    "type": [
     "matéria jornalística"
    ],
    "topics": [
-    "Dados Estratégicos"
+    "Dados Estratégicos",
+    "Gênero e Raça"
    ],
    "countries_es": [
     "Brasil"
@@ -1495,14 +1739,16 @@
      "data_institution": "Geledés; Instituto Alana",
      "data_url": "https://alana.org.br/lei-10639-ensino/",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     },
     {
      "data_name": "Memória da Escravidão no Brasil",
      "data_institution": "Laboratório de História Oral e Imagem da Universidade Federal Fluminense (LABHOI/UFF)",
      "data_url": "http://passadospresentes.com.br/index.php/principal/index",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     }
    ],
    "record_date": "2025-10-17",
@@ -1511,10 +1757,12 @@
     "artículo periodístico"
    ],
    "topics_es": [
-    "Datos Estratégicos"
+    "Datos Estratégicos",
+    "Género y raza"
    ],
    "status_published": false,
-   "status_review": true
+   "status_review": false,
+   "url_archive": "https://archive.ph/nvtJx"
   },
   {
    "hash_id": 1911540586,
@@ -1557,9 +1805,7 @@
     null
    ],
    "geo_level": null,
-   "countries": [
-    "Brasil"
-   ],
+   "countries": null,
    "fed_units": null,
    "municipalities": null,
    "email": null,
@@ -1570,37 +1816,39 @@
    ],
    "url_source": "https://",
    "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_1911540586.png",
-   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\nOcultado porque as fontes de dados não atendem aos nossos critérios de formato.",
    "type": [
     "matéria jornalística"
    ],
    "topics": [
-    "Governo e Política"
+    "Governo e Política",
+    "Gênero e Raça"
    ],
-   "countries_es": [
-    "Brasil"
-   ],
+   "countries_es": null,
    "datasets": [
     {
      "data_name": "Documentação Histórica - Tabelionato do 1º Ofício do Fórum Desembargador Filinto Bastos",
      "data_institution": "UEFS; TJBA",
      "data_url": "http://www.cativosdosertao.uefs.br/index.html",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     },
     {
      "data_name": "Livro de Notas Nº 4 da Villa de Feira de Santana",
      "data_institution": "Maria Alice de Sá Barbosa Mendes (UEFS)",
      "data_url": "http://www.historia.uefs.br/modules/conteudo/conteudo.php?conteudo=46",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     },
     {
      "data_name": "Inventário dos quintos avós de Itamar Franco",
      "data_institution": "Ana Paula de Albuquerque Silva (UFBA)",
      "data_url": "https://repositorio.ufba.br/handle/ri/23394",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     }
    ],
    "record_date": "2025-10-17",
@@ -1609,10 +1857,12 @@
     "artículo periodístico"
    ],
    "topics_es": [
-    "Gobierno y Política"
+    "Gobierno y Política",
+    "Género y raza"
    ],
    "status_published": false,
-   "status_review": true
+   "status_review": false,
+   "url_archive": "https://archive.ph/uyUGe"
   },
   {
    "hash_id": 784885264,
@@ -1673,25 +1923,22 @@
     "matéria jornalística"
    ],
    "topics": [
-    "Governo e Política"
+    "Governo e Política",
+    "Gênero e Raça"
    ],
    "countries_es": [
     "Brasil"
    ],
    "datasets": [
     {
-     "data_name": "Banco de Dados do Comércio Transatlântico de Escravos",
+     "data_name": "Comércio Transatlântico de Escravos - Voyages",
      "data_institution": "Emory University",
      "data_url": "https://www.slavevoyages.org/voyage/all-voyages#voyages",
      "data_periodical": false,
-     "data_license": null
-    },
-    {
-     "data_name": "Membros da alta classe política americana descendentes de escravizadores",
-     "data_institution": "Reuters",
-     "data_url": "https://www.reuters.com/investigates/special-report/usa-slavery-lawmakers/",
-     "data_periodical": false,
-     "data_license": null
+     "data_license": "CC BY-NC",
+     "data_format": [
+      "CSV"
+     ]
     }
    ],
    "record_date": "2025-10-17",
@@ -1700,10 +1947,12 @@
     "artículo periodístico"
    ],
    "topics_es": [
-    "Gobierno y Política"
+    "Gobierno y Política",
+    "Género y raza"
    ],
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false,
+   "url_archive": "https://archive.ph/dpHHU"
   },
   {
    "hash_id": 205133436,
@@ -1762,12 +2011,13 @@
    ],
    "url_source": "https://",
    "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_205133436.png",
-   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\nOcultado porque as fontes de dados não atendem aos nossos critérios de formato.",
    "type": [
     "matéria jornalística"
    ],
    "topics": [
-    "Governo e Política"
+    "Governo e Política",
+    "Gênero e Raça"
    ],
    "countries_es": [
     "Brasil"
@@ -1778,14 +2028,16 @@
      "data_institution": "Família Coelho Rodrigues",
      "data_url": "https://www.coelhorodrigues.ong.br/imagens/valerio-no-brasil.png",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     },
     {
      "data_name": "Genealogia de Valério Coelho Rodrigues",
      "data_institution": "Família Coelho Rodrigues",
      "data_url": "https://www.coelhorodrigues.ong.br/arquivos/GENEALOGIA%20DE%20VALERIO%20COELHO%20V2022-01-15.pdf",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     }
    ],
    "record_date": "2025-10-17",
@@ -1794,10 +2046,12 @@
     "artículo periodístico"
    ],
    "topics_es": [
-    "Gobierno y Política"
+    "Gobierno y Política",
+    "Género y raza"
    ],
    "status_published": false,
-   "status_review": true
+   "status_review": false,
+   "url_archive": "https://"
   },
   {
    "hash_id": 2991627217,
@@ -1860,60 +2114,22 @@
    ],
    "topics": [
     "Economia e Finanças",
-    "Governo e Política"
+    "Governo e Política",
+    "Gênero e Raça"
    ],
    "countries_es": [
     "Brasil"
    ],
    "datasets": [
     {
-     "data_name": "Reprodução Sistemática de Pessoas Escravizadas",
-     "data_institution": "G1",
-     "data_url": "https://g1.globo.com/pb/paraiba/noticia/2024/05/13/fazenda-era-usada-para-a-reproducao-sistematica-de-pessoas-escravizadas-em-remigio-na-pb.ghtml",
-     "data_periodical": false,
-     "data_license": null
-    },
-    {
-     "data_name": "Comercialização de Pessoas Escravizadas",
-     "data_institution": "A União",
-     "data_url": "https://auniao.pb.gov.br/institucional/jornal-a-uniao",
-     "data_periodical": false,
-     "data_license": null
-    },
-    {
-     "data_name": "Registro de Vendas de Pessoas Escravizadas",
-     "data_institution": "Eleonora Félix da Silva (UFCG)",
-     "data_url": "https://dspace.sti.ufcg.edu.br/handle/riufcg/2540",
-     "data_periodical": false,
-     "data_license": null
-    },
-    {
-     "data_name": "Inventário de Maria Franca Torres",
-     "data_institution": "Pedro Nicácio Souto (UFCG)",
-     "data_url": "https://dspace.sti.ufcg.edu.br/handle/riufcg/35496",
-     "data_periodical": false,
-     "data_license": null
-    },
-    {
-     "data_name": "Patrimônio de Francisco Corrêa da Costa",
-     "data_institution": "Maria Amélia Assis Alves Crivelente (Universidade do Porto)",
-     "data_url": "https://repositorio-aberto.up.pt/handle/10216/73523?mode=full",
-     "data_periodical": false,
-     "data_license": null
-    },
-    {
-     "data_name": "Parlamentares que votaram para aprovar emenda que dificulta combate ao trabalho escravo",
+     "data_name": "Parlamentares que votaram a favor da emenda ao PL da Super Receita",
      "data_institution": "Repórter Brasil",
      "data_url": "https://reporterbrasil.org.br/2007/02/quem-votou-contra-o-combate-ao-trabalho-escravo-no-brasil/",
      "data_periodical": false,
-     "data_license": null
-    },
-    {
-     "data_name": "Senhores de Escravos em Santa Luzia do Sabugy",
-     "data_institution": "Joselito Eulâmpio da Nóbrega (UEPB)",
-     "data_url": "https://bdtd.ibict.br/vufind/Record/UEPB_5d49408ad1119dd47ef3baed7d56e750",
-     "data_periodical": false,
-     "data_license": null
+     "data_license": "CC BY-ND",
+     "data_format": [
+      "XLSX"
+     ]
     }
    ],
    "record_date": "2025-10-17",
@@ -1923,10 +2139,12 @@
    ],
    "topics_es": [
     "Economía y Finanzas",
-    "Gobierno y Política"
+    "Gobierno y Política",
+    "Género y raza"
    ],
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false,
+   "url_archive": "https://archive.ph/7O4gv"
   },
   {
    "hash_id": 3852784515,
@@ -1992,7 +2210,8 @@
    ],
    "topics": [
     "Governo e Política",
-    "Trabalho"
+    "Trabalho",
+    "Gênero e Raça"
    ],
    "countries_es": [
     "Brasil"
@@ -2003,70 +2222,86 @@
      "data_institution": "Ministério Público do Trabalho (MPT)",
      "data_url": "https://apublica.org/wp-content/uploads/2024/11/Relatorio-1-3885969-Politicos-que-seriam-parentes-de-escravizadores-foram-investigados-por-escravidao-moderna.pdf",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     },
     {
      "data_name": "Indicações de Helder Barbalho",
      "data_institution": "Estadão",
      "data_url": "https://www.estadao.com.br/politica/com-indicacoes-de-helder-familia-barbalho-chega-a-20-integrantes-em-cargos-no-para/",
      "data_periodical": true,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     },
     {
      "data_name": "Patrimônio da Família Fontenelle",
      "data_institution": "Vicente Miranda",
      "data_url": "https://pt.scribd.com/document/545067662/Tres-Seculos-de-Caminhada",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     },
     {
      "data_name": "Família Caiado",
      "data_institution": "Mirian Bianca Amaral Bueno (UFG)",
      "data_url": "https://files.cercomp.ufg.br/weby/up/113/o/MIRIAN_BIANCA_AMARAL_RIBEIRO_1_A_241_mesclado-girado.pdf",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     },
     {
      "data_name": "Trabalhadores resgatados da fazenda de Emival Ramos Caiado",
      "data_institution": "Repórter Brasil",
      "data_url": "https://reporterbrasil.org.br/2010/08/fazenda-de-primo-de-ruralista-mantinha-trabalho-escravo/",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     },
     {
      "data_name": "Relatório de Fiscalização Fazenda Lago Perdido",
      "data_institution": "Ministério do Trabalho e Emprego (SRTE/GO); Ministério Público do Trabalho; Polícia Rodoviária Federal",
      "data_url": "https://apublica.org/wp-content/uploads/2024/11/Relatorio-3-3886015-Politicos-que-seriam-parentes-de-escravizadores-foram-investigados-por-escravidao-moderna.pdf",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     },
     {
      "data_name": "Ação Trabalhista Fazenda Lago Perdido",
      "data_institution": "Ministério Público do Trabalho (MPT)",
      "data_url": "https://apublica.org/wp-content/uploads/2024/11/Sentenca-Caiado-Politicos-que-seriam-parentes-de-escravizadores-foram-investigados-por-escravidao-moderna.pdf",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     },
     {
      "data_name": "Termo de Compromisso de Ajustamento de Conduta MPT e Mário Alves Ferreira",
      "data_institution": "Ministério Público do Trabalho (MPT)",
      "data_url": "https://apublica.org/wp-content/uploads/2024/11/tac_276-2013_Politicos-que-seriam-parentes-de-escravizadores-foram-investigados-por-escravidao-moderna.pdf",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     },
     {
      "data_name": "Propriedades Rurais de Parlamentares por Município",
      "data_institution": "De Olho nos Ruralistas",
      "data_url": "https://maphub.net/deolhonosruralistas/bancadaruralista",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": [
+      "JSON",
+      "KML",
+      "Outro",
+      "XLSX",
+      "CSV"
+     ]
     },
     {
      "data_name": "Genealogia matogrossense",
      "data_institution": "José Barnabé de Mesquita",
      "data_url": "https://pt.scribd.com/document/151308737/Genealogia-Matogrossense-Mesquita",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     }
    ],
    "record_date": "2025-10-17",
@@ -2076,10 +2311,12 @@
    ],
    "topics_es": [
     "Gobierno y Política",
-    "Trabajo"
+    "Trabajo",
+    "Género y raza"
    ],
    "status_published": false,
-   "status_review": true
+   "status_review": true,
+   "url_archive": "https://archive.ph/pSqH4"
   },
   {
    "hash_id": 633852937,
@@ -2134,13 +2371,14 @@
     "poder político"
    ],
    "url_source": "https://",
-   "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_633852937.png",
-   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "url_image": "https://i0.wp.com/apublica.org/wp-content/uploads/2024/11/CAPA-MDB-e-o-partido-brasileiro-com-mais-politicos-descendentes-de-escravagistas.png?fit=1400%2C788&ssl=1",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\nOcultado porque as fontes de dados não atendem aos nossos critérios de formato. Tratam-se de publicações acadêmicas.",
    "type": [
     "matéria jornalística"
    ],
    "topics": [
-    "Governo e Política"
+    "Governo e Política",
+    "Gênero e Raça"
    ],
    "countries_es": [
     "Brasil"
@@ -2151,21 +2389,24 @@
      "data_institution": "Eleonora Félix da Silva (UFCG)",
      "data_url": "https://dspace.sti.ufcg.edu.br/handle/riufcg/2540",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     },
     {
      "data_name": "Senhores de Terras da Vila de Itu em 1817",
      "data_institution": "Leandro Antonio de Almeida (Revista da ASBRAP)",
      "data_url": "https://www.asbrap.org.br/artigos/rev7_art1.pdf",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     },
     {
      "data_name": "Genealogia de Rogério Marinho",
      "data_institution": "José Lázaro Ferreira Barros Júnior; Vanessa Roberta do Rocio Souza (Revista NEP - Núcleo de Estudos Paranaenses)",
      "data_url": "https://apublica.org/wp-content/uploads/2024/12/REVISTA-NEP-MDB-e-PL-sao-os-partidos-com-mais-politicos-que-seriam-descendentes-de-escravagistas.pdf",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     }
    ],
    "record_date": "2025-10-17",
@@ -2174,10 +2415,12 @@
     "artículo periodístico"
    ],
    "topics_es": [
-    "Gobierno y Política"
+    "Gobierno y Política",
+    "Género y raza"
    ],
    "status_published": false,
-   "status_review": true
+   "status_review": false,
+   "url_archive": "https://archive.ph/OPl7h"
   },
   {
    "hash_id": 3150301144,
@@ -2232,7 +2475,7 @@
     "família souza breves"
    ],
    "url_source": "https://",
-   "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_3150301144.png",
+   "url_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAWRTqA0l-v-6zefQeJbVHARV01ka3utaMbw&s",
    "comment": "Cadastrado por Jacqueline (Ceweb.br).",
    "type": [
     "matéria jornalística"
@@ -2240,32 +2483,25 @@
    "topics": [
     "Agricultura, extrativismo e pesca",
     "Economia e Finanças",
-    "Trabalho"
+    "Trabalho",
+    "Gênero e Raça"
    ],
    "countries_es": [
     "Brasil"
    ],
    "datasets": [
     {
-     "data_name": "Posses da Família Souza Breves",
-     "data_institution": "Thiago Campos Pessoa Lourenço (UFF)",
-     "data_url": "https://app.uff.br/riuff/handle/1/16887",
-     "data_periodical": false,
-     "data_license": null
-    },
-    {
-     "data_name": "Tráfico de Pessoas Escravizadas",
-     "data_institution": "CNN",
-     "data_url": "https://www.cnnbrasil.com.br/nacional/os-numeros-a-violencia-e-a-complexidade-da-escravidao-me-surpreendem/#google_vignette",
-     "data_periodical": false,
-     "data_license": null
-    },
-    {
-     "data_name": "Censo 2022",
+     "data_name": "População por cor ou raça",
      "data_institution": "IBGE",
-     "data_url": "https://censo2022.ibge.gov.br/panorama/",
+     "data_url": "https://www.ibge.gov.br/estatisticas/sociais/saude/22827-censo-demografico-2022.html?edicao=38698&t=resultados",
      "data_periodical": false,
-     "data_license": null
+     "data_license": "Inexistente",
+     "data_format": [
+      "XLSX",
+      "ODS",
+      "CSV",
+      "Outro"
+     ]
     }
    ],
    "record_date": "2025-10-17",
@@ -2276,10 +2512,12 @@
    "topics_es": [
     "Agricultura, Extractivismo y Pesca",
     "Economía y Finanzas",
-    "Trabajo"
+    "Trabajo",
+    "Género y raza"
    ],
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false,
+   "url_archive": "https://archive.ph/7ENfX"
   },
   {
    "hash_id": 84106520,
@@ -2334,39 +2572,59 @@
     "subrepresentação negra"
    ],
    "url_source": "https://",
-   "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_84106520.png",
+   "url_image": "https://i0.wp.com/apublica.org/wp-content/uploads/2024/12/CAPA-Politicos-negros-no-Brasil-o-que-se-sabe-sobre-seus-antepassados.png?fit=1400%2C788&ssl=1",
    "comment": "Cadastrado por Jacqueline (Ceweb.br).",
    "type": [
     "matéria jornalística"
    ],
    "topics": [
     "Dados Estratégicos",
-    "Governo e Política"
+    "Governo e Política",
+    "Gênero e Raça"
    ],
    "countries_es": [
     "Brasil"
    ],
    "datasets": [
     {
-     "data_name": "Senadores negros registrados brancos",
-     "data_institution": "Abdias Nascimento (Senado Federal)",
-     "data_url": "https://www12.senado.leg.br/noticias/especiais/arquivo-s/abdias-nascimento-revelou-senadores-negros-que-a-historia-apresentou-como-brancos",
-     "data_periodical": false,
-     "data_license": null
-    },
-    {
-     "data_name": "Candidatos por raça declarada",
+     "data_name": "Candidatos - 2022",
      "data_institution": "TSE",
-     "data_url": "https://dadosabertos.tse.jus.br/dataset/",
+     "data_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2022",
      "data_periodical": false,
-     "data_license": null
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV"
+     ]
     },
     {
-     "data_name": "Fraudes na autodeclaração de cor dos eleitos em 2022",
-     "data_institution": "UOL",
-     "data_url": "https://noticias.uol.com.br/politica/ultimas-noticias/2022/11/20/metade-dos-parlamentares-eleitos-que-dizem-ser-negros-sao-brancos.htm",
-     "data_periodical": false,
-     "data_license": null
+     "data_name": "Candidatos - 2024",
+     "data_institution": "TSE",
+     "data_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Resultados - 2022",
+     "data_institution": "TSE",
+     "data_url": "https://dadosabertos.tse.jus.br/dataset/resultados-2022",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Resultados - 2024",
+     "data_institution": "TSE",
+     "data_url": "https://dadosabertos.tse.jus.br/dataset/resultados-2024",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": false
     }
    ],
    "record_date": "2025-10-17",
@@ -2376,10 +2634,12 @@
    ],
    "topics_es": [
     "Datos Estratégicos",
-    "Gobierno y Política"
+    "Gobierno y Política",
+    "Género y raza"
    ],
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false,
+   "url_archive": "https://archive.ph/AcF2k"
   },
   {
    "hash_id": 869417017,
@@ -2435,13 +2695,14 @@
     "conflitos raciais"
    ],
    "url_source": "https://",
-   "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
-   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "url_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS966qUc2ycgPIBMqEjtA0ixAqTSz1IpLyGLg&s",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\nOcultado porque as fontes de dados não atendem aos nossos critérios de formato. Tratam-se de notícias.",
    "type": [
     "matéria jornalística"
    ],
    "topics": [
-    "Dados Estratégicos"
+    "Dados Estratégicos",
+    "Gênero e Raça"
    ],
    "countries_es": [
     "Brasil"
@@ -2452,14 +2713,16 @@
      "data_institution": "Agência Brasil",
      "data_url": "https://agenciabrasil.ebc.com.br/radioagencia-nacional/economia/audio/2023-12/taxa-de-pobreza-de-pretos-e-duas-vezes-maior-em-relacao-a-de-brancos",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     },
     {
      "data_name": "Discriminação de negros",
      "data_institution": "Agência Brasil",
      "data_url": "https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2024-11/seis-em-cada-dez-negros-sofreram-discriminacao-no-ultimo-ano",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     }
    ],
    "record_date": "2025-10-17",
@@ -2468,10 +2731,12 @@
     "artículo periodístico"
    ],
    "topics_es": [
-    "Datos Estratégicos"
+    "Datos Estratégicos",
+    "Género y raza"
    ],
    "status_published": false,
-   "status_review": true
+   "status_review": false,
+   "url_archive": "https://archive.ph/Qa5Kb"
   },
   {
    "hash_id": 3913815942,
@@ -2527,14 +2792,15 @@
     "reprodução sistemática de escravizados"
    ],
    "url_source": "https://",
-   "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_3913815942.png",
-   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "url_image": "https://assets.brasildefato.com.br/2025/02/image_processing20250127-804602-cpqb31-750x450.webp",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\nOcultado porque as fontes de dados não atendem aos nossos critérios de formato. Tratam-se de artigos.",
    "type": [
     "matéria jornalística"
    ],
    "topics": [
     "Defesa e Segurança",
-    "Saúde"
+    "Saúde",
+    "Gênero e Raça"
    ],
    "countries_es": [
     "Brasil"
@@ -2545,14 +2811,16 @@
      "data_institution": "Thiago Campos Pessoa (UFF)",
      "data_url": "https://www.scielo.br/j/topoi/a/FjwdgQkPFhCcZ5cP5hWwG6g/?format=html&lang=pt",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     },
     {
      "data_name": "Reprodução Escravista no Brasil",
      "data_institution": "Gabriela Salcedo Figueira (UM)",
      "data_url": "https://repositorium.uminho.pt/entities/publication/9964c9af-c89c-4418-abb7-bf4c2fda63fa",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     }
    ],
    "record_date": "2025-10-17",
@@ -2562,10 +2830,12 @@
    ],
    "topics_es": [
     "Defensa y Seguridad",
-    "Salud"
+    "Salud",
+    "Género y raza"
    ],
    "status_published": false,
-   "status_review": true
+   "status_review": false,
+   "url_archive": "https://archive.ph/CEf4g"
   },
   {
    "hash_id": 4232934708,
@@ -2620,14 +2890,15 @@
     "escravocatas"
    ],
    "url_source": "https://",
-   "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_4232934708.png",
-   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "url_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoQdp2ZSJt4WG9N_PVyc7A7L3vUNI64lxRRQ&s",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\nAs fontes de dados não atendem aos nossos critérios de formato. Tratam-se de cartas, reportagens, notícias e um mapa que não permite baixar/acessar os dados que o construíram.",
    "type": [
     "matéria jornalística"
    ],
    "topics": [
     "Governo e Política",
-    "Trabalho"
+    "Trabalho",
+    "Gênero e Raça"
    ],
    "countries_es": [
     "Brasil"
@@ -2638,35 +2909,40 @@
      "data_institution": "USP",
      "data_url": "https://digital.bbm.usp.br/handle/bbm/4699",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     },
     {
      "data_name": "Políticos parentes de escravizadores",
      "data_institution": "Agência Pública de Jornalismo Investigativo",
      "data_url": "https://apublica.org/2024/11/trabalho-escravo-no-passo-e-no-presente/",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     },
     {
      "data_name": "Monumentos Confederados Removidos ou Renomeados - EUA",
      "data_institution": "CNN",
      "data_url": "https://www.cnnbrasil.com.br/internacional/eua-73-monumentos-confederados-foram-removidos-ou-renomeados-em-2021/",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     },
     {
      "data_name": "Monumentos Confederados Removidos ou Renomeados - Europa",
      "data_institution": "UOL",
      "data_url": "https://noticias.uol.com.br/colunas/jamil-chade/2020/06/12/europa-reve-passado-escravagista-derruba-estatuas-e-muda-nomes-de-locais.htm",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     },
     {
      "data_name": "Homenagens Públicas Controversas em Salvador",
      "data_institution": "UNESCO",
      "data_url": "https://www.salvadorescravista.com/",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     }
    ],
    "record_date": "2025-10-17",
@@ -2676,10 +2952,12 @@
    ],
    "topics_es": [
     "Gobierno y Política",
-    "Trabajo"
+    "Trabajo",
+    "Género y raza"
    ],
    "status_published": false,
-   "status_review": true
+   "status_review": false,
+   "url_archive": "https://archive.ph/ZYPNa"
   },
   {
    "hash_id": 1784118771,
@@ -2736,7 +3014,7 @@
     "abolição"
    ],
    "url_source": "https://",
-   "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+   "url_image": "https://i0.wp.com/apublica.org/wp-content/uploads/2025/05/Capa_Escravizador-na-pele-de-abolicionista-abolicao-teve-apoio-de-politicos-que-escravizaram.jpg?fit=1920%2C1080&ssl=1",
    "comment": "Cadastrado por Jacqueline (Ceweb.br).",
    "type": [
     "matéria jornalística"
@@ -2744,18 +3022,28 @@
    "topics": [
     "Governo e Política",
     "Justiça e Legislação",
-    "Trabalho"
+    "Trabalho",
+    "Gênero e Raça"
    ],
    "countries_es": [
     "Brasil"
    ],
    "datasets": [
     {
-     "data_name": "Banco de Dados dos Parlamentares Escravistas",
+     "data_name": "Proprietários de escravizados",
      "data_institution": "PUC/Rio",
      "data_url": "https://www.opodereaescravidao.com/banco-de-dados",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
+    },
+    {
+     "data_name": "Descendentes ou irmãos de proprietários de escravizados",
+     "data_institution": "PUC/Rio",
+     "data_url": "https://www.opodereaescravidao.com/banco-de-dados",
+     "data_license": null,
+     "data_format": [],
+     "data_periodical": false
     }
    ],
    "record_date": "2025-10-17",
@@ -2766,10 +3054,12 @@
    "topics_es": [
     "Gobierno y Política",
     "Justicia y Legislación",
-    "Trabajo"
+    "Trabajo",
+    "Género y raza"
    ],
    "status_published": false,
-   "status_review": true
+   "status_review": true,
+   "url_archive": "https://archive.ph/QpduX"
   },
   {
    "hash_id": 3082641303,
@@ -2804,7 +3094,7 @@
     "prejuízos socioambientais"
    ],
    "url_source": "https://",
-   "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_3082641303.png",
+   "url_image": "https://opara.nyc3.cdn.digitaloceanspaces.com/ojoio/uploads/2024/11/header-coca-itabirito.jpg",
    "comment": "Cadastrado por Jacqueline (Ceweb.br).",
    "type": [
     "matéria jornalística"
@@ -2818,74 +3108,14 @@
    ],
    "datasets": [
     {
-     "data_name": "Área atingida pelo fogo na Serra Moeda",
-     "data_institution": "UFMG",
-     "data_url": "https://manuelzao.ufmg.br/incendio-que-atingiu-serra-da-moeda-queimou-500-hectares-de-unidade-de-conservacao/",
-     "data_periodical": false,
-     "data_license": null
-    },
-    {
-     "data_name": "Renúncia de Impostos MG",
-     "data_institution": "G1",
-     "data_url": "https://g1.globo.com/mg/minas-gerais/noticia/2024/09/23/teto-de-gastos-divida-com-a-uniao-mg-aumento-de-15percent-renuncia-de-impostos.ghtml",
-     "data_periodical": false,
-     "data_license": null
-    },
-    {
-     "data_name": "Geração de ICMS em Itabirito",
-     "data_institution": "Estado de Minas",
-     "data_url": "https://www.em.com.br/app/noticia/economia/2011/07/01/internas_economia, 237204/itabirito-sai-no-lucro-com-guerra-dos-refrigerantes.shtml",
-     "data_periodical": false,
-     "data_license": null
-    },
-    {
-     "data_name": "Desconto ICMS Coca-Cola",
-     "data_institution": "O Tempo",
-     "data_url": "https://www.otempo.com.br/economia/coca-inaugura-nova-fabrica-1.1053974",
-     "data_periodical": false,
-     "data_license": null
-    },
-    {
-     "data_name": "Resoluções Conselho Nacional de Meio Ambiente (Conama)",
-     "data_institution": "Diário Oficial da União",
-     "data_url": "https://conama.mma.gov.br/atos-normativos-sistema",
-     "data_periodical": false,
-     "data_license": null
-    },
-    {
-     "data_name": "Estudo de Impacto Ambiental / Relatório de Impacto Ambiental - Distrito Industrial de Água Limpa",
-     "data_institution": "Prefeitura de Itabirito",
-     "data_url": "https://drive.google.com/drive/folders/1D-jW1bxsDhtX51C2r7MmUOzpWn4ZNe2H",
-     "data_periodical": false,
-     "data_license": null
-    },
-    {
-     "data_name": "Municípios atendidos pela Companhia de Saneamento de Minas Gerais (Copasa)",
+     "data_name": "Concessões Água e Esgoto em Minas Gerais - Copasa",
      "data_institution": "Companhia de Saneamento de Minas Gerais (Copasa)",
-     "data_url": "https://www.copasa.com.br/wps/portal/internet/a-copasa/area-de-atuacao",
+     "data_url": "https://www.copasa.com.br/wps/wcm/connect/11553006-8bea-49ed-a76f-963a695c7bec/ConcCopasa.pdf?MOD=AJPERES&CVID=porTjla",
      "data_periodical": false,
-     "data_license": null
-    },
-    {
-     "data_name": "Denúncia ao MP",
-     "data_institution": "Fórum Nacional da Sociedade Civil nos Comitês de Bacias Hidrográficas",
-     "data_url": "https://fonasc-cbh.org.br/wp-content/uploads/Of%C3%ADcio-MPE-Impactos-coca-Cola.pdf",
-     "data_periodical": false,
-     "data_license": null
-    },
-    {
-     "data_name": "Concessão à Associação de Captação de Água da Serra - ACAS",
-     "data_institution": "Câmara Municipal de Brumadinho",
-     "data_url": "https://www.cmbrumadinho.mg.gov.br/legislacao/leis-ordinarias",
-     "data_periodical": false,
-     "data_license": null
-    },
-    {
-     "data_name": "Análise Semestral dos Dados de Monitoramento da Unidade de Tratamento de Água do SAAE – Itabirito",
-     "data_institution": "SAAE Itabirito",
-     "data_url": "https://saaeita.mg.gov.br/uploads/servico/388/gd3xnF9kC7ZF2mB0vQmRYxJZF-tcnyde.pdf",
-     "data_periodical": false,
-     "data_license": null
+     "data_license": "Inexistente",
+     "data_format": [
+      "PDF"
+     ]
     }
    ],
    "record_date": "2025-10-17",
@@ -2897,8 +3127,9 @@
     "Industria",
     "Medio Ambiente"
    ],
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false,
+   "url_archive": "https://archive.ph/pCvKn"
   },
   {
    "hash_id": 2608517022,
@@ -2925,8 +3156,8 @@
     "conflito de interesses"
    ],
    "url_source": "https://",
-   "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_2608517022.png",
-   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "url_image": "https://pistachocoffeebrunch.com/wp-content/uploads/2025/01/Beneficios-de-la-nutricion-cruda-1024x585.jpg",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\nOcultado porque todas as fontes são documentos.",
    "type": [
     "matéria jornalística"
    ],
@@ -2939,39 +3170,36 @@
    ],
    "datasets": [
     {
-     "data_name": "Atas de Reuniões Plenárias",
-     "data_institution": "Conselho Federal de Nutrição (CFN)",
-     "data_url": "https://transparencia.cfn.org.br/index.php/atas-de-reunioes-plenarias/",
-     "data_periodical": false,
-     "data_license": null
-    },
-    {
      "data_name": "Deliberação Plenária sobre reconhecimento de títulos de Especialista em Nutrição Oncológica",
      "data_institution": "Diário Oficial da União",
      "data_url": "https://sbno.com.br/wp-content/uploads/2025/02/PORTARIA-CFN-No-4_2025.pdf",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     },
     {
      "data_name": "Parecer Jurídico do Conselho Federal de Nutrição (CFN)",
      "data_institution": "Conselho Federal de Nutrição (CFN)",
      "data_url": "https://opara.nyc3.cdn.digitaloceanspaces.com/ojoio/uploads/2025/05/2-SEI_CFN-1831746-CFN-Informacao-Juridica_PRIMEIRO-PARECER-JUR-SBNO.pdf",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     },
     {
      "data_name": "Despacho",
      "data_institution": "Conselho Federal de Nutrição (CFN)",
      "data_url": "https://opara.nyc3.cdn.digitaloceanspaces.com/ojoio/uploads/2025/05/Despacho-Alexsandro-Wosniaki-12-de-maio.pdf",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     },
     {
      "data_name": "Carta da Coordenação de Articulação para o Etnodesenvolvimento Quilombola e de Povos e Comunidades Tradicionais",
      "data_institution": "Ministério do Desenvolvimento Agrário e Agricultura Familiar",
      "data_url": "https://opara.nyc3.cdn.digitaloceanspaces.com/ojoio/uploads/2025/05/CARTA.pdf",
      "data_periodical": false,
-     "data_license": null
+     "data_license": null,
+     "data_format": []
     }
    ],
    "record_date": "2025-10-17",
@@ -2984,7 +3212,8 @@
     "Salud"
    ],
    "status_published": false,
-   "status_review": true
+   "status_review": false,
+   "url_archive": "http://archive.today/jDQPk"
   },
   {
    "hash_id": 871299308,
@@ -3028,28 +3257,28 @@
    ],
    "datasets": [
     {
-     "data_name": "Censo 2022",
+     "data_name": "População por Município",
      "data_institution": "IBGE",
-     "data_url": "https://cidades.ibge.gov.br/",
+     "data_url": "https://www.ibge.gov.br/estatisticas/sociais/populacao/9103-estimativas-de-populacao.html?edicao=41105",
      "data_periodical": false,
-     "data_license": null,
-     "data_format": []
+     "data_license": "Inexistente",
+     "data_format": [
+      "PDF",
+      "ODS",
+      "XLSX"
+     ]
     },
     {
-     "data_name": "Beneficiários do Programa Bolsa Família",
+     "data_name": "Quantidade de Famílias Beneficiárias do Programa Bolsa Família",
      "data_institution": "Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome",
-     "data_url": "https://dados.gov.br/dados/organizacoes/visualizar/ministerio-do-desenvolvimento-e-assistencia-social-familia-e-combate-a-fome",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/bolsa-familia",
      "data_periodical": false,
-     "data_license": null,
-     "data_format": []
-    },
-    {
-     "data_name": "Prefeitos Eleitos na Bahia (2024)",
-     "data_institution": "TRE-BA",
-     "data_url": "https://www.bahianoticias.com.br/noticia/296975-eleicoes-2024-veja-lista-completa-de-prefeitos-eleitos-na-bahia",
-     "data_periodical": false,
-     "data_license": null,
-     "data_format": []
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV",
+      "JSON",
+      "XML"
+     ]
     }
    ],
    "record_date": "2025-10-17",
@@ -3063,8 +3292,8 @@
     "Gobierno y Política"
    ],
    "url_archive": "http://archive.today/gvmMz",
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false
   },
   {
    "hash_id": 656486850,
@@ -3155,8 +3384,8 @@
     "Transporte y Tráfico"
    ],
    "url_archive": "http://archive.today/8Ojcz",
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false
   },
   {
    "hash_id": 1343504186,
@@ -3183,7 +3412,7 @@
     "ensino superior"
    ],
    "url_source": "https://",
-   "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_1343504186.png",
+   "url_image": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Participantes_do_Enem.jpg",
    "comment": "Cadastrado por Jacqueline (Ceweb.br).",
    "type": [
     "matéria jornalística"
@@ -3197,11 +3426,17 @@
    ],
    "datasets": [
     {
-     "data_name": "Oferta, Ocupação e Ociosidade das vagas do Prouni",
+     "data_name": "Bolsas concedidas do Prouni",
      "data_institution": "MEC",
      "data_url": "https://dados.gov.br/dados/conjuntos-dados/mec-prouni",
      "data_periodical": false,
-     "data_license": null
+     "data_license": "ODbL",
+     "data_format": [
+      "CSV",
+      "PDF",
+      "ZIP",
+      "XML"
+     ]
     }
    ],
    "record_date": "2025-10-17",
@@ -3213,8 +3448,9 @@
     "Educación",
     "Gobierno y Política"
    ],
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false,
+   "url_archive": "http://archive.today/0SDIy"
   },
   {
    "hash_id": 4252760184,
@@ -3276,8 +3512,8 @@
     "Defensa y Seguridad"
    ],
    "url_archive": "http://archive.today/Uaw0p",
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false
   },
   {
    "hash_id": 1123926844,
@@ -3345,10 +3581,7 @@
      "data_periodical": false,
      "data_license": "CC-BY",
      "data_format": [
-      "CSV",
-      "PNG",
-      "JPG",
-      "Outro"
+      "CSV"
      ]
     },
     {
@@ -3372,8 +3605,8 @@
     "Medio Ambiente"
    ],
    "url_archive": "http://archive.today/BOqqE",
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false
   },
   {
    "hash_id": 3146776786,
@@ -3455,11 +3688,7 @@
      "data_periodical": false,
      "data_license": "Inexistente",
      "data_format": [
-      "CSV",
-      "XLSX",
-      "PNG",
-      "JPG",
-      "PDF"
+      "CSV"
      ]
     },
     {
@@ -3509,8 +3738,8 @@
     "Medio Ambiente"
    ],
    "url_archive": "http://archive.today/BaNNl",
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false
   },
   {
    "hash_id": 3152665951,
@@ -3599,8 +3828,8 @@
     "Medio Ambiente"
    ],
    "url_archive": "http://archive.today/NAIGQ",
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false
   },
   {
    "hash_id": 4045053834,
@@ -3674,10 +3903,7 @@
      "data_periodical": false,
      "data_license": "CC-BY",
      "data_format": [
-      "CSV",
-      "PNG",
-      "JPG",
-      "Outro"
+      "CSV"
      ]
     }
    ],
@@ -3691,8 +3917,8 @@
     "Medio Ambiente"
    ],
    "url_archive": "http://archive.today/ulsRB",
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false
   },
   {
    "hash_id": 2257702101,
@@ -3863,8 +4089,8 @@
     "Medio Ambiente"
    ],
    "url_archive": "http://archive.today/OyLj7",
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false
   },
   {
    "hash_id": 1263137159,
@@ -3916,7 +4142,7 @@
     "solidão"
    ],
    "url_source": "https://",
-   "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_1263137159.png",
+   "url_image": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Penitenci%C3%A1ria_de_Piracicaba.jpg",
    "comment": "Cadastrado por Jacqueline (Ceweb.br).",
    "type": [
     "matéria jornalística"
@@ -3951,8 +4177,8 @@
     "Género y raza"
    ],
    "url_archive": "http://archive.today/hEzi0",
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false
   },
   {
    "hash_id": 3808183748,
@@ -4015,8 +4241,8 @@
     "Defensa y Seguridad"
    ],
    "url_archive": "http://archive.today/xr0UB",
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false
   },
   {
    "hash_id": 1628832933,
@@ -4160,8 +4386,8 @@
     "Gobierno y Política"
    ],
    "url_archive": "http://archive.today/5F9lH",
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false
   },
   {
    "hash_id": 2004969591,
@@ -4238,8 +4464,8 @@
     "Justicia y Legislación"
    ],
    "url_archive": "http://archive.today/DnOVk",
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false
   },
   {
    "hash_id": 2437576788,
@@ -4306,8 +4532,8 @@
     "Género y raza"
    ],
    "url_archive": "http://archive.today/WYcT5",
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false
   },
   {
    "hash_id": 1766200613,
@@ -4456,7 +4682,8 @@
      "data_periodical": false,
      "data_license": "Inexistente",
      "data_format": [
-      "ZIP"
+      "ZIP",
+      "SHP"
      ]
     }
    ],
@@ -4472,8 +4699,8 @@
     "Medio Ambiente"
    ],
    "url_archive": "http://archive.today/VaxzF",
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false
   },
   {
    "hash_id": 1689115581,
@@ -4534,8 +4761,8 @@
     "Género y raza"
    ],
    "url_archive": "http://archive.today/MIw9A",
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false
   },
   {
    "hash_id": 1998242644,
@@ -4617,8 +4844,8 @@
     "Industria"
    ],
    "url_archive": "http://archive.today/7pREA",
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false
   },
   {
    "hash_id": 854809149,
@@ -8694,9 +8921,7 @@
    "authors_id": [
     null
    ],
-   "countries": [
-    "Brasil"
-   ],
+   "countries": null,
    "email": [
     "agendas@fiquemsabendo.com.br"
    ],
@@ -8722,7 +8947,9 @@
      "data_name": "Agenda Pública de Autoridades do Poder Executivo Federal",
      "data_institution": "CGU",
      "data_url": "https://dados.gov.br/dados/conjuntos-dados/agenda-publica-de-autoridades-do-poder-executivo-federal",
-     "data_periodical": true
+     "data_periodical": true,
+     "data_license": null,
+     "data_format": []
     }
    ],
    "record_date": "2024-08-28",
@@ -8732,15 +8959,14 @@
    "topics_es": [
     "Gobierno y Política"
    ],
-   "countries_es": [
-    "Brasil"
-   ],
+   "countries_es": null,
    "geo_level": null,
    "fed_units": null,
    "municipalities": null,
    "modified_date": null,
    "status_published": false,
-   "status_review": true
+   "status_review": true,
+   "url_archive": "https://"
   },
   {
    "hash_id": 4112078854,
