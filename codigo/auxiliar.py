@@ -212,3 +212,28 @@ def load_translations(path='data/translations.csv', from_l='ptbr', to_l='es'):
     print(translation_dict)
     return translation_dict
 
+
+def usecase_id2idx(ids: list, target_id: int):
+    """
+    Return the index of `target_id` in `ids`.
+    If `target_id` is None, return None.
+    """
+    if target_id == None:
+        return None
+    else:
+        return ids.index(target_id)
+    
+
+def select_usecase_by_id(data: dict, hash_id: int) -> dict:
+    """
+    Return the usecase stored in `data` (dict) whose
+    hash_id is the one provided. 
+    """
+    usecases = data["data"]
+    
+    selection = list(filter(lambda uc: uc['hash_id'] == hash_id, usecases))
+    assert len(selection) <= 1, 'Found duplicated hash_id = {:}'.format(hash_id)
+    assert len(selection) > 0, 'Did not find hash_id = {:}'.format(hash_id)
+    uc = selection[0]
+
+    return uc

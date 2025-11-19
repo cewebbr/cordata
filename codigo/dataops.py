@@ -29,7 +29,7 @@ def load_from_github():
     if st.button('Confirmar'):
         data = download_data('https://raw.githubusercontent.com/cewebbr/cordata/refs/heads/main/dados/limpos/usecases_current.json')
         save_data(data)
-        st.session_state['idx_init'] = None
+        st.session_state['id_init'] = None
         st.rerun()
 
 
@@ -40,7 +40,7 @@ def upload_data():
     if uploaded_file is not None:
         data = json.load(uploaded_file)
         save_data(data)
-        st.session_state['idx_init'] = None
+        st.session_state['id_init'] = None
         st.rerun()
 
 
@@ -201,12 +201,12 @@ def add_new_case(data):
         usecases.insert(0, uc)
         save_data(data, cf.TEMP_FILE)
         # Set to show it:
-        st.session_state['idx_init'] = 0
+        st.session_state['id_init'] = uc['hash_id']
         st.rerun()
     aux.log('Finished add_new_case dialog')
 
 @st.dialog('Remover caso de uso')
-def remove_usecase(data, idx):
+def remove_usecase(data, hash_id):
     """
     Remove usecase from our data.
 
@@ -215,17 +215,19 @@ def remove_usecase(data, idx):
     data : dict
             The whole information about the usecases, including
             the metadata (e.g. last_update).
-    idx : int
-        Position in list of usecases `data['data]`.
+    hash_id : int
+        Usecase ID.
     """
     aux.log('Entered remove_usecase dialog')
     st.write('Todas as informações a respeito deste caso de uso serão perdidas.')
     if st.button('Confirmar'):
         aux.log('Entered remove_usecase confirm area')
         usecases = data["data"]
+        ids   = [uc['hash_id'] for uc in usecases]
+        idx = aux.usecase_id2idx(ids, hash_id)
         usecases.pop(idx)
         save_data(data)
-        st.session_state['idx_init'] = None
+        st.session_state['id_init'] = None
         st.rerun()
     aux.log('Finished remove_usecase dialog')
 

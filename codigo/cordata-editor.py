@@ -64,8 +64,8 @@ def tags_fmt(x):
 #aux.log('Entered Init section')
 
 # Initialization of session variables:
-if 'idx_init' not in st.session_state:
-    st.session_state['idx_init'] = None
+if 'id_init' not in st.session_state:
+    st.session_state['id_init'] = None
 # Load list of options for multiselect widgets:
 if 'sel_opts' not in st.session_state:
     mun = aux.read_lines('data/municipios.csv')
@@ -109,23 +109,14 @@ st.sidebar.button('🗑️ Limpar a base', on_click=io.erase_usecases)
 
 # Load local data:
 data = io.load_data(cf.TEMP_FILE)
-usecases = data["data"]
 
 # Baixar dados:
 st.sidebar.download_button('⬇️ Baixar dados', json.dumps(data, indent=1, ensure_ascii=False), file_name='usecases_current.json')
 
 aux.html('<hr>', sidebar=True)
 
-# Display statuses selectors for usecases:
-status_filter = ct.status_selectors()
-
-
-# Filter usecases based on statuses:
-sel_usecases = list(filter(lambda uc: ct.status_selected(uc, status_filter), usecases))
-
-# Select usecase:
-#aux.log('Will run usecase select box')
-idx = ct.usecase_picker(sel_usecases, data)
+# Select a usecase to view/edit:
+hash_id = ct.usecase_selector(data)
 
 # Add new usecase:
 st.sidebar.button('➕ Adicionar novo caso', on_click=io.add_new_case, args=(data,))
@@ -136,45 +127,45 @@ st.sidebar.button('➕ Adicionar novo caso', on_click=io.add_new_case, args=(dat
 ### Usecase editor ###
 ######################
 
-if idx != None:
-    uc = sel_usecases[idx]
-    hash = uc['hash_id']
+if hash_id != None:
+    
+    uc = aux.select_usecase_by_id(data, hash_id)
 
     # Editing the selected usecase:
     st.subheader(f"{uc.get('name')}")
 
     ### Mandatory fields ###
     for uckey in ['name', 'url', 'url_archive']:
-        uc[uckey] = st.text_input(label=cf.WIDGET_LABEL[uckey], value=uc.get(uckey, uc_v0[uckey]), key=aux.gen_uckey(hash, uckey))
+        uc[uckey] = st.text_input(label=cf.WIDGET_LABEL[uckey], value=uc.get(uckey, uc_v0[uckey]), key=aux.gen_uckey(hash_id, uckey))
 
     ### Optional fields ###
     uckey = 'description'
-    uc[uckey] = st.text_area(label=cf.WIDGET_LABEL[uckey], value=uc.get(uckey, uc_v0[uckey]), key=aux.gen_uckey(hash, uckey), height=200)
+    uc[uckey] = st.text_area(label=cf.WIDGET_LABEL[uckey], value=uc.get(uckey, uc_v0[uckey]), key=aux.gen_uckey(hash_id, uckey), height=200)
     # Data de publicação:
     uckey = 'known_pub'
-    known_pub_date = st.checkbox(label=cf.WIDGET_LABEL[uckey], value=(uc['pub_date'] != None), key=aux.gen_uckey(hash, uckey))
+    known_pub_date = st.checkbox(label=cf.WIDGET_LABEL[uckey], value=(uc['pub_date'] != None), key=aux.gen_uckey(hash_id, uckey))
     uckey = 'pub_date'
     if known_pub_date == True:
-        pub_date = st.date_input(label=cf.WIDGET_LABEL[uckey], value=aux.read_date(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash, uckey), 
+        pub_date = st.date_input(label=cf.WIDGET_LABEL[uckey], value=aux.read_date(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash_id, uckey), 
                                  format="DD/MM/YYYY")            
         uc[uckey] = None if pub_date == None else pub_date.strftime("%m/%Y")
     else:
         uc[uckey] = None
     
     uckey = 'authors'
-    uc[uckey] = st_tags(label=cf.WIDGET_LABEL[uckey], value=tags_fmt(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash, uckey))
+    uc[uckey] = st_tags(label=cf.WIDGET_LABEL[uckey], value=tags_fmt(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash_id, uckey))
     # Nível de cobertura geográfica:
     uckey = 'geo_level'
     uc[uckey] = st.radio(label=cf.WIDGET_LABEL[uckey],
                 options=cf.GEOLEVEL_OPTIONS,
-                index=cf.GEOLEVEL_OPTIONS.index(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash, uckey),
+                index=cf.GEOLEVEL_OPTIONS.index(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash_id, uckey),
                 horizontal=True, format_func=(lambda x: none_fmt[x]))
     geolevel = uc[uckey]
     # Seletor de localidades (se nível comportar):
     if geolevel in cf.GEOLEVEL_KEYS.keys():
         gkey = cf.GEOLEVEL_KEYS[geolevel]
         uc[gkey] = st.multiselect(label=geolevel + ':', options=st.session_state['sel_opts'][gkey], 
-                                  default=uc.get(gkey, uc_v0[gkey]), key=aux.gen_uckey(hash, gkey))
+                                  default=uc.get(gkey, uc_v0[gkey]), key=aux.gen_uckey(hash_id, gkey))
         # Erase information of other previously set levels:
         for gk in cf.GEOLEVEL_KEYS.values():
             if gk != gkey:
@@ -185,14 +176,14 @@ if idx != None:
             uc[gkey] = None
 
     uckey = 'email'
-    uc[uckey] = st_tags(label=cf.WIDGET_LABEL[uckey], value=tags_fmt(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash, uckey))
+    uc[uckey] = st_tags(label=cf.WIDGET_LABEL[uckey], value=tags_fmt(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash_id, uckey))
     for uckey in ['type', 'topics']:
         uc[uckey] = st.multiselect(label=cf.WIDGET_LABEL[uckey], options=st.session_state['sel_opts'][uckey], 
-                                   default=uc.get(uckey, []), key=aux.gen_uckey(hash, uckey))
+                                   default=uc.get(uckey, []), key=aux.gen_uckey(hash_id, uckey))
     uckey = 'tags'
-    uc[uckey] = st_tags(label=cf.WIDGET_LABEL[uckey], value=tags_fmt(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash, uckey))
+    uc[uckey] = st_tags(label=cf.WIDGET_LABEL[uckey], value=tags_fmt(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash_id, uckey))
     for uckey in ['url_source', 'url_image']:
-        uc[uckey] = st.text_input(label=cf.WIDGET_LABEL[uckey], value=uc.get(uckey, uc_v0[uckey]), key=aux.gen_uckey(hash, uckey))
+        uc[uckey] = st.text_input(label=cf.WIDGET_LABEL[uckey], value=uc.get(uckey, uc_v0[uckey]), key=aux.gen_uckey(hash_id, uckey))
     st.image(uc['url_image'])
 
     ### Datasets ###
@@ -205,17 +196,17 @@ if idx != None:
         with st.expander(f"Dataset {i+1}"):
             # Dataset metadata:
             for dkey in ['data_name', 'data_institution', 'data_url']:
-                ds[dkey] = st.text_input(label=cf.WIDGET_LABEL[dkey], value=ds.get(dkey, ds_v0[dkey]), key=aux.gen_uckey(hash, dkey, i))
+                ds[dkey] = st.text_input(label=cf.WIDGET_LABEL[dkey], value=ds.get(dkey, ds_v0[dkey]), key=aux.gen_uckey(hash_id, dkey, i))
             dkey = 'data_license'
-            ds[dkey] = st.selectbox(label=cf.WIDGET_LABEL[dkey], options=cf.LICENSE_OPTIONS, key=aux.gen_uckey(hash, dkey, i), 
+            ds[dkey] = st.selectbox(label=cf.WIDGET_LABEL[dkey], options=cf.LICENSE_OPTIONS, key=aux.gen_uckey(hash_id, dkey, i), 
                                     index=aux.nindex(cf.LICENSE_OPTIONS, ds.get(dkey, ds_v0[dkey])))
             dkey = 'data_format'
             ds[dkey] = st.multiselect(label=cf.WIDGET_LABEL[dkey], options=st.session_state['sel_opts'][dkey], 
-                                      default=ds.get(dkey, []), key=aux.gen_uckey(hash, dkey, i))
+                                      default=ds.get(dkey, []), key=aux.gen_uckey(hash_id, dkey, i))
             dkey = 'data_periodical'
             ds[dkey] = st.radio(label=cf.WIDGET_LABEL[dkey], options=[True, False, None],
                                 index=[True, False, None].index(ds.get(dkey, ds_v0[dkey])), 
-                                key=aux.gen_uckey(hash, dkey, i), horizontal=True, 
+                                key=aux.gen_uckey(hash_id, dkey, i), horizontal=True, 
                                 format_func=(lambda x: {True:'Sim', False:'Não', None:'(vazio)'}[x]))
             # Option to remove this dataset:
             def rm_dataset(index=i):
@@ -240,16 +231,16 @@ if idx != None:
         st.markdown('**Última modificação:** {:}'.format(uc.get('modified_date', '(vazio)')))
     # Editable fields:
     uckey = 'comment'
-    uc[uckey] = st.text_area(label=cf.WIDGET_LABEL[uckey], value=uc.get(uckey, uc_v0[uckey]), key=aux.gen_uckey(hash, uckey), height=200)
+    uc[uckey] = st.text_area(label=cf.WIDGET_LABEL[uckey], value=uc.get(uckey, uc_v0[uckey]), key=aux.gen_uckey(hash_id, uckey), height=200)
     #uckey = 'status'
     #uc[uckey] = st.radio(cf.WIDGET_LABEL[uckey], options=cf.STATUS_OPTIONS, horizontal=True,
-    #                    index=cf.STATUS_OPTIONS.index(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash, uckey))
+    #                    index=cf.STATUS_OPTIONS.index(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash_id, uckey))
     status_list = ['status_published', 'status_review']
     status_cols = st.columns(len(status_list))
     for i, uckey in enumerate(status_list):
         with status_cols[i]:
             uc[uckey] = st.radio(cf.WIDGET_LABEL[uckey], options=cf.STATUS_OPTIONS, horizontal=True,
-                        index=cf.STATUS_OPTIONS.index(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash, uckey),
+                        index=cf.STATUS_OPTIONS.index(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash_id, uckey),
                         format_func=(lambda x: cf.STATUS_DISPLAY[uckey][x]))
 
 
@@ -265,10 +256,7 @@ if idx != None:
             st.success("Dados salvos com sucesso!")
     # Remove button:
     with remove_col:
-        st.button("❌  Remover caso de uso", on_click=io.remove_usecase, args=(data, idx))
-    # Reset button:
-    #with reset_col:
-    #    st.button("🔄 Desfazer edições", on_click=io.reset_usecase, args=(idx,))
+        st.button("❌  Remover caso de uso", on_click=io.remove_usecase, args=(data, hash_id))
 
 
 ########################
@@ -276,7 +264,7 @@ if idx != None:
 ########################
 
 aux.html('<hr>', sidebar=True)
-st.sidebar.markdown('**\# casos cadastrados:** {:}'.format(len(usecases)))
+st.sidebar.markdown('**\# casos cadastrados:** {:}'.format(len(data['data'])))
 st.sidebar.markdown('**Última atualização**: {:}'.format(data['metadata']['last_update']))
 if st.session_state['allow_edit'] == True:
     st.sidebar.write('✏️ Edição permitida')

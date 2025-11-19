@@ -2,6 +2,7 @@ import streamlit as st
 
 import dataops as io
 import config as cf
+import auxiliar as aux
 
 #################
 ### Functions ###
@@ -60,7 +61,7 @@ def status_selectors():
                     status_filter[status_type].append(status_val)
 
     return status_filter
-
+    
 
 def usecase_picker(usecases: list, data: dict):
     """
@@ -71,26 +72,46 @@ def usecase_picker(usecases: list, data: dict):
     ----------
     usecases : list of dict
         A list of usecases, each a dict containing the data
-        about that usecase.
+        about that usecase. It can be filtered (i.e. not 
+        contain all usecases in `data`).
     data : dict
-        The whole CORDATA data, including the metadata 
-        (e.g. last_update).
+        The whole CORDATA data, including the metadata (e.g. 
+        last_update) and all usecases.
     
     Returns
     -------
-    idx : int
-        The index in `usecases` of the selected usecase.
+    hash_id : int
+        The ID of the selected usecase.
     """
     names = [uc['name'] for uc in usecases]
     ids   = [uc['hash_id'] for uc in usecases]
     id2name = dict(zip(ids, names))
-    idx = st.sidebar.selectbox("Selecione o caso de uso:", range(len(usecases)), format_func=lambda i: names[i], 
-                            index=st.session_state['idx_init'], on_change=io.save_data, kwargs={'data': data})
-    #idx = st.sidebar.selectbox("Selecione o caso de uso:", ids, format_func=lambda i: id2name[i], 
-    #                           index=st.session_state['idx_init'], on_change=io.save_data, kwargs={'data': data})
+    #idx = st.sidebar.selectbox("Selecione o caso de uso:", range(len(usecases)), format_func=lambda i: names[i], 
+    #                        index=st.session_state['idx_init'], on_change=io.save_data, kwargs={'data': data})
+    hash_id = st.sidebar.selectbox("Selecione o caso de uso:", ids, format_func=lambda i: id2name[i], 
+                                   index=aux.usecase_id2idx(ids, st.session_state['id_init']), on_change=io.save_data, kwargs={'data': data})
+
+    return hash_id
+
+
+def usecase_selector(data: dict):
+    """
+    Display selectors for the usecase to be viewed/edited.
+    """
+    
+    # Display statuses selectors for usecases:
+    status_filter = status_selectors()
+
+    # Filter usecases based on statuses:
+    usecases = data["data"]
+    sel_usecases = list(filter(lambda uc: status_selected(uc, status_filter), usecases))
+
+    # Select usecase:
+    #aux.log('Will run usecase select box')
+    hash_id = usecase_picker(sel_usecases, data)
     #aux.log('Ran usecase select box')
 
-    return idx
+    return hash_id
 
 
 ################
