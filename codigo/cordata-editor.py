@@ -117,34 +117,15 @@ st.sidebar.download_button('⬇️ Baixar dados', json.dumps(data, indent=1, ens
 aux.html('<hr>', sidebar=True)
 
 # Display statuses selectors for usecases:
-status_filter = dict()
-status_caption = {'status_published': 'Status de publicação:', 'status_review': 'Status de revisão:'}
-for status_type in cf.STATUS_DISPLAY.keys():
-    # Get captions and options for one status type:
-    st.sidebar.write(status_caption[status_type])
-    status_dict = cf.STATUS_DISPLAY[status_type]
-    # Loop over options:
-    cols = st.sidebar.columns(len(status_dict))
-    status_filter[status_type] = []
-    for i, (status_val, status_label) in enumerate(status_dict.items()):
-        with cols[i]:
-            # If options is selected, add it to selection
-            if st.checkbox(label=status_label, value=True) == True:
-                status_filter[status_type].append(status_val)
+status_filter = ct.status_selectors()
+
 
 # Filter usecases based on statuses:
 sel_usecases = list(filter(lambda uc: ct.status_selected(uc, status_filter), usecases))
 
 # Select usecase:
 #aux.log('Will run usecase select box')
-names = [uc['name'] for uc in sel_usecases]
-ids   = [uc['hash_id'] for uc in sel_usecases]
-id2name = dict(zip(ids, names))
-idx = st.sidebar.selectbox("Selecione o caso de uso:", range(len(sel_usecases)), format_func=lambda i: names[i], 
-                           index=st.session_state['idx_init'], on_change=io.save_data, kwargs={'data': data})
-#idx = st.sidebar.selectbox("Selecione o caso de uso:", ids, format_func=lambda i: id2name[i], 
-#                           index=st.session_state['idx_init'], on_change=io.save_data, kwargs={'data': data})
-#aux.log('Ran usecase select box')
+idx = ct.usecase_picker(sel_usecases, data)
 
 # Add new usecase:
 st.sidebar.button('➕ Adicionar novo caso', on_click=io.add_new_case, args=(data,))
