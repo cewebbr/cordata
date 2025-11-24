@@ -86,10 +86,9 @@ def usecase_picker(usecases: list, data: dict):
     names = [uc['name'] for uc in usecases]
     ids   = [uc['hash_id'] for uc in usecases]
     id2name = dict(zip(ids, names))
-    #idx = st.sidebar.selectbox("Selecione o caso de uso:", range(len(usecases)), format_func=lambda i: names[i], 
-    #                        index=st.session_state['idx_init'], on_change=io.save_data, kwargs={'data': data})
     hash_id = st.sidebar.selectbox("Selecione o caso de uso:", ids, format_func=lambda i: id2name[i], 
-                                   index=aux.usecase_id2idx(ids, st.session_state['id_init']), on_change=io.save_data, kwargs={'data': data})
+                                   index=aux.usecase_id2idx(ids, st.session_state['id_init']), 
+                                   on_change=io.save_data, args=(data,), key='usecase_selectbox')
 
     return hash_id
 
@@ -102,8 +101,17 @@ def usecase_selector(data: dict):
     # Display statuses selectors for usecases:
     status_filter = status_selectors()
 
-    # Filter usecases based on statuses:
+    # Check if status selector will drop current usecase:
     usecases = data["data"]
+    if st.session_state['usecase_selectbox'] != None:
+         uc = aux.select_usecase_by_id(data, st.session_state['usecase_selectbox'])
+         st.code(uc)
+         if status_selected(uc, status_filter) == False:
+             st.write('entrou no limpador de id')
+             # Set id_init to None.
+             st.session_state['id_init'] = None
+
+    # Filter usecases based on statuses:
     sel_usecases = list(filter(lambda uc: status_selected(uc, status_filter), usecases))
 
     # Select usecase:

@@ -36,7 +36,7 @@ import auxiliar as aux
 import controls as ct
 
 # Logging:
-aux.log('Started app run')
+#aux.log('Started app run')
 
 # Move current working directory to the script’s directory
 os.chdir(Path(__file__).parent)
@@ -66,6 +66,8 @@ def tags_fmt(x):
 # Initialization of session variables:
 if 'id_init' not in st.session_state:
     st.session_state['id_init'] = None
+if 'usecase_selectbox' not in st.session_state:
+    st.session_state['usecase_selectbox'] = None
 # Load list of options for multiselect widgets:
 if 'sel_opts' not in st.session_state:
     mun = aux.read_lines('data/municipios.csv')
@@ -97,13 +99,10 @@ if 'allow_edit' not in st.session_state:
 
 # Sidebar header:
 st.sidebar.image('img/logo-cordata.png', width=200)
-
 # Replace local data with the one from the repo:
 st.sidebar.button('🐙 Carregar do Github', on_click=io.load_from_github)
-
 # Upload data from local:
 st.sidebar.button('⬆️ Subir dados locais', on_click=io.upload_data)
-
 # Remove all data from the app:
 st.sidebar.button('🗑️ Limpar a base', on_click=io.erase_usecases)
 
@@ -112,11 +111,13 @@ data = io.load_data(cf.TEMP_FILE)
 
 # Baixar dados:
 st.sidebar.download_button('⬇️ Baixar dados', json.dumps(data, indent=1, ensure_ascii=False), file_name='usecases_current.json')
-
 aux.html('<hr>', sidebar=True)
 
 # Select a usecase to view/edit:
 hash_id = ct.usecase_selector(data)
+
+st.write('Selectbox:', st.session_state['usecase_selectbox'])
+st.write('id_init:', st.session_state['id_init'])
 
 # Add new usecase:
 st.sidebar.button('➕ Adicionar novo caso', on_click=io.add_new_case, args=(data,))
@@ -270,4 +271,4 @@ if st.session_state['allow_edit'] == True:
     st.sidebar.write('✏️ Edição permitida')
 
 # Logging:
-aux.log('Finished app run')
+#aux.log('Finished app run')

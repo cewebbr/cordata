@@ -30,6 +30,7 @@ def load_from_github():
         data = download_data('https://raw.githubusercontent.com/cewebbr/cordata/refs/heads/main/dados/limpos/usecases_current.json')
         save_data(data)
         st.session_state['id_init'] = None
+        st.session_state['usecase_selectbox'] = None
         st.rerun()
 
 
@@ -41,6 +42,7 @@ def upload_data():
         data = json.load(uploaded_file)
         save_data(data)
         st.session_state['id_init'] = None
+        st.session_state['usecase_selectbox'] = None
         st.rerun()
 
 
@@ -202,6 +204,7 @@ def add_new_case(data):
         save_data(data, cf.TEMP_FILE)
         # Set to show it:
         st.session_state['id_init'] = uc['hash_id']
+        st.session_state['usecase_selectbox'] = uc['hash_id']
         st.rerun()
     aux.log('Finished add_new_case dialog')
 
@@ -228,6 +231,7 @@ def remove_usecase(data, hash_id):
         usecases.pop(idx)
         save_data(data)
         st.session_state['id_init'] = None
+        st.session_state['usecase_selectbox'] = None
         st.rerun()
     aux.log('Finished remove_usecase dialog')
 

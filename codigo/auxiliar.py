@@ -206,10 +206,8 @@ def load_translations(path='data/translations.csv', from_l='ptbr', to_l='es'):
     with the translations from language `from_l` (str)
     to `to_l` (str). 
     """
-    #translations_df = pd.read_csv(path)
     translations_df = read_csv_as_dict(path)
     translation_dict = dict(zip(translations_df[from_l], translations_df[to_l]))
-    print(translation_dict)
     return translation_dict
 
 
