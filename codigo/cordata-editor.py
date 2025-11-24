@@ -116,8 +116,8 @@ aux.html('<hr>', sidebar=True)
 # Select a usecase to view/edit:
 hash_id = ct.usecase_selector(data)
 
-st.write('Selectbox:', st.session_state['usecase_selectbox'])
-st.write('id_init:', st.session_state['id_init'])
+#st.write('Selectbox:', st.session_state['usecase_selectbox'])
+#st.write('id_init:', st.session_state['id_init'])
 
 # Add new usecase:
 st.sidebar.button('➕ Adicionar novo caso', on_click=io.add_new_case, args=(data,))

@@ -105,7 +105,7 @@ def usecase_selector(data: dict):
     usecases = data["data"]
     if st.session_state['usecase_selectbox'] != None:
          uc = aux.select_usecase_by_id(data, st.session_state['usecase_selectbox'])
-         st.code(uc)
+         #st.code(uc)
          if status_selected(uc, status_filter) == False:
              st.write('entrou no limpador de id')
              # Set id_init to None.
