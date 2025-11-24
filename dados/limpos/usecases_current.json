@@ -1,8 +1,1081 @@
 {
  "metadata": {
-  "last_update": "2025-11-13"
+  "last_update": "2025-11-24"
  },
  "data": [
+  {
+   "hash_id": 4037860835,
+   "name": "Petróleo gera royalties, mas não desenvolvimento na Amazônia peruana",
+   "url": "https://infoamazonia.org/2025/04/15/petroleo-gera-royalties-mas-nao-desenvolvimento-na-amazonia-peruana/",
+   "url_archive": "https://archive.ph/gHG1l",
+   "description": "A reportagem faz parte do especial \"Até a Última Gota\", uma investigação jornalística transfronteiriça e multidisciplinar que percorreu a Amazônia ao longo de quase um ano para entender os impactos — passados, presentes e futuros — da exploração petrolífera no maior bioma tropical do planeta.",
+   "pub_date": "04/2025",
+   "authors": [
+    "Aramís Castro"
+   ],
+   "authors_id": [
+    null
+   ],
+   "geo_level": "Países",
+   "countries": [
+    "Peru"
+   ],
+   "fed_units": null,
+   "municipalities": null,
+   "email": null,
+   "type": [
+    "matéria jornalística"
+   ],
+   "topics": [
+    "Economia e Finanças",
+    "Assistência e Desenvolvimento Social",
+    "Meio Ambiente"
+   ],
+   "tags": [
+    "Amazônia Peruana",
+    "desigualdade social",
+    "pobreza",
+    "petróleo"
+   ],
+   "url_source": "https://",
+   "url_image": "https://infoamazonia.org/wp-content/uploads/2025/03/petroleoPeru-1536x1024.jpg",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "datasets": [
+    {
+     "data_name": "Índice Temático Social - Mazán",
+     "data_institution": "Instituto Nacional de Estatística e Informática (INEI)",
+     "data_url": "https://estadist.inei.gob.pe/map",
+     "data_license": "Inexistente",
+     "data_format": [
+      "XLSX"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Presupuesto Aprobado año 2025",
+     "data_institution": "Portal de Transparencia Económica",
+     "data_url": "https://www.mef.gob.pe/es/?option=com_content&language=es-ES&Itemid=101158&lang=es-ES&view=article&id=8371",
+     "data_license": "Inexistente",
+     "data_format": [
+      "PDF",
+      "XLSX"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Atividades Petrolíferas no Peru",
+     "data_institution": "Instituto Internacional Arayara",
+     "data_url": "https://monitor.amazonialivredepetroleo.org/",
+     "data_license": "CC BY-NC-ND",
+     "data_format": [
+      "XLSX"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Reporte de Produccion Fiscalizada de Hidrocarburos Liquidos a Nivel Nacional (Barriles)",
+     "data_institution": "Perúpetro",
+     "data_url": "https://www.perupetro.com.pe/wps/wcm/connect/corporativo/fd464084-a67c-4d4c-a0e9-ff7838f18edd/L%C3%ADquidos+-+febrero+2025.pdf?MOD=AJPERES",
+     "data_license": "Inexistente",
+     "data_format": [
+      "PDF"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Presupuesto Aprobado año 2023",
+     "data_institution": "Portal de Transparencia Económica",
+     "data_url": "https://www.mef.gob.pe/es/?option=com_content&language=es-ES&Itemid=101158&lang=es-ES&view=article&id=7596",
+     "data_license": "Inexistente",
+     "data_format": [
+      "PDF",
+      "XLSX"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Presupuesto Aprobado año 2024",
+     "data_institution": "Portal de Transparencia Económica",
+     "data_url": "https://www.mef.gob.pe/es/?option=com_content&language=es-ES&Itemid=101158&lang=es-ES&view=article&id=8072",
+     "data_license": "Inexistente",
+     "data_format": [
+      "PDF",
+      "XLSX"
+     ],
+     "data_periodical": false
+    }
+   ],
+   "record_date": "2025-11-24",
+   "modified_date": null,
+   "status_published": true,
+   "status_review": false,
+   "type_es": [
+    "artículo periodístico"
+   ],
+   "topics_es": [
+    "Economía y Finanzas",
+    "Asistencia y Desarrollo Social",
+    "Medio Ambiente"
+   ],
+   "countries_es": [
+    "Perú"
+   ]
+  },
+  {
+   "hash_id": 806202395,
+   "name": "VIS DATA - Visualizador de Dados Sociais",
+   "url": "https://aplicacoes.cidadania.gov.br/vis/data3/data-explorer.php#",
+   "url_archive": "https://archive.ph/UvBFk",
+   "description": "É uma aplicação que tem como objetivo fornecer uma plataforma para análise e visualização de dados relacionados aos programas sociais do MDS.",
+   "pub_date": "01/2025",
+   "authors": [
+    "SECRETARIA DE AVALIAÇÃO, GESTÃO DA INFORMAÇÃO E CADASTRO ÚNICO - SAGICAD"
+   ],
+   "authors_id": [
+    null
+   ],
+   "geo_level": "Países",
+   "countries": [
+    "Brasil"
+   ],
+   "fed_units": null,
+   "municipalities": null,
+   "email": null,
+   "type": [
+    "aplicativo ou plataforma"
+   ],
+   "topics": [
+    "Assistência e Desenvolvimento Social"
+   ],
+   "tags": [
+    "MI Social",
+    "visualização",
+    "mds",
+    "Assistência Social",
+    "visdata",
+    "matriz de informação social"
+   ],
+   "url_source": "https://",
+   "url_image": "https://dados.gov.br/api/publico/s3/77a7ce73-a6c5-475f-ad91-2b283df10d56.png",
+   "comment": "Cadastrado por César Calafrioli",
+   "datasets": [
+    {
+     "data_name": "Auxílio Gás dos Brasileiros",
+     "data_institution": "MDS",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/programa-auxilio-gas-dos-brasileiros",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV",
+      "JSON"
+     ],
+     "data_periodical": true
+    },
+    {
+     "data_name": "Unidades de Atendimento da Assistência Social",
+     "data_institution": "MDS",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/unidades-de-atendimento-da-assistencia-social",
+     "data_license": "ODbL",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "SUASWEB – Sistema de Gestão do SUAS",
+     "data_institution": "MDS",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/suasweb--sistema-de-gestao-do-suas",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV",
+      "JSON"
+     ],
+     "data_periodical": true
+    },
+    {
+     "data_name": "Pessoas inscritas no Cadastro Único por faixa de renda per capita",
+     "data_institution": "MDS",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/pessoas-inscritas-no-cadastro-unico-por-faixa-de-renda-per-capita",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": true
+    },
+    {
+     "data_name": "Programa Criança Feliz",
+     "data_institution": "MDS",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/programa-crianca-feliz",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV",
+      "JSON"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "SICON - Sistema de Condicionalidades de Saúde do Programa Bolsa Família",
+     "data_institution": "MDS",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/sicon---sistema-de-condicionalidades---saude",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV",
+      "JSON"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "SICON - Sistema de Condicionalidades de Repercussões do Programa Bolsa Família",
+     "data_institution": "MDS",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/sicon---sistema-de-condicionalidades-de-repercussoes",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV",
+      "JSON"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Famílias por faixa de renda com cadastro atualizado no Cadastro Único",
+     "data_institution": "MDS",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/familias-por-faixa-de-renda-com-cadastro-atualizado-no-cadastro-unico",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": true
+    },
+    {
+     "data_name": "Auxílio Brasil (Descontinuado)",
+     "data_institution": "MDS",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/auxilio-brasil",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV",
+      "JSON"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "SISC - Sistema de Informações do Serviço de Convivência e Fortalecimento de Vínculos",
+     "data_institution": "MDS",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/sisc---sistema-de-informacoes-do-servico-de-convivencia-e-fortalecimento-de-vinculos",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": true
+    }
+   ],
+   "record_date": "2025-11-21",
+   "modified_date": null,
+   "status_published": true,
+   "status_review": true,
+   "type_es": [
+    "aplicación o plataforma"
+   ],
+   "topics_es": [
+    "Asistencia y Desarrollo Social"
+   ],
+   "countries_es": [
+    "Brasil"
+   ]
+  },
+  {
+   "hash_id": 2889619413,
+   "name": "Cacimbão",
+   "url": "https://huggingface.co/spaces/anapaulagomes/pescadores-e-pescadoras-profissionais",
+   "url_archive": "https://",
+   "description": "O Cacimbão é uma biblioteca de código aberto (demo https://huggingface.co/spaces/anapaulagomes/pescadores-e-pescadoras-profissionais) que oferece fácil acesso aos dados abertos brasileiros de tamanhos diferentes reais com o propósito educacional.",
+   "pub_date": "01/2025",
+   "authors": null,
+   "authors_id": null,
+   "geo_level": "Países",
+   "countries": [
+    "Brasil"
+   ],
+   "fed_units": null,
+   "municipalities": null,
+   "email": null,
+   "type": [
+    "aplicativo ou plataforma",
+    "outro"
+   ],
+   "topics": [
+    "Agricultura, extrativismo e pesca",
+    "Geografia"
+   ],
+   "tags": [
+    "Pesca",
+    "filmes",
+    "salários-mínimos",
+    "Aldeias indígenas"
+   ],
+   "url_source": "https://",
+   "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+   "comment": "Cadastrado por César Calafrioli.",
+   "datasets": [
+    {
+     "data_name": "Pescador Profissional",
+     "data_institution": "IBAMA",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/pescador-profissional1",
+     "data_license": "Outra",
+     "data_format": [
+      "CSV",
+      "Outro",
+      "XML"
+     ],
+     "data_periodical": true
+    },
+    {
+     "data_name": "Tabela de aldeias indígenas",
+     "data_institution": "FUNAI",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/tabela-de-aldeias-indgenas",
+     "data_license": "CC-BY",
+     "data_format": [
+      "ODS"
+     ],
+     "data_periodical": null
+    }
+   ],
+   "record_date": "2025-11-20",
+   "modified_date": null,
+   "status_published": true,
+   "status_review": true,
+   "type_es": [
+    "aplicación o plataforma",
+    "outros"
+   ],
+   "topics_es": [
+    "Agricultura, Extractivismo y Pesca",
+    "Geografía"
+   ],
+   "countries_es": [
+    "Brasil"
+   ]
+  },
+  {
+   "hash_id": 1365711301,
+   "name": "Brasil Transparente",
+   "url": "https://brasiltransparente.digital/sobre",
+   "url_archive": "https://archive.ph/G5Em1",
+   "description": "O Brasil Transparente é um projeto criado para facilitar o acesso e a compreensão dos gastos públicos da União e dos estados brasileiros. Embora existam portais oficiais que disponibilizam esses dados, eles são descentralizados, complexos e pouco acessíveis. Nossa plataforma surgiu para resolver esse problema: oferecemos uma interface simples, intuitiva e centrada no usuário, que busca tornar as informações públicas verdadeiramente compreensíveis.\n\nA missão é permitir que qualquer pessoa entenda, com clareza, como os recursos públicos estão sendo utilizados. Queremos apresentar o cenário das despesas governamentais de forma completa, organizada e muito fácil de explorar e compreender. Acreditamos que transparência e conhecimento são pilares de um Brasil mais justo, democrático e eficiente. Compreender onde e como os recursos públicos são utilizados permite que você tome decisões mais informadas e contribua para a construção de um país mais transparente e responsável.",
+   "pub_date": "01/2025",
+   "authors": [
+    "Brasil Transparente"
+   ],
+   "authors_id": [
+    null
+   ],
+   "geo_level": "Países",
+   "countries": [
+    "Brasil"
+   ],
+   "fed_units": null,
+   "municipalities": null,
+   "email": null,
+   "type": [
+    "aplicativo ou plataforma"
+   ],
+   "topics": [
+    "Economia e Finanças"
+   ],
+   "tags": [
+    "Transparência",
+    "Cidadania",
+    "Gastos",
+    "Economia e Finanças",
+    "Orçamento público",
+    "Custos da União",
+    "código aberto"
+   ],
+   "url_source": "https://",
+   "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+   "comment": "O conjunto de dados \"Despesa pública\", do Estado de Minas Gerais, está na licença CC-BY-4.0.\n\nCadastrado por César Calafrioli.",
+   "datasets": [
+    {
+     "data_name": "Despesa pública",
+     "data_institution": "Estado de minas Gerais",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/despesa",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV",
+      "JSON"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Despesas Públicas",
+     "data_institution": "Controladoria-Geral da União (CGU)",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/despesas-publicas",
+     "data_license": "Inexistente",
+     "data_format": [
+      "ZIP",
+      "CSV"
+     ],
+     "data_periodical": false
+    }
+   ],
+   "record_date": "2025-11-20",
+   "modified_date": null,
+   "status_published": true,
+   "status_review": true,
+   "type_es": [
+    "aplicación o plataforma"
+   ],
+   "topics_es": [
+    "Economía y Finanzas"
+   ],
+   "countries_es": [
+    "Brasil"
+   ]
+  },
+  {
+   "hash_id": 1022525827,
+   "name": "Bolsa Família e Cadastro Único no seu município",
+   "url": "https://aplicacoes.cidadania.gov.br/ri/pbfcad/",
+   "url_archive": "https://",
+   "description": "Reúne e organiza as informações de forma textual do Bolsa Família e do Cadastro Único para facilitar a gestão local dos programas sociais, permitindo que visualizem dados, indicadores e relatórios essenciais para monitorar a execução dos programas.",
+   "pub_date": null,
+   "authors": [
+    "Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome"
+   ],
+   "authors_id": [
+    null
+   ],
+   "geo_level": "Países",
+   "countries": [
+    "Brasil"
+   ],
+   "fed_units": null,
+   "municipalities": null,
+   "email": null,
+   "type": [
+    "aplicativo ou plataforma"
+   ],
+   "topics": [
+    "Assistência e Desenvolvimento Social"
+   ],
+   "tags": [
+    "MI Social"
+   ],
+   "url_source": "https://",
+   "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+   "comment": "Cadastrado por César Calafrioli.",
+   "datasets": [
+    {
+     "data_name": "Auxílio Gás dos Brasileiros",
+     "data_institution": "Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome (MDS)",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/programa-auxilio-gas-dos-brasileiros",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV",
+      "JSON"
+     ],
+     "data_periodical": true
+    },
+    {
+     "data_name": "Pessoas inscritas no Cadastro Único por faixa de renda per capita",
+     "data_institution": "Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome (MDS)",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/pessoas-inscritas-no-cadastro-unico-por-faixa-de-renda-per-capita",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": true
+    },
+    {
+     "data_name": "Bolsa Família - Benefícios Básicos e Variáveis",
+     "data_institution": "Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome (MDS)",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/bolsa-familia---beneficios-basicos-e-variaveis",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV",
+      "JSON"
+     ],
+     "data_periodical": true
+    },
+    {
+     "data_name": "Bolsa Família",
+     "data_institution": "Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome (MDS)",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/bolsa-familia",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV",
+      "JSON",
+      "XML"
+     ],
+     "data_periodical": true
+    },
+    {
+     "data_name": "Índice de Gestão Descentralizada dos Municípios - IGD-M",
+     "data_institution": " Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome (MDS)",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/indice-de-gestao-descentralizada-dos-municipios---igd-m",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV",
+      "JSON"
+     ],
+     "data_periodical": true
+    },
+    {
+     "data_name": "Famílias inscritas no Cadastro Único por faixa de renda per capita",
+     "data_institution": "Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome (MDS)",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/familias-inscritas-no-cadastro-unico-por-faixa-de-renda-per-capita",
+     "data_license": "CC0",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": true
+    },
+    {
+     "data_name": "SICON - Sistema de Condicionalidades de Saúde do Programa Bolsa Família",
+     "data_institution": " Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome (MDS)",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/sicon---sistema-de-condicionalidades---saude",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV",
+      "JSON"
+     ],
+     "data_periodical": true
+    }
+   ],
+   "record_date": "2025-11-20",
+   "modified_date": null,
+   "status_published": true,
+   "status_review": true,
+   "type_es": [
+    "aplicación o plataforma"
+   ],
+   "topics_es": [
+    "Asistencia y Desarrollo Social"
+   ],
+   "countries_es": [
+    "Brasil"
+   ]
+  },
+  {
+   "hash_id": 3114585729,
+   "name": "Indígenas da Amazônia colombiana denunciam poluição por petróleo e ameaças de guerrilhas",
+   "url": "https://infoamazonia.org/2025/04/10/indigenas-da-amazonia-colombiana-denunciam-poluicao-por-petroleo-e-ameacas-de-guerrilhas/",
+   "url_archive": "https://archive.ph/w9Unw",
+   "description": "A reportagem faz parte do especial \"Até a Última Gota\", uma investigação jornalística transfronteiriça e multidisciplinar que percorreu a Amazônia ao longo de quase um ano para entender os impactos — passados, presentes e futuros — da exploração petrolífera no maior bioma tropical do planeta.",
+   "pub_date": "04/2025",
+   "authors": [
+    "Pilar Puentes"
+   ],
+   "authors_id": [
+    null
+   ],
+   "geo_level": "Países",
+   "countries": [
+    "Colômbia",
+    "Equador",
+    "Brasil"
+   ],
+   "fed_units": null,
+   "municipalities": null,
+   "email": null,
+   "type": [
+    "matéria jornalística"
+   ],
+   "topics": [
+    "Meio Ambiente",
+    "Governo e Política",
+    "Defesa e Segurança",
+    "Indústria"
+   ],
+   "tags": [
+    "petróleo",
+    "Rio Putumayo",
+    "povos indígenas",
+    "Amazônia",
+    "povos transfronteiriços"
+   ],
+   "url_source": "https://",
+   "url_image": "https://infoamazonia.org/wp-content/uploads/2025/04/38.-Desolacion-a-lo-largo-de-los-desplazamientos-por-el-rio-Putumayo.-1-1536x956.jpg",
+   "comment": null,
+   "datasets": [
+    {
+     "data_name": "Exploração Petrolífera",
+     "data_institution": "Instituto Internacional Arayara",
+     "data_url": "https://monitor.amazonialivredepetroleo.org/",
+     "data_license": "Inexistente",
+     "data_format": [
+      "XLSX"
+     ],
+     "data_periodical": false
+    }
+   ],
+   "record_date": "2025-11-19",
+   "modified_date": null,
+   "status_published": true,
+   "status_review": false,
+   "type_es": [
+    "artículo periodístico"
+   ],
+   "topics_es": [
+    "Medio Ambiente",
+    "Gobierno y Política",
+    "Defensa y Seguridad",
+    "Industria"
+   ],
+   "countries_es": [
+    "Colombia",
+    "Ecuador",
+    "Brasil"
+   ]
+  },
+  {
+   "hash_id": 1005420252,
+   "name": "ExxonMobil consolida ‘petroestado’ em meio a denúncias ambientais na Guiana",
+   "url": "https://infoamazonia.org/2025/04/08/exxonmobil-consolida-petroestado-em-meio-a-denuncias-ambientais-na-guiana/",
+   "url_archive": "https://archive.ph/6ubXQ",
+   "description": "A reportagem faz parte do especial \"Até a Última Gota\", uma investigação jornalística transfronteiriça e multidisciplinar que percorreu a Amazônia ao longo de quase um ano para entender os impactos — passados, presentes e futuros — da exploração petrolífera no maior bioma tropical do planeta.",
+   "pub_date": "04/2025",
+   "authors": [
+    "Fábio Bispo"
+   ],
+   "authors_id": [
+    null
+   ],
+   "geo_level": "Países",
+   "countries": [
+    "Guiana"
+   ],
+   "fed_units": null,
+   "municipalities": null,
+   "email": null,
+   "type": [
+    "matéria jornalística"
+   ],
+   "topics": [
+    "Meio Ambiente",
+    "Governo e Política",
+    "Justiça e Legislação",
+    "Indústria"
+   ],
+   "tags": [
+    "ExxonMobil",
+    "legislação ambiental",
+    "indústria petrolífera",
+    "gas flaring"
+   ],
+   "url_source": "https://",
+   "url_image": "https://infoamazonia.org/wp-content/uploads/2025/03/Petroleo-na-Giuana-26-1536x1025.jpg",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\nDataset 2: o link para esse conjunto de dados está localizado abaixo do gráfico \"Produção média diária do bloco Stabroek\", mas está quebrado.",
+   "datasets": [
+    {
+     "data_name": "Produto Interno Bruto (PIB) - Países",
+     "data_institution": "Banco Mundial",
+     "data_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV",
+      "XML",
+      "XLSX"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Produção de Petróleo média diária do bloco Stabroek",
+     "data_institution": "U.S. Energy Information Administration",
+     "data_url": null,
+     "data_license": "CC0",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Gas Flaring Volume",
+     "data_institution": "SkyTruth",
+     "data_url": "https://flaring.skytruth.org/?view=volume",
+     "data_license": "CC BY-SA",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Country Carbon Data - Guyana",
+     "data_institution": "Global Forest Watch",
+     "data_url": "https://gfw2-data.s3.amazonaws.com/country-pages/country_stats/download/2024/global_05212025.xlsx",
+     "data_license": "CC-BY",
+     "data_format": [
+      "XLSX"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Taxa de Crescimento Anual do PIB da Guiana",
+     "data_institution": "Bank of Guyana",
+     "data_url": "https://pt.tradingeconomics.com/guyana/gdp-growth-annual",
+     "data_license": "Inexistente",
+     "data_format": [
+      "CSV",
+      "XLSX",
+      "API",
+      "JSON",
+      "XML"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Taxa de Desemprego - América",
+     "data_institution": "Trading Economics",
+     "data_url": "https://pt.tradingeconomics.com/country-list/unemployment-rate?continent=america&utm",
+     "data_license": "Inexistente",
+     "data_format": [
+      "CSV",
+      "JSON",
+      "XML",
+      "XLSX",
+      "API"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Guyana Exports",
+     "data_institution": "World Integrated Trade Solution (WITS)",
+     "data_url": "https://wits.worldbank.org/CountryProfile/en/Country/GUY/Year/2022/TradeFlow/Export/Partner/all/Show/Partner%20Name;XPRT-TRD-VL;XPRT-PRTNR-SHR;/Sort/XPRT-TRD-VL/Chart/top5",
+     "data_license": "CC-BY",
+     "data_format": [
+      "XLSX"
+     ],
+     "data_periodical": false
+    }
+   ],
+   "record_date": "2025-11-18",
+   "modified_date": null,
+   "status_published": true,
+   "status_review": false,
+   "type_es": [
+    "artículo periodístico"
+   ],
+   "topics_es": [
+    "Medio Ambiente",
+    "Gobierno y Política",
+    "Justicia y Legislación",
+    "Industria"
+   ],
+   "countries_es": [
+    "Guyana"
+   ]
+  },
+  {
+   "hash_id": 2094169909,
+   "name": "AuditaSocial",
+   "url": "https://ma-elperr.github.io/AuditaSocial/",
+   "url_archive": "https://archive.ph/ld97T",
+   "description": "Este projeto tem como objetivo fornecer um mecanismo para cruzamento de bases de dados para verificar se determinada relação de servidores públicos constam como recebedores de benefícios federais.\n\nAs seguintes bases de dados federais são utilizadas nos cruzamentos:\n\nNovo Bolsa Família\nBPC (Benefício de Prestação Continuada)\nSeguro Defeso\nOs arquivos das respectivas bases são baixados automaticamente dos Dados Abertos do Portal da Transparência do Governo Federal: https://portaldatransparencia.gov.br/download-de-dados\n\nO número do NIS é utilizado como campo chave nos cruzamentos, e portanto, é imprescindível a disponibilidade de uma relação de servidores contendo o número do NIS do ente federativo que irá utilizar esta ferramenta.\n\nO usuário deverá gerar uma relação de servidores em arquivo no formato CSV em layout específico (detalhado abaixo) e colocar em uma pasta do projeto para execução dos cruzamentos.\n\nEste projeto inclui um modo de teste, por meio do qual é realizada uma simulação com dados fictícios gerados aleatoriamente, para fins de demonstração da funcionalidade.",
+   "pub_date": "01/2025",
+   "authors": [
+    "AuditaSocial"
+   ],
+   "authors_id": [
+    null
+   ],
+   "geo_level": "Países",
+   "countries": [
+    "Brasil"
+   ],
+   "fed_units": null,
+   "municipalities": null,
+   "email": null,
+   "type": [
+    "aplicativo ou plataforma"
+   ],
+   "topics": [
+    "Governo e Política",
+    "Assistência e Desenvolvimento Social"
+   ],
+   "tags": [
+    "benefícios sociais",
+    "Participação e Controle Social",
+    "auditoria",
+    "Integridade Pública",
+    "Controle Interno"
+   ],
+   "url_source": "https://",
+   "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+   "comment": "Aplicativo armazenado no repositório do github para download e execução na máquina local. Não há emails para contato.\n\nResta revisar a periodicidade do uso, que necessita da instalação da ferramenta na máquina local via docker.\n\nCadastrado por César Calafrioli.",
+   "datasets": [
+    {
+     "data_name": "BPC - Pagamentos",
+     "data_institution": "Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/bpc---pagamentos",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV",
+      "ZIP"
+     ],
+     "data_periodical": null
+    },
+    {
+     "data_name": "Bolsa Família",
+     "data_institution": "Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/bolsa-familia",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV",
+      "JSON",
+      "XML"
+     ],
+     "data_periodical": null
+    },
+    {
+     "data_name": "Benefícios ao Cidadão",
+     "data_institution": "Controladoria-Geral da União",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/programas-sociais",
+     "data_license": "Inexistente",
+     "data_format": [
+      "CSV",
+      "ZIP"
+     ],
+     "data_periodical": null
+    }
+   ],
+   "record_date": "2025-11-16",
+   "modified_date": null,
+   "status_published": true,
+   "status_review": true,
+   "type_es": [
+    "aplicación o plataforma"
+   ],
+   "topics_es": [
+    "Gobierno y Política",
+    "Asistencia y Desarrollo Social"
+   ],
+   "countries_es": [
+    "Brasil"
+   ]
+  },
+  {
+   "hash_id": 2515427461,
+   "name": "Águas do Ceará",
+   "url": "https://app.powerbi.com/view?r=eyJrIjoiMmFlOTVjZjItMmI2Yy00YTYwLWExYWMtNzViODU2YzUwZWI1IiwidCI6ImZhYWM3MDFjLTczN2QtNDEyYS1hMmQwLWI2MTM0Y2Y3OTk0ZiJ9",
+   "url_archive": "https://",
+   "description": "Informações sobre volume de açudes, infraestrutura hídrica, demanda setorial por água, panorama das chuvas, abastecimento de água e esgotamento sanitário dos municípios do Ceará.\n",
+   "pub_date": "01/2025",
+   "authors": [
+    "Observatório da Indústria"
+   ],
+   "authors_id": [
+    null
+   ],
+   "geo_level": "Unidades federativas",
+   "countries": [
+    "Brasil"
+   ],
+   "fed_units": [
+    "CE"
+   ],
+   "municipalities": null,
+   "email": null,
+   "type": [
+    "painel, dashboard ou infográfico"
+   ],
+   "topics": [
+    "Habitação, Saneamento e Urbanismo"
+   ],
+   "tags": [
+    "agua",
+    "Esgotamento Sanitário",
+    "rede esgoto esgotamento sanitario fortaleza"
+   ],
+   "url_source": "https://",
+   "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+   "comment": "Não consegui encontrar na web o email da Federação das Indústrias do Estado do Ceará (FIEC) para colocar no contato. O único dataset apontado no reúso é apenas uma página html de teste. Não coloquei link da cópia arquivada pois, ao cadastrar no archive.ph, aparece apenas uma página em branco.\n\nCadastrado por César Calafrioli.",
+   "datasets": [
+    {
+     "data_name": "SNIS - Série Histórica",
+     "data_institution": "Ministério das Cidades",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/snis---srie-histrica",
+     "data_license": "CC-BY",
+     "data_format": [
+      "Outro"
+     ],
+     "data_periodical": null
+    }
+   ],
+   "record_date": "2025-11-16",
+   "modified_date": null,
+   "status_published": true,
+   "status_review": true,
+   "type_es": [
+    "panel de control o infografía"
+   ],
+   "topics_es": [
+    "Vivienda, Saneamiento y Urbanismo"
+   ],
+   "countries_es": [
+    "Brasil"
+   ]
+  },
+  {
+   "hash_id": 3878869115,
+   "name": "ABDI Observatório - MPE",
+   "url": "https://app.powerbi.com/view?r=eyJrIjoiMGE3NWFjMTUtMWM0ZS00YzQyLWFkMjgtZWRkYjQwZTIyNzBkIiwidCI6ImZhYWM3MDFjLTczN2QtNDEyYS1hMmQwLWI2MTM0Y2Y3OTk0ZiJ9",
+   "url_archive": "https://",
+   "description": "O Observatório da Micro e Pequena Empresa é uma plataforma na qual são disponibilizados, em um único ambiente, dados de diversas fontes relacionados aos temas de crédito, mercado de trabalho, abertura e fechamento de empresas, etc.",
+   "pub_date": "01/2025",
+   "authors": [
+    "Observatório da Indústria"
+   ],
+   "authors_id": [
+    null
+   ],
+   "geo_level": "Mundial",
+   "countries": null,
+   "fed_units": null,
+   "municipalities": null,
+   "email": null,
+   "type": [
+    "aplicativo ou plataforma",
+    "painel, dashboard ou infográfico",
+    "conjunto de dados"
+   ],
+   "topics": [
+    "Comércio, Serviços e Turismo",
+    "Economia e Finanças",
+    "Geografia"
+   ],
+   "tags": [
+    "Empreendedorismo",
+    "credito",
+    "Mercado de Trabalho",
+    "Empresas"
+   ],
+   "url_source": "https://",
+   "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+   "comment": "Conjuntos de dados advindo do sistema SIDRA, do IBGE.\n\nCadastrado por César Calafrioli.",
+   "datasets": [
+    {
+     "data_name": "Pesquisa Nacional por Amostra de Domicílios Contínua Anual - PNADC/A",
+     "data_institution": "Instituto Brasileiro de Geografia e Estatística - IBGE",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/pesquisa-nacional-por-amostra-de-domicilios-continua-anual-pnadc-a",
+     "data_license": "Outra",
+     "data_format": [
+      "JSON",
+      "ODS",
+      "XML",
+      "XLSX"
+     ],
+     "data_periodical": false
+    }
+   ],
+   "record_date": "2025-11-16",
+   "modified_date": null,
+   "status_published": true,
+   "status_review": true,
+   "type_es": [
+    "aplicación o plataforma",
+    "panel de control o infografía",
+    "conjunto de datos"
+   ],
+   "topics_es": [
+    "Comercio, Servicios y Turismo",
+    "Economía y Finanzas",
+    "Geografía"
+   ],
+   "countries_es": null
+  },
+  {
+   "hash_id": 202991398,
+   "name": "Atlas da Mineração do Ceará",
+   "url": "https://experience.arcgis.com/experience/aa87f2cc9a8e4d6d816a3e1db2b054c0/",
+   "url_archive": "https://archive.ph/Zg11l",
+   "description": "A Federação das Indústrias do Estado do Ceará (FIEC), por meio do Observatório da Indústria, em parceria com o SEBRAE, com o objetivo de fortalecer a indústria e incentivar o desenvolvimento socioeconômico do estado, apresenta a Plataforma Online Atlas da Mineração do Ceará, cuja importância é estratégica face à retomada de setores que levam a extração, transformação e utilização de minerais como elos de suas cadeias produtivas.\n\nAtlas da Mineração do Ceará traz clareza para o entendimento da formação geológica cearense, a qual influencia diretamente na localização dos minerais que estão em nosso território, e sua relação com fatores regionais.",
+   "pub_date": null,
+   "authors": [
+    "Observatório da Indústria"
+   ],
+   "authors_id": [
+    null
+   ],
+   "geo_level": "Unidades federativas",
+   "countries": [
+    "Brasil"
+   ],
+   "fed_units": [
+    "CE"
+   ],
+   "municipalities": null,
+   "email": null,
+   "type": [
+    "painel, dashboard ou infográfico"
+   ],
+   "topics": [
+    "Geografia"
+   ],
+   "tags": [
+    "Mineral"
+   ],
+   "url_source": "https://",
+   "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+   "comment": "Cadastrado por César Calafrioli.",
+   "datasets": [
+    {
+     "data_name": "Compensação Financeira pela Exploração de Recursos Minerais (CFEM)",
+     "data_institution": "Agência Nacional de Mineração",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/sistema-arrecadacao",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV",
+      "ODS"
+     ],
+     "data_periodical": null
+    },
+    {
+     "data_name": "SIGA - Sistema de Informações de Geração da ANEEL",
+     "data_institution": "Agência Nacional de Energia Elétrica - ANEEL",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/siga-sistema-de-informacoes-de-geracao-da-aneel",
+     "data_license": "ODbL",
+     "data_format": [
+      "CSV",
+      "XML"
+     ],
+     "data_periodical": null
+    },
+    {
+     "data_name": "Anuário Mineral Brasileiro (AMB)",
+     "data_institution": " Agência Nacional de Mineração",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/anuario-mineral-brasileiro-amb",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV",
+      "ODS"
+     ],
+     "data_periodical": null
+    },
+    {
+     "data_name": "Informações digitais de dados altimétricos - Referência de Nível",
+     "data_institution": "Instituto Brasileiro de Geografia e Estatística - IBGE",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/cged_bdg_rn",
+     "data_license": "Inexistente",
+     "data_format": [
+      "CSV",
+      "JSON",
+      "KML",
+      "ZIP"
+     ],
+     "data_periodical": null
+    }
+   ],
+   "record_date": "2025-11-16",
+   "modified_date": null,
+   "status_published": true,
+   "status_review": true,
+   "type_es": [
+    "panel de control o infografía"
+   ],
+   "topics_es": [
+    "Geografía"
+   ],
+   "countries_es": [
+    "Brasil"
+   ]
+  },
   {
    "hash_id": 273749399,
    "name": "Petroleiras criam ‘cortina de fumaça’ para viabilizar exploração na costa amazônica do Brasil",
@@ -128,17 +1201,21 @@
    "hash_id": 866649000,
    "name": "Análise dos Dados do ENEM 2023 para Cursos Selecionados — Spark & Power BI",
    "url": "https://github.com/marianatiele/rdata_Enem2023",
-   "url_archive": "https://",
+   "url_archive": "https://archive.ph/Q4UO8",
    "description": "Este projeto tem como objetivo explorar e visualizar os dados do Exame Nacional do Ensino Médio (ENEM) 2023 com foco em seis cursos de alto interesse, utilizando PySpark para e Power BI para criar dashboards interativos. A análise permite verificar quantos aprovados foram por cotas, a distribuição por estado, médias de notas, perfil dos candidatos e outras informações relevantes para apoiar estudantes e pesquisadores.",
    "pub_date": null,
    "authors": null,
    "authors_id": null,
-   "geo_level": null,
-   "countries": null,
+   "geo_level": "Países",
+   "countries": [
+    "Brasil"
+   ],
    "fed_units": null,
    "municipalities": null,
    "email": null,
-   "type": null,
+   "type": [
+    "painel, dashboard ou infográfico"
+   ],
    "topics": [
     "Educação"
    ],
@@ -148,7 +1225,7 @@
    ],
    "url_source": "https://",
    "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
-   "comment": null,
+   "comment": "Cadastrado por César Calafrioli.",
    "datasets": [
     {
      "data_name": " SiSU - cursos, vagas e candidatos",
@@ -174,27 +1251,27 @@
    ],
    "record_date": "2025-11-12",
    "modified_date": null,
-   "status_published": false,
+   "status_published": true,
    "status_review": true,
-   "type_es": null,
+   "type_es": [
+    "panel de control o infografía"
+   ],
    "topics_es": [
     "Educación"
    ],
-   "countries_es": null
+   "countries_es": [
+    "Brasil"
+   ]
   },
   {
    "hash_id": 2136819096,
    "name": "Análise de Leitos Hospitalares e de UTI",
    "url": "https://app.powerbi.com/view?r=eyJrIjoiZDI3MTZlMGEtM2ExNS00MjBmLWIyMGItYmZmNDJjYmI4YjA0IiwidCI6IjU1ODY3OGY0LTMxN2MtNDRhZC1iMDkyLTkyMDM1ZDk3ZTBiYyJ9",
    "url_archive": "https://",
-   "description": null,
+   "description": "A análise cruza dados nacionais dos hospitais com dados populacionais mostrando a relação de leitos disponíveis e leitos de UTI por unidade da federação. A extração dos dados é automatizada diretamente do portal de dados abertos do Ministério da Saúde.",
    "pub_date": null,
-   "authors": [
-    "PEDRO TELES"
-   ],
-   "authors_id": [
-    null
-   ],
+   "authors": null,
+   "authors_id": null,
    "geo_level": "Países",
    "countries": [
     "Brasil"
@@ -217,7 +1294,7 @@
    ],
    "url_source": "https://",
    "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
-   "comment": null,
+   "comment": "Cadastrado por César Calafrioli.",
    "datasets": [
     {
      "data_name": "Hospitais e Leitos",
@@ -227,7 +1304,8 @@
      "data_format": [
       "CSV",
       "JSON",
-      "XML"
+      "XML",
+      "API"
      ],
      "data_periodical": null
     },
@@ -244,7 +1322,7 @@
    ],
    "record_date": "2025-11-12",
    "modified_date": null,
-   "status_published": false,
+   "status_published": true,
    "status_review": true,
    "type_es": [
     "panel de control o infografía"
@@ -262,28 +1340,144 @@
    "url": "https://datasearch.anac.gov.br/DataSearch/",
    "url_archive": "https://",
    "description": "Mais informações sobre o Projeto de Aprimoramento da Governança de Informações Digitais (AGID) e para incluir conjunto de dados envie email: governancadados@anac.gov.br",
-   "pub_date": null,
-   "authors": null,
-   "authors_id": null,
-   "geo_level": null,
-   "countries": null,
+   "pub_date": "01/2025",
+   "authors": [
+    "Agência Nacional de Aviação Civil (ANAC)"
+   ],
+   "authors_id": [
+    null
+   ],
+   "geo_level": "Países",
+   "countries": [
+    "Brasil"
+   ],
    "fed_units": null,
    "municipalities": null,
-   "email": null,
+   "email": [
+    "governancadados@anac.gov.br"
+   ],
    "type": [
     "aplicativo ou plataforma"
    ],
    "topics": [
     "Transportes e Trânsito"
    ],
-   "tags": null,
+   "tags": [
+    "ANAC"
+   ],
    "url_source": "https://",
    "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
-   "comment": null,
-   "datasets": [],
+   "comment": "Cadastrado por César Calafrioli.",
+   "datasets": [
+    {
+     "data_name": "Aeronaves - Registro Aeronáutico Brasileiro",
+     "data_institution": "Agência Nacional de Aviação Civil - ANAC",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/aeronaves-registradas-no-registro-aeronautico-brasileiro-rab",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV",
+      "JSON",
+      "XLSX"
+     ],
+     "data_periodical": true
+    },
+    {
+     "data_name": "Organizações de formação - Simuladores de Voo com Qualificação ANAC válida",
+     "data_institution": "Agência Nacional de Aviação Civil - ANAC",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/organizacoes-de-formacao-simuladores-de-voo-com-qualificacao-anac-valida",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV",
+      "JSON"
+     ],
+     "data_periodical": true
+    },
+    {
+     "data_name": "Aeródromos - Lista de PZRs registrados",
+     "data_institution": "Agência Nacional de Aviação Civil - ANAC",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/aerodromos-lista-de-pzrs-registrados",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV",
+      "JSON"
+     ],
+     "data_periodical": true
+    },
+    {
+     "data_name": "Operador aeroportuário - Tarifas Aeroportuárias: Tetos Tarifários e Reajustes Tarifários",
+     "data_institution": "Agência Nacional de Aviação Civil - ANAC",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/operador-aeroportuario-tarifas-aeroportuarias-tetos-tarifarios-e-reajustes-tarifarios",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Operador aeroportuário - Tarifas Aeroportuárias: Tetos Tarifários e Reajustes Tarifários",
+     "data_institution": "Agência Nacional de Aviação Civil - ANAC",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/operador-aeroportuario-tarifas-aeroportuarias-tetos-tarifarios-e-reajustes-tarifarios",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Voos e operações aéreas - Dados Estatísticos do Transporte Aéreo",
+     "data_institution": "Agência Nacional de Aviação Civil - ANAC",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/voos-e-operacoes-aereas-dados-estatisticos-do-transporte-aereo",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": true
+    },
+    {
+     "data_name": "Organizações de Formação - Escolas de Aviação Civil",
+     "data_institution": "Agência Nacional de Aviação Civil - ANAC",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/organizacoes-de-formacao---escolas-de-aviacao-civil",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": true
+    },
+    {
+     "data_name": "Aeródromos - Lista de Aeródromos Privados V2",
+     "data_institution": "Agência Nacional de Aviação Civil - ANAC",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/aerodromos---lista-de-aerodromos-privados-v2",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Operador Aeroportuário - Dados de Movimentação Aeroportuária",
+     "data_institution": " Agência Nacional de Aviação Civil - ANAC",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/operador-aeroportuario-dados-de-movimentacao-aeroportuaria",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV",
+      "JSON"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Voos e operações aéreas - Tarifas Aéreas Domésticas",
+     "data_institution": "Agência Nacional de Aviação Civil - ANAC",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/voos-e-operaes-areas---tarifas-areas-domsticas",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": true
+    }
+   ],
    "record_date": "2025-11-12",
    "modified_date": null,
-   "status_published": false,
+   "status_published": true,
    "status_review": true,
    "type_es": [
     "aplicación o plataforma"
@@ -291,7 +1485,9 @@
    "topics_es": [
     "Transporte y Tráfico"
    ],
-   "countries_es": null
+   "countries_es": [
+    "Brasil"
+   ]
   },
   {
    "hash_id": 944893125,
@@ -704,7 +1900,7 @@
    "datasets": [
     {
      "data_name": "Nascim p/resid.mãe por Idade da mãe segundo UF",
-     "data_institution": "SUS",
+     "data_institution": "Ministério da Saúde",
      "data_url": "http://tabnet.datasus.gov.br/cgi/tabcgi.exe?sinasc/cnv/nvuf.def",
      "data_license": "Inexistente",
      "data_periodical": false,
@@ -1266,7 +2462,7 @@
    ],
    "url_source": "https://",
    "url_image": "https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA0L2ZsNTEwNDAxNDU0MjItcHVibGljLWltYWdlLWtvbnVnYTRoLmpwZw.jpg",
-   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\n\nConteúdo propenso a desafios comunicacionais (registrado por Xavier).",
    "type": [
     "matéria jornalística"
    ],
@@ -1297,7 +2493,7 @@
     "Medio Ambiente"
    ],
    "url_archive": "https://archive.ph/OG9HS",
-   "status_published": true,
+   "status_published": false,
    "status_review": false
   },
   {
@@ -1423,7 +2619,7 @@
    ],
    "url_source": "https://",
    "url_image": "https://editoraelefante.com.br/wp-content/uploads/2024/06/image-from-rawpixel-id-5941608-jpeg-scaled-1014x487.jpg",
-   "comment": "Cadastrado por Jacqueline (Ceweb.br).\nOcultado porque não usaram os dados disponíveis no site da CGU como fonte, mas fez \"a extração e análise de metadados de grande volume de documentos\".",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\nOcultado porque não usaram os dados disponíveis no site da CGU como fonte, mas fez \"a extração e análise de metadados de grande volume de documentos\".\n\nConteúdo propenso a desafios comunicacionais (registrado por Xavier).",
    "type": [
     "matéria jornalística"
    ],
@@ -1521,7 +2717,7 @@
    ],
    "url_source": "https://",
    "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_3068193784.png",
-   "comment": "Cadastrado por Jacqueline (Ceweb.br).\nOcultado porque a fonte de dados não atende aos nossos critérios de formato.",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\nOcultado porque a fonte de dados não atende aos nossos critérios de formato.\n\nConteúdo propenso a desafios comunicacionais (registrado por Xavier).",
    "type": [
     "matéria jornalística"
    ],
@@ -1614,7 +2810,7 @@
    ],
    "url_source": "https://",
    "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_1709125189.png",
-   "comment": "Cadastrado por Jacqueline (Ceweb.br).\nOcultado porque as fontes de dados não atendem aos nossos critérios de formato.",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\nOcultado porque as fontes de dados não atendem aos nossos critérios de formato.\n\nConteúdo propenso a desafios comunicacionais (registrado por Xavier).",
    "type": [
     "matéria jornalística"
    ],
@@ -1816,7 +3012,7 @@
    ],
    "url_source": "https://",
    "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_1911540586.png",
-   "comment": "Cadastrado por Jacqueline (Ceweb.br).\nOcultado porque as fontes de dados não atendem aos nossos critérios de formato.",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\nOcultado porque as fontes de dados não atendem aos nossos critérios de formato.\n\nConteúdo propenso a desafios comunicacionais (registrado por Xavier).",
    "type": [
     "matéria jornalística"
    ],
@@ -2011,7 +3207,7 @@
    ],
    "url_source": "https://",
    "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_205133436.png",
-   "comment": "Cadastrado por Jacqueline (Ceweb.br).\nOcultado porque as fontes de dados não atendem aos nossos critérios de formato.",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\nOcultado porque as fontes de dados não atendem aos nossos critérios de formato.\n\nConteúdo propenso a desafios comunicacionais (registrado por Xavier).",
    "type": [
     "matéria jornalística"
    ],
@@ -2108,7 +3304,7 @@
    ],
    "url_source": "https://",
    "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_2991627217.png",
-   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\n\nConteúdo propenso a desafios comunicacionais (registrado por Xavier).",
    "type": [
     "matéria jornalística"
    ],
@@ -2142,7 +3338,7 @@
     "Gobierno y Política",
     "Género y raza"
    ],
-   "status_published": true,
+   "status_published": false,
    "status_review": false,
    "url_archive": "https://archive.ph/7O4gv"
   },
@@ -2204,7 +3400,7 @@
    ],
    "url_source": "https://",
    "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_3852784515.png",
-   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\nOcultado porque as fontes de dados não atendem aos nossos critérios de formato. \n\nConteúdo propenso a desafios comunicacionais (registrado por Xavier).",
    "type": [
     "matéria jornalística"
    ],
@@ -2282,20 +3478,6 @@
      "data_format": []
     },
     {
-     "data_name": "Propriedades Rurais de Parlamentares por Município",
-     "data_institution": "De Olho nos Ruralistas",
-     "data_url": "https://maphub.net/deolhonosruralistas/bancadaruralista",
-     "data_periodical": false,
-     "data_license": null,
-     "data_format": [
-      "JSON",
-      "KML",
-      "Outro",
-      "XLSX",
-      "CSV"
-     ]
-    },
-    {
      "data_name": "Genealogia matogrossense",
      "data_institution": "José Barnabé de Mesquita",
      "data_url": "https://pt.scribd.com/document/151308737/Genealogia-Matogrossense-Mesquita",
@@ -2315,7 +3497,7 @@
     "Género y raza"
    ],
    "status_published": false,
-   "status_review": true,
+   "status_review": false,
    "url_archive": "https://archive.ph/pSqH4"
   },
   {
@@ -2372,7 +3554,7 @@
    ],
    "url_source": "https://",
    "url_image": "https://i0.wp.com/apublica.org/wp-content/uploads/2024/11/CAPA-MDB-e-o-partido-brasileiro-com-mais-politicos-descendentes-de-escravagistas.png?fit=1400%2C788&ssl=1",
-   "comment": "Cadastrado por Jacqueline (Ceweb.br).\nOcultado porque as fontes de dados não atendem aos nossos critérios de formato. Tratam-se de publicações acadêmicas.",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\nOcultado porque as fontes de dados não atendem aos nossos critérios de formato. Tratam-se de publicações acadêmicas.\n\nConteúdo propenso a desafios comunicacionais (registrado por Xavier).",
    "type": [
     "matéria jornalística"
    ],
@@ -2476,7 +3658,7 @@
    ],
    "url_source": "https://",
    "url_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAWRTqA0l-v-6zefQeJbVHARV01ka3utaMbw&s",
-   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\n\nConteúdo propenso a desafios comunicacionais (registrado por Xavier).",
    "type": [
     "matéria jornalística"
    ],
@@ -2515,7 +3697,7 @@
     "Trabajo",
     "Género y raza"
    ],
-   "status_published": true,
+   "status_published": false,
    "status_review": false,
    "url_archive": "https://archive.ph/7ENfX"
   },
@@ -3015,7 +4197,7 @@
    ],
    "url_source": "https://",
    "url_image": "https://i0.wp.com/apublica.org/wp-content/uploads/2025/05/Capa_Escravizador-na-pele-de-abolicionista-abolicao-teve-apoio-de-politicos-que-escravizaram.jpg?fit=1920%2C1080&ssl=1",
-   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\n\n",
    "type": [
     "matéria jornalística"
    ],
@@ -3041,8 +4223,10 @@
      "data_name": "Descendentes ou irmãos de proprietários de escravizados",
      "data_institution": "PUC/Rio",
      "data_url": "https://www.opodereaescravidao.com/banco-de-dados",
-     "data_license": null,
-     "data_format": [],
+     "data_license": "Inexistente",
+     "data_format": [
+      "Outro"
+     ],
      "data_periodical": false
     }
    ],
@@ -3057,8 +4241,8 @@
     "Trabajo",
     "Género y raza"
    ],
-   "status_published": false,
-   "status_review": true,
+   "status_published": true,
+   "status_review": false,
    "url_archive": "https://archive.ph/QpduX"
   },
   {
@@ -3771,7 +4955,7 @@
    ],
    "url_source": "https://",
    "url_image": "https://opara.nyc3.cdn.digitaloceanspaces.com/ojoio/uploads/2025/01/header-viagem-Ro-materia-2.jpg",
-   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\n\nConteúdo propenso a desafios comunicacionais (registrado por Xavier).",
    "type": [
     "matéria jornalística"
    ],
@@ -3828,7 +5012,7 @@
     "Medio Ambiente"
    ],
    "url_archive": "http://archive.today/NAIGQ",
-   "status_published": true,
+   "status_published": false,
    "status_review": false
   },
   {
@@ -3860,7 +5044,7 @@
    ],
    "url_source": "https://",
    "url_image": "https://opara.nyc3.cdn.digitaloceanspaces.com/ojoio/uploads/2024/10/header-JBS-e-abertura-de-capital.jpg",
-   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\n\nConteúdo propenso a desafios comunicacionais (registrado por Xavier).",
    "type": [
     "matéria jornalística"
    ],
@@ -3917,7 +5101,7 @@
     "Medio Ambiente"
    ],
    "url_archive": "http://archive.today/ulsRB",
-   "status_published": true,
+   "status_published": false,
    "status_review": false
   },
   {
@@ -4954,11 +6138,11 @@
     "Brasil"
    ],
    "fed_units": [
-    "DF",
-    "PE",
-    "SP",
     "RJ",
-    "RS"
+    "SP",
+    "RS",
+    "PE",
+    "DF"
    ],
    "municipalities": [
     "São Paulo (SP)",
@@ -5615,7 +6799,7 @@
    ],
    "url_source": "https://",
    "url_image": "https://azmina.com.br/wp-content/uploads/2025/03/CAPA-MATERIA-3.jpg",
-   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\n\nConteúdo propenso a desafios comunicacionais (registrado por Xavier).",
    "type": [
     "matéria jornalística"
    ],
@@ -5652,7 +6836,7 @@
     "Género y raza"
    ],
    "url_archive": "http://archive.today/bZiql",
-   "status_published": true,
+   "status_published": false,
    "status_review": false
   },
   {
@@ -6444,10 +7628,10 @@
     "Brasil"
    ],
    "fed_units": [
-    "MA",
-    "PA",
     "AM",
-    "AP"
+    "AP",
+    "PA",
+    "MA"
    ],
    "municipalities": [
     "Serrano do Maranhão (MA)",
@@ -6964,7 +8148,8 @@
      "data_periodical": false,
      "data_license": "Inexistente",
      "data_format": [
-      "ZIP"
+      "ZIP",
+      "Outro"
      ]
     }
    ],
@@ -8430,32 +9615,57 @@
     {
      "data_name": "Cadastro Geral de Empregados e Desempregados (Novo CAGED)",
      "data_institution": "Ministério do Trabalho e Emprego",
-     "data_url": "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/estatisticas-trabalho/novo-caged",
-     "data_periodical": true
+     "data_url": "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/estatisticas-trabalho/novo-caged/meses-anteriores",
+     "data_periodical": true,
+     "data_license": "CC BY-ND",
+     "data_format": [
+      "XLSX"
+     ]
     },
     {
      "data_name": "Relação Anual de Informações Sociais (RAIS)",
      "data_institution": "Ministério do Trabalho e Emprego",
      "data_url": "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/estatisticas-trabalho/rais",
-     "data_periodical": true
+     "data_periodical": true,
+     "data_license": "CC BY-ND",
+     "data_format": [
+      "XLSX"
+     ]
     },
     {
      "data_name": "Censo demográfico",
      "data_institution": "IBGE",
      "data_url": "https://sidra.ibge.gov.br/pesquisa/censo-demografico",
-     "data_periodical": false
+     "data_periodical": true,
+     "data_license": "Inexistente",
+     "data_format": [
+      "XLSX",
+      "ODS",
+      "Outro",
+      "CSV"
+     ]
     },
     {
      "data_name": "Índice de Desenvolvimento da Educação Básica (Ideb)",
      "data_institution": "INEP",
      "data_url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/ideb/resultados",
-     "data_periodical": null
+     "data_periodical": true,
+     "data_license": "CC BY-ND",
+     "data_format": [
+      "ZIP",
+      "XLSX",
+      "ODS"
+     ]
     },
     {
      "data_name": "Radar SIT - Painel de Informações e Estatísticas da Inspeção do Trabalho no Brasil",
      "data_institution": "Escola Nacional de Inspeção do Trabalho (ENIT)",
      "data_url": "https://sit.trabalho.gov.br/radar/",
-     "data_periodical": true
+     "data_periodical": true,
+     "data_license": "Inexistente",
+     "data_format": [
+      "XLSX"
+     ]
     }
    ],
    "record_date": "2024-10-22",
@@ -8471,12 +9681,13 @@
    "countries_es": [
     "Brasil"
    ],
-   "geo_level": null,
+   "geo_level": "Países",
    "fed_units": null,
    "municipalities": null,
    "modified_date": null,
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false,
+   "url_archive": "https://archive.ph/KxZ7P"
   },
   {
    "hash_id": 4231990403,
@@ -8534,7 +9745,7 @@
    ],
    "url_source": "https://",
    "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_4231990403.png",
-   "comment": "Existe mais uma fonte de dados citada pelo projeto: Causas de Urgência Médica (https://icdcodelookup.com/icd-10/common-codes/emergency-dept)\r\nCaso coletado pelo Ceweb.",
+   "comment": "Caso coletado pelo Ceweb.",
    "type": [
     "painel, dashboard ou infográfico"
    ],
@@ -8545,33 +9756,45 @@
    "datasets": [
     {
      "data_name": "Internações hospitalares do SIHSUS",
-     "data_institution": "DataSUS",
+     "data_institution": "Ministério da Saúde",
      "data_url": "https://datasus.saude.gov.br/transferencia-de-arquivos/",
-     "data_periodical": false
+     "data_periodical": true,
+     "data_license": "Inexistente",
+     "data_format": [
+      "ZIP",
+      "Outro"
+     ]
     },
     {
-     "data_name": "Malha municipal",
+     "data_name": "Malha Municipal",
      "data_institution": "IBGE",
      "data_url": "http://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais/15774-malhas.html",
-     "data_periodical": false
+     "data_periodical": true,
+     "data_license": "Inexistente",
+     "data_format": [
+      "ZIP"
+     ]
     },
     {
      "data_name": "Macrorregiões e Regiões de Saúde",
      "data_institution": "CONASEMS",
      "data_url": "https://www.conasems.org.br/painel/macrorregioes-e-regioes-de-saude/",
-     "data_periodical": false
+     "data_periodical": true,
+     "data_license": "Inexistente",
+     "data_format": [
+      "XLSX"
+     ]
     },
     {
-     "data_name": "Causas evitáveis - Measuring the health of nations: analysis of mortality amenable to health care",
-     "data_institution": "National Library of Medicine",
-     "data_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC261807/",
-     "data_periodical": false
-    },
-    {
-     "data_name": "Causas Sensíveis à Atenção Primária (ICSAP)",
+     "data_name": "Produção Ambulatorial do SIASUS",
      "data_institution": "Ministério da Saúde",
-     "data_url": "https://bvsms.saude.gov.br/bvs/saudelegis/sas/2008/prt0221_17_04_2008.html",
-     "data_periodical": false
+     "data_url": "https://datasus.saude.gov.br/transferencia-de-arquivos/",
+     "data_license": "Inexistente",
+     "data_format": [
+      "ZIP",
+      "Outro"
+     ],
+     "data_periodical": true
     }
    ],
    "record_date": "2024-10-22",
@@ -8585,12 +9808,13 @@
    "countries_es": [
     "Brasil"
    ],
-   "geo_level": null,
+   "geo_level": "Países",
    "fed_units": null,
    "municipalities": null,
    "modified_date": null,
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false,
+   "url_archive": "https://archive.ph/nMLwG"
   },
   {
    "hash_id": 3317482484,
@@ -8625,7 +9849,7 @@
    ],
    "url_source": "https://",
    "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_3317482484.png",
-   "comment": "O projeto IEPS Data consulta muitas outras bases de dados, especialmente de saúde. Mas não podemos colocar todas elas aqui.",
+   "comment": null,
    "type": [
     "painel, dashboard ou infográfico",
     "conjunto de dados"
@@ -8638,34 +9862,100 @@
    ],
    "datasets": [
     {
-     "data_name": "Atlas do Desenvolvimento Humano nas Regiões Metropolitanas Brasileiras",
-     "data_institution": "Atlas Brasil",
-     "data_url": "http://www.atlasbrasil.org.br/acervo/biblioteca",
-     "data_periodical": false
-    },
-    {
      "data_name": "Dados do Programa Nacional de Imunizações (PNI)",
-     "data_institution": "DATASUS",
+     "data_institution": "Ministério da Saúde",
      "data_url": "http://tabnet.datasus.gov.br/cgi/dhdat.exe?bd_pni/cpnibr.def",
-     "data_periodical": false
+     "data_periodical": false,
+     "data_license": "Inexistente",
+     "data_format": [
+      "CSV"
+     ]
     },
     {
      "data_name": "Beneficiários de Planos de Saúde",
      "data_institution": "ANS",
      "data_url": "https://www.ans.gov.br/anstabnet/cgi-bin/dh?dados/tabnet_02.def",
-     "data_periodical": false
+     "data_periodical": false,
+     "data_license": "Inexistente",
+     "data_format": [
+      "CSV"
+     ]
     },
     {
      "data_name": "Sistema de Informações sobre Orçamento Público em Saúde (SIOPS)",
-     "data_institution": "DATASUS",
+     "data_institution": "Ministério da Saúde",
      "data_url": "http://siops-asp.datasus.gov.br/cgi/tabcgi.exe?SIOPS/SerHist/ESTADO/indicuf.def",
+     "data_periodical": false,
+     "data_license": "Inexistente",
+     "data_format": [
+      "CSV"
+     ]
+    },
+    {
+     "data_name": "Sistema de Informações sobre Nascidos Vivos (SINASC)",
+     "data_institution": "Ministério da Saúde",
+     "data_url": "https://datasus.saude.gov.br/transferencia-de-arquivos/",
+     "data_license": "Inexistente",
+     "data_format": [
+      "ZIP",
+      "Outro"
+     ],
      "data_periodical": false
     },
     {
-     "data_name": null,
-     "data_institution": "IPEA",
-     "data_url": "http://www.ipeadata.gov.br/Default.aspx",
+     "data_name": "Sistema de Informações sobre Mortalidade (SIM)",
+     "data_institution": "Ministério da Saúde",
+     "data_url": "https://datasus.saude.gov.br/transferencia-de-arquivos/",
+     "data_license": "Inexistente",
+     "data_format": [
+      "ZIP",
+      "Outro"
+     ],
      "data_periodical": false
+    },
+    {
+     "data_name": "Sistema de Informações Hospitalares do SUS (SIHSUS)",
+     "data_institution": "Ministério da Saúde",
+     "data_url": "https://datasus.saude.gov.br/transferencia-de-arquivos/",
+     "data_license": "Inexistente",
+     "data_format": [
+      "ZIP",
+      "Outro"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Cadastro Nacional de Estabelecimentos de Saúde (CNES) - Profissionais",
+     "data_institution": "Ministério da Saúde",
+     "data_url": "https://datasus.saude.gov.br/transferencia-de-arquivos/",
+     "data_license": "Inexistente",
+     "data_format": [
+      "ZIP",
+      "Outro"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Cadastro Nacional de Estabelecimentos de Saúde (CNES) - Leitos",
+     "data_institution": "Ministério da Saúde",
+     "data_url": "https://datasus.saude.gov.br/transferencia-de-arquivos/",
+     "data_license": "Inexistente",
+     "data_format": [
+      "ZIP",
+      "Outro"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Base Populacional",
+     "data_institution": "IBGE",
+     "data_url": "https://datasus.saude.gov.br/transferencia-de-arquivos/",
+     "data_license": "Inexistente",
+     "data_format": [
+      "ZIP",
+      "Outro"
+     ],
+     "data_periodical": null
     }
    ],
    "record_date": "2024-10-22",
@@ -8682,12 +9972,13 @@
    "countries_es": [
     "Brasil"
    ],
-   "geo_level": null,
+   "geo_level": "Países",
    "fed_units": null,
    "municipalities": null,
    "modified_date": null,
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false,
+   "url_archive": "https://archive.ph/F6qdC"
   },
   {
    "hash_id": 2723352845,
@@ -8734,10 +10025,14 @@
    ],
    "datasets": [
     {
-     "data_name": "Conteúdo completo dos diários oficiais de cada município disponível no Querido Diário em formato XML, agrupados por ano.",
-     "data_institution": "Open Knowledge Brasil",
+     "data_name": "Conteúdo dos Diários Oficiais dos Municípios disponível no Querido Diário",
+     "data_institution": "Open Knowledge Brasil (OKBR)",
      "data_url": "https://queridodiario.ok.org.br/dados",
-     "data_periodical": true
+     "data_periodical": true,
+     "data_license": "CC-BY",
+     "data_format": [
+      "XML"
+     ]
     }
    ],
    "record_date": "2024-10-21",
@@ -8751,12 +10046,13 @@
    "countries_es": [
     "Brasil"
    ],
-   "geo_level": null,
+   "geo_level": "Países",
    "fed_units": null,
    "municipalities": null,
    "modified_date": null,
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false,
+   "url_archive": "https://archive.ph/4CauF"
   },
   {
    "hash_id": 2471608684,
@@ -8770,9 +10066,7 @@
    "authors_id": [
     null
    ],
-   "countries": [
-    "Brasil"
-   ],
+   "countries": null,
    "email": [
     "queridodiario@ok.org.br"
    ],
@@ -8782,7 +10076,7 @@
    ],
    "url_source": "https://github.com/okfn-brasil/querido-diario",
    "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_2471608684.png",
-   "comment": "As fontes originais dos dados são as prefeituras das cidades cadastradas na plataforma. Esse número cresce continuamente, conforme novos códigos para coletar dados de mais municípios são integrados ao código do Querido Diário.",
+   "comment": "As fontes originais dos dados são as prefeituras das cidades cadastradas na plataforma. Esse número cresce continuamente, conforme novos códigos para coletar dados de mais municípios são integrados ao código do Querido Diário.\nForam selecionadas as duas capitais mais populosas de cada região do país para catalogação.",
    "type": [
     "aplicativo ou plataforma",
     "painel, dashboard ou infográfico",
@@ -8807,9 +10101,104 @@
    ],
    "datasets": [
     {
-     "data_name": "Conteúdo completo dos diários oficiais de cada município disponível no Querido Diário em formato XML, agrupados por ano.",
-     "data_institution": "Diversas instituições",
-     "data_url": null,
+     "data_name": "Diário Oficial de Manaus",
+     "data_institution": "Prefeitura de Manaus",
+     "data_url": "https://dom.manaus.am.gov.br/?go=dom",
+     "data_periodical": true,
+     "data_license": "Inexistente",
+     "data_format": [
+      "PDF"
+     ]
+    },
+    {
+     "data_name": "Diário Oficial do Município de Belém",
+     "data_institution": "Prefeitura Municipal de Belém",
+     "data_url": "https://sistemas.belem.pa.gov.br/diario/painel",
+     "data_license": "Inexistente",
+     "data_format": [
+      "PDF"
+     ],
+     "data_periodical": true
+    },
+    {
+     "data_name": "Diário Oficial do Município de Salvador",
+     "data_institution": "Prefeitura Municipal de Salvador",
+     "data_url": "http://www.dom.salvador.ba.gov.br/#",
+     "data_license": "Inexistente",
+     "data_format": [
+      "PDF"
+     ],
+     "data_periodical": true
+    },
+    {
+     "data_name": "Diário Oficial de Fortaleza",
+     "data_institution": "Prefeitura Municipal de Fortaleza",
+     "data_url": "https://diariooficial.fortaleza.ce.gov.br/",
+     "data_license": "Inexistente",
+     "data_format": [
+      "PDF"
+     ],
+     "data_periodical": true
+    },
+    {
+     "data_name": "Diário Oficial do Distrito Federal (DODF)",
+     "data_institution": "Casa Civil do Distrito Federal",
+     "data_url": "https://dodf.df.gov.br/dodf/jornal/diario?data=1763434800",
+     "data_license": "Inexistente",
+     "data_format": [
+      "PDF"
+     ],
+     "data_periodical": true
+    },
+    {
+     "data_name": "Diário Oficial do Município de Goiânia",
+     "data_institution": "Prefeitura de Goiânia",
+     "data_url": "https://www.goiania.go.gov.br/casa-civil/diario-oficial/",
+     "data_license": "Inexistente",
+     "data_format": [
+      "PDF"
+     ],
+     "data_periodical": true
+    },
+    {
+     "data_name": "Diário Oficial da Prefeitura de São Paulo (DOSP)",
+     "data_institution": "Prefeitura Municipal de São Paulo",
+     "data_url": "https://diariooficial.prefeitura.sp.gov.br/md_epubli_controlador.php?acao=inicio",
+     "data_license": "Inexistente",
+     "data_format": [
+      "PDF"
+     ],
+     "data_periodical": true
+    },
+    {
+     "data_name": "Diário Oficial da Prefeitura do Rio de Janeiro",
+     "data_institution": "Prefeitura do Rio de Janeiro",
+     "data_url": "https://doweb.rio.rj.gov.br/",
+     "data_license": "Inexistente",
+     "data_format": [
+      "PDF",
+      "Outro"
+     ],
+     "data_periodical": true
+    },
+    {
+     "data_name": "Diário Oficial do Município de Curitiba",
+     "data_institution": "Prefeitura de Curitiba",
+     "data_url": "https://legisladocexterno.curitiba.pr.gov.br/DiarioConsultaExterna_Pesquisa.aspx",
+     "data_license": "Inexistente",
+     "data_format": [
+      "PDF"
+     ],
+     "data_periodical": true
+    },
+    {
+     "data_name": "Diário Oficial de Porto Alegre (DOPA)",
+     "data_institution": "Prefeitura de Porto Alegre",
+     "data_url": "https://dopa.portoalegre.rs.gov.br/",
+     "data_license": "Inexistente",
+     "data_format": [
+      "PDF"
+     ],
      "data_periodical": true
     }
    ],
@@ -8836,15 +10225,14 @@
     "Salud",
     "Transporte y Tráfico"
    ],
-   "countries_es": [
-    "Brasil"
-   ],
+   "countries_es": null,
    "geo_level": null,
    "fed_units": null,
    "municipalities": null,
    "modified_date": null,
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false,
+   "url_archive": "https://archive.ph/8TW22"
   },
   {
    "hash_id": 2283375359,
@@ -8858,9 +10246,7 @@
    "authors_id": [
     null
    ],
-   "countries": [
-    "Brasil"
-   ],
+   "countries": null,
    "email": [
     "operacao@iluminando.app.br"
    ],
@@ -8882,13 +10268,21 @@
      "data_name": "Coordenadas e endereços – Nominatim",
      "data_institution": "OpenStreetMap Foundation",
      "data_url": "https://nominatim.openstreetmap.org/",
-     "data_periodical": true
+     "data_periodical": true,
+     "data_license": "ODbL",
+     "data_format": [
+      "Outro"
+     ]
     },
     {
      "data_name": "Horários do nascer e pôr do Sol",
      "data_institution": "Sunrise-Sunset.org",
      "data_url": "https://api.sunrise-sunset.org/",
-     "data_periodical": true
+     "data_periodical": true,
+     "data_license": "Inexistente",
+     "data_format": [
+      "API"
+     ]
     }
    ],
    "record_date": "2024-10-21",
@@ -8899,15 +10293,14 @@
    "topics_es": [
     "Equipamiento Público"
    ],
-   "countries_es": [
-    "Brasil"
-   ],
+   "countries_es": null,
    "geo_level": null,
    "fed_units": null,
    "municipalities": null,
    "modified_date": null,
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false,
+   "url_archive": "https://archive.ph/xfIX0"
   },
   {
    "hash_id": 3799964393,
@@ -8921,7 +10314,9 @@
    "authors_id": [
     null
    ],
-   "countries": null,
+   "countries": [
+    "Brasil"
+   ],
    "email": [
     "agendas@fiquemsabendo.com.br"
    ],
@@ -8948,8 +10343,11 @@
      "data_institution": "CGU",
      "data_url": "https://dados.gov.br/dados/conjuntos-dados/agenda-publica-de-autoridades-do-poder-executivo-federal",
      "data_periodical": true,
-     "data_license": null,
-     "data_format": []
+     "data_license": "ODbL",
+     "data_format": [
+      "ZIP",
+      "CSV"
+     ]
     }
    ],
    "record_date": "2024-08-28",
@@ -8959,23 +10357,25 @@
    "topics_es": [
     "Gobierno y Política"
    ],
-   "countries_es": null,
-   "geo_level": null,
+   "countries_es": [
+    "Brasil"
+   ],
+   "geo_level": "Países",
    "fed_units": null,
    "municipalities": null,
    "modified_date": null,
-   "status_published": false,
-   "status_review": true,
-   "url_archive": "https://"
+   "status_published": true,
+   "status_review": false,
+   "url_archive": "https://archive.ph/Nb1EU"
   },
   {
    "hash_id": 4112078854,
-   "name": "Resultados eleitorais georreferenciados por municípios",
+   "name": "Resultados Eleitorais Georreferenciados por Municípios",
    "url": "https://centrodametropole.fflch.usp.br/pt-br/node/13051",
    "description": "Uma base cartográfica georreferenciada em formato shapefile contendo os resultados eleitorais do ano de 2022 dos 5568 municípios do Brasil, mais o Distrito Federal e o Distrito Estadual de Fernando de Noronha. Acompanha uma tabela em formato excel com os dados descritos. É possível saber como os cidadãos de cada município brasileiro votaram para presidente, senador, deputado federal, governador e deputado estadual ou distrital, por partido, votos brancos e nulos e abstenção.",
    "pub_date": "02/2023",
    "authors": [
-    "Centro de Estudos da Metropole"
+    "CEM"
    ],
    "authors_id": [
     null
@@ -8993,7 +10393,7 @@
    ],
    "url_source": "https://",
    "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_4112078854.png",
-   "comment": "Caso informado pelo Ceweb. O caso apenas informa que utilizou dados do TSE e TREs. O dado exato utilizado foi inferido a partir das informações providas no novo conjunto de dados. Não foi informado de onde veio os dados georreferenciados.",
+   "comment": "Caso informado pelo Ceweb. O caso apenas informa que utilizou dados do TSE e TREs. O dado exato utilizado foi inferido a partir das informações providas no novo conjunto de dados. Não foi informado de onde vieram os dados georreferenciados.",
    "type": [
     "conjunto de dados"
    ],
@@ -9003,10 +10403,14 @@
    ],
    "datasets": [
     {
-     "data_name": "Resultados eleitorais de 2022",
+     "data_name": "Resultados Eleitorais de 2022",
      "data_institution": "TSE",
      "data_url": "https://dadosabertos.tse.jus.br/dataset/resultados-2022",
-     "data_periodical": false
+     "data_periodical": false,
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV"
+     ]
     }
    ],
    "record_date": "2024-04-15",
@@ -9020,18 +10424,19 @@
    "countries_es": [
     "Brasil"
    ],
-   "geo_level": null,
+   "geo_level": "Países",
    "fed_units": null,
    "municipalities": null,
    "modified_date": null,
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false,
+   "url_archive": "https://archive.ph/57PAg"
   },
   {
    "hash_id": 305585732,
    "name": "DataMPE Brasil Data Explorer",
    "url": "https://datampe.sebrae.com.br/data-explorer",
-   "description": "Painel interativo no qual é possível consultar de maneira simples dados de diversos setores econômicos e regiões do Brasil. O objetivo é prover dados e informação que possam auxiliar no desenvolvimento de pequenos negócios no Brasil. O painel disponibiliza cerca de 24 bases de dados em variados temas.",
+   "description": "Painel interativo no qual é possível consultar de maneira simples dados de diversos setores econômicos e regiões do Brasil. O objetivo é prover dados e informações que possam auxiliar no desenvolvimento de pequenos negócios no Brasil. O painel disponibiliza cerca de 24 bases de dados em variados temas.",
    "pub_date": "10/2023",
    "authors": [
     "SEBRAE",
@@ -9076,32 +10481,108 @@
    "datasets": [
     {
      "data_name": "RAIS - Relação Anual de Informações Sociais",
-     "data_institution": "Ministério da Economia",
-     "data_url": null,
-     "data_periodical": false
+     "data_institution": "Ministério do Trabalho e Emprego",
+     "data_url": "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/estatisticas-trabalho/rais/rais-anos-anteriores",
+     "data_periodical": true,
+     "data_license": "CC BY-ND",
+     "data_format": [
+      "TXT",
+      "XLSX"
+     ]
     },
     {
      "data_name": "Dados de crédito de Pessoa Jurídica do Banco Central",
-     "data_institution": null,
-     "data_url": "https://dadosabertos.bcb.gov.br/",
-     "data_periodical": false
+     "data_institution": "Banco Central do Brasil",
+     "data_url": "https://dadosabertos.bcb.gov.br/dataset/scr_data",
+     "data_periodical": false,
+     "data_license": "ODbL",
+     "data_format": [
+      "ZIP",
+      "CSV"
+     ]
     },
     {
      "data_name": "Chegada de Turistas Internacionais",
      "data_institution": "Ministério do Turismo",
      "data_url": "https://dados.turismo.gov.br/pt_BR/dataset/chegada-de-turistas-internacionais",
-     "data_periodical": false
+     "data_periodical": false,
+     "data_license": "ODbL",
+     "data_format": [
+      "CSV"
+     ]
     },
     {
      "data_name": "Estatísticas de Comércio Exterior",
      "data_institution": "Ministério do Desenvolvimento, Indústria, Comércio e Serviços",
      "data_url": "https://www.gov.br/mdic/pt-br/assuntos/comercio-exterior/estatisticas/base-de-dados-bruta",
-     "data_periodical": true
+     "data_periodical": true,
+     "data_license": "CC BY-ND",
+     "data_format": [
+      "CSV"
+     ]
     },
     {
      "data_name": "Índice Sebrae de Desenvolvimento Econômico Local  - ISDEL",
      "data_institution": "SEBRAE",
      "data_url": "https://www.isdel-sebrae.com/territorios",
+     "data_periodical": false,
+     "data_license": "Inexistente",
+     "data_format": [
+      "XLSX"
+     ]
+    },
+    {
+     "data_name": "CAGED - Cadastro Geral de Empregados e Desempregados",
+     "data_institution": "Ministério do Trabalho e Emprego",
+     "data_url": "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/estatisticas-trabalho/novo-caged/meses-anteriores",
+     "data_license": "CC BY-ND",
+     "data_format": [
+      "TXT",
+      "XLSX"
+     ],
+     "data_periodical": true
+    },
+    {
+     "data_name": "Mapa do Turismo Brasileiro",
+     "data_institution": "Ministério do Turismo",
+     "data_url": "https://dados.turismo.gov.br/pt_BR/dataset/mapa-do-turismo-brasileiro",
+     "data_license": "ODbL",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "População Estimada",
+     "data_institution": "Ministério da Saúde",
+     "data_url": "http://tabnet.datasus.gov.br/cgi/deftohtm.exe?ibge/cnv/popsvsbr.def",
+     "data_license": "Inexistente",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Pesquisa da Pecuária Municipal - PPM",
+     "data_institution": "IBGE",
+     "data_url": "https://sidra.ibge.gov.br/pesquisa/ppm/quadros/brasil/2024",
+     "data_license": "Inexistente",
+     "data_format": [
+      "XLSX",
+      "ODS",
+      "CSV",
+      "Outro"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Produção Agrícola Municipal - PAM",
+     "data_institution": "IBGE",
+     "data_url": "https://www.ibge.gov.br/estatisticas/economicas/agricultura-e-pecuaria/9117-producao-agricola-municipal-culturas-temporarias-e-permanentes.html?=&t=downloads",
+     "data_license": "Inexistente",
+     "data_format": [
+      "XLSX"
+     ],
      "data_periodical": false
     }
    ],
@@ -9122,12 +10603,13 @@
    "countries_es": [
     "Brasil"
    ],
-   "geo_level": null,
+   "geo_level": "Países",
    "fed_units": null,
    "municipalities": null,
    "modified_date": null,
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false,
+   "url_archive": "https://archive.ph/hQiP3"
   },
   {
    "hash_id": 742694612,
@@ -9167,7 +10649,12 @@
      "data_name": "Cadastro Nacional de Pessoa Jurídica (CNPJ)",
      "data_institution": "Receita Federal",
      "data_url": "https://dados.gov.br/dados/conjuntos-dados/cadastro-nacional-da-pessoa-juridica---cnpj",
-     "data_periodical": true
+     "data_periodical": true,
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV",
+      "ZIP"
+     ]
     }
    ],
    "record_date": "2024-04-15",
@@ -9181,12 +10668,13 @@
    "countries_es": [
     "Brasil"
    ],
-   "geo_level": null,
+   "geo_level": "Países",
    "fed_units": null,
    "municipalities": null,
    "modified_date": null,
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false,
+   "url_archive": "https://archive.ph/NF3Ho"
   },
   {
    "hash_id": 889903064,
@@ -9244,22 +10732,42 @@
    ],
    "datasets": [
     {
-     "data_name": "Processos Minerários - Sistema de Informações Geográficas da Mineração",
+     "data_name": "Processos Minerários - Sistema de Informações Geográficas da Mineração (SIGMINE)",
      "data_institution": "Agência Nacional de Mineração",
-     "data_url": "https://geo.anm.gov.br/portal/apps/webappviewer/index.html?id=6a8f5ccc4b6a4c2bba79759aa952d908",
-     "data_periodical": true
+     "data_url": "https://geo.anm.gov.br/portal/home/index.html",
+     "data_periodical": true,
+     "data_license": "CC BY-ND",
+     "data_format": [
+      "SHP",
+      "KML",
+      "CSV",
+      "JSON"
+     ]
     },
     {
      "data_name": "Terras indígenas",
      "data_institution": "FUNAI",
      "data_url": "https://www.gov.br/funai/pt-br/atuacao/terras-indigenas/geoprocessamento-e-mapas",
-     "data_periodical": false
+     "data_periodical": false,
+     "data_license": "CC BY-ND",
+     "data_format": [
+      "KML",
+      "XLSX",
+      "CSV",
+      "ODS",
+      "SHP"
+     ]
     },
     {
      "data_name": "Unidades de conservação",
      "data_institution": "Ministério do Meio Ambiente",
      "data_url": "http://mapas.mma.gov.br/i3geo/datadownload.htm",
-     "data_periodical": false
+     "data_periodical": false,
+     "data_license": "Inexistente",
+     "data_format": [
+      "SHP",
+      "Outro"
+     ]
     }
    ],
    "record_date": "2024-03-01",
@@ -9277,17 +10785,28 @@
    "countries_es": [
     "Brasil"
    ],
-   "geo_level": null,
-   "fed_units": null,
+   "geo_level": "Unidades federativas",
+   "fed_units": [
+    "AC",
+    "AM",
+    "RO",
+    "MT",
+    "RR",
+    "AP",
+    "PA",
+    "MA",
+    "PI"
+   ],
    "municipalities": null,
    "modified_date": null,
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false,
+   "url_archive": "https://archive.ph/du3iI"
   },
   {
    "hash_id": 4135650661,
    "name": "Mapa das Terras dos Parlamentares",
-   "url": "https://deolhonosruralistas.com.br/2019/05/12/mapa-das-terras-dos-parlamentares-mostra-que-congressistas-acumulam-fazendas-na-amazonia-e-no-matopiba",
+   "url": "https://maphub.net/deolhonosruralistas/bancadaruralista",
    "description": "Um mapa que localiza, por município, as propriedades rurais declaradas por deputados e senadores; a primeira reportagem de série sobre a bancada ruralista aponta latifúndios de congressistas nas fronteiras agrícolas.",
    "pub_date": "05/2019",
    "authors": [
@@ -9316,7 +10835,7 @@
    ],
    "url_source": "https://",
    "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_4135650661.png",
-   "comment": "Caso não foi informado pelo autor.",
+   "comment": "Caso não foi informado pelo autor.\n\nConteúdo propenso a desafios comunicacionais (registrado por Xavier).",
    "type": [
     "matéria jornalística",
     "painel, dashboard ou infográfico",
@@ -9331,7 +10850,11 @@
      "data_name": "Candidatos e bens declarados - 2018",
      "data_institution": "TSE",
      "data_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2018",
-     "data_periodical": false
+     "data_periodical": false,
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV"
+     ]
     }
    ],
    "record_date": "2024-03-01",
@@ -9347,12 +10870,13 @@
    "countries_es": [
     "Brasil"
    ],
-   "geo_level": null,
+   "geo_level": "Países",
    "fed_units": null,
    "municipalities": null,
    "modified_date": null,
    "status_published": false,
-   "status_review": true
+   "status_review": false,
+   "url_archive": "https://archive.ph/7pejH"
   },
   {
    "hash_id": 3214313788,
@@ -9375,7 +10899,11 @@
     "marcelo@lagomdata.com.br"
    ],
    "tags": [
-    "pandemia, coronavírus, covid-19, vacinação, vacina"
+    "pandemia",
+    "coronavírus",
+    "covid-19",
+    "vacinação",
+    "vacina"
    ],
    "url_source": "https://",
    "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_3214313788.png",
@@ -9384,38 +10912,70 @@
     "painel, dashboard ou infográfico"
    ],
    "topics": [
-    "Saúde"
+    "Saúde",
+    "Dados Estratégicos"
    ],
    "datasets": [
     {
      "data_name": "Microdados do Sivep-Gripe 2020",
-     "data_institution": "SUS",
+     "data_institution": "Ministério da Saúde",
      "data_url": "https://opendatasus.saude.gov.br/dataset/srag-2020",
-     "data_periodical": true
+     "data_periodical": false,
+     "data_license": "CC-BY",
+     "data_format": [
+      "API",
+      "CSV",
+      "JSON",
+      "XML"
+     ]
     },
     {
      "data_name": "Microdados do Sivep-Gripe 2021",
-     "data_institution": "SUS",
-     "data_url": "https://opendatasus.saude.gov.br/dataset/srag-2021-a-2023",
-     "data_periodical": true
+     "data_institution": "Ministério da Saúde",
+     "data_url": "https://opendatasus.saude.gov.br/dataset/srag-2021-a-2024",
+     "data_periodical": false,
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV",
+      "JSON",
+      "XML",
+      "Outro"
+     ]
     },
     {
-     "data_name": "Mortes por COVID-19",
-     "data_institution": "Secretarias Estaduais de Saúde",
-     "data_url": null,
-     "data_periodical": true
+     "data_name": "Microdados do Sivep-Gripe 2022",
+     "data_institution": "Ministério da Saúde",
+     "data_url": "https://opendatasus.saude.gov.br/dataset/srag-2021-a-2024",
+     "data_periodical": false,
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV",
+      "JSON",
+      "XML",
+      "Outro"
+     ]
     },
     {
      "data_name": "Vacinação contra a COVID-19",
-     "data_institution": "SUS",
+     "data_institution": "Ministério da Saúde",
      "data_url": "https://opendatasus.saude.gov.br/dataset/covid-19-vacinacao",
-     "data_periodical": true
+     "data_periodical": false,
+     "data_license": "CC-BY",
+     "data_format": [
+      "API",
+      "CSV"
+     ]
     },
     {
      "data_name": "Projeção da população",
      "data_institution": "IBGE",
      "data_url": "https://www.ibge.gov.br/estatisticas/sociais/populacao/9109-projecao-da-populacao.html",
-     "data_periodical": false
+     "data_periodical": false,
+     "data_license": "Inexistente",
+     "data_format": [
+      "XLSX",
+      "ODS"
+     ]
     }
    ],
    "record_date": "2024-03-01",
@@ -9423,17 +10983,19 @@
     "panel de control o infografía"
    ],
    "topics_es": [
-    "Salud"
+    "Salud",
+    "Datos Estratégicos"
    ],
    "countries_es": [
     "Brasil"
    ],
-   "geo_level": null,
+   "geo_level": "Países",
    "fed_units": null,
    "municipalities": null,
    "modified_date": null,
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false,
+   "url_archive": "https://web.archive.org/web/20251117124031/https://lagomdata.com.br/coronavirus/"
   },
   {
    "hash_id": 2994367502,
@@ -9453,9 +11015,7 @@
     null,
     null
    ],
-   "countries": [
-    "Brasil"
-   ],
+   "countries": null,
    "email": [
     "contato@neuralmind.ai"
    ],
@@ -9481,7 +11041,11 @@
      "data_name": "BrWaC (Brazilian Portuguese Web as Corpus)",
      "data_institution": "UFRGS",
      "data_url": "https://www.inf.ufrgs.br/pln/wiki/index.php?title=BrWaC",
-     "data_periodical": false
+     "data_periodical": false,
+     "data_license": "Outra",
+     "data_format": [
+      "Outro"
+     ]
     }
    ],
    "record_date": "2024-02-07",
@@ -9492,20 +11056,19 @@
    "topics_es": [
     "Ciencia, Información y Comunicación"
    ],
-   "countries_es": [
-    "Brasil"
-   ],
-   "geo_level": null,
+   "countries_es": null,
+   "geo_level": "Não se aplica",
    "fed_units": null,
    "municipalities": null,
    "modified_date": null,
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false,
+   "url_archive": "https://archive.ph/q7N1S"
   },
   {
    "hash_id": 1092493666,
    "name": "Aplicativo Democracia Beta",
-   "url": "https://onelink.to/bgmk2n",
+   "url": "https://apkcombo.com/democracia-beta/com.tukeydata.debeta.android/",
    "description": "Desenvolvemos o app Democracia Beta para tornar a participação do cidadão na política fácil e objetiva. O aplicativo coleta informações de fontes públicas e oficiais para apresentar as atividades de Deputados Federais, Senadores e do Presidente da República, possibilitando que o cidadão acompanhe e fiscalize os seus Representantes. \n\nInteligência Artificial (ChatPDF) ajuda a entender melhor Projetos de Lei e Propostas de Emenda à Constituição, levantando prós e contras da Proposição. E o usuário pode expressar sua opinião nas atividades dos seus Representantes, escolhendo entre \"gostei\",  \"não gostei\" ou \"me abstenho\", e apenas ele terá acesso a suas manifestações. Para garantir um posicionamento mais isento, o político em questão permanece oculto antes da escolha, sendo revelado assim que a decisão é tomada, juntamente com o resultado geral anônimo dos posicionamentos da comunidade. \n\nNa aba Resultados, o usuário tem acesso aos seus rankings de Representantes e Partidos baseados nos seus posicionamentos, possibilitando que ele identifique aqueles que melhor o representam. Também é possível ver os rankings da comunidade como um todo.",
    "pub_date": "10/2022",
    "authors": [
@@ -9550,19 +11113,40 @@
      "data_name": "Dados Abertos do Senado Federal",
      "data_institution": "Senado Federal",
      "data_url": "https://legis.senado.leg.br/dadosabertos/docs/ui/index.html#/",
-     "data_periodical": true
+     "data_periodical": true,
+     "data_license": "Inexistente",
+     "data_format": [
+      "API",
+      "CSV",
+      "XML",
+      "JSON"
+     ]
     },
     {
      "data_name": "Dados Abertos da Câmara dos Deputados",
      "data_institution": "Câmara dos Deputados",
      "data_url": "https://dadosabertos.camara.leg.br/swagger/api.html",
-     "data_periodical": true
+     "data_periodical": true,
+     "data_license": "Inexistente",
+     "data_format": [
+      "API",
+      "JSON",
+      "XML",
+      "CSV",
+      "XLSX",
+      "ODS",
+      "ZIP"
+     ]
     },
     {
      "data_name": "Dados Abertos do Governo Federal",
      "data_institution": "Governo Federal",
      "data_url": "https://api.portaldatransparencia.gov.br/",
-     "data_periodical": true
+     "data_periodical": true,
+     "data_license": "Inexistente",
+     "data_format": [
+      "API"
+     ]
     }
    ],
    "record_date": "2024-02-07",
@@ -9576,12 +11160,13 @@
    "countries_es": [
     "Brasil"
    ],
-   "geo_level": null,
+   "geo_level": "Países",
    "fed_units": null,
    "municipalities": null,
    "modified_date": null,
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false,
+   "url_archive": "https://archive.ph/ZX9a2"
   },
   {
    "hash_id": 3061861584,
@@ -9622,7 +11207,9 @@
      "data_name": "Repositório de contratos, pedidos via LAI, entre outros",
      "data_institution": "Data Privacy Brasil",
      "data_url": "https://docs.google.com/spreadsheets/d/1Wgf7gIHUV5rWU2o_RNyCwJ0uFGC2mwDoBWUED1E0v-w/edit#gid=0",
-     "data_periodical": false
+     "data_periodical": false,
+     "data_license": null,
+     "data_format": []
     }
    ],
    "record_date": "2024-02-07",
@@ -9637,12 +11224,13 @@
    "countries_es": [
     "Brasil"
    ],
-   "geo_level": null,
+   "geo_level": "Países",
    "fed_units": null,
    "municipalities": null,
    "modified_date": null,
    "status_published": false,
-   "status_review": true
+   "status_review": true,
+   "url_archive": "https://archive.ph/PHqMY"
   },
   {
    "hash_id": 2766310307,
@@ -9656,7 +11244,9 @@
    "authors_id": [
     null
    ],
-   "countries": null,
+   "countries": [
+    "Brasil"
+   ],
    "email": null,
    "tags": [
     "diário oficial da união",
@@ -9669,7 +11259,7 @@
    ],
    "url_source": "https://",
    "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_2766310307.png",
-   "comment": "Data de publicação na web foi aproximada. Esse é um caso interessante pois utiliza textos como dado aberto e não é uma aplicação, e sim um trabalho manual do jornalista Breno Costa.",
+   "comment": "Data de publicação na web foi aproximada. Esse é um caso interessante pois utiliza textos como dado aberto e não é uma aplicação, e sim um trabalho manual do jornalista Breno Costa.\n\nConteúdo propenso a desafios comunicacionais (registrado por Xavier).",
    "type": [
     "conjunto de dados",
     "outro"
@@ -9696,7 +11286,9 @@
     "Relações Internacionais",
     "Saúde",
     "Trabalho",
-    "Transportes e Trânsito"
+    "Transportes e Trânsito",
+    "Gênero e Raça",
+    "Religião"
    ],
    "datasets": [
     {
@@ -9704,7 +11296,10 @@
      "data_institution": "Imprensa Nacional",
      "data_url": "https://www.in.gov.br/leiturajornal",
      "data_periodical": true,
-     "data_license": null
+     "data_license": "CC BY-ND",
+     "data_format": [
+      "PDF"
+     ]
     }
    ],
    "record_date": "2023-10-27",
@@ -9734,16 +11329,20 @@
     "Relaciones Internacionales",
     "Salud",
     "Trabajo",
-    "Transporte y Tráfico"
+    "Transporte y Tráfico",
+    "Género y raza",
+    "Religión"
    ],
-   "countries_es": null,
-   "geo_level": null,
+   "countries_es": [
+    "Brasil"
+   ],
+   "geo_level": "Países",
    "fed_units": null,
    "municipalities": null,
    "modified_date": null,
    "url_archive": "https://web.archive.org/web/20251022130555/https://brenocosta.substack.com/",
    "status_published": false,
-   "status_review": true
+   "status_review": false
   },
   {
    "hash_id": 2978085734,
@@ -9791,19 +11390,22 @@
      "data_name": "Metadados da Base Siconv",
      "data_institution": "Ministério da Gestão e da Inovação em Serviços Públicos",
      "data_url": "https://dados.gov.br/dados/conjuntos-dados/siconvmetadados",
-     "data_periodical": null
+     "data_periodical": false,
+     "data_license": "Inexistente",
+     "data_format": [
+      "ZIP"
+     ]
     },
     {
-     "data_name": "SICONV",
+     "data_name": "Convênios",
      "data_institution": "CGU",
      "data_url": "https://portaldatransparencia.gov.br/download-de-dados/convenios",
-     "data_periodical": null
-    },
-    {
-     "data_name": null,
-     "data_institution": "IBGE",
-     "data_url": "https://dados.gov.br/dados/organizacoes/visualizar/instituto-brasileiro-de-geografia-e-estatistica-ibge",
-     "data_periodical": null
+     "data_periodical": false,
+     "data_license": "Inexistente",
+     "data_format": [
+      "ZIP",
+      "CSV"
+     ]
     }
    ],
    "record_date": "2023-10-27",
@@ -9818,12 +11420,13 @@
    "countries_es": [
     "Brasil"
    ],
-   "geo_level": null,
+   "geo_level": "Países",
    "fed_units": null,
    "municipalities": null,
    "modified_date": null,
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false,
+   "url_archive": "https://archive.ph/kT3PX"
   },
   {
    "hash_id": 2828213759,
@@ -9869,13 +11472,17 @@
      "data_name": null,
      "data_institution": "Brasil.io",
      "data_url": "http://brasil.io/",
-     "data_periodical": true
+     "data_periodical": true,
+     "data_license": null,
+     "data_format": []
     },
     {
      "data_name": null,
      "data_institution": "DataSUS",
      "data_url": "https://datasus.saude.gov.br/",
-     "data_periodical": true
+     "data_periodical": true,
+     "data_license": null,
+     "data_format": []
     }
    ],
    "record_date": "2023-10-25",
@@ -9888,12 +11495,13 @@
    "countries_es": [
     "Brasil"
    ],
-   "geo_level": null,
+   "geo_level": "Países",
    "fed_units": null,
    "municipalities": null,
    "modified_date": null,
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false,
+   "url_archive": ""
   },
   {
    "hash_id": 3561964102,
@@ -9946,31 +11554,53 @@
      "data_name": "Incrementos de desmatamento na Amazônia Legal",
      "data_institution": "INPE",
      "data_url": "http://terrabrasilis.dpi.inpe.br/app/dashboar d/deforestation/biomes/legal_amazon/increments",
-     "data_periodical": false
+     "data_periodical": false,
+     "data_license": "CC BY-SA",
+     "data_format": [
+      "ZIP",
+      "SHP"
+     ]
     },
     {
-     "data_name": "Orçamento Federal - SIGA Brasil",
+     "data_name": "Orçamento Federal - Painel Especialista",
      "data_institution": "Senado Federal",
      "data_url": "https://www12.senado.leg.br/orcamento/sigabrasil",
-     "data_periodical": false
+     "data_periodical": false,
+     "data_license": "Inexistente",
+     "data_format": [
+      "XLSX"
+     ]
     },
     {
      "data_name": "Servidores do IBAMA - Painel Estatístico de Pessoal",
      "data_institution": "Ministério da Economia",
      "data_url": "http://painel.pep.planejamento.gov.br",
-     "data_periodical": false
+     "data_periodical": false,
+     "data_license": "Inexistente",
+     "data_format": [
+      "XLSX"
+     ]
     },
     {
      "data_name": "Dados meteorológicos históricos",
      "data_institution": "INMET",
-     "data_url": "https://porta l.inmet.gov.br/dadoshistoricos",
-     "data_periodical": false
+     "data_url": "https://portal.inmet.gov.br/dadoshistoricos",
+     "data_periodical": false,
+     "data_license": "Inexistente",
+     "data_format": [
+      "ZIP",
+      "CSV"
+     ]
     },
     {
      "data_name": "Preço de commodities agrícolas",
      "data_institution": "ESALQ",
      "data_url": "https://www.cepea.esalq.usp.br/br/consultas-ao-banco-de-dados-do-site.aspx",
-     "data_periodical": false
+     "data_periodical": false,
+     "data_license": "CC BY-NC",
+     "data_format": [
+      "XLSX"
+     ]
     }
    ],
    "record_date": "2023-10-25",
@@ -9985,12 +11615,23 @@
    "countries_es": [
     "Brasil"
    ],
-   "geo_level": null,
-   "fed_units": null,
+   "geo_level": "Unidades federativas",
+   "fed_units": [
+    "AC",
+    "AP",
+    "AM",
+    "MT",
+    "PA",
+    "RO",
+    "RR",
+    "TO",
+    "MA"
+   ],
    "municipalities": null,
    "modified_date": null,
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false,
+   "url_archive": "https://archive.ph/ZQocW"
   },
   {
    "hash_id": 3338481779,
@@ -10006,7 +11647,9 @@
     null,
     null
    ],
-   "countries": null,
+   "countries": [
+    "Brasil"
+   ],
    "email": [
     "contato@reporterbrasil.org.br",
     "contato@apublica.org"
@@ -10035,7 +11678,11 @@
      "data_institution": "Imprensa Nacional",
      "data_url": "https://github.com/Imprensa-Nacional/inlabs",
      "data_periodical": true,
-     "data_license": null
+     "data_license": "Inexistente",
+     "data_format": [
+      "PDF",
+      "XML"
+     ]
     }
    ],
    "record_date": "2023-10-25",
@@ -10048,14 +11695,16 @@
     "Medio Ambiente",
     "Salud"
    ],
-   "countries_es": null,
-   "geo_level": null,
+   "countries_es": [
+    "Brasil"
+   ],
+   "geo_level": "Países",
    "fed_units": null,
    "municipalities": null,
    "modified_date": null,
    "url_archive": "https://archive.ph/0sCuk",
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false
   },
   {
    "hash_id": 4006395846,
@@ -10101,10 +11750,14 @@
    ],
    "datasets": [
     {
-     "data_name": "Mortalidade no municipio de Sao Paulo",
-     "data_institution": "Prefeitura de São Paulo; DataSUS",
-     "data_url": "http://www.prefeitura.sp.gov.br/cidade/secretarias/saude/epidemiologia_e_informacao/mortalidade/",
-     "data_periodical": false
+     "data_name": "Mortalidade no Município de São Paulo",
+     "data_institution": "Prefeitura Municipal de São Paulo; Ministério da Saúde",
+     "data_url": "https://tabnet.saude.prefeitura.sp.gov.br/cgi/deftohtm3.exe?secretarias/saude/TABNET/SIM/obito.def",
+     "data_periodical": false,
+     "data_license": "Inexistente",
+     "data_format": [
+      "CSV"
+     ]
     }
    ],
    "record_date": "2023-10-25",
@@ -10120,16 +11773,21 @@
    "countries_es": [
     "Brasil"
    ],
-   "geo_level": null,
-   "fed_units": null,
-   "municipalities": null,
+   "geo_level": "Municípios",
+   "fed_units": [
+    "SP"
+   ],
+   "municipalities": [
+    "São Paulo (SP)"
+   ],
    "modified_date": null,
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false,
+   "url_archive": "https://web.archive.org/web/20251117165759/https://diplomatique.org.br/vidas-desiguais-na-cidade-de-sao-paulo/"
   },
   {
    "hash_id": 171154266,
-   "name": "Painel de Temas da Câmara dos deputados",
+   "name": "Painel de Temas da Câmara dos Deputados",
    "url": "https://lookerstudio.google.com/u/0/reporting/1dstcE9vqfyVreNkMWc9xPomHUFE3Wvu_/page/jper",
    "description": "Um painel que mostra as proposições apresentadas por deputados federais dentro de diversos temas, anos, partidos e estados.",
    "pub_date": "08/2019",
@@ -10139,7 +11797,9 @@
    "authors_id": [
     null
    ],
-   "countries": null,
+   "countries": [
+    "Brasil"
+   ],
    "email": [
     "contato@movimentoacredito.com",
     "hsxavier@gmail.com"
@@ -10166,14 +11826,24 @@
      "data_institution": "Câmara dos Deputados",
      "data_url": "https://dadosabertos.camara.leg.br/swagger/api.html",
      "data_periodical": true,
-     "data_license": null
+     "data_license": "Inexistente",
+     "data_format": [
+      "API",
+      "JSON",
+      "XML"
+     ]
     },
     {
      "data_name": "Deputados",
      "data_institution": "Câmara dos Deputados",
      "data_url": "https://dadosabertos.camara.leg.br/swagger/api.html",
      "data_periodical": true,
-     "data_license": null
+     "data_license": "Inexistente",
+     "data_format": [
+      "API",
+      "JSON",
+      "XML"
+     ]
     }
    ],
    "record_date": "2023-10-25",
@@ -10183,14 +11853,16 @@
    "topics_es": [
     "Gobierno y Política"
    ],
-   "countries_es": null,
-   "geo_level": null,
+   "countries_es": [
+    "Brasil"
+   ],
+   "geo_level": "Países",
    "fed_units": null,
    "municipalities": null,
    "modified_date": null,
    "url_archive": "https://web.archive.org/web/20251022125412/https://lookerstudio.google.com/reporting/1dstcE9vqfyVreNkMWc9xPomHUFE3Wvu_/page/jper",
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false
   },
   {
    "hash_id": 3196016551,
@@ -10220,7 +11892,7 @@
    ],
    "url_source": "https://",
    "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_3196016551.png",
-   "comment": "Existe mais um conjunto de dados abertos utilizado quenão foi informado por falta de espaço.",
+   "comment": null,
    "type": [
     "artigo científico ou publicação acadêmica"
    ],
@@ -10230,39 +11902,69 @@
    ],
    "datasets": [
     {
-     "data_name": "Automated Hate Speech Detection and the Problem of Offensive Language",
-     "data_institution": "Thomas Davidson et al.",
+     "data_name": "Hate Speech and the Offensive Language",
+     "data_institution": "Thomas Davidson; Dana Warmsley; Michael Macy; Ingmar Weber",
      "data_url": "https://github.com/t-davidson/hate-speech-and-offensive-language",
      "data_periodical": false,
-     "data_license": null
+     "data_license": "Outra",
+     "data_format": [
+      "CSV"
+     ]
     },
     {
      "data_name": "Hate Speech Twitter annotations",
      "data_institution": "Zeerak Waseem; Dirk Hovy",
      "data_url": "https://github.com/zeeraktalat/hatespeech",
      "data_periodical": false,
-     "data_license": null
-    },
-    {
-     "data_name": "Overview of the Evalita 2018 Task on Automatic Misogyny Identification (AMI)",
-     "data_institution": "Elisabetta Fersini; Debora Nozza; Paolo Rosso",
-     "data_url": null,
-     "data_periodical": false,
-     "data_license": null
+     "data_license": "Inexistente",
+     "data_format": [
+      "CSV",
+      "Outro"
+     ]
     },
     {
      "data_name": "HatEval",
-     "data_institution": "Valerio Basile et al.",
-     "data_url": "http://hatespeech.di.unito.it/hateval.html",
+     "data_institution": "Valerio Basile; Cristina Bosco; Elisabetta Fersini; Debora Nozza; Viviana Patti; Francisco Manuel Rangel Pardo; Paolo Rosso; Manuela Sanguinetti",
+     "data_url": "https://github.com/msang/hateval",
      "data_periodical": false,
-     "data_license": null
+     "data_license": "Inexistente",
+     "data_format": [
+      "Outro",
+      "ZIP"
+     ]
     },
     {
      "data_name": "Toxic Comment Classification Challenge",
      "data_institution": "Jigsaw/Conversation AI",
      "data_url": "https://www.kaggle.com/competitions/jigsaw-toxic-comment-classification-challenge/data",
      "data_periodical": false,
-     "data_license": null
+     "data_license": "CC0",
+     "data_format": [
+      "ZIP",
+      "CSV"
+     ]
+    },
+    {
+     "data_name": "Automatic Misogyny Identification (Evalita 2018)",
+     "data_institution": "Elisabetta Fersini; Debora Nozza; Paolo Rosso",
+     "data_url": "https://github.com/MIND-Lab/Automatic-Misogyny-Identification",
+     "data_license": "CC BY-NC-SA",
+     "data_format": [
+      "Outro",
+      "ZIP"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "TRAC",
+     "data_institution": "Marcos Zampieri; Shervin Malmasi; Preslav Nakov; Sara Rosenthal; Noura Farra; Ritesh Kumar",
+     "data_url": "https://github.com/ZeyadZanaty/offenseval",
+     "data_license": "Outra",
+     "data_format": [
+      "ZIP",
+      "Outro"
+     ],
+     "data_periodical": false
     }
    ],
    "record_date": "2023-10-25",
@@ -10274,13 +11976,13 @@
     "Ciencia, Información y Comunicación"
    ],
    "countries_es": null,
-   "geo_level": null,
+   "geo_level": "Não se aplica",
    "fed_units": null,
    "municipalities": null,
    "modified_date": null,
    "url_archive": "https://web.archive.org/web/20251022125122/https://aclanthology.org/2020.lrec-1.838/",
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false
   },
   {
    "hash_id": 1191967625,
@@ -10325,34 +12027,57 @@
    ],
    "datasets": [
     {
-     "data_name": "Mortalidade no município de Sâo Paulo",
-     "data_institution": "Prefeitura do Município de São Paulo",
-     "data_url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/saude/epidemiologia_e_informacao/mortalidade/",
-     "data_periodical": false
+     "data_name": "Mortalidade no Município de São Paulo",
+     "data_institution": "Prefeitura Municipal de São Paulo; Ministério da Saúde",
+     "data_url": "https://tabnet.saude.prefeitura.sp.gov.br/cgi/deftohtm3.exe?secretarias/saude/TABNET/SIM/obito.def",
+     "data_periodical": false,
+     "data_license": "Inexistente",
+     "data_format": [
+      "CSV"
+     ]
     },
     {
-     "data_name": "População do município de São Paulo, por idade",
+     "data_name": "Projeção da população por idade e sexo ─ Município de SP",
      "data_institution": "SEADE",
      "data_url": "https://repositorio.seade.gov.br/group/seade-populacao",
-     "data_periodical": false
+     "data_periodical": false,
+     "data_license": "Inexistente",
+     "data_format": [
+      "CSV"
+     ]
     },
     {
-     "data_name": "Fronteiras dos distritos do município de São Paulo",
-     "data_institution": "Prefeitura do Município de São Paulo",
+     "data_name": "Limites Administrativos dos Distritos de São Paulo",
+     "data_institution": "Prefeitura Municipal de São Paulo",
      "data_url": "https://geosampa.prefeitura.sp.gov.br",
-     "data_periodical": false
+     "data_periodical": false,
+     "data_license": "CC BY-SA",
+     "data_format": [
+      "SHP",
+      "KML",
+      "JSON",
+      "GPKG"
+     ]
     },
     {
-     "data_name": "Prestação de contas eleitorais",
+     "data_name": "Prestação de Contas Eleitorais - 2022",
      "data_institution": "TSE",
-     "data_url": "https://dadosabertos.tse.jus.br/dataset/",
-     "data_periodical": false
+     "data_url": "https://dadosabertos.tse.jus.br/dataset/dadosabertos-tse-jus-br-dataset-prestacao-de-contas-eleitorais-2022",
+     "data_periodical": false,
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV"
+     ]
     },
     {
-     "data_name": "Candidatos eleitorais",
+     "data_name": "Candidatos - 2022",
      "data_institution": "TSE",
-     "data_url": "https://dadosabertos.tse.jus.br/dataset/",
-     "data_periodical": false
+     "data_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2022",
+     "data_periodical": false,
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV"
+     ]
     }
    ],
    "record_date": "2023-10-11",
@@ -10369,12 +12094,13 @@
    "countries_es": [
     "Brasil"
    ],
-   "geo_level": null,
+   "geo_level": "Países",
    "fed_units": null,
    "municipalities": null,
    "modified_date": null,
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false,
+   "url_archive": "https://archive.ph/y8HRh"
   },
   {
    "hash_id": 1108461102,
@@ -10388,10 +12114,7 @@
    "authors_id": [
     null
    ],
-   "countries": [
-    "Mundial",
-    "Brasil"
-   ],
+   "countries": null,
    "email": null,
    "tags": [
     "catálogo",
@@ -10425,7 +12148,9 @@
     "Relações Internacionais",
     "Saúde",
     "Trabalho",
-    "Transportes e Trânsito"
+    "Transportes e Trânsito",
+    "Gênero e Raça",
+    "Religião"
    ],
    "datasets": [],
    "record_date": "2023-10-11",
@@ -10454,18 +12179,18 @@
     "Relaciones Internacionales",
     "Salud",
     "Trabajo",
-    "Transporte y Tráfico"
+    "Transporte y Tráfico",
+    "Género y raza",
+    "Religión"
    ],
-   "countries_es": [
-    "Mundial",
-    "Brasil"
-   ],
-   "geo_level": null,
+   "countries_es": null,
+   "geo_level": "Não se aplica",
    "fed_units": null,
    "municipalities": null,
    "modified_date": null,
    "status_published": false,
-   "status_review": true
+   "status_review": true,
+   "url_archive": "https://archive.ph/t9yip"
   },
   {
    "hash_id": 3206104055,
@@ -10483,7 +12208,9 @@
     null,
     null
    ],
-   "countries": null,
+   "countries": [
+    "Brasil"
+   ],
    "email": [
     "contato@serenata.ai"
    ],
@@ -10509,25 +12236,37 @@
    ],
    "datasets": [
     {
-     "data_name": "Cota parlamentar",
-     "data_institution": "Câmara dos deputados",
+     "data_name": "Cota Parlamentar",
+     "data_institution": "Câmara dos Deputados",
      "data_url": "https://www.camara.leg.br/cota-parlamentar/",
      "data_periodical": true,
-     "data_license": null
+     "data_license": "Inexistente",
+     "data_format": [
+      "XLSX"
+     ]
     },
     {
-     "data_name": "Informações sobre deputados federais",
-     "data_institution": "Câmara dos deputados",
+     "data_name": "Informações sobre Deputados Federais",
+     "data_institution": "Câmara dos Deputados",
      "data_url": "https://www.camara.leg.br/SitCamaraWS/Deputados.asmx",
      "data_periodical": true,
-     "data_license": null
+     "data_license": "Inexistente",
+     "data_format": [
+      "XML"
+     ]
     },
     {
-     "data_name": "API de Compras Governamentais",
+     "data_name": "Compras Governamentais",
      "data_institution": "Ministério da Economia",
-     "data_url": "http://compras.dados.gov.br",
+     "data_url": "https://api.compras.dados.gov.br/",
      "data_periodical": true,
-     "data_license": null
+     "data_license": "Inexistente",
+     "data_format": [
+      "API",
+      "JSON",
+      "XML",
+      "CSV"
+     ]
     }
    ],
    "record_date": "2023-10-11",
@@ -10539,14 +12278,16 @@
     "Economía y Finanzas",
     "Gobierno y Política"
    ],
-   "countries_es": null,
-   "geo_level": null,
+   "countries_es": [
+    "Brasil"
+   ],
+   "geo_level": "Países",
    "fed_units": null,
    "municipalities": null,
    "modified_date": null,
    "url_archive": "https://web.archive.org/web/20251022124748/https://serenata.ai/",
-   "status_published": false,
-   "status_review": true
+   "status_published": true,
+   "status_review": false
   },
   {
    "hash_id": 2507397523,
@@ -10581,7 +12322,7 @@
    ],
    "url_source": "https://github.com/gabinete-compartilhado-acredito/dados_orcamentarios",
    "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_2507397523.png",
-   "comment": null,
+   "comment": "Conteúdo propenso a desafios comunicacionais (registrado por Xavier).",
    "type": [
     "matéria jornalística"
    ],
@@ -10591,22 +12332,32 @@
    ],
    "datasets": [
     {
-     "data_name": "SIGA Brasil",
+     "data_name": "Orçamento Federal",
      "data_institution": "Senado Federal",
      "data_url": "https://www12.senado.leg.br/orcamento/sigabrasil",
-     "data_periodical": false
+     "data_periodical": false,
+     "data_license": "Inexistente",
+     "data_format": [
+      "XLSX"
+     ]
     },
     {
-     "data_name": "Orçamento da despesa pública",
+     "data_name": "Orçamento da Despesa Pública",
      "data_institution": "CGU",
      "data_url": "https://portaldatransparencia.gov.br/orcamento/despesas?ordenarPor=ano&direcao=desc",
-     "data_periodical": false
+     "data_periodical": false,
+     "data_license": "Inexistente",
+     "data_format": [
+      "CSV"
+     ]
     },
     {
      "data_name": "Plataforma +Brasil",
      "data_institution": "Ministério da Economia",
      "data_url": "https://antigo.plataformamaisbrasil.gov.br/download-de-dados",
-     "data_periodical": false
+     "data_periodical": false,
+     "data_license": null,
+     "data_format": []
     }
    ],
    "record_date": "2023-10-11",
@@ -10620,12 +12371,13 @@
    "countries_es": [
     "Brasil"
    ],
-   "geo_level": null,
+   "geo_level": "Países",
    "fed_units": null,
    "municipalities": null,
    "modified_date": null,
    "status_published": false,
-   "status_review": true
+   "status_review": false,
+   "url_archive": "https://archive.ph/hus0z"
   }
  ]
 }
