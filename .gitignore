@@ -10,6 +10,8 @@ analises/__pycache__
 analises/.ipynb_checkpoints
 codigo/__pycache__
 codigo/nohup.out
+codigo/data/trash
+analises/trash
 
 # Não inclusos
 codigo/env
