@@ -1,8 +1,1489 @@
 {
  "metadata": {
-  "last_update": "2025-11-24"
+  "last_update": "2025-11-28"
  },
  "data": [
+  {
+   "hash_id": 3943333835,
+   "name": "Saúde - Ceará",
+   "url": "https://app.powerbi.com/view?r=eyJrIjoiM2NiY2Q1ZjQtZTgxYS00MjNhLThiMzEtYTQ5YzRlMGMyOTQ2IiwidCI6ImZhYWM3MDFjLTczN2QtNDEyYS1hMmQwLWI2MTM0Y2Y3OTk0ZiJ9",
+   "url_archive": "https://",
+   "description": null,
+   "pub_date": "01/2025",
+   "authors": [
+    "Observatório da Indústria"
+   ],
+   "authors_id": [
+    null
+   ],
+   "geo_level": "Unidades federativas",
+   "countries": [
+    "Brasil"
+   ],
+   "fed_units": [
+    "CE"
+   ],
+   "municipalities": null,
+   "email": null,
+   "type": [
+    "painel, dashboard ou infográfico"
+   ],
+   "topics": [
+    "Saúde"
+   ],
+   "tags": [
+    "atendimento saude",
+    "saude"
+   ],
+   "url_source": "https://",
+   "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+   "comment": "Cadastrado por César Calafrioli.",
+   "datasets": [
+    {
+     "data_name": "Hospitais e Leitos",
+     "data_institution": "Ministério da Saúde",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/hospitais-e-leitos",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV",
+      "API",
+      "JSON",
+      "XML"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Indicadores sobre Sistema de Informações Ambulatoriais do SUS - SIA/SUS",
+     "data_institution": "IBGE",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/sistema-de-informacoes-ambulatoriais-do-sus-sia-sus",
+     "data_license": "ODbL",
+     "data_format": [
+      "JSON",
+      "XML"
+     ],
+     "data_periodical": false
+    }
+   ],
+   "record_date": "2025-11-27",
+   "modified_date": null,
+   "status_published": true,
+   "status_review": true,
+   "type_es": [
+    "panel de control o infografía"
+   ],
+   "topics_es": [
+    "Salud"
+   ],
+   "countries_es": [
+    "Brasil"
+   ]
+  },
+  {
+   "hash_id": 3800638430,
+   "name": "Venda de medicamentos no Estado do Rio de Janeiro",
+   "url": "https://www.areadetrampo.com.br/venda-de-medicamentos/",
+   "url_archive": "https://archive.ph/7NkT8",
+   "description": "A categoria Quem Somos aborda a motivação para criar o site Área de Trampo, deixamos transparente sobre como abordamos os dados dos internautas.",
+   "pub_date": "01/2025",
+   "authors": [
+    "Area de trampo"
+   ],
+   "authors_id": [
+    null
+   ],
+   "geo_level": "Unidades federativas",
+   "countries": [
+    "Brasil"
+   ],
+   "fed_units": [
+    "RJ"
+   ],
+   "municipalities": null,
+   "email": null,
+   "type": [
+    "painel, dashboard ou infográfico"
+   ],
+   "topics": [
+    "Saúde"
+   ],
+   "tags": [
+    "MEDICAMENTO"
+   ],
+   "url_source": "https://",
+   "url_image": "https://www.areadetrampo.com.br/wp-content/uploads/2025/08/prescricao_conselho_medico.webp",
+   "comment": "Cadastrado por César Calafrioli.",
+   "datasets": [
+    {
+     "data_name": "Venda de Medicamentos Controlados e Antimicrobianos - Medicamentos Industrializados",
+     "data_institution": "ANVISA",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/venda-de-medicamentos-controlados-e-antimicrobianos---medicamentos-industrializados",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": false
+    }
+   ],
+   "record_date": "2025-11-27",
+   "modified_date": null,
+   "status_published": true,
+   "status_review": true,
+   "type_es": [
+    "panel de control o infografía"
+   ],
+   "topics_es": [
+    "Salud"
+   ],
+   "countries_es": [
+    "Brasil"
+   ]
+  },
+  {
+   "hash_id": 2413942282,
+   "name": "Agenda de Nilmário Miranda tem 1 compromisso a cada 9 dias",
+   "url": "https://ofator.com.br/informacao/agenda-de-nilmario-miranda-tem-1-compromisso-a-cada-9-dias/",
+   "url_archive": "https://archive.ph/4RVGs",
+   "description": "A agenda pública de Nilmário Miranda, chefe de uma assessoria especial do Ministério dos Direitos Humanos, soma 98 compromissos desde janeiro de 2023, quando ele tomou posse no cargo – ou seja, cerca de um compromisso a cada nove dias corridos.",
+   "pub_date": "05/2025",
+   "authors": [
+    "Cedê Silva"
+   ],
+   "authors_id": [
+    null
+   ],
+   "geo_level": "Países",
+   "countries": [
+    "Brasil"
+   ],
+   "fed_units": null,
+   "municipalities": null,
+   "email": null,
+   "type": [
+    "matéria jornalística"
+   ],
+   "topics": [
+    "Governo e Política"
+   ],
+   "tags": [
+    "agenda pública",
+    "agenda transparente",
+    "Fiquem Sabendo"
+   ],
+   "url_source": "https://",
+   "url_image": "https://ofator.com.br/wp-content/uploads/2025/05/Nilmario-MDH_10.dez_.2024-1024x683.jpg",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\n\nConteúdo propenso a desafios comunicacionais (registrado por Xavier).",
+   "datasets": [
+    {
+     "data_name": "Agenda Pública de Nilmário Miranda",
+     "data_institution": "Fiquem Sabendo",
+     "data_url": "https://agendas.fiquemsabendo.com.br/agendas?authorityId=34e3f106-fd5a-5207-bc5e-7ce38509a028",
+     "data_license": "Inexistente",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Agenda Pública de Macaé Evaristo",
+     "data_institution": "Fiquem Sabendo",
+     "data_url": "https://agendas.fiquemsabendo.com.br/agendas?authorityId=b07f7bcc-4ec4-5c91-8189-9b401660726f",
+     "data_license": "Inexistente",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": false
+    }
+   ],
+   "record_date": "2025-11-26",
+   "modified_date": null,
+   "status_published": false,
+   "status_review": false,
+   "type_es": [
+    "artículo periodístico"
+   ],
+   "topics_es": [
+    "Gobierno y Política"
+   ],
+   "countries_es": [
+    "Brasil"
+   ]
+  },
+  {
+   "hash_id": 3493711934,
+   "name": "IBGE: 3% da população total de BH é formada em Direito",
+   "url": "https://ofator.com.br/informacao/ibge-3-da-populacao-total-de-bh-e-formada-em-direito/",
+   "url_archive": "https://archive.ph/RIoEE",
+   "description": "Dados do Censo 2022 mostram os cursos universitários mais populares entre as pessoas com ensino superior completo. Em BH são 69.817 formados em Direito, o equivalente a pouco mais de 3% da população total calculada em 2022, de 2,3 milhões de habitantes.",
+   "pub_date": "02/2025",
+   "authors": [
+    "Cedê Silva"
+   ],
+   "authors_id": [
+    null
+   ],
+   "geo_level": "Municípios",
+   "countries": [
+    "Brasil"
+   ],
+   "fed_units": [
+    "MG"
+   ],
+   "municipalities": [
+    "Belo Horizonte (MG)"
+   ],
+   "email": null,
+   "type": [
+    "matéria jornalística"
+   ],
+   "topics": [
+    "Educação"
+   ],
+   "tags": [
+    "ensino superior",
+    "cursos universitários"
+   ],
+   "url_source": "https://",
+   "url_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmWM4K6ELz_TJAz6jsUw6GBNFaBXM8WALRsA&s",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "datasets": [
+    {
+     "data_name": "Pessoas com nível superior completo, por áreas gerais, específicas e detalhadas de formação do curso de graduação concluído, segundo o sexo e a cor ou raça",
+     "data_institution": "IBGE",
+     "data_url": "https://sidra.ibge.gov.br/tabela/10065#/n1/all/n3/all/v/all/p/all/c2082/all/c2/all/c86/all/l/v,p+c2+c86,t+c2082/resultado",
+     "data_license": "Inexistente",
+     "data_format": [
+      "XLSX",
+      "CSV",
+      "ODS",
+      "Outro"
+     ],
+     "data_periodical": false
+    }
+   ],
+   "record_date": "2025-11-26",
+   "modified_date": null,
+   "status_published": true,
+   "status_review": false,
+   "type_es": [
+    "artículo periodístico"
+   ],
+   "topics_es": [
+    "Educación"
+   ],
+   "countries_es": [
+    "Brasil"
+   ]
+  },
+  {
+   "hash_id": 2351287261,
+   "name": "Jardins, chácaras e santos: O que dizem os nomes das favelas de São Paulo",
+   "url": "https://agenciamural.org.br/especiais/nomes-das-favelas-de-sao-paulo/",
+   "url_archive": "https://archive.ph/dEOBE",
+   "description": "Os últimos dados do IBGE mostram que a cidade de São Paulo possui 1,7 milhão de pessoas que vivem em mais de 1.300 favelas. Entre tantas comunidades, ocupações e moradias que começaram improvisadas, há mais de 300 jardins, 92 vilas e 74 parques. A reportagem analisa os nomes para fazer um mergulho sobre a visão de moradores de vários desses territórios e o que há por trás dessas escolhas.",
+   "pub_date": "01/2025",
+   "authors": [
+    "Artur Ferreira",
+    "Cleberson Santos",
+    "Matheus Oliveira",
+    "Nathália Ract da Silva",
+    "Paulo Talarico",
+    "Magno Borges",
+    "Léu Britto"
+   ],
+   "authors_id": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "geo_level": "Municípios",
+   "countries": [
+    "Brasil"
+   ],
+   "fed_units": [
+    "SP"
+   ],
+   "municipalities": [
+    "São Paulo (SP)"
+   ],
+   "email": null,
+   "type": [
+    "matéria jornalística"
+   ],
+   "topics": [
+    "Habitação, Saneamento e Urbanismo"
+   ],
+   "tags": [
+    "favelas",
+    "periferia",
+    "comunidades urbanas"
+   ],
+   "url_source": "https://",
+   "url_image": "https://cdn.agenciamural.org.br/2025/01/24101249/Favelas-de-Sao-Paulo-por-seus-nomes-2-1024x684.png",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "datasets": [
+    {
+     "data_name": "Número de favelas e comunidades urbanas, segundo os Municípios",
+     "data_institution": "IBGE",
+     "data_url": "https://sidra.ibge.gov.br/Tabela/9883",
+     "data_license": "Inexistente",
+     "data_format": [
+      "XLSX",
+      "CSV",
+      "ODS",
+      "Outro"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "População residente em favelas e comunidades urbanas, por cor ou raça, sexo e grupos de idade, segundo as Favelas e Comunidades Urbanas",
+     "data_institution": "IBGE",
+     "data_url": "https://sidra.ibge.gov.br/Tabela/9884",
+     "data_license": "Inexistente",
+     "data_format": [
+      "XLSX",
+      "CSV",
+      "ODS",
+      "Outro"
+     ],
+     "data_periodical": false
+    }
+   ],
+   "record_date": "2025-11-25",
+   "modified_date": null,
+   "status_published": true,
+   "status_review": false,
+   "type_es": [
+    "artículo periodístico"
+   ],
+   "topics_es": [
+    "Vivienda, Saneamiento y Urbanismo"
+   ],
+   "countries_es": [
+    "Brasil"
+   ]
+  },
+  {
+   "hash_id": 96814526,
+   "name": "Mar de papéis: Santinhos no chão dão votos, mas não garantem vitória",
+   "url": "https://agenciamural.org.br/especiais/santinhos-no-chao-da-votos-mas-nao-garantem-vitoria/",
+   "url_archive": "https://archive.ph/eLl6o",
+   "description": "Levantamento exclusivo da Agência Mural revela o peso da boca de urna e dos papéis que sujam as ruas no dia da eleição. Com um cruzamento de dados públicos com os papéis coletados por repórteres em cada unidade escolar, foi possível comprovar que campeões de votos em escolas de SP tinham mais santinhos jogados nas calçadas. Apesar dos vitoriosos, maioria jogou santinhos ao vento.",
+   "pub_date": "10/2024",
+   "authors": [
+    "Paulo Talarico",
+    "Ariane Costa Gomes",
+    "Artur Ferreira",
+    "Ana Beatriz Alves",
+    "Daniel Santana",
+    "Estela Aguiar",
+    "Gabriel Negri",
+    "Isabela do Carmo",
+    "Livia Alves",
+    "Luis Antonio",
+    "Matheus Oliveira",
+    "Thauane Blanche",
+    "Thila Moura",
+    "Wellington Nascimento",
+    "Léu Britto"
+   ],
+   "authors_id": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "geo_level": "Unidades federativas",
+   "countries": [
+    "Brasil"
+   ],
+   "fed_units": [
+    "SP"
+   ],
+   "municipalities": null,
+   "email": null,
+   "type": [
+    "matéria jornalística"
+   ],
+   "topics": [
+    "Governo e Política"
+   ],
+   "tags": [
+    "eleições",
+    "vereadores",
+    "derramamento de santinhos"
+   ],
+   "url_source": "https://",
+   "url_image": "https://cdn.agenciamural.org.br/2024/10/30172021/Gari-limpando-os-santinhos-espalhados-de-frente-a-escola-1024x768.jpeg",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "datasets": [
+    {
+     "data_name": "SP - Votação por seção eleitoral - 2024",
+     "data_institution": "TSE",
+     "data_url": "https://dadosabertos.tse.jus.br/dataset/resultados-2024/resource/655a5e7f-08d7-4a21-8a5f-0c851e21b670?inner_span=True",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": false
+    }
+   ],
+   "record_date": "2025-11-25",
+   "modified_date": null,
+   "status_published": true,
+   "status_review": false,
+   "type_es": [
+    "artículo periodístico"
+   ],
+   "topics_es": [
+    "Gobierno y Política"
+   ],
+   "countries_es": [
+    "Brasil"
+   ]
+  },
+  {
+   "hash_id": 1740824378,
+   "name": "Conheça Itacaré",
+   "url": "https://institutotijuipe.wixsite.com/institutotijuipe/conheca-itacare",
+   "url_archive": "http://archive.today/vgYbe",
+   "description": "Plataforma digital que consolida dados e informações diversas que permitem conhecer Itacaré, município de menos de 30 mil habitantes do litoral sul da Bahia, e são importantes ferramentas para qualificar as políticas públicas locais.",
+   "pub_date": "10/2024",
+   "authors": [
+    "Márcio Leal Gonçalves"
+   ],
+   "authors_id": [
+    null
+   ],
+   "geo_level": "Municípios",
+   "countries": [
+    "Brasil"
+   ],
+   "fed_units": [
+    "BA"
+   ],
+   "municipalities": [
+    "Itacaré (BA)"
+   ],
+   "email": null,
+   "type": [
+    "aplicativo ou plataforma",
+    "matéria jornalística"
+   ],
+   "topics": [
+    "Agricultura, extrativismo e pesca",
+    "Governo e Política",
+    "Religião",
+    "Gênero e Raça",
+    "Geografia"
+   ],
+   "tags": [
+    "cidade de Itacaré",
+    "Censo 2022",
+    "demografia"
+   ],
+   "url_source": "https://",
+   "url_image": "https://static.wixstatic.com/media/c56029_aacfc347d95844bc8fd02d3023722b4f~mv2.png/v1/fill/w_488,h_364,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/tijuipe-logomarca-22anos.png",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\nHá uma série de outras fontes além das catalogadas.",
+   "datasets": [
+    {
+     "data_name": "Censo Demográfico 2022 - Panorama Itacaré (BA)",
+     "data_institution": "IBGE",
+     "data_url": "https://censo2022.ibge.gov.br/panorama/",
+     "data_license": "Inexistente",
+     "data_format": [
+      "CSV",
+      "XLSX"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Censo Demográfico 2022 - Panorama Bahia",
+     "data_institution": "IBGE",
+     "data_url": "https://censo2022.ibge.gov.br/panorama/",
+     "data_license": "Inexistente",
+     "data_format": [
+      "CSV",
+      "XLSX"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Censo Demográfico 2022 - Panorama Brasil",
+     "data_institution": "IBGE",
+     "data_url": "https://censo2022.ibge.gov.br/panorama/",
+     "data_license": "Inexistente",
+     "data_format": [
+      "CSV",
+      "XLSX"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "População residente, por sexo e lugar de nascimento - Bahia",
+     "data_institution": "IBGE",
+     "data_url": "https://www.ibge.gov.br/estatisticas/sociais/trabalho/22827-censo-demografico-2022.html?edicao=43821&t=resultados",
+     "data_license": "Inexistente",
+     "data_format": [
+      "ODS",
+      "XLSX"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Pessoas de 10 anos ou mais de idade, por cor ou raça, segundo o sexo e a religião",
+     "data_institution": "IBGE",
+     "data_url": "https://sidra.ibge.gov.br/Tabela/6417",
+     "data_license": "Inexistente",
+     "data_format": [
+      "XLSX",
+      "ODS",
+      "CSV",
+      "Outro"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Pessoas residentes de 2 anos ou mais de idade, total e pessoas com deficiência, por sexo e grupos de idade",
+     "data_institution": "IBGE",
+     "data_url": "https://sidra.ibge.gov.br/Tabela/10125",
+     "data_license": "Inexistente",
+     "data_format": [
+      "XLSX",
+      "ODS",
+      "CSV",
+      "Outro"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Pessoas residentes de 2 anos ou mais de idade com deficiência por tipos de dificuldades funcionais",
+     "data_institution": "IBGE",
+     "data_url": "https://sidra.ibge.gov.br/Tabela/10127",
+     "data_license": "Inexistente",
+     "data_format": [
+      "XLSX",
+      "CSV",
+      "ODS",
+      "Outro"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "População residente, total e quilombola, por sexo e grupos de idade, segundo localização e situação do domicílio",
+     "data_institution": "IBGE",
+     "data_url": "https://sidra.ibge.gov.br/Tabela/10089",
+     "data_license": "Inexistente",
+     "data_format": [
+      "XLSX",
+      "CSV",
+      "ODS",
+      "Outro"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Taxa de alfabetização da população, total e quilombola, de 15 anos ou mais de idade, por sexo, grupos de idade, localização e situação do domicílio",
+     "data_institution": "IBGE",
+     "data_url": "https://sidra.ibge.gov.br/Tabela/10091",
+     "data_license": "Inexistente",
+     "data_format": [
+      "XLSX",
+      "CSV",
+      "ODS",
+      "Outro"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Domicílios particulares permanentes ocupados, total e com pelo menos um morador quilombola, e moradores, total e quilombolas, em domicílios particulares permanentes ocupados, por principal forma de abastecimento de água, existência de canalização de água, tipo de esgotamento sanitário, destino do lixo, localização e situação do domicílio",
+     "data_institution": "IBGE",
+     "data_url": "https://sidra.ibge.gov.br/Tabela/10099",
+     "data_license": "Inexistente",
+     "data_format": [
+      "XLSX",
+      "CSV",
+      "ODS",
+      "Outro"
+     ],
+     "data_periodical": false
+    }
+   ],
+   "record_date": "2025-11-25",
+   "modified_date": null,
+   "status_published": true,
+   "status_review": false,
+   "type_es": [
+    "aplicación o plataforma",
+    "artículo periodístico"
+   ],
+   "topics_es": [
+    "Agricultura, Extractivismo y Pesca",
+    "Gobierno y Política",
+    "Religión",
+    "Género y raza",
+    "Geografía"
+   ],
+   "countries_es": [
+    "Brasil"
+   ]
+  },
+  {
+   "hash_id": 3534809627,
+   "name": "Uso de agrotóxicos cresce quase 200% em 10 anos no Maranhão e expõe moradores a riscos",
+   "url": "https://portalassobiar.com.br/uncategorized/uso-de-agrotoxicos-cresce-quase-200-em-10-anos-no-maranhao-e-expoe-moradores-a-riscos/",
+   "url_archive": "https://web.archive.org/web/20251125153829/https://portalassobiar.com.br/uncategorized/uso-de-agrotoxicos-cresce-quase-200-em-10-anos-no-maranhao-e-expoe-moradores-a-riscos/",
+   "description": "Esta reportagem aborda o aumento alarmante de 191,5% no uso de agrotóxicos no Maranhão entre 2013 e 2022, impulsionado pela expansão do plantio de soja. Em 2022, o estado registrou um recorde de 15.649,67 toneladas de agrotóxicos comprados. Essa intensificação comprovada no Maranhão concentrando 85% dos casos de intoxicação por agrotóxicos em comunidades no Brasil no primeiro semestre de 2024, de acordo com a Comissão Pastoral da Terra (CPT). Moradores de assentamentos como Novo Oriente e Francisco Romão em Açailândia relatam viver em contato diário com os produtos químicos, que são pulverizados indiscriminadamente sobre casas, escolas e quintais, inclusive por drones, contaminando água, ar e alimentos.",
+   "pub_date": "05/2025",
+   "authors": [
+    "Daniela Souza",
+    "Idayane Ferreira"
+   ],
+   "authors_id": [
+    null,
+    null
+   ],
+   "geo_level": "Unidades federativas",
+   "countries": [
+    "Brasil"
+   ],
+   "fed_units": [
+    "MA"
+   ],
+   "municipalities": null,
+   "email": [
+    "redacao@portalassobiar.com.br"
+   ],
+   "type": [
+    "matéria jornalística"
+   ],
+   "topics": [
+    "Agricultura, extrativismo e pesca",
+    "Meio Ambiente",
+    "Saúde"
+   ],
+   "tags": [
+    "agrotóxicos",
+    "produção de soja",
+    "riscos de saúde"
+   ],
+   "url_source": "https://",
+   "url_image": "https://portalassobiar.com.br/wp-content/uploads/2025/02/acailandia.jpg",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "datasets": [
+    {
+     "data_name": "Comercialização de Agrotóxicos (2000-2022)",
+     "data_institution": "Ibama",
+     "data_url": "https://www.gov.br/ibama/pt-br/assuntos/quimicos-e-biologicos/agrotoxicos/arquivos/qualidadeambiental/relatorios/2023/2023-12-11_13_historico_de_comercializacao_2000_a_2022_dados_bi.xlsx",
+     "data_license": "CC BY-ND",
+     "data_format": [
+      "XLSX"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Área plantada, área colhida, quantidade produzida, rendimento médio e valor da produção das lavouras temporárias (1974 a 2023)",
+     "data_institution": "IBGE",
+     "data_url": "https://sidra.ibge.gov.br/tabela/1612",
+     "data_license": "Inexistente",
+     "data_format": [
+      "CSV",
+      "XLSX",
+      "ODS",
+      "Outro"
+     ],
+     "data_periodical": false
+    }
+   ],
+   "record_date": "2025-11-25",
+   "modified_date": null,
+   "status_published": true,
+   "status_review": false,
+   "type_es": [
+    "artículo periodístico"
+   ],
+   "topics_es": [
+    "Agricultura, Extractivismo y Pesca",
+    "Medio Ambiente",
+    "Salud"
+   ],
+   "countries_es": [
+    "Brasil"
+   ]
+  },
+  {
+   "hash_id": 3305610872,
+   "name": "Mortes por intervenção policial no Ceará aumentam 28% no ano de 2024 e atingem o maior número nos últimos 6 anos",
+   "url": "https://diariodonordeste.verdesmares.com.br/seguranca/mortes-por-intervencao-policial-no-ceara-aumentam-28-no-ano-de-2024-e-atingem-o-maior-numero-nos-ultimos-6-anos-1.3605689",
+   "url_archive": "https://archive.ph/aWduO",
+   "description": "O ano de 2024 terminou com 189 mortes por intervenção policial no Ceará, conforme dados da Secretaria da Segurança Pública e Defesa Social do Estado (SSPDS). O número representa um aumento de 28,5% no índice, na comparação com 2023, que teve 147 mortes. O último ano ainda foi o mais letal em ações policiais nos últimos seis anos.",
+   "pub_date": "01/2025",
+   "authors": [
+    "Messias Borges"
+   ],
+   "authors_id": [
+    null
+   ],
+   "geo_level": "Unidades federativas",
+   "countries": [
+    "Brasil"
+   ],
+   "fed_units": [
+    "CE"
+   ],
+   "municipalities": null,
+   "email": [
+    "messias.borges@svm.com.br"
+   ],
+   "type": [
+    "matéria jornalística"
+   ],
+   "topics": [
+    "Defesa e Segurança",
+    "Gênero e Raça"
+   ],
+   "tags": [
+    "letalidade policial"
+   ],
+   "url_source": "https://",
+   "url_image": "https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3605695:1736885578/pm2%20(1).jpg?f=16x9&h=432&w=768&$p$f$h$w=bfda499",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "datasets": [
+    {
+     "data_name": "Indicadores de Segurança Pública Detalhados 2013 a 2024 - Crimes Violentos Letais e Intencionais (Intervenção Policial)",
+     "data_institution": "Secretaria da Segurança Pública e Defesa Social do Estado (SSPDS)",
+     "data_url": "https://www.sspds.ce.gov.br/indicadores-de-seguranca-publica/",
+     "data_license": "Inexistente",
+     "data_format": [
+      "XLSX"
+     ],
+     "data_periodical": false
+    }
+   ],
+   "record_date": "2025-11-25",
+   "modified_date": null,
+   "status_published": true,
+   "status_review": false,
+   "type_es": [
+    "artículo periodístico"
+   ],
+   "topics_es": [
+    "Defensa y Seguridad",
+    "Género y raza"
+   ],
+   "countries_es": [
+    "Brasil"
+   ]
+  },
+  {
+   "hash_id": 3627347965,
+   "name": "Ceará registra mais de 3.100 homicídios no ano de 2024 e volta a ter aumento de mortes violentas após três anos",
+   "url": "https://diariodonordeste.verdesmares.com.br/seguranca/ceara-registra-mais-de-3100-homicidios-no-ano-de-2024-e-volta-a-ter-aumento-de-mortes-violentas-apos-tres-anos-1.3601362",
+   "url_archive": "https://archive.ph/OXnoO",
+   "description": "O ano de 2024 terminou com aumento de homicídios no Ceará, na comparação com 2023. Conforme dados parciais disponibilizados no site da Secretaria da Segurança Pública e Defesa Social do Ceará (SSPDS), o Estado registrou pelo menos 3.151 mortes violentas no ano passado, até o dia 20 de dezembro (números dos últimos 11 dias do ano ainda não foram divulgados). Os anos de 2023 e 2022 terminaram com 2.970 homicídios, cada.  ",
+   "pub_date": "01/2025",
+   "authors": [
+    "Messias Borges"
+   ],
+   "authors_id": [
+    null
+   ],
+   "geo_level": "Unidades federativas",
+   "countries": [
+    "Brasil"
+   ],
+   "fed_units": [
+    "CE"
+   ],
+   "municipalities": null,
+   "email": [
+    "messias.borges@svm.com.br"
+   ],
+   "type": [
+    "matéria jornalística"
+   ],
+   "topics": [
+    "Defesa e Segurança"
+   ],
+   "tags": [
+    "homicídios",
+    "violência",
+    "mortes violentas",
+    "facções criminosas",
+    "crime"
+   ],
+   "url_source": "https://",
+   "url_image": "https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3601368:1735908998/ataquebarra%20(1).jpeg?f=16x9&h=432&w=768&$p$f$h$w=8dcb111",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "datasets": [
+    {
+     "data_name": "Indicadores de Segurança Pública Detalhados 2015 a 2024 - Crimes Violentos Letais e Intencionais",
+     "data_institution": "Secretaria da Segurança Pública e Defesa Social do Ceará (SSPDS)",
+     "data_url": "https://www.sspds.ce.gov.br/indicadores-de-seguranca-publica/",
+     "data_license": "Inexistente",
+     "data_format": [
+      "XLSX"
+     ],
+     "data_periodical": false
+    }
+   ],
+   "record_date": "2025-11-25",
+   "modified_date": null,
+   "status_published": true,
+   "status_review": false,
+   "type_es": [
+    "artículo periodístico"
+   ],
+   "topics_es": [
+    "Defensa y Seguridad"
+   ],
+   "countries_es": [
+    "Brasil"
+   ]
+  },
+  {
+   "hash_id": 3675553274,
+   "name": "Dossiê 20 maiores bens declarados de candidatos nas eleições municipais de Sergipe",
+   "url": "https://manguejornalismo.org/dossie-20-maiores-bens-declarados-de-candidatos-nas-eleicoes-municipais-de-sergipe/",
+   "url_archive": "https://archive.ph/YYTEI",
+   "description": "Como parte da cobertura especial das eleições municipais de 2024 em Sergipe, a parceria entre a Mangue Jornalismo, a Liga Acadêmica de Ciência de Dados da Universidade Federal de Sergipe (LADATA) e o jornalista Antônio Laranjeira lançou em outubro de 2024 um dossiê sobre os 20 candidatos a cargos municipais no estado que informaram ao Tribunal Superior Eleitoral (TSE) as maiores declarações de bens.\n\nO levantamento dos dados, realizado pela LADATA a pedido da Mangue, foi feito a partir das informações reportadas pelos candidatos ao site do TSE, todas de caráter público. Vale ressaltar que todos os 20 candidatos são homens, a maioria declarou-se branca e a média de idade fica acima dos 50 anos. Os oito primeiros nomes da lista são do interior do estado e a maior declaração de bens supera os R$ 19 milhões. \n\nIndo além dos números, a reportagem contextualizou as fortunas nas realidades políticas e financeiras dos candidatos prévias ao pleito de 2024, em um esforço coordenado de levantamento e checagem de informações.",
+   "pub_date": "10/2024",
+   "authors": [
+    "Ana Paula Rocha",
+    "LADATA",
+    "Antônio Laranjeira",
+    "Paulo Marques"
+   ],
+   "authors_id": [
+    null,
+    null,
+    null,
+    null
+   ],
+   "geo_level": "Unidades federativas",
+   "countries": [
+    "Brasil"
+   ],
+   "fed_units": [
+    "SE"
+   ],
+   "municipalities": null,
+   "email": null,
+   "type": [
+    "matéria jornalística"
+   ],
+   "topics": [
+    "Governo e Política",
+    "Gênero e Raça"
+   ],
+   "tags": [
+    "eleições municipais",
+    "declaração de bens"
+   ],
+   "url_source": "https://",
+   "url_image": "https://www.tribunadeituverava.com.br/wp-content/uploads/2022/02/43358_b2650e6fde181c8a3ce31beb161621ae.jpg",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\n\nConteúdo propenso a desafios comunicacionais (registrado por Xavier).",
+   "datasets": [
+    {
+     "data_name": "Candidatos Eleições Municipais em Sergipe - 2024",
+     "data_institution": "TSE",
+     "data_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024/resource/af76c401-0972-4ddf-8ea8-00e310ae53b4?inner_span=True",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Bens de Candidatos de Sergipe - 2024",
+     "data_institution": "TSE",
+     "data_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2024/resource/2d078979-116f-498f-ac5b-2e2a6fb0ff1f?inner_span=True",
+     "data_license": "CC-BY",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": false
+    }
+   ],
+   "record_date": "2025-11-25",
+   "modified_date": null,
+   "status_published": false,
+   "status_review": false,
+   "type_es": [
+    "artículo periodístico"
+   ],
+   "topics_es": [
+    "Gobierno y Política",
+    "Género y raza"
+   ],
+   "countries_es": [
+    "Brasil"
+   ]
+  },
+  {
+   "hash_id": 698894884,
+   "name": "A cada dia, em média, 68 mulheres denunciaram ser vítimas de violência doméstica no Ceará em 2025",
+   "url": "https://diariodonordeste.verdesmares.com.br/seguranca/a-cada-dia-em-media-68-mulheres-denunciaram-ser-vitimas-de-violencia-domestica-no-ceara-em-2025-1.3641126",
+   "url_archive": "https://archive.ph/WCXzV",
+   "description": "Nas ruas, o medo de ser abordada e violentada por um estranho. Dentro de casa, se o companheiro já deu sinais de comportamento agressivo, também já é sabido que aquele não é um ambiente seguro. Os números mostram que cada vez mais mulheres vêm denunciando ser vítimas de violência de gênero ou doméstica.\n\nCom base na Lei Maria da Penha, a Secretaria da Segurança Pública e Defesa Social (SSPDS) contabiliza que no primeiro trimestre de 2025, 6.189 pessoas do gênero feminino oficializaram denúncias enquanto vítimas da violência no Ceará.",
+   "pub_date": "04/2025",
+   "authors": [
+    "Emanoela Campelo de Melo"
+   ],
+   "authors_id": [
+    null
+   ],
+   "geo_level": "Unidades federativas",
+   "countries": [
+    "Brasil"
+   ],
+   "fed_units": [
+    "CE"
+   ],
+   "municipalities": null,
+   "email": null,
+   "type": [
+    "matéria jornalística"
+   ],
+   "topics": [
+    "Defesa e Segurança",
+    "Gênero e Raça"
+   ],
+   "tags": [
+    "violência doméstica",
+    "Lei nº 11.340/2006",
+    "Lei Maria da Penha"
+   ],
+   "url_source": "https://",
+   "url_image": "https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3641128:1744743879/a3af5c0a-b612-4e18-941f-2f5ad6bb9d24.jpg?f=2x1&h=384&q=0.8&w=768&$p$f$h$q$w=ea0a51b",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "datasets": [
+    {
+     "data_name": "Indicadores Detalhados 2025 - Lei 11.340/06 (Lei Maria da Penha)",
+     "data_institution": "Secretaria da Segurança Pública e Defesa Social do Estado do Ceará (SSPDS/CE)",
+     "data_url": "https://www.sspds.ce.gov.br/estatisticas/",
+     "data_license": "Inexistente",
+     "data_format": [
+      "XLSX"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Indicadores de Segurança Pública Detalhados 2023 a 2024 - Lei 11.340/06 (Lei Maria da Penha)",
+     "data_institution": "Secretaria da Segurança Pública e Defesa Social do Estado do Ceará (SSPDS/CE)",
+     "data_url": "https://www.sspds.ce.gov.br/indicadores-de-seguranca-publica/",
+     "data_license": "Inexistente",
+     "data_format": [
+      "XLSX"
+     ],
+     "data_periodical": false
+    }
+   ],
+   "record_date": "2025-11-25",
+   "modified_date": null,
+   "status_published": true,
+   "status_review": false,
+   "type_es": [
+    "artículo periodístico"
+   ],
+   "topics_es": [
+    "Defensa y Seguridad",
+    "Género y raza"
+   ],
+   "countries_es": [
+    "Brasil"
+   ]
+  },
+  {
+   "hash_id": 4134539652,
+   "name": "Aéreas somam R$ 1,7 bilhão em isenções fiscais por ano em MG",
+   "url": "https://ofator.com.br/informacao/aereas-somam-r-17-bilhao-em-isencoes-fiscais-por-ano-em-mg/",
+   "url_archive": "https://archive.ph/BBPDb",
+   "description": "As companhias aéreas Azul, Gol e Latam estão entre as empresas sediadas em Minas Gerais mais beneficiadas por isenções fiscais federais em 2023 – embora nenhuma delas tenha seu quartel-general no estado.",
+   "pub_date": "01/2025",
+   "authors": [
+    "Cadê Silva"
+   ],
+   "authors_id": [
+    null
+   ],
+   "geo_level": "Unidades federativas",
+   "countries": [
+    "Brasil"
+   ],
+   "fed_units": [
+    "MG"
+   ],
+   "municipalities": null,
+   "email": null,
+   "type": [
+    "matéria jornalística"
+   ],
+   "topics": [
+    "Economia e Finanças",
+    "Transportes e Trânsito"
+   ],
+   "tags": [
+    "benefícios fiscais",
+    "isenções fiscais federais",
+    "companhias aéreas"
+   ],
+   "url_source": "https://",
+   "url_image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/A320neo_Azul_%2831739584755%29.jpg",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "datasets": [
+    {
+     "data_name": "Detalhamento por Beneficiário Pessoa Jurídica - Azul Linhas Aéreas Brasileiras",
+     "data_institution": "CGU",
+     "data_url": "https://portaldatransparencia.gov.br/renuncias/beneficiario?paginacaoSimples=true&tamanhoPagina=&offset=&direcaoOrdenacao=asc&anoCalendario=2023&beneficiarioNomeFantasia=AZUL+LINHAS+AEREAS+BRASILEIRAS&colunasSelecionadas=cnpjDesformatado%2CanoCalendario%2Ccnpj%2Cbeneficiario%2CvalorRenunciado",
+     "data_license": "Inexistente",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Detalhamento por Beneficiário Pessoa Jurídica - Gol Linhas Aéreas",
+     "data_institution": "CGU",
+     "data_url": "https://portaldatransparencia.gov.br/renuncias/beneficiario?paginacaoSimples=true&tamanhoPagina=&offset=&direcaoOrdenacao=asc&anoCalendario=2023&beneficiarioNomeFantasia=GOL+LINHAS+AEREAS&colunasSelecionadas=cnpjDesformatado%2CanoCalendario%2Ccnpj%2Cbeneficiario%2CvalorRenunciado",
+     "data_license": "Inexistente",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Detalhamento por Beneficiário Pessoa Jurídica - TAM Linhas Aéreas",
+     "data_institution": "CGU",
+     "data_url": "https://portaldatransparencia.gov.br/renuncias/beneficiario?paginacaoSimples=true&tamanhoPagina=&offset=&direcaoOrdenacao=asc&anoCalendario=2023&beneficiarioNomeFantasia=TAM+LINHAS+AEREAS+S%2FA.&colunasSelecionadas=cnpjDesformatado%2CanoCalendario%2Ccnpj%2Cbeneficiario%2CvalorRenunciado",
+     "data_license": "Inexistente",
+     "data_format": [
+      "CSV"
+     ],
+     "data_periodical": false
+    }
+   ],
+   "record_date": "2025-11-25",
+   "modified_date": null,
+   "status_published": true,
+   "status_review": false,
+   "type_es": [
+    "artículo periodístico"
+   ],
+   "topics_es": [
+    "Economía y Finanzas",
+    "Transporte y Tráfico"
+   ],
+   "countries_es": [
+    "Brasil"
+   ]
+  },
+  {
+   "hash_id": 3972633318,
+   "name": "Bahia registra mais de 1.600 casos de estupro contra crianças e jovens em 2024; polícia reporta apenas 30% das denúncias",
+   "url": "https://www.bahianoticias.com.br/noticia/304850-bahia-registra-mais-de-1600-casos-de-estupro-contra-criancas-e-jovens-em-2024-policia-reporta-apenas-30-das-denuncias",
+   "url_archive": "https://archive.ph/R1NKS",
+   "description": "A presente reportagem explora os dados do Painel da Ouvidoria Nacional de Direitos Humanos, sobre a violação de direitos sexuais contra crianças e jovens e compara os números com os registros formais de denúncias na Secretária de Segurança Pública da Bahia (SSP-BA). É por meio da notável subnotificação dos dados comparados que a reportagem se desdobra para falar sobre educação sexual e o papel das escolas no combate a exploração sexual infantojuvenil. ",
+   "pub_date": "05/2025",
+   "authors": [
+    "Eduarda Pinto"
+   ],
+   "authors_id": [
+    null
+   ],
+   "geo_level": "Unidades federativas",
+   "countries": [
+    "Brasil"
+   ],
+   "fed_units": [
+    "BA"
+   ],
+   "municipalities": null,
+   "email": null,
+   "type": [
+    "matéria jornalística"
+   ],
+   "topics": [
+    "Defesa e Segurança",
+    "Saúde"
+   ],
+   "tags": [
+    "infância  e juventude",
+    "violência sexual"
+   ],
+   "url_source": "https://",
+   "url_image": "https://www.bahianoticias.com.br/_next/image?url=https%3A%2F%2Fwww.bahianoticias.com.br%2Ffotos%2Fprincipal_noticias%2F304850%2FIMAGEM_NOTICIA_9.jpg%3Fchecksum%3D1747693978&w=1080&q=75",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "datasets": [
+    {
+     "data_name": "Denúncias de Violação de Direitos Humanos - Estupro de Vulnerável (2024)",
+     "data_institution": "Ministério dos Direitos Humanos e da Cidadania",
+     "data_url": "https://www.gov.br/mdh/pt-br/ondh/painel-de-dados/2024",
+     "data_license": "CC BY-ND",
+     "data_format": [
+      "XLSX"
+     ],
+     "data_periodical": false
+    }
+   ],
+   "record_date": "2025-11-25",
+   "modified_date": null,
+   "status_published": true,
+   "status_review": false,
+   "type_es": [
+    "artículo periodístico"
+   ],
+   "topics_es": [
+    "Defensa y Seguridad",
+    "Salud"
+   ],
+   "countries_es": [
+    "Brasil"
+   ]
+  },
+  {
+   "hash_id": 3579714502,
+   "name": "Do acolhimento à adoção: mais de 600 crianças e adolescentes vivem em lares na Bahia",
+   "url": "https://www.bahianoticias.com.br/noticia/300270-do-acolhimento-a-adocao-mais-de-600-criancas-e-adolescentes-vivem-em-lares-na-bahia",
+   "url_archive": "https://archive.ph/TMpke",
+   "description": "Esta reportagem utiliza dados sobre o número de crianças em unidades de acolhimento na Bahia, seja aquelas que esperam a adoação ou não. Por meio dos dados do IBGE (Instituto Brasileiro de Geografia e Estatística) sobre moradores de residências coletivas e a entrevista com uma defensora pública é possível compreender a realidade dessas crianças e jovens e o funcionamento da máquina pública nesse processo. ",
+   "pub_date": "01/2025",
+   "authors": [
+    "Eduarda Pinto"
+   ],
+   "authors_id": [
+    null
+   ],
+   "geo_level": "Unidades federativas",
+   "countries": [
+    "Brasil"
+   ],
+   "fed_units": [
+    "BA"
+   ],
+   "municipalities": null,
+   "email": null,
+   "type": [
+    "matéria jornalística"
+   ],
+   "topics": [
+    "Assistência e Desenvolvimento Social"
+   ],
+   "tags": [
+    "adoção",
+    "abandono",
+    "unidades de acolhimento",
+    "infância",
+    "adolescência",
+    "orfanato",
+    "direitos humanos"
+   ],
+   "url_source": "https://",
+   "url_image": "https://www.bahianoticias.com.br/_next/image?url=https%3A%2F%2Fwww.bahianoticias.com.br%2Ffotos%2Fprincipal_noticias%2F300270%2FIMAGEM_NOTICIA_9.jpg%3Fchecksum%3D1736814503&w=1080&q=75",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "datasets": [
+    {
+     "data_name": "Moradores em domicílios coletivos, por tipo de domicílio, grupo de idade e sexo",
+     "data_institution": "IBGE",
+     "data_url": "https://sidra.ibge.gov.br/tabela/9869",
+     "data_license": "Inexistente",
+     "data_format": [
+      "XLSX",
+      "ODS",
+      "CSV",
+      "Outro"
+     ],
+     "data_periodical": false
+    }
+   ],
+   "record_date": "2025-11-24",
+   "modified_date": null,
+   "status_published": true,
+   "status_review": false,
+   "type_es": [
+    "artículo periodístico"
+   ],
+   "topics_es": [
+    "Asistencia y Desarrollo Social"
+   ],
+   "countries_es": [
+    "Brasil"
+   ]
+  },
+  {
+   "hash_id": 3423981677,
+   "name": "Vi.Elas",
+   "url": "https://projetovielas.wixstudio.com/site",
+   "url_archive": "https://archive.ph/GHrSb",
+   "description": "O projeto vi.Elas é uma iniciativa da disciplina de Jornalismo Digital, da Faculdade de Comunicação da Universidade Federal de Juiz de Fora (UFJF), que apresenta uma série de reportagens sobre as mulheres que dão nome a algumas ruas de Juiz de Fora (MG).\n\n",
+   "pub_date": "01/2025",
+   "authors": [
+    "Universidade Federal de Juiz de Fora "
+   ],
+   "authors_id": [
+    null
+   ],
+   "geo_level": "Municípios",
+   "countries": [
+    "Brasil"
+   ],
+   "fed_units": [
+    "MG"
+   ],
+   "municipalities": [
+    "Juiz de Fora (MG)"
+   ],
+   "email": null,
+   "type": [
+    "matéria jornalística"
+   ],
+   "topics": [
+    "Gênero e Raça",
+    "Habitação, Saneamento e Urbanismo",
+    "Cultura, Lazer e Esporte"
+   ],
+   "tags": [
+    "Mulheres",
+    "Ruas",
+    "História",
+    "Memória"
+   ],
+   "url_source": "https://",
+   "url_image": "https://dados.gov.br/api/publico/s3/1936c355-213c-476d-969d-fa9759075124.jpeg",
+   "comment": "Cadastrado por César Calafrioli.",
+   "datasets": [
+    {
+     "data_name": "Censo Demográfico",
+     "data_institution": "IBGE",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/cd-censo-demografico",
+     "data_license": "Outra",
+     "data_format": [
+      "XML",
+      "ODS",
+      "JSON"
+     ],
+     "data_periodical": null
+    }
+   ],
+   "record_date": "2025-11-24",
+   "modified_date": null,
+   "status_published": true,
+   "status_review": true,
+   "type_es": [
+    "artículo periodístico"
+   ],
+   "topics_es": [
+    "Género y raza",
+    "Vivienda, Saneamiento y Urbanismo",
+    "Cultura, Entretenimiento y Deporte"
+   ],
+   "countries_es": [
+    "Brasil"
+   ]
+  },
+  {
+   "hash_id": 3980300144,
+   "name": "IDEB 2023: o Pará aprendeu a ganhar boa nota na avaliação tal qual um aluno que não estuda e escancara limitações do indicador",
+   "url": "https://www.amazonialatitude.com/2024/10/15/ideb-2023-para-boa-nota-aluno-nao-estuda-escancara-limitacoes-indicador/",
+   "url_archive": "https://archive.ph/NUOhz",
+   "description": "A investigação buscou entender quais foram as ações empreendidas pela Secretaria de Educação do Estado do Pará (SEDUC-PA) que geraram um salto no Índice de Desenvolvimento da Educação Básica (IDEB) do ensino médio do estado do Pará da 26ª posição em 2021 para a 7ª posição em 2023. A nota IDEB é composta pela multiplicação da nota média obtida na Prova Brasil vezes o percentual de aprovação dos estudantes (fluxo escolar). A investigação mostrou que o salto foi produzido pela taxa de fluxo escolar atingida, a maior do Brasil e jamais conquistada antes por nenhum estado na história do indicador. O progresso dos estudantes na prova não foi significativo. O fluxo escolar expressivo foi produzido pela aprovação automática de absolutamente todos os estudantes dos primeiros e segundos anos da etapa em todas as escolas da SEDUC-PA. Isso só foi possível porque não houve contabilização da frequência de presença/ausência dos estudantes, desviando assim do problema crônico da evasão escolar que, na etapa média, tem sido desafiador em todo o Brasil e especialmente em territórios da Amazônia, onde as barreiras sociais se somam geográficas e ambientais. O mecanismo adotado, além de colocar em risco a formação dos jovens, é ilegal, pois a LDBEN (Lei nº 9.394/1996) determina que aqueles com menos de 75% de presença devem ser reprovados por falta. O salto no IDEB foi, essencialmente, manipulado ilegalmente pelo governo do estado.",
+   "pub_date": "10/2024",
+   "authors": [
+    "Felipe Garcia Passos"
+   ],
+   "authors_id": [
+    null
+   ],
+   "geo_level": "Unidades federativas",
+   "countries": [
+    "Brasil"
+   ],
+   "fed_units": [
+    "PA"
+   ],
+   "municipalities": null,
+   "email": null,
+   "type": [
+    "matéria jornalística"
+   ],
+   "topics": [
+    "Educação",
+    "Governo e Política"
+   ],
+   "tags": [
+    "IDEB",
+    "indicadores de qualidade do ensino"
+   ],
+   "url_source": "https://",
+   "url_image": "https://jornal.usp.br/wp-content/uploads/2022/04/20220427_sala-1.jpg",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "datasets": [
+    {
+     "data_name": "Índice de Desenvolvimento da Educação Básica (Ideb) - Brasil",
+     "data_institution": "INEP",
+     "data_url": "https://dados.gov.br/dados/conjuntos-dados/inep-indicador-educacional-da-educacao-basica-indice-de-desenvolvimento-da-educacao-basica-ideb",
+     "data_license": "CC-BY",
+     "data_format": [
+      "ZIP",
+      "XLSX",
+      "ODS"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Índice de Desenvolvimento da Educação Básica (Ideb) - Regiões e Estados",
+     "data_institution": "INEP",
+     "data_url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/ideb/resultados",
+     "data_license": "CC-BY",
+     "data_format": [
+      "ZIP",
+      "XLSX",
+      "ODS"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Microdados do Enem 2023",
+     "data_institution": "INEP",
+     "data_url": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/enem",
+     "data_license": "CC BY-ND",
+     "data_format": [
+      "ZIP",
+      "CSV"
+     ],
+     "data_periodical": false
+    }
+   ],
+   "record_date": "2025-11-24",
+   "modified_date": null,
+   "status_published": true,
+   "status_review": false,
+   "type_es": [
+    "artículo periodístico"
+   ],
+   "topics_es": [
+    "Educación",
+    "Gobierno y Política"
+   ],
+   "countries_es": [
+    "Brasil"
+   ]
+  },
+  {
+   "hash_id": 2838945556,
+   "name": "Petroleiras aproveitam disputas entre indígenas e ocupam papel de Estado enquanto exploram territórios no Equador",
+   "url": "https://infoamazonia.org/2025/04/23/petroleiras-aproveitam-disputas-entre-indigenas-e-ocupam-papel-de-estado-enquanto-exploram-territorios-no-equador/",
+   "url_archive": "https://archive.ph/7KEIS",
+   "description": "A reportagem faz parte do especial \"Até a Última Gota\", uma investigação jornalística transfronteiriça e multidisciplinar que percorreu a Amazônia ao longo de quase um ano para entender os impactos — passados, presentes e futuros — da exploração petrolífera no maior bioma tropical do planeta.",
+   "pub_date": "04/2025",
+   "authors": [
+    "Emilia Paz y Miño",
+    "Isabela Ponce"
+   ],
+   "authors_id": [
+    null,
+    null
+   ],
+   "geo_level": "Países",
+   "countries": [
+    "Equador"
+   ],
+   "fed_units": null,
+   "municipalities": null,
+   "email": null,
+   "type": [
+    "matéria jornalística"
+   ],
+   "topics": [
+    "Governo e Política",
+    "Indústria",
+    "Agricultura, extrativismo e pesca"
+   ],
+   "tags": [
+    "petroleira",
+    "bloco 10",
+    "povos indígenas"
+   ],
+   "url_source": "https://",
+   "url_image": "https://infoamazonia.org/wp-content/uploads/2025/04/20241118_PetroleoEcuador_8.jpg",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "datasets": [
+    {
+     "data_name": "Petróleo",
+     "data_institution": "Rede Amazônica de Informação Socioambiental Georreferenciada (RAISG)",
+     "data_url": "https://www.raisg.org/pt-br/mapas/",
+     "data_license": "Inexistente",
+     "data_format": [
+      "ZIP",
+      "XML",
+      "SHP",
+      "JPG",
+      "Outro"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Atividade Petrolífera no Equador",
+     "data_institution": "Instituto Internacional Arayara",
+     "data_url": "https://monitor.amazonialivredepetroleo.org/",
+     "data_license": "CC BY-NC-ND",
+     "data_format": [
+      "XLSX"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Unidades de Conservação",
+     "data_institution": "Ministério do Meio Ambiente e Mudança do Clima",
+     "data_url": "https://dados.mma.gov.br/dataset/unidadesdeconservacao/resource/9ec98f66-44ad-4397-8583-a1d9cc3a9835?inner_span=True",
+     "data_license": "CC-BY",
+     "data_format": [
+      "ZIP",
+      "SHP"
+     ],
+     "data_periodical": false
+    },
+    {
+     "data_name": "Cobertura Florestal Bloco 10",
+     "data_institution": "University of Maryland",
+     "data_url": "https://glad.earthengine.app/view/global-forest-change#bl=off;old=off;dl=1;lon=20;lat=10;zoom=3;",
+     "data_license": "CC-BY",
+     "data_format": [
+      "Outro"
+     ],
+     "data_periodical": false
+    }
+   ],
+   "record_date": "2025-11-24",
+   "modified_date": null,
+   "status_published": true,
+   "status_review": false,
+   "type_es": [
+    "artículo periodístico"
+   ],
+   "topics_es": [
+    "Gobierno y Política",
+    "Industria",
+    "Agricultura, Extractivismo y Pesca"
+   ],
+   "countries_es": [
+    "Ecuador"
+   ]
+  },
   {
    "hash_id": 4037860835,
    "name": "Petróleo gera royalties, mas não desenvolvimento na Amazônia peruana",
@@ -3414,76 +4895,16 @@
    ],
    "datasets": [
     {
-     "data_name": "Relatório de Fiscalização",
-     "data_institution": "Ministério Público do Trabalho (MPT)",
-     "data_url": "https://apublica.org/wp-content/uploads/2024/11/Relatorio-1-3885969-Politicos-que-seriam-parentes-de-escravizadores-foram-investigados-por-escravidao-moderna.pdf",
-     "data_periodical": false,
-     "data_license": null,
-     "data_format": []
-    },
-    {
-     "data_name": "Indicações de Helder Barbalho",
-     "data_institution": "Estadão",
-     "data_url": "https://www.estadao.com.br/politica/com-indicacoes-de-helder-familia-barbalho-chega-a-20-integrantes-em-cargos-no-para/",
-     "data_periodical": true,
-     "data_license": null,
-     "data_format": []
-    },
-    {
-     "data_name": "Patrimônio da Família Fontenelle",
-     "data_institution": "Vicente Miranda",
-     "data_url": "https://pt.scribd.com/document/545067662/Tres-Seculos-de-Caminhada",
-     "data_periodical": false,
-     "data_license": null,
-     "data_format": []
-    },
-    {
-     "data_name": "Família Caiado",
-     "data_institution": "Mirian Bianca Amaral Bueno (UFG)",
-     "data_url": "https://files.cercomp.ufg.br/weby/up/113/o/MIRIAN_BIANCA_AMARAL_RIBEIRO_1_A_241_mesclado-girado.pdf",
-     "data_periodical": false,
-     "data_license": null,
-     "data_format": []
-    },
-    {
-     "data_name": "Trabalhadores resgatados da fazenda de Emival Ramos Caiado",
-     "data_institution": "Repórter Brasil",
-     "data_url": "https://reporterbrasil.org.br/2010/08/fazenda-de-primo-de-ruralista-mantinha-trabalho-escravo/",
-     "data_periodical": false,
-     "data_license": null,
-     "data_format": []
-    },
-    {
-     "data_name": "Relatório de Fiscalização Fazenda Lago Perdido",
-     "data_institution": "Ministério do Trabalho e Emprego (SRTE/GO); Ministério Público do Trabalho; Polícia Rodoviária Federal",
-     "data_url": "https://apublica.org/wp-content/uploads/2024/11/Relatorio-3-3886015-Politicos-que-seriam-parentes-de-escravizadores-foram-investigados-por-escravidao-moderna.pdf",
-     "data_periodical": false,
-     "data_license": null,
-     "data_format": []
-    },
-    {
-     "data_name": "Ação Trabalhista Fazenda Lago Perdido",
-     "data_institution": "Ministério Público do Trabalho (MPT)",
-     "data_url": "https://apublica.org/wp-content/uploads/2024/11/Sentenca-Caiado-Politicos-que-seriam-parentes-de-escravizadores-foram-investigados-por-escravidao-moderna.pdf",
-     "data_periodical": false,
-     "data_license": null,
-     "data_format": []
-    },
-    {
-     "data_name": "Termo de Compromisso de Ajustamento de Conduta MPT e Mário Alves Ferreira",
-     "data_institution": "Ministério Público do Trabalho (MPT)",
-     "data_url": "https://apublica.org/wp-content/uploads/2024/11/tac_276-2013_Politicos-que-seriam-parentes-de-escravizadores-foram-investigados-por-escravidao-moderna.pdf",
-     "data_periodical": false,
-     "data_license": null,
-     "data_format": []
-    },
-    {
-     "data_name": "Genealogia matogrossense",
-     "data_institution": "José Barnabé de Mesquita",
-     "data_url": "https://pt.scribd.com/document/151308737/Genealogia-Matogrossense-Mesquita",
-     "data_periodical": false,
-     "data_license": null,
-     "data_format": []
+     "data_name": "Propriedades Rurais de Parlamentares por Município",
+     "data_institution": "De Olho nos Ruralistas",
+     "data_url": "https://maphub.net/deolhonosruralistas/bancadaruralista",
+     "data_license": "Inexistente",
+     "data_format": [
+      "JSON",
+      "KML",
+      "Outro"
+     ],
+     "data_periodical": false
     }
    ],
    "record_date": "2025-10-17",
@@ -6138,11 +7559,11 @@
     "Brasil"
    ],
    "fed_units": [
-    "RJ",
-    "SP",
-    "RS",
+    "DF",
     "PE",
-    "DF"
+    "SP",
+    "RJ",
+    "RS"
    ],
    "municipalities": [
     "São Paulo (SP)",
@@ -7352,7 +8773,7 @@
    ],
    "url_source": "https://",
    "url_image": "https://newr7-r7-prod.web.arc-cdn.net/resizer/v2/24A664PKLZDRXEY6V543R52K5I.jpg?auth=e814a118d60428e5c95c013fab4a8c497b1d84e2c214c5d54eefb84f5fdec8f1&width=1600&height=1066",
-   "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+   "comment": "Cadastrado por Jacqueline (Ceweb.br).\nOcultado porque os dados do dashboard não podem ser baixados, e a outra fonte de dados foi obtida via LAI.",
    "type": [
     "matéria jornalística"
    ],
@@ -7382,7 +8803,7 @@
    ],
    "url_archive": "http://archive.today/2yYgT",
    "status_published": false,
-   "status_review": true
+   "status_review": false
   },
   {
    "hash_id": 1335572503,
@@ -7628,10 +9049,10 @@
     "Brasil"
    ],
    "fed_units": [
-    "AM",
-    "AP",
+    "MA",
     "PA",
-    "MA"
+    "AM",
+    "AP"
    ],
    "municipalities": [
     "Serrano do Maranhão (MA)",
@@ -11228,7 +12649,7 @@
    "fed_units": null,
    "municipalities": null,
    "modified_date": null,
-   "status_published": false,
+   "status_published": true,
    "status_review": true,
    "url_archive": "https://archive.ph/PHqMY"
   },
@@ -12122,7 +13543,7 @@
    ],
    "url_source": "https://github.com/basedosdados",
    "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/hash_id_1108461102.png",
-   "comment": "São muitas bases de dados, não seria possível listar",
+   "comment": "São muitas bases de dados, não seria possível listar.",
    "type": [
     "conjunto de dados"
    ],
@@ -12188,8 +13609,8 @@
    "fed_units": null,
    "municipalities": null,
    "modified_date": null,
-   "status_published": false,
-   "status_review": true,
+   "status_published": true,
+   "status_review": false,
    "url_archive": "https://archive.ph/t9yip"
   },
   {
