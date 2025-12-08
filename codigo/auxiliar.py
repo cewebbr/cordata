@@ -31,7 +31,20 @@ class translate_dict(dict):
     """
     def __missing__(self,key):
         return key
-    
+
+
+# Display format for options including None:
+none_fmt = translate_dict({None:'(vazio)'})
+
+
+def tags_fmt(x):
+    """
+    Return empty list if `x` is None.
+    """
+    if x == None:
+        return []
+    return x
+
 
 def gen_uckey(hash, prop, idx=0):
     """

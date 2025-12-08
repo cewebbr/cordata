@@ -24,11 +24,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 # External imports:
 import json
 import streamlit as st
+import os
 from streamlit_tags import st_tags
 from datetime import datetime
 from pathlib import Path
 from copy import deepcopy
-import os
 
 # Internal imports:
 import config as cf
@@ -39,36 +39,16 @@ import controls as ct
 # Logging:
 #aux.log('Started app run')
 
-# Move current working directory to the script’s directory
+# Move current working directory to the script’s directory:
 os.chdir(Path(__file__).parent)
 
-
-#################
-### Functions ###
-#################
-
-# Display format for options including None:
-none_fmt = aux.translate_dict({None:'(vazio)'})
-
-def tags_fmt(x):
-    """
-    Return empty list if `x` is None.
-    """
-    if x == None:
-        return []
-    return x
 
 ############
 ### Init ###
 ############
 
-#aux.log('Entered Init section')
+### Constant data ###
 
-# Initialization of session variables:
-if 'id_init' not in st.session_state:
-    st.session_state['id_init'] = None
-if 'usecase_selectbox' not in st.session_state:
-    st.session_state['usecase_selectbox'] = None
 # Load list of options for multiselect widgets:
 if 'sel_opts' not in st.session_state:
     mun = aux.read_lines('data/municipios.csv')
@@ -86,9 +66,17 @@ uc_v0 = st.session_state['uc_defaults']
 if 'ds_defaults' not in st.session_state:
     st.session_state['ds_defaults'] = io.load_data(cf.DATASET_MODEL)
 ds_v0 = st.session_state['ds_defaults']
+
+### Controladores de edição ###
+
 # Prepare usecase editing space:
 if 'uc' not in st.session_state:
     st.session_state['uc'] = None
+# Initialization of session variables:
+if 'id_init' not in st.session_state:
+    st.session_state['id_init'] = None
+if 'usecase_selectbox' not in st.session_state:
+    st.session_state['usecase_selectbox'] = None
 
 # Login:
 if 'allow_edit' not in st.session_state:
@@ -98,8 +86,6 @@ if 'allow_edit' not in st.session_state:
 ################
 ### Controls ###
 ################
-
-#aux.log('Entered app controls')
 
 # Sidebar header:
 st.sidebar.image('img/logo-cordata.png', width=200)
@@ -120,77 +106,26 @@ aux.html('<hr>', sidebar=True)
 # Select a usecase to view/edit:
 hash_id = ct.usecase_selector(data)
 
-#st.write('Selectbox:', st.session_state['usecase_selectbox'])
-#st.write('id_init:', st.session_state['id_init'])
-
 # Add new usecase:
 st.sidebar.button('➕ Adicionar novo caso', on_click=io.add_new_case, args=(data,))
 
-#aux.log('Ended app controls')
 
 ######################
 ### Usecase editor ###
-######################
-
-def set_ds_widgets(ds: dict, i: int):
-    """
-    Set the value of the widgets for editing the dataset 
-    `i` (int) of a usecase to the values in the provided 
-    dataset `ds` (dict).    
-    """
-    for dkey in ds.keys():
-        if dkey == 'data_format':
-            st.session_state[aux.gen_uckey(hash_id, dkey, i)] = deepcopy(ds.get(dkey, []))
-        else:
-            st.session_state[aux.gen_uckey(hash_id, dkey, i)] = deepcopy(ds.get(dkey, ds_v0[dkey]))
-
-
-def set_uc_widgets(uc: dict):
-    """
-    Set the value of the widgets for editing the usecase 
-    to the values in the provided usecase `uc` (dict).
-    """
-
-    # Hard-coded:
-    tags = {'authors', 'email', 'tags'}
-    multiselect = {'type', 'topics', 'countries', 'fed_units', 'municipalities'}
-    
-    # Loop over usecase properties:
-    for uckey in uc.keys():
-        # Multiselects:
-        if uckey in multiselect:
-            st.session_state[aux.gen_uckey(hash_id, uckey)] = deepcopy(tags_fmt(uc.get(uckey, [])))
-        # Tags:
-        #elif uckey in tags:
-        #    st.session_state[aux.gen_uckey(hash_id, uckey)] = deepcopy(tags_fmt(uc.get(uckey, uc_v0[uckey])))
-        # Special cases:
-        elif uckey == 'pub_date':
-            st.session_state[aux.gen_uckey(hash_id, uckey)] = deepcopy(aux.read_date(uc.get(uckey, uc_v0[uckey])))
-        # Datasets:
-        elif uckey == 'datasets':
-            datasets = uc['datasets']
-            # Loop over datasets:
-            for i, ds in enumerate(datasets):
-                set_ds_widgets(ds, i)
-        # Normal properties:
-        else:
-            st.session_state[aux.gen_uckey(hash_id, uckey)] = deepcopy(uc.get(uckey, uc_v0[uckey]))
-
-    # Set widgets with no keys in usecase:
-    uckey = 'known_pub'
-    st.session_state[aux.gen_uckey(hash_id, uckey)] = (uc['pub_date'] != None)
-        
+######################        
 
 if hash_id != None:
     
     # Copy usecase to memory if it is a new selection:
     if st.session_state['uc'] == None or st.session_state['uc']['hash_id'] != hash_id:
         st.session_state['uc'] = deepcopy(aux.select_usecase_by_id(data, hash_id))
-        set_uc_widgets(st.session_state['uc'])
+        io.set_uc_widgets(st.session_state['uc'])
         aux.log('Changed usecase')
     # Use a short name for the editing usecase:
     uc = st.session_state['uc']
-    #uc = aux.select_usecase_by_id(data, hash_id)
+    #uc = aux.select_usecase_by_id(data, hash_id) # Edita direto nos dados, não em cópia da memória.
+
+    print(uc['datasets'])
 
     # Editing the selected usecase:
     st.subheader(f"{uc.get('name')}")
@@ -214,13 +149,13 @@ if hash_id != None:
         uc[uckey] = None
     
     uckey = 'authors'                                  # Default based on usecase V
-    uc[uckey] = st_tags(label=cf.WIDGET_LABEL[uckey], value=tags_fmt(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash_id, uckey))
+    uc[uckey] = st_tags(label=cf.WIDGET_LABEL[uckey], value=aux.tags_fmt(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash_id, uckey))
     # Nível de cobertura geográfica:
     uckey = 'geo_level'
     uc[uckey] = st.radio(label=cf.WIDGET_LABEL[uckey],
                 options=cf.GEOLEVEL_OPTIONS,
                 index=cf.GEOLEVEL_OPTIONS.index(uc_v0[uckey]), key=aux.gen_uckey(hash_id, uckey),
-                horizontal=True, format_func=(lambda x: none_fmt[x]))
+                horizontal=True, format_func=(lambda x: aux.none_fmt[x]))
     geolevel = uc[uckey]
     # Seletor de localidades (se nível comportar):
     if geolevel in cf.GEOLEVEL_KEYS.keys():
@@ -237,12 +172,12 @@ if hash_id != None:
             uc[gkey] = None
 
     uckey = 'email'                                    # Default based on usecase V
-    uc[uckey] = st_tags(label=cf.WIDGET_LABEL[uckey], value=tags_fmt(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash_id, uckey))
+    uc[uckey] = st_tags(label=cf.WIDGET_LABEL[uckey], value=aux.tags_fmt(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash_id, uckey))
     for uckey in ['type', 'topics']:
         uc[uckey] = st.multiselect(label=cf.WIDGET_LABEL[uckey], options=st.session_state['sel_opts'][uckey], 
                                    default=[], key=aux.gen_uckey(hash_id, uckey))
     uckey = 'tags'                                     # Default based on usecase V
-    uc[uckey] = st_tags(label=cf.WIDGET_LABEL[uckey], value=tags_fmt(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash_id, uckey))
+    uc[uckey] = st_tags(label=cf.WIDGET_LABEL[uckey], value=aux.tags_fmt(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash_id, uckey))
     for uckey in ['url_source', 'url_image']:
         uc[uckey] = st.text_input(label=cf.WIDGET_LABEL[uckey], value=uc_v0[uckey], key=aux.gen_uckey(hash_id, uckey))
     st.image(uc['url_image'])
@@ -252,7 +187,7 @@ if hash_id != None:
     st.markdown("#### Conjuntos de dados")
     datasets = uc['datasets']
 
-    rm_dataset_btn = []
+    #rm_dataset_btn = []
     for i, ds in enumerate(datasets):
         with st.expander(f"Dataset {i+1}"):
             # Dataset metadata:
@@ -270,18 +205,15 @@ if hash_id != None:
                                 key=aux.gen_uckey(hash_id, dkey, i), horizontal=True, 
                                 format_func=(lambda x: {True:'Sim', False:'Não', None:'(vazio)'}[x]))
             # Option to remove this dataset:
-            def rm_dataset(index=i):
-                uc['datasets'].pop(index)
-                io.save_data(data)
-            rm_dataset_btn.append(rm_dataset)
-            st.button("❌  Remover", key=f'rm-dataset_{i}', on_click=rm_dataset_btn[i])
+            #rm_dataset_btn.append(io.gen_rm_dataset(i))
+            st.button("❌  Remover", key=f'rm-dataset_{i}', on_click=io.gen_rm_dataset(i), args=(uc,))
 
     # Option to add new dataset        
     st.button("➕ Adicionar conjunto de dados", on_click=io.append_dataset, args=(data, datasets))
 
     ### Usecase internal data ###
-
     st.markdown("#### Registros internos")
+    
     # Non editable fields:
     id_col, record_col, modified_col = st.columns(3)
     with id_col:
@@ -290,12 +222,10 @@ if hash_id != None:
         st.markdown('**Data de registro:** {:}'.format(uc.get('record_date', '(vazio)')))
     with modified_col:
         st.markdown('**Última modificação:** {:}'.format(uc.get('modified_date', '(vazio)')))
+    
     # Editable fields:
     uckey = 'comment'
     uc[uckey] = st.text_area(label=cf.WIDGET_LABEL[uckey], value=uc.get(uckey, uc_v0[uckey]), key=aux.gen_uckey(hash_id, uckey), height=200)
-    #uckey = 'status'
-    #uc[uckey] = st.radio(cf.WIDGET_LABEL[uckey], options=cf.STATUS_OPTIONS, horizontal=True,
-    #                    index=cf.STATUS_OPTIONS.index(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash_id, uckey))
     status_list = ['status_published', 'status_review']
     status_cols = st.columns(len(status_list))
     for i, uckey in enumerate(status_list):
