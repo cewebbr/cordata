@@ -235,6 +235,17 @@ def usecase_id2idx(ids: list, target_id: int):
         return ids.index(target_id)
     
 
+def get_usecase_pos(usecases: list, hash_id: int) -> int: 
+    """
+    Given a list `usecases` of usecases (dicts), returns the 
+    position in the list of the usecase identified by `hash_id`
+    (int).
+    """
+    ids = [uc['hash_id'] for uc in usecases]
+    idx = usecase_id2idx(ids, hash_id)
+    return idx
+
+
 def select_usecase_by_id(data: dict, hash_id: int) -> dict:
     """
     Return the usecase stored in `data` (dict) whose

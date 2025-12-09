@@ -184,7 +184,21 @@ def append_dataset(data, datasets):
     #aux.log('Will append dataset to usecase')
     dataset = load_data(cf.DATASET_MODEL)
     datasets.append(dataset)
-    #save_data(data)
+
+
+def update_usecase(uc, data):
+    """
+    Update the information about an usecase stored in `data`
+    (dict) to the new information provided `uc` (dict). 
+    The `data` is saved to a file.  
+    """        
+    
+    # Find position of the usecase in the list of usecases:
+    idx = aux.get_usecase_pos(data['data'], uc['hash_id'])
+    # Copy to the usecase position in list:
+    data['data'][idx] = uc # Deepcopy not required since we are saving to a file.
+    # Save to file:
+    save_data(data)
 
 
 @st.dialog('Adicionar novo caso')
@@ -206,7 +220,7 @@ def add_new_case(data):
         # Insert in dataset:
         usecases = data["data"]
         usecases.insert(0, uc)
-        save_data(data, cf.TEMP_FILE)
+        save_data(data)
         # Set to show it:
         st.session_state['id_init'] = uc['hash_id']
         st.session_state['usecase_selectbox'] = uc['hash_id']
@@ -230,9 +244,8 @@ def remove_usecase(data, hash_id):
     st.write('Todas as informações a respeito deste caso de uso serão perdidas.')
     if st.button('Confirmar'):
         aux.log('Entered remove_usecase confirm area')
-        usecases = data["data"]
-        ids   = [uc['hash_id'] for uc in usecases]
-        idx = aux.usecase_id2idx(ids, hash_id)
+        usecases = data['data']
+        idx = aux.get_usecase_pos(usecases, hash_id)
         usecases.pop(idx)
         save_data(data)
         st.session_state['id_init'] = None

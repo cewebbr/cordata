@@ -125,8 +125,6 @@ if hash_id != None:
     uc = st.session_state['uc']
     #uc = aux.select_usecase_by_id(data, hash_id) # Edita direto nos dados, não em cópia da memória.
 
-    print(uc['datasets'])
-
     # Editing the selected usecase:
     st.subheader(f"{uc.get('name')}")
 
@@ -243,7 +241,7 @@ if hash_id != None:
     with save_col:
         if st.button("💾 Salvar"):
             aux.log('Entrou no Salvar caso de uso')
-            io.save_data(data)
+            io.update_usecase(uc, data)
             st.success("Dados salvos com sucesso!")
     # Remove button:
     with remove_col:
@@ -262,3 +260,5 @@ if st.session_state['allow_edit'] == True:
 
 # Logging:
 #aux.log('Finished app run')
+
+print(uc['datasets'])
