@@ -37,7 +37,7 @@ import auxiliar as aux
 import controls as ct
 
 # Logging:
-#aux.log('Started app run')
+aux.log('Started app run')
 
 # Move current working directory to the script’s directory:
 os.chdir(Path(__file__).parent)
@@ -82,6 +82,12 @@ if 'usecase_selectbox' not in st.session_state:
 if 'allow_edit' not in st.session_state:
     aux.edit_control()
 
+# Initial local data load to memory:
+if 'data' not in st.session_state:
+    st.session_state['data'] = deepcopy(io.load_data(cf.TEMP_FILE))
+# Use a short name for the data:
+data = st.session_state['data']
+
 
 ################
 ### Controls ###
@@ -96,9 +102,6 @@ st.sidebar.button('⬆️ Subir dados locais', on_click=io.upload_data)
 # Remove all data from the app:
 st.sidebar.button('🗑️ Limpar a base', on_click=io.erase_usecases)
 
-# Load local data:
-data = io.load_data(cf.TEMP_FILE)
-
 # Baixar dados:
 st.sidebar.download_button('⬇️ Baixar dados', json.dumps(data, indent=1, ensure_ascii=False), file_name='usecases_current.json')
 aux.html('<hr>', sidebar=True)
@@ -107,7 +110,7 @@ aux.html('<hr>', sidebar=True)
 hash_id = ct.usecase_selector(data)
 
 # Add new usecase:
-st.sidebar.button('➕ Adicionar novo caso', on_click=io.add_new_case, args=(data,))
+st.sidebar.button('➕ Adicionar novo caso', on_click=io.add_usecase, args=(data,))
 
 
 ######################
@@ -207,7 +210,7 @@ if hash_id != None:
             st.button("❌  Remover", key=f'rm-dataset_{i}', on_click=io.gen_rm_dataset(i), args=(uc,))
 
     # Option to add new dataset        
-    st.button("➕ Adicionar conjunto de dados", on_click=io.append_dataset, args=(data, datasets))
+    st.button("➕ Adicionar conjunto de dados", on_click=io.append_dataset, args=(datasets,))
 
     ### Usecase internal data ###
     st.markdown("#### Registros internos")
@@ -240,7 +243,6 @@ if hash_id != None:
     # Save button:
     with save_col:
         if st.button("💾 Salvar"):
-            aux.log('Entrou no Salvar caso de uso')
             io.update_usecase(uc, data)
             st.success("Dados salvos com sucesso!")
     # Remove button:
@@ -261,4 +263,4 @@ if st.session_state['allow_edit'] == True:
 # Logging:
 #aux.log('Finished app run')
 
-print(uc['datasets'])
+#aux.log(f'hash_id = {hash_id}')
