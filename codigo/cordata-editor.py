@@ -37,7 +37,7 @@ import auxiliar as aux
 import controls as ct
 
 # Logging:
-aux.log('Started app run')
+#aux.log('Started app run')
 
 # Move current working directory to the script’s directory:
 os.chdir(Path(__file__).parent)
@@ -255,7 +255,7 @@ if hash_id != None:
     with remove_col:
         st.button("❌  Remover caso de uso", on_click=io.remove_usecase, args=(data, hash_id))
 
-    aux.log(uc, prefix='[END]')
+    #aux.log(uc, prefix='[END]')
 
 else:
     st.session_state['prev_empty_sel'] = True
