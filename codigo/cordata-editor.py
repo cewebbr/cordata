@@ -132,7 +132,7 @@ if hash_id != None:
     uc = st.session_state['uc']
     #uc = aux.select_usecase_by_id(data, hash_id) # Edita direto nos dados, não em cópia da memória.
 
-    aux.log(uc, prefix='[START]')
+    #aux.log(uc, prefix='[START]')
 
     # Editing the selected usecase:
     st.subheader(f"{uc.get('name')}")
