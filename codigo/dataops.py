@@ -3,48 +3,15 @@ import json
 import streamlit as st
 from pathlib import Path
 from datetime import datetime
+from copy import deepcopy
 
 import config as cf
 import auxiliar as aux
 
-def download_data(url):
-    """
-    Download CORDATA data from an `url` (str) address pointing to a 
-    JSON file.
-    """
-    response = requests.get(url)
-    status = response.status_code
-    if status == 200:
-        content = response.content.decode()
-        data = json.loads(content)
-        return data
-    else:
-        st.error(f'Falha no carregamento dos dados (status code {status})')
-    #aux.log('Ran download_data')
 
-
-@st.dialog('Carregar dados do Github')
-def load_from_github():
-    st.write('ATENÇÃO! Todos os casos de uso atualmente cadastrados neste app serão apagados, sendo substituídos pelos do Github. Deseja continuar?')
-    if st.button('Confirmar'):
-        data = download_data('https://raw.githubusercontent.com/cewebbr/cordata/refs/heads/main/dados/limpos/usecases_current.json')
-        save_data(data)
-        st.session_state['id_init'] = None
-        st.session_state['usecase_selectbox'] = None
-        st.rerun()
-
-
-@st.dialog('Subir dados locais')
-def upload_data():
-    st.write('ATENÇÃO! Todos os casos de uso atualmente cadastrados neste app serão apagados, sendo substituídos pelos do arquivo selecionado.')
-    uploaded_file = st.file_uploader(label='Escolha o arquivo para carregar', type='json')
-    if uploaded_file is not None:
-        data = json.load(uploaded_file)
-        save_data(data)
-        st.session_state['id_init'] = None
-        st.session_state['usecase_selectbox'] = None
-        st.rerun()
-
+###############################################
+### Auxiliary functions for data operations ###
+###############################################
 
 def mun2uf(mun_list):
     """
@@ -126,6 +93,51 @@ def make_derived_data(data):
             uc['authors_id'] = None
 
 
+#########################################
+### Operations on all data on storage ###
+#########################################
+
+def download_data(url):
+    """
+    Download CORDATA data from an `url` (str) address pointing to a 
+    JSON file.
+    """
+    response = requests.get(url)
+    status = response.status_code
+    if status == 200:
+        content = response.content.decode()
+        data = json.loads(content)
+        return data
+    else:
+        st.error(f'Falha no carregamento dos dados (status code {status})')
+    #aux.log('Ran download_data')
+
+
+@st.dialog('Carregar dados do Github')
+def load_from_github():
+    st.write('ATENÇÃO! Todos os casos de uso atualmente cadastrados neste app serão apagados, sendo substituídos pelos do Github. Deseja continuar?')
+    if st.button('Confirmar'):
+        data = download_data('https://raw.githubusercontent.com/cewebbr/cordata/refs/heads/main/dados/limpos/usecases_current.json')
+        st.session_state['data'] = deepcopy(data)
+        save_data(data)
+        st.session_state['id_init'] = None
+        st.session_state['usecase_selectbox'] = None
+        st.rerun()
+
+
+@st.dialog('Subir dados locais')
+def upload_data():
+    st.write('ATENÇÃO! Todos os casos de uso atualmente cadastrados neste app serão apagados, sendo substituídos pelos do arquivo selecionado.')
+    uploaded_file = st.file_uploader(label='Escolha o arquivo para carregar', type='json')
+    if uploaded_file is not None:
+        data = json.load(uploaded_file)
+        st.session_state['data'] = deepcopy(data)
+        save_data(data)
+        st.session_state['id_init'] = None
+        st.session_state['usecase_selectbox'] = None
+        st.rerun()
+
+
 def save_data(data, path=cf.TEMP_FILE):
     """
     Save `data` (dict) to `path` (str) if edit controls
@@ -147,7 +159,7 @@ def load_data(path):
     """
     Load JSON from file at `path` (str).
     """
-    #aux.log('Will load data from {:}'.format(path))
+    aux.log('Load data from {:}'.format(path))
     return json.loads(Path(path).read_text(encoding="utf-8"))
 
 
@@ -158,32 +170,18 @@ def erase_usecases():
     if st.button('Confirmar'):
         aux.log('Entered erase_usecases confirm area')
         data = load_data(cf.EMPTY_FILE)
+        st.session_state['data'] = deepcopy(data)
         save_data(data)
         st.rerun()
     aux.log('Finished erase_usecases dialog')
 
 
-def append_dataset(data, datasets):
-    """
-    Add a new dataset to those used by a usecase.
-
-    Parameters
-    ----------
-    data : dict
-        The whole information about the usecases, including
-        the metadata (e.g. last_update).
-    datasets : list
-        List of datasets used by the usecase. It must be a 
-        reference to a list inside a usecase inside `data`.
-    """
-    #aux.log('Will append dataset to usecase')
-    dataset = load_data(cf.DATASET_MODEL)
-    datasets.append(dataset)
-    save_data(data)
-
+######################################
+### Operations to a single usecase ###
+######################################
 
 @st.dialog('Adicionar novo caso')
-def add_new_case(data):
+def add_usecase(data):
     """
     Create a new usecase, add it to dataset and
     show it for edition.
@@ -191,22 +189,47 @@ def add_new_case(data):
     aux.log('Entered add_new_case dialog')
     # Ask for new usecase name:
     name = st.text_input("Nome:")
+    
     if st.button("🚀 Criar!"):
-        aux.log('Entered add_new_case confirm area')
+        aux.log('Adding new usecase')
+        
         # Create new usecase:
         uc = load_data(cf.ENTRY_MODEL)
         uc['name'] = name
         uc['record_date'] = datetime.today().strftime('%Y-%m-%d')
         uc['hash_id'] = aux.hash_string(uc['name'] + uc['record_date'])
+        
         # Insert in dataset:
-        usecases = data["data"]
+        data = load_data(cf.TEMP_FILE)
+        usecases = data['data']
         usecases.insert(0, uc)
-        save_data(data, cf.TEMP_FILE)
+        st.session_state['data'] = deepcopy(data)
+        save_data(data)
+        
         # Set to show it:
         st.session_state['id_init'] = uc['hash_id']
         st.session_state['usecase_selectbox'] = uc['hash_id']
         st.rerun()
-    aux.log('Finished add_new_case dialog')
+    
+
+def update_usecase(uc: dict, data:dict):
+    """
+    Update the information about an usecase in `data` (dict)
+    to the new information provided `uc` (dict). The `data` 
+    is saved to the file.  
+    """        
+    
+    # Load current data saved on file:
+    data = load_data(cf.TEMP_FILE)
+
+    # Copy to the usecase position in list:
+    idx = aux.get_usecase_pos(data['data'], uc['hash_id'])
+    data['data'][idx] = uc # Deepcopy not required since we are saving to a file.
+    st.session_state['data'] = deepcopy(data)
+
+    # Save to file:
+    save_data(data)
+
 
 @st.dialog('Remover caso de uso')
 def remove_usecase(data, hash_id):
@@ -223,17 +246,27 @@ def remove_usecase(data, hash_id):
     """
     aux.log('Entered remove_usecase dialog')
     st.write('Todas as informações a respeito deste caso de uso serão perdidas.')
+    
     if st.button('Confirmar'):
-        aux.log('Entered remove_usecase confirm area')
-        usecases = data["data"]
-        ids   = [uc['hash_id'] for uc in usecases]
-        idx = aux.usecase_id2idx(ids, hash_id)
+        aux.log('Removing usecase')
+
+        # Load current data saved on file:
+        data = load_data(cf.TEMP_FILE)
+
+        # Remove target usecase:
+        usecases = data['data']
+        idx = aux.get_usecase_pos(usecases, hash_id)
         usecases.pop(idx)
+        
+        # Save data:
+        st.session_state['data'] = deepcopy(data)
         save_data(data)
+        
+        # Reset usecase selection:
         st.session_state['id_init'] = None
         st.session_state['usecase_selectbox'] = None
         st.rerun()
-    aux.log('Finished remove_usecase dialog')
+
 
 @st.dialog('Desfazer modificações')
 def reset_usecase(idx):
@@ -248,3 +281,99 @@ def reset_usecase(idx):
         st.session_state['usecase_status'] = uc.get('status', 'Em revisão')
         usecase_widgets = list(filter(lambda x: x[:8] == 'usecase_', st.session_state.keys()))
         st.rerun()
+
+
+###############################################
+### Operations on current usecase in memory ###
+###############################################
+
+def append_dataset(datasets):
+    """
+    Add a new dataset to those used by a usecase.
+
+    Parameters
+    ----------
+    data : dict
+        The whole information about the usecases, including
+        the metadata (e.g. last_update).
+    datasets : list
+        List of datasets used by the usecase. It must be a 
+        reference to a list inside a usecase inside `data`.
+    """
+    #aux.log('Will append dataset to usecase')
+    dataset = load_data(cf.DATASET_MODEL)
+    datasets.append(dataset)
+
+
+def gen_rm_dataset(i: int):
+    """
+    Return a function that receives a usecase as input  
+    and removes the dataset in position `i` (int) from
+    `uc['datasets']`.
+    """
+    def rm_dataset(uc):
+        uc['datasets'].pop(i)
+        set_datasets_widgets(uc)
+    return rm_dataset
+
+
+def set_ds_widgets(hash_id: int, ds: dict, i: int):
+    """
+    Set the value of the widgets for editing the dataset 
+    `i` (int) of a usecase to the values in the provided 
+    dataset `ds` (dict).    
+    """
+
+    # Load default values:
+    ds_v0 = st.session_state['ds_defaults']
+
+    for dkey in ds.keys():
+        if dkey == 'data_format':
+            st.session_state[aux.gen_uckey(hash_id, dkey, i)] = deepcopy(ds.get(dkey, []))
+        else:
+            st.session_state[aux.gen_uckey(hash_id, dkey, i)] = deepcopy(ds.get(dkey, ds_v0[dkey]))
+
+
+def set_datasets_widgets(uc: dict):
+    """
+    Set the values of the widgets of all datasets in usecase
+    `uc` (dict). 
+    """
+    # Loop over datasets:
+    for i, ds in enumerate(uc['datasets']):
+        set_ds_widgets(uc['hash_id'], ds, i)
+
+
+def set_uc_widgets(uc: dict):
+    """
+    Set the value of the widgets for editing the usecase 
+    to the values in the provided usecase `uc` (dict).
+    """
+
+    # Hard-coded:
+    tags = {'authors', 'email', 'tags'}
+    multiselect = {'type', 'topics', 'countries', 'fed_units', 'municipalities'}
+    # Load default values:
+    uc_v0 = st.session_state['uc_defaults']
+
+    # Loop over usecase properties:
+    for uckey in uc.keys():
+        # Multiselects:
+        if uckey in multiselect:
+            st.session_state[aux.gen_uckey(uc['hash_id'], uckey)] = deepcopy(aux.tags_fmt(uc.get(uckey, [])))
+        # Tags:
+        #elif uckey in tags:
+        #    st.session_state[aux.gen_uckey(uc['hash_id'], uckey)] = deepcopy(tags_fmt(uc.get(uckey, uc_v0[uckey])))
+        # Special cases:
+        elif uckey == 'pub_date':
+            st.session_state[aux.gen_uckey(uc['hash_id'], uckey)] = deepcopy(aux.read_date(uc.get(uckey, uc_v0[uckey])))
+        # Datasets:
+        elif uckey == 'datasets':
+            set_datasets_widgets(uc)
+        # Normal properties:
+        else:
+            st.session_state[aux.gen_uckey(uc['hash_id'], uckey)] = deepcopy(uc.get(uckey, uc_v0[uckey]))
+
+    # Set widgets with no keys in usecase:
+    uckey = 'known_pub'
+    st.session_state[aux.gen_uckey(uc['hash_id'], uckey)] = (uc['pub_date'] != None)

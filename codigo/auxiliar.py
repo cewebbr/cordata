@@ -31,7 +31,20 @@ class translate_dict(dict):
     """
     def __missing__(self,key):
         return key
-    
+
+
+# Display format for options including None:
+none_fmt = translate_dict({None:'(vazio)'})
+
+
+def tags_fmt(x):
+    """
+    Return empty list if `x` is None.
+    """
+    if x == None:
+        return []
+    return x
+
 
 def gen_uckey(hash, prop, idx=0):
     """
@@ -221,6 +234,17 @@ def usecase_id2idx(ids: list, target_id: int):
     else:
         return ids.index(target_id)
     
+
+def get_usecase_pos(usecases: list, hash_id: int) -> int: 
+    """
+    Given a list `usecases` of usecases (dicts), returns the 
+    position in the list of the usecase identified by `hash_id`
+    (int).
+    """
+    ids = [uc['hash_id'] for uc in usecases]
+    idx = usecase_id2idx(ids, hash_id)
+    return idx
+
 
 def select_usecase_by_id(data: dict, hash_id: int) -> dict:
     """
