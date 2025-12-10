@@ -77,6 +77,9 @@ if 'id_init' not in st.session_state:
     st.session_state['id_init'] = None
 if 'usecase_selectbox' not in st.session_state:
     st.session_state['usecase_selectbox'] = None
+# Select box state to prevent bug with hitting x in usecase selectbox:
+if 'prev_empty_sel' not in st.session_state:
+    st.session_state['prev_empty_sel'] = True
 
 # Login:
 if 'allow_edit' not in st.session_state:
@@ -120,13 +123,16 @@ st.sidebar.button('➕ Adicionar novo caso', on_click=io.add_usecase, args=(data
 if hash_id != None:
     
     # Copy usecase to memory if it is a new selection:
-    if st.session_state['uc'] == None or st.session_state['uc']['hash_id'] != hash_id:
+    if st.session_state['uc'] == None or st.session_state['uc']['hash_id'] != hash_id or st.session_state['prev_empty_sel']:
         st.session_state['uc'] = deepcopy(aux.select_usecase_by_id(data, hash_id))
         io.set_uc_widgets(st.session_state['uc'])
         aux.log('Changed usecase')
+    st.session_state['prev_empty_sel'] = False
     # Use a short name for the editing usecase:
     uc = st.session_state['uc']
     #uc = aux.select_usecase_by_id(data, hash_id) # Edita direto nos dados, não em cópia da memória.
+
+    aux.log(uc, prefix='[START]')
 
     # Editing the selected usecase:
     st.subheader(f"{uc.get('name')}")
@@ -249,6 +255,10 @@ if hash_id != None:
     with remove_col:
         st.button("❌  Remover caso de uso", on_click=io.remove_usecase, args=(data, hash_id))
 
+    aux.log(uc, prefix='[END]')
+
+else:
+    st.session_state['prev_empty_sel'] = True
 
 ########################
 ### Dataset metadata ###
@@ -262,5 +272,4 @@ if st.session_state['allow_edit'] == True:
 
 # Logging:
 #aux.log('Finished app run')
-
 #aux.log(f'hash_id = {hash_id}')
