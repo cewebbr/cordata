@@ -83,7 +83,9 @@ if 'prev_empty_sel' not in st.session_state:
 
 # Login:
 if 'allow_edit' not in st.session_state:
+    st.session_state['allow_edit'] = False
     aux.edit_control()
+
 
 # Initial local data load to memory:
 if 'data' not in st.session_state:
