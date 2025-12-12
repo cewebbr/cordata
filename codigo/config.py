@@ -1,8 +1,8 @@
-# Global variables for cordata-editor.py
+# Global, constant variables for the editor (#define).
 # -*- coding: utf-8 -*-
 
 """
-CORDATA EDITOR libraries 
+CORDATA EDITOR (Content Management System)
 Copyright (C) 2025 Henrique Xavier
 Contact: contato@henriquexavier.net
 
@@ -82,7 +82,6 @@ GEOLEVEL_OPTIONS = ['Não se aplica', 'Mundial', 'Países', 'Unidades federativa
 
 GEOLEVEL_KEYS = {'Países':'countries', 'Unidades federativas':'fed_units', 'Municípios':'municipalities'}
 
-#STATUS_OPTIONS = ['Oculto', 'Em revisão', 'Em validação', 'Publicado']
 STATUS_OPTIONS = [True, False]
 STATUS_DISPLAY = {'status_published': {True: 'Publicado', False: 'Oculto'},
                   'status_review':    {True: 'Revisar',   False: 'Finalizado'}}

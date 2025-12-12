@@ -1,3 +1,6 @@
+# Assorted auxiliary codes
+# -*- coding: utf-8 -*-
+
 """
 CORDATA EDITOR libraries 
 Copyright (C) 2025 Henrique Xavier
@@ -18,7 +21,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 
 import streamlit as st
-import streamlit.components.v1 as components
 from datetime import datetime
 from zlib import crc32
 import numpy as np

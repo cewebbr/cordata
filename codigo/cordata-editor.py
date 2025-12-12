@@ -1,5 +1,6 @@
 #!/usr/bin/env -S="streamlit run"
 # http://localhost:8501
+# Main code (app)
 # -*- coding: utf-8 -*-
 
 """
@@ -80,7 +81,7 @@ st.sidebar.button('➕ Adicionar novo caso', on_click=io.add_usecase, args=(data
 ### Usecase editor ###
 ######################        
 
-ed.usecase_editor(hash_id, data)
+ed.usecase_page(hash_id, data)
 
 
 ########################

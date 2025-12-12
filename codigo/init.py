@@ -1,3 +1,4 @@
+# Initialization of the app - Edit permission control & Session state init.
 # -*- coding: utf-8 -*-
 
 """

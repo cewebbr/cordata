@@ -1,3 +1,25 @@
+# CRUD operations on data in storage (HD)
+# -*- coding: utf-8 -*-
+
+"""
+CORDATA EDITOR (Content Management System)
+Copyright (C) 2025 Henrique Xavier
+Contact: contato@henriquexavier.net
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+"""
+
 import requests
 import json
 import streamlit as st
@@ -289,99 +311,3 @@ def reset_usecase(idx):
         st.session_state['usecase_status'] = uc.get('status', 'Em revisão')
         usecase_widgets = list(filter(lambda x: x[:8] == 'usecase_', st.session_state.keys()))
         st.rerun()
-
-
-###############################################
-### Operations on current usecase in memory ###
-###############################################
-
-def append_dataset(datasets):
-    """
-    Add a new dataset to those used by a usecase.
-
-    Parameters
-    ----------
-    data : dict
-        The whole information about the usecases, including
-        the metadata (e.g. last_update).
-    datasets : list
-        List of datasets used by the usecase. It must be a 
-        reference to a list inside a usecase inside `data`.
-    """
-    #aux.log('Will append dataset to usecase')
-    dataset = load_data(cf.DATASET_MODEL)
-    datasets.append(dataset)
-
-
-def gen_rm_dataset(i: int):
-    """
-    Return a function that receives a usecase as input  
-    and removes the dataset in position `i` (int) from
-    `uc['datasets']`.
-    """
-    def rm_dataset(uc):
-        uc['datasets'].pop(i)
-        set_datasets_widgets(uc)
-    return rm_dataset
-
-
-def set_ds_widgets(hash_id: int, ds: dict, i: int):
-    """
-    Set the value of the widgets for editing the dataset 
-    `i` (int) of a usecase to the values in the provided 
-    dataset `ds` (dict).    
-    """
-
-    # Load default values:
-    ds_v0 = st.session_state['ds_defaults']
-
-    for dkey in ds.keys():
-        if dkey == 'data_format':
-            st.session_state[aux.gen_uckey(hash_id, dkey, i)] = deepcopy(ds.get(dkey, []))
-        else:
-            st.session_state[aux.gen_uckey(hash_id, dkey, i)] = deepcopy(ds.get(dkey, ds_v0[dkey]))
-
-
-def set_datasets_widgets(uc: dict):
-    """
-    Set the values of the widgets of all datasets in usecase
-    `uc` (dict). 
-    """
-    # Loop over datasets:
-    for i, ds in enumerate(uc['datasets']):
-        set_ds_widgets(uc['hash_id'], ds, i)
-
-
-def set_uc_widgets(uc: dict):
-    """
-    Set the value of the widgets for editing the usecase 
-    to the values in the provided usecase `uc` (dict).
-    """
-
-    # Hard-coded:
-    tags = {'authors', 'email', 'tags'}
-    multiselect = {'type', 'topics', 'countries', 'fed_units', 'municipalities'}
-    # Load default values:
-    uc_v0 = st.session_state['uc_defaults']
-
-    # Loop over usecase properties:
-    for uckey in uc.keys():
-        # Multiselects:
-        if uckey in multiselect:
-            st.session_state[aux.gen_uckey(uc['hash_id'], uckey)] = deepcopy(aux.tags_fmt(uc.get(uckey, [])))
-        # Tags:
-        #elif uckey in tags:
-        #    st.session_state[aux.gen_uckey(uc['hash_id'], uckey)] = deepcopy(tags_fmt(uc.get(uckey, uc_v0[uckey])))
-        # Special cases:
-        elif uckey == 'pub_date':
-            st.session_state[aux.gen_uckey(uc['hash_id'], uckey)] = deepcopy(aux.read_date(uc.get(uckey, uc_v0[uckey])))
-        # Datasets:
-        elif uckey == 'datasets':
-            set_datasets_widgets(uc)
-        # Normal properties:
-        else:
-            st.session_state[aux.gen_uckey(uc['hash_id'], uckey)] = deepcopy(uc.get(uckey, uc_v0[uckey]))
-
-    # Set widgets with no keys in usecase:
-    uckey = 'known_pub'
-    st.session_state[aux.gen_uckey(uc['hash_id'], uckey)] = (uc['pub_date'] != None)
