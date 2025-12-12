@@ -25,17 +25,14 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 import json
 import streamlit as st
 import os
-from streamlit_tags import st_tags
-from datetime import datetime
 from pathlib import Path
-from copy import deepcopy
 
 # Internal imports:
-import config as cf
 import dataops as io
 import auxiliar as aux
 import controls as ct
 import init
+import editor as ed
 
 
 # Logging:
@@ -49,10 +46,9 @@ os.chdir(Path(__file__).parent)
 ### Init ###
 ############
 
+# Initialize session state (permanent variables through successive code runs):
 init.init_session()
-# Create shorthands for session memory:
-uc_v0 = st.session_state['uc_defaults']
-ds_v0 = st.session_state['ds_defaults']
+# Create shorthand for data in memory:
 data  = st.session_state['data']
 
 
@@ -84,143 +80,8 @@ st.sidebar.button('➕ Adicionar novo caso', on_click=io.add_usecase, args=(data
 ### Usecase editor ###
 ######################        
 
-if hash_id != None:
-    
-    # Copy usecase to memory if it is a new selection:
-    if st.session_state['uc'] == None or st.session_state['uc']['hash_id'] != hash_id or st.session_state['prev_empty_sel']:
-        st.session_state['uc'] = deepcopy(aux.select_usecase_by_id(data, hash_id))
-        io.set_uc_widgets(st.session_state['uc'])
-        aux.log(f"Changed to usecase: {st.session_state['uc']['name']}")
-    st.session_state['prev_empty_sel'] = False
-    # Use a short name for the editing usecase:
-    uc = st.session_state['uc']
-    #uc = aux.select_usecase_by_id(data, hash_id) # Edita direto nos dados, não em cópia da memória.
+ed.usecase_editor(hash_id, data)
 
-    #aux.log(uc, prefix='[START]')
-
-    # Editing the selected usecase:
-    st.subheader(f"{uc.get('name')}")
-
-    ### Mandatory fields ###
-    for uckey in ['name', 'url', 'url_archive']:
-        uc[uckey] = st.text_input(label=cf.WIDGET_LABEL[uckey], value=uc_v0[uckey], key=aux.gen_uckey(hash_id, uckey))
-
-    ### Optional fields ###
-    uckey = 'description'
-    uc[uckey] = st.text_area(label=cf.WIDGET_LABEL[uckey], value=uc_v0[uckey], key=aux.gen_uckey(hash_id, uckey), height=200)
-    # Data de publicação:
-    uckey = 'known_pub'
-    known_pub_date = st.checkbox(label=cf.WIDGET_LABEL[uckey], value=False, key=aux.gen_uckey(hash_id, uckey))
-    uckey = 'pub_date'
-    if known_pub_date == True:
-        pub_date = st.date_input(label=cf.WIDGET_LABEL[uckey], value=aux.read_date(uc_v0[uckey]), key=aux.gen_uckey(hash_id, uckey), 
-                                 format="DD/MM/YYYY")            
-        uc[uckey] = None if pub_date == None else pub_date.strftime("%m/%Y")
-    else:
-        uc[uckey] = None
-    
-    uckey = 'authors'                                  # Default based on usecase V
-    uc[uckey] = st_tags(label=cf.WIDGET_LABEL[uckey], value=aux.tags_fmt(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash_id, uckey))
-    # Nível de cobertura geográfica:
-    uckey = 'geo_level'
-    uc[uckey] = st.radio(label=cf.WIDGET_LABEL[uckey],
-                options=cf.GEOLEVEL_OPTIONS,
-                index=cf.GEOLEVEL_OPTIONS.index(uc_v0[uckey]), key=aux.gen_uckey(hash_id, uckey),
-                horizontal=True, format_func=(lambda x: aux.none_fmt[x]))
-    geolevel = uc[uckey]
-    # Seletor de localidades (se nível comportar):
-    if geolevel in cf.GEOLEVEL_KEYS.keys():
-        gkey = cf.GEOLEVEL_KEYS[geolevel]
-        uc[gkey] = st.multiselect(label=geolevel + ':', options=st.session_state['sel_opts'][gkey], 
-                                  default=uc_v0[gkey], key=aux.gen_uckey(hash_id, gkey))
-        # Erase information of other previously set levels:
-        for gk in cf.GEOLEVEL_KEYS.values():
-            if gk != gkey:
-                uc[gk] = None
-    # Erase locality information if geo_level does not support:
-    else:
-        for gkey in cf.GEOLEVEL_KEYS.values():
-            uc[gkey] = None
-
-    uckey = 'email'                                    # Default based on usecase V
-    uc[uckey] = st_tags(label=cf.WIDGET_LABEL[uckey], value=aux.tags_fmt(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash_id, uckey))
-    for uckey in ['type', 'topics']:
-        uc[uckey] = st.multiselect(label=cf.WIDGET_LABEL[uckey], options=st.session_state['sel_opts'][uckey], 
-                                   default=[], key=aux.gen_uckey(hash_id, uckey))
-    uckey = 'tags'                                     # Default based on usecase V
-    uc[uckey] = st_tags(label=cf.WIDGET_LABEL[uckey], value=aux.tags_fmt(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash_id, uckey))
-    for uckey in ['url_source', 'url_image']:
-        uc[uckey] = st.text_input(label=cf.WIDGET_LABEL[uckey], value=uc_v0[uckey], key=aux.gen_uckey(hash_id, uckey))
-    st.image(uc['url_image'])
-
-    ### Datasets ###
-
-    st.markdown("#### Conjuntos de dados")
-    datasets = uc['datasets']
-
-    #rm_dataset_btn = []
-    for i, ds in enumerate(datasets):
-        with st.expander(f"Dataset {i+1}"):
-            # Dataset metadata:
-            for dkey in ['data_name', 'data_institution', 'data_url']:
-                ds[dkey] = st.text_input(label=cf.WIDGET_LABEL[dkey], value=ds_v0[dkey], key=aux.gen_uckey(hash_id, dkey, i))
-            dkey = 'data_license'
-            ds[dkey] = st.selectbox(label=cf.WIDGET_LABEL[dkey], options=cf.LICENSE_OPTIONS, key=aux.gen_uckey(hash_id, dkey, i), 
-                                    index=aux.nindex(cf.LICENSE_OPTIONS, ds_v0[dkey]))
-            dkey = 'data_format'
-            ds[dkey] = st.multiselect(label=cf.WIDGET_LABEL[dkey], options=st.session_state['sel_opts'][dkey], 
-                                      default=[], key=aux.gen_uckey(hash_id, dkey, i))
-            dkey = 'data_periodical'
-            ds[dkey] = st.radio(label=cf.WIDGET_LABEL[dkey], options=[True, False, None],
-                                index=[True, False, None].index(ds_v0[dkey]), 
-                                key=aux.gen_uckey(hash_id, dkey, i), horizontal=True, 
-                                format_func=(lambda x: {True:'Sim', False:'Não', None:'(vazio)'}[x]))
-            # Option to remove this dataset:
-            #rm_dataset_btn.append(io.gen_rm_dataset(i))
-            st.button("❌  Remover", key=f'rm-dataset_{i}', on_click=io.gen_rm_dataset(i), args=(uc,))
-
-    # Option to add new dataset        
-    st.button("➕ Adicionar conjunto de dados", on_click=io.append_dataset, args=(datasets,))
-
-    ### Usecase internal data ###
-    st.markdown("#### Registros internos")
-    
-    # Non editable fields:
-    id_col, record_col, modified_col = st.columns(3)
-    with id_col:
-        st.markdown('**ID:** {:}'.format(uc['hash_id']))
-    with record_col:
-        st.markdown('**Data de registro:** {:}'.format(uc.get('record_date', '(vazio)')))
-    with modified_col:
-        st.markdown('**Última modificação:** {:}'.format(uc.get('modified_date', '(vazio)')))
-    
-    # Editable fields:
-    uckey = 'comment'
-    uc[uckey] = st.text_area(label=cf.WIDGET_LABEL[uckey], value=uc.get(uckey, uc_v0[uckey]), key=aux.gen_uckey(hash_id, uckey), height=200)
-    status_list = ['status_published', 'status_review']
-    status_cols = st.columns(len(status_list))
-    for i, uckey in enumerate(status_list):
-        with status_cols[i]:
-            uc[uckey] = st.radio(cf.WIDGET_LABEL[uckey], options=cf.STATUS_OPTIONS, horizontal=True,
-                        index=cf.STATUS_OPTIONS.index(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash_id, uckey),
-                        format_func=(lambda x: cf.STATUS_DISPLAY[uckey][x]))
-
-
-    ### Usecase operations ###
-
-    aux.html('<hr>')
-    save_col, remove_col, reset_col = st.columns(3)
-    # Save button:
-    with save_col:
-        if st.button("💾 Salvar"):
-            io.update_usecase(uc, data)
-            st.success("Dados salvos com sucesso!")
-    # Remove button:
-    with remove_col:
-        st.button("❌  Remover caso de uso", on_click=io.remove_usecase, args=(data, hash_id))
-
-else:
-    st.session_state['prev_empty_sel'] = True
 
 ########################
 ### Dataset metadata ###
