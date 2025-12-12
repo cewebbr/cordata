@@ -73,8 +73,8 @@ ds_v0 = st.session_state['ds_defaults']
 if 'uc' not in st.session_state:
     st.session_state['uc'] = None
 # Initialization of session variables:
-if 'id_init' not in st.session_state:
-    st.session_state['id_init'] = None
+#if 'id_init' not in st.session_state:
+#    st.session_state['id_init'] = None
 if 'usecase_selectbox' not in st.session_state:
     st.session_state['usecase_selectbox'] = None
 # Select box state to prevent bug with hitting x in usecase selectbox:
