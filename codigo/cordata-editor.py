@@ -35,6 +35,8 @@ import config as cf
 import dataops as io
 import auxiliar as aux
 import controls as ct
+import init
+
 
 # Logging:
 #aux.log('Started app run')
@@ -47,54 +49,11 @@ os.chdir(Path(__file__).parent)
 ### Init ###
 ############
 
-# Log start of session:
-if 'session_start' not in st.session_state:
-    aux.log('Starting session', prefix='[STT]')
-    st.session_state['session_start'] = True
-
-### Constant data ###
-
-# Load list of options for multiselect widgets:
-if 'sel_opts' not in st.session_state:
-    mun = aux.read_lines('data/municipios.csv')
-    st.session_state['sel_opts'] = {'countries': cf.COUNTRY_OPTIONS, 
-                                    'fed_units': cf.UF_OPTIONS, 
-                                    'municipalities': mun,
-                                    'type': cf.TYPE_OPTIONS,
-                                    'topics': cf.TOPIC_OPTIONS,
-                                    'data_format': cf.FORMAT_OPTIONS}
-# Load usecase default values:
-if 'uc_defaults' not in st.session_state:
-    st.session_state['uc_defaults'] = io.load_data(cf.ENTRY_MODEL)
+init.init_session()
+# Create shorthands for session memory:
 uc_v0 = st.session_state['uc_defaults']
-# Load datasets default values:
-if 'ds_defaults' not in st.session_state:
-    st.session_state['ds_defaults'] = io.load_data(cf.DATASET_MODEL)
 ds_v0 = st.session_state['ds_defaults']
-
-### Controladores de edição ###
-
-# Prepare usecase editing space:
-if 'uc' not in st.session_state:
-    st.session_state['uc'] = None
-# Initialization of session variables:
-if 'usecase_selectbox' not in st.session_state:
-    st.session_state['usecase_selectbox'] = None
-# Select box state to prevent bug with hitting x in usecase selectbox:
-if 'prev_empty_sel' not in st.session_state:
-    st.session_state['prev_empty_sel'] = True
-
-# Login:
-if 'allow_edit' not in st.session_state:
-    st.session_state['allow_edit'] = False
-    aux.edit_control()
-
-
-# Initial local data load to memory:
-if 'data' not in st.session_state:
-    st.session_state['data'] = deepcopy(io.load_data(cf.TEMP_FILE))
-# Use a short name for the data:
-data = st.session_state['data']
+data  = st.session_state['data']
 
 
 ################
@@ -259,8 +218,6 @@ if hash_id != None:
     # Remove button:
     with remove_col:
         st.button("❌  Remover caso de uso", on_click=io.remove_usecase, args=(data, hash_id))
-
-    #aux.log(uc, prefix='[END]')
 
 else:
     st.session_state['prev_empty_sel'] = True

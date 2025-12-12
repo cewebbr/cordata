@@ -159,23 +159,6 @@ def hash_string(string, prefix=''):
     return crc32(bytes(name, 'utf-8'))
 
 
-@st.dialog('Controle de edição')
-def edit_control():
-    """
-    Admin access dialog that asks for password to
-    enable edit permission.
-    """
-    entry = st.text_input(label='Digite a senha:', type='password')
-    if st.button('🚪 Entrar') == True:
-        if entry == st.secrets['PWD']:
-            log('Log in: ALLOW EDIT')
-            st.session_state['allow_edit'] = True
-        else:
-            log('Log in: EDITING NOT ALLOWED')
-            st.session_state['allow_edit'] = False
-        st.rerun()
-
-
 def read_csv_as_dict(filename, delimiter=",", skip_header=True):
     """
     Read a CSV file and return a dict of NumPy arrays (one per column).
