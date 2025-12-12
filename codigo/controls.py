@@ -86,8 +86,8 @@ def usecase_picker(usecases: list, data: dict):
     names = [uc['name'] for uc in usecases]
     ids   = [uc['hash_id'] for uc in usecases]
     id2name = dict(zip(ids, names))
-    hash_id = st.sidebar.selectbox("Selecione o caso de uso:", ids, format_func=lambda i: id2name[i], 
-                                   index=aux.usecase_id2idx(ids, st.session_state['id_init']), 
+    hash_id = st.sidebar.selectbox("Selecione o caso de uso:", ids, format_func=lambda i: id2name[i],  
+                                   index=aux.usecase_id2idx(ids, st.session_state['usecase_selectbox']), 
                                    key='usecase_selectbox')
 
     return hash_id
@@ -105,20 +105,16 @@ def usecase_selector(data: dict):
     usecases = data["data"]
     if st.session_state['usecase_selectbox'] != None:
          uc = aux.select_usecase_by_id(data, st.session_state['usecase_selectbox'])
-         #st.code(uc)
          if status_selected(uc, status_filter) == False:
-             st.write('entrou no limpador de id')
              # Set id_init to None.
-             st.session_state['id_init'] = None
+             st.session_state['usecase_selectbox'] = None
 
     # Filter usecases based on statuses:
     sel_usecases = list(filter(lambda uc: status_selected(uc, status_filter), usecases))
 
     # Select usecase:
-    #aux.log('Will run usecase select box')
     hash_id = usecase_picker(sel_usecases, data)
-    #aux.log('Ran usecase select box')
-
+    
     return hash_id
 
 
