@@ -47,6 +47,11 @@ os.chdir(Path(__file__).parent)
 ### Init ###
 ############
 
+# Log start of session:
+if 'session_start' not in st.session_state:
+    aux.log('Starting session', prefix='[STT]')
+    st.session_state['session_start'] = True
+
 ### Constant data ###
 
 # Load list of options for multiselect widgets:
@@ -73,8 +78,6 @@ ds_v0 = st.session_state['ds_defaults']
 if 'uc' not in st.session_state:
     st.session_state['uc'] = None
 # Initialization of session variables:
-#if 'id_init' not in st.session_state:
-#    st.session_state['id_init'] = None
 if 'usecase_selectbox' not in st.session_state:
     st.session_state['usecase_selectbox'] = None
 # Select box state to prevent bug with hitting x in usecase selectbox:
@@ -128,7 +131,7 @@ if hash_id != None:
     if st.session_state['uc'] == None or st.session_state['uc']['hash_id'] != hash_id or st.session_state['prev_empty_sel']:
         st.session_state['uc'] = deepcopy(aux.select_usecase_by_id(data, hash_id))
         io.set_uc_widgets(st.session_state['uc'])
-        aux.log('Changed usecase')
+        aux.log(f"Changed to usecase: {st.session_state['uc']['name']}")
     st.session_state['prev_empty_sel'] = False
     # Use a short name for the editing usecase:
     uc = st.session_state['uc']

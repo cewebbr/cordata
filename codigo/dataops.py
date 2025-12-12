@@ -117,10 +117,10 @@ def download_data(url):
 def load_from_github():
     st.write('ATENÇÃO! Todos os casos de uso atualmente cadastrados neste app serão apagados, sendo substituídos pelos do Github. Deseja continuar?')
     if st.button('Confirmar'):
+        aux.log('Downloading data from github')
         data = download_data('https://raw.githubusercontent.com/cewebbr/cordata/refs/heads/main/dados/limpos/usecases_current.json')
         st.session_state['data'] = deepcopy(data)
         save_data(data)
-        #st.session_state['id_init'] = None
         st.session_state['usecase_selectbox'] = None
         st.rerun()
 
@@ -130,10 +130,10 @@ def upload_data():
     st.write('ATENÇÃO! Todos os casos de uso atualmente cadastrados neste app serão apagados, sendo substituídos pelos do arquivo selecionado.')
     uploaded_file = st.file_uploader(label='Escolha o arquivo para carregar', type='json')
     if uploaded_file is not None:
+        aux.log('Uploading local data')
         data = json.load(uploaded_file)
         st.session_state['data'] = deepcopy(data)
         save_data(data)
-        #st.session_state['id_init'] = None
         st.session_state['usecase_selectbox'] = None
         st.rerun()
 
@@ -152,7 +152,7 @@ def save_data(data, path=cf.TEMP_FILE):
         # Save data:
         with open(path, 'w') as f:
             json.dump(data, f, indent=1, ensure_ascii=False)
-        #aux.log('Saved data to {:}'.format(path))
+        aux.log(f'Saved data to {path}')
 
 
 def load_data(path):
@@ -165,15 +165,13 @@ def load_data(path):
 
 @st.dialog('Limpar a base')
 def erase_usecases():
-    aux.log('Entered erase_usecases dialog')
     st.write('ATENÇÃO! Todos os casos de uso atualmente cadastrados neste app serão apagados. Deseja continuar?')
     if st.button('Confirmar'):
-        aux.log('Entered erase_usecases confirm area')
+        aux.log('Erasing all data')
         data = load_data(cf.EMPTY_FILE)
         st.session_state['data'] = deepcopy(data)
         save_data(data)
         st.rerun()
-    aux.log('Finished erase_usecases dialog')
 
 
 ######################################
@@ -186,12 +184,12 @@ def add_usecase(data):
     Create a new usecase, add it to dataset and
     show it for edition.
     """
-    aux.log('Entered add_new_case dialog')
+
     # Ask for new usecase name:
     name = st.text_input("Nome:")
     
     if st.button("🚀 Criar!"):
-        aux.log('Adding new usecase')
+        aux.log(f'Adding new usecase: {name}')
         
         # Create new usecase:
         uc = load_data(cf.ENTRY_MODEL)
@@ -207,7 +205,6 @@ def add_usecase(data):
         save_data(data)
         
         # Set to show it:
-        #st.session_state['id_init'] = uc['hash_id']
         st.session_state['usecase_selectbox'] = uc['hash_id']
         st.rerun()
     
@@ -219,6 +216,8 @@ def update_usecase(uc: dict, data:dict):
     is saved to the file.  
     """        
     
+    aux.log(f"Saving usecase: {uc['name']}")
+
     # Load current data saved on file:
     data = load_data(cf.TEMP_FILE)
 
@@ -244,11 +243,10 @@ def remove_usecase(data, hash_id):
     hash_id : int
         Usecase ID.
     """
-    aux.log('Entered remove_usecase dialog')
     st.write('Todas as informações a respeito deste caso de uso serão perdidas.')
     
     if st.button('Confirmar'):
-        aux.log('Removing usecase')
+        aux.log(f'Removing usecase: {hash_id}')
 
         # Load current data saved on file:
         data = load_data(cf.TEMP_FILE)
@@ -263,7 +261,6 @@ def remove_usecase(data, hash_id):
         save_data(data)
         
         # Reset usecase selection:
-        #st.session_state['id_init'] = None
         st.session_state['usecase_selectbox'] = None
         st.rerun()
 

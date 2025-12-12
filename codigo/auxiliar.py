@@ -18,6 +18,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 
 import streamlit as st
+import streamlit.components.v1 as components
 from datetime import datetime
 from zlib import crc32
 import numpy as np
@@ -167,8 +168,10 @@ def edit_control():
     entry = st.text_input(label='Digite a senha:', type='password')
     if st.button('🚪 Entrar') == True:
         if entry == st.secrets['PWD']:
+            log('Log in: ALLOW EDIT')
             st.session_state['allow_edit'] = True
         else:
+            log('Log in: EDITING NOT ALLOWED')
             st.session_state['allow_edit'] = False
         st.rerun()
 
