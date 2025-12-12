@@ -93,6 +93,13 @@ def make_derived_data(data):
             uc['authors_id'] = None
 
 
+def today():
+    """
+    Returns a string with the current date in the
+    YYYY-MM-DD format.
+    """
+    return datetime.today().strftime('%Y-%m-%d')
+
 #########################################
 ### Operations on all data on storage ###
 #########################################
@@ -148,7 +155,7 @@ def save_data(data, path=cf.TEMP_FILE):
         std_data(data)
         make_derived_data(data)
         # Set update date to now:
-        data['metadata']['last_update'] = datetime.today().strftime('%Y-%m-%d')
+        data['metadata']['last_update'] = today()
         # Save data:
         with open(path, 'w') as f:
             json.dump(data, f, indent=1, ensure_ascii=False)
@@ -194,7 +201,8 @@ def add_usecase(data):
         # Create new usecase:
         uc = load_data(cf.ENTRY_MODEL)
         uc['name'] = name
-        uc['record_date'] = datetime.today().strftime('%Y-%m-%d')
+        uc['record_date']   = today()
+        uc['modified_date'] = today()
         uc['hash_id'] = aux.hash_string(uc['name'] + uc['record_date'])
         
         # Insert in dataset:
@@ -220,6 +228,9 @@ def update_usecase(uc: dict, data:dict):
 
     # Load current data saved on file:
     data = load_data(cf.TEMP_FILE)
+
+    # Set last modified date:
+    uc['modified_date'] = today()
 
     # Copy to the usecase position in list:
     idx = aux.get_usecase_pos(data['data'], uc['hash_id'])
