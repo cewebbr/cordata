@@ -35,7 +35,7 @@ import auxiliar as aux
 ### Operations on current usecase dataset ###
 #############################################
 
-def append_dataset(datasets):
+def append_dataset(datasets: list):
     """
     Add a new dataset to those used by a usecase.
 
@@ -53,7 +53,7 @@ def append_dataset(datasets):
     datasets.append(dataset)
 
 
-def gen_rm_dataset(i: int):
+def gen_rm_dataset(i: int) -> callable:
     """
     Return a function that receives a usecase as input  
     and removes the dataset in position `i` (int) from

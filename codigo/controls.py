@@ -26,7 +26,7 @@ import config as cf
 import auxiliar as aux
 
 
-def status_selected(usecase: dict, status_filter: dict):
+def status_selected(usecase: dict, status_filter: dict) -> bool:
     """
     Return whether the usecase is selected by a filter, that is,
     whether its value for the possible statuses in listed in 
@@ -53,10 +53,11 @@ def status_selected(usecase: dict, status_filter: dict):
     return True
 
 
-def status_selectors():
+def status_selectors() -> dict:
     """
     Create status selectors (checkbox filters) for 
-    usecases.
+    usecases. Return the statuses selected by the 
+    checkbox widgets.
     """
     
     status_filter = dict()
@@ -81,7 +82,7 @@ def status_selectors():
     return status_filter
     
 
-def usecase_picker(usecases: list, data: dict):
+def usecase_picker(usecases: list, data: dict) -> int:
     """
     Create the dropdown selector used to pick a usecase
     from the list of usecases.
@@ -111,12 +112,15 @@ def usecase_picker(usecases: list, data: dict):
     return hash_id
 
 
-def usecase_selector(data: dict):
+def usecase_selector(data: dict)-> int:
     """
     Display selectors for the usecase to be viewed/edited.
+    Return the ID of the usecase selected in the select box, 
+    after filtering the usecases by statuses accordingly to 
+    the check boxes. 
     """
     
-    # Display statuses selectors for usecases:
+    # Display statuses selectors for usecases and get selected statuses:
     status_filter = status_selectors()
 
     # Check if status selector will drop current usecase:

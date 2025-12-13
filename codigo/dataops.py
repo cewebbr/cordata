@@ -35,7 +35,7 @@ import auxiliar as aux
 ### Auxiliary functions for data operations ###
 ###############################################
 
-def mun2uf(mun_list):
+def mun2uf(mun_list: list) -> list:
     """
     List the federative units mentioned in a list of 
     municipalities `mun_list` (list of str).
@@ -52,9 +52,9 @@ def mun2uf(mun_list):
     return uf_list
 
 
-def std_data(data):
+def std_data(data: dict):
     """
-    Standardize data in place.
+    Standardize `data` (dict) in place.
     """
     usecases = data['data']
     # Loop over usecases:
@@ -84,9 +84,9 @@ def std_data(data):
                 uc[k] = 'https://'
 
 
-def make_derived_data(data):
+def make_derived_data(data: dict):
     """
-    Compute data fields given others:
+    Compute data fields given others, in place:
     - Translate type, topics and countries;
     - Assign author IDs for CGU (FAKE FOR NOW!)
     """
@@ -115,18 +115,57 @@ def make_derived_data(data):
             uc['authors_id'] = None
 
 
-def today():
+def today() -> str:
     """
     Returns a string with the current date in the
     YYYY-MM-DD format.
     """
     return datetime.today().strftime('%Y-%m-%d')
 
+
 #########################################
 ### Operations on all data on storage ###
 #########################################
 
-def download_data(url):
+def save_data(data: dict, path=cf.TEMP_FILE):
+    """
+    Save `data` (dict) to `path` (str) if edit controls
+    are enabled.
+    """
+    if st.session_state['allow_edit'] == True:
+        # Standardize data and derive other fields:
+        std_data(data)
+        make_derived_data(data)
+        # Set update date to now:
+        data['metadata']['last_update'] = today()
+        # Save data:
+        with open(path, 'w') as f:
+            json.dump(data, f, indent=1, ensure_ascii=False)
+        aux.log(f'Saved data to {path}')
+
+
+def load_data(path: str) -> dict:
+    """
+    Load JSON from file at `path` (str).
+    """
+    aux.log('Load data from {:}'.format(path))
+    return json.loads(Path(path).read_text(encoding="utf-8"))
+
+
+def serialize_data(data: dict) -> str:
+    """
+    Standardize and fill derived data (in place) and
+    then serialize to string in JSON format.
+    """
+    # Standardize data and derive other fields:
+    std_data(data)
+    make_derived_data(data)
+    # Serialize data:
+    serial = json.dumps(data, indent=1, ensure_ascii=False)
+    return serial
+
+
+def get_json(url: str) -> dict:
     """
     Download CORDATA data from an `url` (str) address pointing to a 
     JSON file.
@@ -139,7 +178,6 @@ def download_data(url):
         return data
     else:
         st.error(f'Falha no carregamento dos dados (status code {status})')
-    #aux.log('Ran download_data')
 
 
 @st.dialog('Carregar dados do Github')
@@ -147,7 +185,7 @@ def load_from_github():
     st.write('ATENÇÃO! Todos os casos de uso atualmente cadastrados neste app serão apagados, sendo substituídos pelos do Github. Deseja continuar?')
     if st.button('Confirmar'):
         aux.log('Downloading data from github')
-        data = download_data('https://raw.githubusercontent.com/cewebbr/cordata/refs/heads/main/dados/limpos/usecases_current.json')
+        data = get_json('https://raw.githubusercontent.com/cewebbr/cordata/refs/heads/main/dados/limpos/usecases_current.json')
         st.session_state['data'] = deepcopy(data)
         save_data(data)
         st.session_state['usecase_selectbox'] = None
@@ -167,31 +205,6 @@ def upload_data():
         st.rerun()
 
 
-def save_data(data, path=cf.TEMP_FILE):
-    """
-    Save `data` (dict) to `path` (str) if edit controls
-    are enabled.
-    """
-    if st.session_state['allow_edit'] == True:
-        # Standardize data and derive other fields:
-        std_data(data)
-        make_derived_data(data)
-        # Set update date to now:
-        data['metadata']['last_update'] = today()
-        # Save data:
-        with open(path, 'w') as f:
-            json.dump(data, f, indent=1, ensure_ascii=False)
-        aux.log(f'Saved data to {path}')
-
-
-def load_data(path):
-    """
-    Load JSON from file at `path` (str).
-    """
-    aux.log('Load data from {:}'.format(path))
-    return json.loads(Path(path).read_text(encoding="utf-8"))
-
-
 @st.dialog('Limpar a base')
 def erase_usecases():
     st.write('ATENÇÃO! Todos os casos de uso atualmente cadastrados neste app serão apagados. Deseja continuar?')
@@ -208,7 +221,7 @@ def erase_usecases():
 ######################################
 
 @st.dialog('Adicionar novo caso')
-def add_usecase(data):
+def add_usecase(data: dict):
     """
     Create a new usecase, add it to dataset and
     show it for edition.
@@ -264,7 +277,7 @@ def update_usecase(uc: dict, data:dict):
 
 
 @st.dialog('Remover caso de uso')
-def remove_usecase(data, hash_id):
+def remove_usecase(data: dict, hash_id: int):
     """
     Remove usecase from our data.
 
@@ -299,7 +312,7 @@ def remove_usecase(data, hash_id):
 
 
 @st.dialog('Desfazer modificações')
-def reset_usecase(idx):
+def reset_usecase(idx: int):
     """
     Erase records of widgets' states used to edit the usecase.
     """

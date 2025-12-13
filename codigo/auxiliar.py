@@ -40,7 +40,7 @@ class translate_dict(dict):
 none_fmt = translate_dict({None:'(vazio)'})
 
 
-def tags_fmt(x):
+def tags_fmt(x) -> list:
     """
     Return empty list if `x` is None.
     """
@@ -49,7 +49,7 @@ def tags_fmt(x):
     return x
 
 
-def gen_uckey(hash, prop, idx=0):
+def gen_uckey(hash: int, prop: str, idx=0) -> str:
     """
     Return a standardized key for usecase widgets.
 
@@ -72,7 +72,7 @@ def gen_uckey(hash, prop, idx=0):
     return 'uc_{:}_{:}_{:}'.format(hash, prop, idx)
 
 
-def read_lines(path):
+def read_lines(path: str) -> list:
     """
     Read strings from file at `path` (str or Path) and 
     put each line into an element of a list.
@@ -82,7 +82,7 @@ def read_lines(path):
     return lines
 
 
-def read_date(date_str, date_fmts=['%m/%Y', '%d/%m/%Y']):
+def read_date(date_str: str, date_fmts=['%m/%Y', '%d/%m/%Y']):
     """
     Parse date from `date_str` (str) using the first 
     format in `date_fmts` (list of str) that works.
@@ -107,7 +107,7 @@ def read_date(date_str, date_fmts=['%m/%Y', '%d/%m/%Y']):
         raise Exception("Weird date format '{:}'".format(date_str))
 
 
-def nindex(options, sel):
+def nindex(options: list, sel) -> int:
     """
     Return position of `sel` (obj) in `options` (list).
     If `sel` is None, return None.
@@ -119,7 +119,18 @@ def nindex(options, sel):
     return options.index(sel)
 
 
-def html(html_code, sidebar=False):
+def usecase_id2idx(ids: list, target_id: int):
+    """
+    Return the index of `target_id` in `ids`.
+    If `target_id` is None, return None.
+    """
+    if target_id == None:
+        return None
+    else:
+        return ids.index(target_id)
+    
+
+def html(html_code: str, sidebar=False):
     """
     Place `html_code` (str) in the Streamlit app.
     If `sidebar` is True, place it in the sidebar.
@@ -130,7 +141,7 @@ def html(html_code, sidebar=False):
         st.write(html_code, unsafe_allow_html=True)
 
 
-def log(message, prefix='[LOG]', log_time=True):
+def log(message: str, prefix='[LOG]', log_time=True):
     """
     Print message to terminal.
 
@@ -153,7 +164,7 @@ def log(message, prefix='[LOG]', log_time=True):
         print(output)
 
 
-def hash_string(string, prefix=''):
+def hash_string(string: str, prefix='') -> int:
     """
     Takes a `string` as input, remove `prefix` from it and turns it into a hash.
     """
@@ -161,7 +172,7 @@ def hash_string(string, prefix=''):
     return crc32(bytes(name, 'utf-8'))
 
 
-def read_csv_as_dict(filename, delimiter=",", skip_header=True):
+def read_csv_as_dict(filename: str, delimiter=",", skip_header=True) -> dict:
     """
     Read a CSV file and return a dict of NumPy arrays (one per column).
 
@@ -200,7 +211,7 @@ def read_csv_as_dict(filename, delimiter=",", skip_header=True):
 
 
 @st.cache_data
-def load_translations(path='data/translations.csv', from_l='ptbr', to_l='es'):
+def load_translations(path='data/translations.csv', from_l='ptbr', to_l='es') -> dict:
     """
     Load translations for terms used in the data from 
     CSV file stored in `path` (str) and return a dict 
@@ -210,17 +221,6 @@ def load_translations(path='data/translations.csv', from_l='ptbr', to_l='es'):
     translations_df = read_csv_as_dict(path)
     translation_dict = dict(zip(translations_df[from_l], translations_df[to_l]))
     return translation_dict
-
-
-def usecase_id2idx(ids: list, target_id: int):
-    """
-    Return the index of `target_id` in `ids`.
-    If `target_id` is None, return None.
-    """
-    if target_id == None:
-        return None
-    else:
-        return ids.index(target_id)
     
 
 def get_usecase_pos(usecases: list, hash_id: int) -> int: 

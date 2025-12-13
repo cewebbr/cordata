@@ -67,7 +67,7 @@ st.sidebar.button('⬆️ Subir dados locais', on_click=io.upload_data)
 st.sidebar.button('🗑️ Limpar a base', on_click=io.erase_usecases)
 
 # Baixar dados:
-st.sidebar.download_button('⬇️ Baixar dados', json.dumps(data, indent=1, ensure_ascii=False), file_name='usecases_current.json')
+st.sidebar.download_button('⬇️ Baixar dados', io.serialize_data(data), file_name='usecases_current.json')
 aux.html('<hr>', sidebar=True)
 
 # Select a usecase to view/edit:
