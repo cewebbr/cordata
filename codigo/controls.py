@@ -106,7 +106,7 @@ def usecase_picker(usecases: list, data: dict) -> int:
     ids   = [uc['hash_id'] for uc in usecases]
     id2name = dict(zip(ids, names))
     hash_id = st.sidebar.selectbox("Selecione o caso de uso:", ids, format_func=lambda i: id2name[i],  
-                                   index=aux.usecase_id2idx(ids, st.session_state['usecase_selectbox']), 
+                                   index=aux.nindex(ids, st.session_state['usecase_selectbox']), 
                                    key='usecase_selectbox')
 
     return hash_id

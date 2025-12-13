@@ -117,17 +117,6 @@ def nindex(options: list, sel) -> int:
         return None
     # Return position of option
     return options.index(sel)
-
-
-def usecase_id2idx(ids: list, target_id: int):
-    """
-    Return the index of `target_id` in `ids`.
-    If `target_id` is None, return None.
-    """
-    if target_id == None:
-        return None
-    else:
-        return ids.index(target_id)
     
 
 def html(html_code: str, sidebar=False):
@@ -230,7 +219,7 @@ def get_usecase_pos(usecases: list, hash_id: int) -> int:
     (int).
     """
     ids = [uc['hash_id'] for uc in usecases]
-    idx = usecase_id2idx(ids, hash_id)
+    idx = nindex(ids, hash_id)
     return idx
 
 
