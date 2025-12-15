@@ -12,17 +12,27 @@ O **CORDATA - Catálogo Online de Reúso de Dados Abertos** é um site que lista
     ├── README.md               <- Este documento
     ├── LICENSE                 <- Licença dos dados e códigos do projeto
     ├── requirements.txt        <- Principais pacotes de python necessários
-    ├── dados                   <- Metadados sobre casos de uso 
-    |   ├── brutos              <- Metadados brutos, originais
+    ├── codigo                  <- Web app interno de catalogação e gestão dos dados (CMS) 
+	├── dados                   <- Metadados sobre casos de uso 
+    |   ├── brutos              <- Metadados brutos, originais, vindos do formulário
+	|   ├── curados             <- Metadados originados do form manualmente corrigidos
     |   └── limpos              <- Metadados limpos, corrigidos, padronizados
 	├── imagens                 <- Imagens representativas dos casos de uso
     ├── analises                <- Código de limpeza dos dados (notebooks de python)
     ├── scripts                 <- Rotinas auxiliares
     └── docs                    <- Documentos e registros
 
-Os dados brutos, tais quais preenchidos no formulário do CORDATA, estão disponíveis na pasta [dados/brutos](dados/brutos). 
-A versão limpa e enriquecida, que aparece no catálogo do CORDATA, está em [dados/limpos](dados/limpos).
-O código que faz a limpeza dos dados coletados encontra-se disponível na pasta [analises](analises).
+
+## Sobre os metadados dos reúsos
+
+Alguns metadados sobre reúsos foram informados pelo público em geral através do [formulário do CORDATA](https://cordata.ceweb.br/formulario). Nesses casos, os metadados são armazenados na sua forma bruta e posteriormente passam por uma curadoria do Ceweb.br. Os dados brutos, tais quais preenchidos no formulário do CORDATA, estão disponíveis na pasta [dados/brutos](dados/brutos). Os dados curados são versões dos dados brutos manualmente corrigidas, ainda no formato CSV. Ver [dados/curados](dados/curados). 
+
+Outros metadados são registrados diretamente pela equipe do Ceweb.br. Nesses casos, o registro é feito através do _Content Management System_ (CMS) disponibilizado em [codigo](codigo), que resulta diretamente no formato final (JSON). Nesses casos, não há versões brutas ou curadas.
+
+A versão limpa e enriquecida dos metadados coletados através do formulário, combinada com os registrados diretamente pela equipe do Ceweb.br, está em [dados/limpos](dados/limpos). São esses os dados que aparecem no [site do CORDATA](http://cordata.ceweb.br).
+
+O código que faz a limpeza dos dados coletados através do formulário encontra-se disponível na pasta [analises](analises).
+
 
 ## Contato
 
