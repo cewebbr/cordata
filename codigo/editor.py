@@ -214,6 +214,8 @@ def usecase_edit_form(uc: dict):
     
     uckey = 'authors'                                  # Default based on usecase V
     uc[uckey] = st_tags(label=cf.WIDGET_LABEL[uckey], value=aux.tags_fmt(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash_id, uckey))
+    #uc[uckey] = st.multiselect(label=cf.WIDGET_LABEL[uckey], options=[], accept_new_options=True,
+    #                           default=[], key=aux.gen_uckey(hash_id, uckey), help=cf.WIDGET_HELP[uckey])
     # Nível de cobertura geográfica:
     uckey = 'geo_level'
     uc[uckey] = st.radio(label=cf.WIDGET_LABEL[uckey],
