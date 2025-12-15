@@ -158,21 +158,21 @@ def dataset_edit_form(ds: dict, i: int, hash_id: int):
     # Edit fields:
 
     for dkey in ['data_name', 'data_institution', 'data_url']:
-        ds[dkey] = st.text_input(label=cf.WIDGET_LABEL[dkey], value=ds_v0[dkey], key=aux.gen_uckey(hash_id, dkey, i))
+        ds[dkey] = st.text_input(label=cf.WIDGET_LABEL[dkey], value=ds_v0[dkey], key=aux.gen_uckey(hash_id, dkey, i), help=cf.WIDGET_HELP[dkey])
 
     dkey = 'data_license'
     ds[dkey] = st.selectbox(label=cf.WIDGET_LABEL[dkey], options=cf.LICENSE_OPTIONS, key=aux.gen_uckey(hash_id, dkey, i), 
-                            index=aux.nindex(cf.LICENSE_OPTIONS, ds_v0[dkey]))
+                            index=aux.nindex(cf.LICENSE_OPTIONS, ds_v0[dkey]), help=cf.WIDGET_HELP[dkey])
 
     dkey = 'data_format'
     ds[dkey] = st.multiselect(label=cf.WIDGET_LABEL[dkey], options=st.session_state['sel_opts'][dkey], 
-                            default=[], key=aux.gen_uckey(hash_id, dkey, i))
+                            default=[], key=aux.gen_uckey(hash_id, dkey, i), help=cf.WIDGET_HELP[dkey])
 
     dkey = 'data_periodical'
     ds[dkey] = st.radio(label=cf.WIDGET_LABEL[dkey], options=[True, False, None],
                         index=[True, False, None].index(ds_v0[dkey]), 
                         key=aux.gen_uckey(hash_id, dkey, i), horizontal=True, 
-                        format_func=(lambda x: {True:'Sim', False:'Não', None:'(vazio)'}[x]))
+                        format_func=(lambda x: {True:'Sim', False:'Não', None:'(vazio)'}[x]), help=cf.WIDGET_HELP[dkey])
 
 
 
@@ -196,18 +196,18 @@ def usecase_edit_form(uc: dict):
 
     ### Mandatory fields ###
     for uckey in ['name', 'url', 'url_archive']:
-        uc[uckey] = st.text_input(label=cf.WIDGET_LABEL[uckey], value=uc_v0[uckey], key=aux.gen_uckey(hash_id, uckey))
+        uc[uckey] = st.text_input(label=cf.WIDGET_LABEL[uckey], value=uc_v0[uckey], key=aux.gen_uckey(hash_id, uckey), help=cf.WIDGET_HELP[uckey])
 
     ### Optional fields ###
     uckey = 'description'
-    uc[uckey] = st.text_area(label=cf.WIDGET_LABEL[uckey], value=uc_v0[uckey], key=aux.gen_uckey(hash_id, uckey), height=200)
+    uc[uckey] = st.text_area(label=cf.WIDGET_LABEL[uckey], value=uc_v0[uckey], key=aux.gen_uckey(hash_id, uckey), height=200, help=cf.WIDGET_HELP[uckey])
     # Data de publicação:
     uckey = 'known_pub'
-    known_pub_date = st.checkbox(label=cf.WIDGET_LABEL[uckey], value=False, key=aux.gen_uckey(hash_id, uckey))
+    known_pub_date = st.checkbox(label=cf.WIDGET_LABEL[uckey], value=False, key=aux.gen_uckey(hash_id, uckey), help=cf.WIDGET_HELP[uckey])
     uckey = 'pub_date'
     if known_pub_date == True:
         pub_date = st.date_input(label=cf.WIDGET_LABEL[uckey], value=aux.read_date(uc_v0[uckey]), key=aux.gen_uckey(hash_id, uckey), 
-                                format="DD/MM/YYYY")            
+                                format="DD/MM/YYYY", help=cf.WIDGET_HELP[uckey])            
         uc[uckey] = None if pub_date == None else pub_date.strftime("%m/%Y")
     else:
         uc[uckey] = None
@@ -219,7 +219,7 @@ def usecase_edit_form(uc: dict):
     uc[uckey] = st.radio(label=cf.WIDGET_LABEL[uckey],
                 options=cf.GEOLEVEL_OPTIONS,
                 index=cf.GEOLEVEL_OPTIONS.index(uc_v0[uckey]), key=aux.gen_uckey(hash_id, uckey),
-                horizontal=True, format_func=(lambda x: aux.none_fmt[x]))
+                horizontal=True, format_func=(lambda x: aux.none_fmt[x]), help=cf.WIDGET_HELP[uckey])
     geolevel = uc[uckey]
     # Seletor de localidades (se nível comportar):
     if geolevel in cf.GEOLEVEL_KEYS.keys():
@@ -239,11 +239,11 @@ def usecase_edit_form(uc: dict):
     uc[uckey] = st_tags(label=cf.WIDGET_LABEL[uckey], value=aux.tags_fmt(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash_id, uckey))
     for uckey in ['type', 'topics']:
         uc[uckey] = st.multiselect(label=cf.WIDGET_LABEL[uckey], options=st.session_state['sel_opts'][uckey], 
-                                default=[], key=aux.gen_uckey(hash_id, uckey))
+                                default=[], key=aux.gen_uckey(hash_id, uckey), help=cf.WIDGET_HELP[uckey])
     uckey = 'tags'                                     # Default based on usecase V
     uc[uckey] = st_tags(label=cf.WIDGET_LABEL[uckey], value=aux.tags_fmt(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash_id, uckey))
     for uckey in ['url_source', 'url_image']:
-        uc[uckey] = st.text_input(label=cf.WIDGET_LABEL[uckey], value=uc_v0[uckey], key=aux.gen_uckey(hash_id, uckey))
+        uc[uckey] = st.text_input(label=cf.WIDGET_LABEL[uckey], value=uc_v0[uckey], key=aux.gen_uckey(hash_id, uckey), help=cf.WIDGET_HELP[uckey])
     st.image(uc['url_image'])
 
     ### Datasets ###
@@ -278,14 +278,14 @@ def usecase_edit_form(uc: dict):
     
     # Editable fields:
     uckey = 'comment'
-    uc[uckey] = st.text_area(label=cf.WIDGET_LABEL[uckey], value=uc.get(uckey, uc_v0[uckey]), key=aux.gen_uckey(hash_id, uckey), height=200)
+    uc[uckey] = st.text_area(label=cf.WIDGET_LABEL[uckey], value=uc.get(uckey, uc_v0[uckey]), key=aux.gen_uckey(hash_id, uckey), height=200, help=cf.WIDGET_HELP[uckey])
     status_list = ['status_published', 'status_review']
     status_cols = st.columns(len(status_list))
     for i, uckey in enumerate(status_list):
         with status_cols[i]:
             uc[uckey] = st.radio(cf.WIDGET_LABEL[uckey], options=cf.STATUS_OPTIONS, horizontal=True,
                         index=cf.STATUS_OPTIONS.index(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash_id, uckey),
-                        format_func=(lambda x: cf.STATUS_DISPLAY[uckey][x]))
+                        format_func=(lambda x: cf.STATUS_DISPLAY[uckey][x]), help=cf.WIDGET_HELP[uckey])
             
 
 def usecase_page(hash_id: int, data: dict):
