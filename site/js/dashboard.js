@@ -13,10 +13,16 @@ async function loadUsecases() {
     // TODO: apply Fundamental filter (remove non usecases)
   }
 
-
 // Increment by one the object `counter` under key `bucket`:
 function addOneInBucket(counter, bucket) {
     counter[bucket] = (counter[bucket] || 0) + 1;
+    return counter;    
+}
+
+// Increment by one the object `counter` under key `buc[ket]`:
+// (to be applied to objects where the bucket is specified by an attribute of the object).
+function addObjInBucket(counter, buc, ket) {
+    counter[buc[ket]] = (counter[buc[ket]] || 0) + 1;
     return counter;    
 }
 
@@ -41,7 +47,7 @@ function makeIncrementor(key, value_is_str) {
     // If values in the usecases are strings:
     if (value_is_str == true) {
         return function incrementor(acc, obj) {
-            return addCounts(acc, obj, key);
+            return addObjInBucket(acc, obj, key);
         }
     }
     // If values in the usecases are not strings (i.e., lists):  
