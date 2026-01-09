@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CORDATA Dashboard POC</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/vendor/chart.js"></script>
+  <script src="js/dashboard.js" defer></script>
+</head>
+<body>
+
+  <h1>CORDATA dashboard (POC)</h1>
+  
+  <label for="dimension">Dimensão:</label>
+  <select id="dimension">
+    <option value="geo_level">Nível de cobertura geográfica</option>
+    <option value="countries">País</option>
+    <option value="fed_units">UF</option>
+    <option value="type">Tipo</option>
+    <option value="topics">Tema</option>
+  </select>
+
+  <!-- Dashboard location -->
+  <canvas id="myChart"></canvas>
+
+</body>
+</html>
