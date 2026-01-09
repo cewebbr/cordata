@@ -1,129 +1,91 @@
-// Global variables:
-let usecases = []
-let selDimension = 'topics'; // default
+// Functions for counting usecases with a given attribute:
+import {countUsecases, sortEntriesByNumericValue} from './counting.js';
 
+/*****************/
+/*** FUNCTIONS ***/
+/*****************/
 
 // Load JSON data from hard-coded location:
 async function loadUsecases() {
-    // data_src = 'assets/data/usecases_current.json';
-    const data_src = 'https://raw.githubusercontent.com/cewebbr/cordata/refs/heads/main/dados/limpos/usecases_current.json';
-    const response = await fetch(data_src);
+    // dataSrc = 'assets/data/usecases_current.json';
+    const dataSrc = 'https://raw.githubusercontent.com/cewebbr/cordata/refs/heads/main/dados/limpos/usecases_current.json';
+    const response = await fetch(dataSrc);
     const data = await response.json();
     usecases = data['data'];
     // TODO: apply Fundamental filter (remove non usecases)
   }
 
-// Increment by one the object `counter` under key `bucket`:
-function addOneInBucket(counter, bucket) {
-    counter[bucket] = (counter[bucket] || 0) + 1;
-    return counter;    
-}
 
-// Increment by one the object `counter` under key `buc[ket]`:
-// (to be applied to objects where the bucket is specified by an attribute of the object).
-function addObjInBucket(counter, buc, ket) {
-    counter[buc[ket]] = (counter[buc[ket]] || 0) + 1;
-    return counter;    
-}
+/****************/
+/*** Plotting ***/
+/****************/
 
-// Analogous to pandas Series.value_counts():
-function valueCounts(array) {
-    if (array === null) { return {}; }
-    const counts = array.reduce(addOneInBucket, {});
-    return counts;
-}
-
-// Increment counters `acc` by adding the values counted under a key in the object:
-function addCounts(acc, obj, key) {
-    const entry_counts = valueCounts(obj[key])
-    for (const [key, value] of Object.entries(entry_counts)) {
-        acc[key] = (acc[key] || 0) + value;
-    }
-    return acc;
-}
-
-// Create a incrementor function for counting occurences under a given object key over a list of such objects:
-function makeIncrementor(key, value_is_str) {
-    // If values in the usecases are strings:
-    if (value_is_str == true) {
-        return function incrementor(acc, obj) {
-            return addObjInBucket(acc, obj, key);
+function genCountsPlot(counts, elementId, chart, label) {
+    const ctx = document.getElementById(elementId);
+    chart = new Chart(ctx, {type: 'bar',
+        data: {
+            labels: Object.keys(counts),
+            datasets: [{label: label, data: Object.values(counts), borderWidth: 2, tension: 0.3}]
+        },
+        options: {
+            responsive: true,
+            interaction: {mode: 'nearest', intersect: false},
+            plugins: {tooltip: {enabled: true}, legend: {display: true}},
+            scales: {y: {beginAtZero: true}}
         }
-    }
-    // If values in the usecases are not strings (i.e., lists):  
-    else {
-        return function incrementor(acc, obj) {
-            return addCounts(acc, obj, key);
-        }
-    }
+    });
+    return chart;
 }
 
-// Count the number of usecases that feature each value under a given key:
-function countUsecases(list, key) {
-    const is_str = (typeof list[0][key] === 'string')
-    const totals = list.reduce(makeIncrementor(key, is_str), {});
-    return totals;
-};
+function updateCountsPlot(counts, chart) {
+    chart.data.labels = Object.keys(counts);
+    chart.data.datasets[0].data = Object.values(counts);
+    chart.update();
+    return chart;
+}
 
-// Listen to Dimension dropdown:
-const dropdown = document.getElementById('dimension');
-dropdown.addEventListener('change', (event) => {
-  selDimension = event.target.value;
-  console.log('Selected:', selDimension);
-  run();
-});
+function plotCounts(counts, elementId, chart, label) {
+    if (!chart) chart = genCountsPlot(counts, elementId, chart, label);
+    else chart = updateCountsPlot(counts, chart);
+    return chart;
+}
 
 
-async function run() {
-    const counts = countUsecases(usecases, selDimension);
+function gen1DUsecaseChart() {
+    const counts = sortEntriesByNumericValue(countUsecases(usecases, UcDim1));
     console.log(counts);
+    chart = plotCounts(counts, 'usecases-chart-1d', chart, 'Casos cobrindo a categoria');
 }
 
 
-async function init() {
-    await loadUsecases();  // FETCH ONCE.
-    //console.log(usecases);
-    run();                 // INITIAL RENDER.
-  };
-init();
+/************/
+/*** INIT ***/
+/************/
+
+// HTML elements:
+const selectorUcDim1 = document.getElementById('usecases-dimension-1')
+
+// Global variables:
+let usecases = [];
+let UcDim1 = selectorUcDim1.value
+let chart = null;
+
+// Page load process:
+(async function init() {
+    // Fetch data once:
+    await loadUsecases();
+    // Initial render of plots:  
+    gen1DUsecaseChart();
+  })();
 
 
+/*****************/
+/*** BEHAVIOUR ***/
+/*****************/
 
-/*************/
-/*** Plots ***/
-/*************/
-
-const ctx = document.getElementById('myChart');
-
-const myChart = new Chart(ctx, {
-  type: 'line',
-  data: {
-    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
-    datasets: [{
-      label: 'Visitors',
-      data: [120, 190, 300, 250, 220, 310],
-      borderWidth: 2,
-      tension: 0.3
-    }]
-  },
-  options: {
-    responsive: true,
-    interaction: {
-      mode: 'nearest',
-      intersect: false
-    },
-    plugins: {
-      tooltip: {
-        enabled: true
-      },
-      legend: {
-        display: true
-      }
-    },
-    scales: {
-      y: {
-        beginAtZero: true
-      }
-    }
-  }
+// Listen to Dimension selectorUcDim1:
+selectorUcDim1.addEventListener('change', (event) => {
+  UcDim1 = event.target.value;
+  console.log('Selected:', UcDim1);
+  gen1DUsecaseChart();
 });
