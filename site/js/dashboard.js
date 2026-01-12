@@ -1,5 +1,5 @@
 // Functions for counting usecases with a given attribute:
-import {countUsecases, sortEntriesByNumericValue} from './counting.js';
+import {countUsecases, sortEntriesByNumericValue, countDatasets} from './counting.js';
 
 /*****************/
 /*** FUNCTIONS ***/
@@ -52,7 +52,9 @@ function plotCounts(counts, elementId, chart, label) {
 
 
 function gen1DUsecaseChart() {
-    const counts = sortEntriesByNumericValue(countUsecases(usecases, UcDim1));
+    let counts = {};
+    if (UcDim1 == 'datasets') counts = countDatasets(usecases);
+    else counts = sortEntriesByNumericValue(countUsecases(usecases, UcDim1));
     console.log(counts);
     chart = plotCounts(counts, 'usecases-chart-1d', chart, 'Casos cobrindo a categoria');
 }
@@ -76,6 +78,8 @@ let chart = null;
     await loadUsecases();
     // Initial render of plots:  
     gen1DUsecaseChart();
+
+    
   })();
 
 

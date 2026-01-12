@@ -56,3 +56,22 @@ export function sortEntriesByNumericValue(obj, order = 'desc') {
     const factor = order === 'asc' ? 1 : -1;
     return Object.fromEntries(Object.entries(obj).sort(([, a], [, b]) => factor * (a - b)));
   }
+
+
+// Count the number of datasets used by usecase `uc` (obj):
+function countDatasetsInUc(uc) {
+    return uc['datasets'].length;
+}
+
+// Increment by one the object `counter` under the number of datasets used by `uc` (obj):
+function addOneInNDatasets(counter, uc) {
+    counter[countDatasetsInUc(uc)] = (counter[countDatasetsInUc(uc)] || 0) + 1;
+    return counter;    
+}
+
+// Compute the histogram of number of datasets used by usecases:
+export function countDatasets(usecases) {
+    if (usecases === null) return {};
+    const counts = usecases.reduce(addOneInNDatasets, {});
+    return counts;
+}
