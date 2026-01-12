@@ -1,10 +1,12 @@
 # CORDATA
 
 O **CORDATA - Catálogo Online de Reúso de Dados Abertos** é um site que lista casos de uso de dados abertos. Você pode acessá-lo aqui:
-<https://cordata.ceweb.br>. Nesta página disponibilizamos os dados brutos coletados e os dados disponibilizados no site do projeto.
+<https://cordata.ceweb.br>. Nesta página disponibilizamos os dados brutos coletados e os dados disponibilizados no site do projeto, além 
+de códigos utilizados durante a catalogação ativa e algumas análises realizadas sobre os casos catalogados.
 
 **CORDATA - Catálogo Online de Reutilización de Datos Abiertos** _es un sitio web que enumera casos de uso de datos abiertos. Puedes acceder a él aquí:
-<https://cordata.ceweb.br>. En esta página ponemos a disposición los datos brutos recopilados y los datos disponibles en el sitio web del proyecto._
+<https://cordata.ceweb.br>. En esta página ponemos a disposición los datos brutos recopilados y los datos disponibles en el sitio web del proyecto, así 
+como los códigos utilizados durante la catalogación activa y algunos análisis realizados en los casos catalogados._
 
 ## Estrutura do projeto:
 
@@ -18,7 +20,7 @@ O **CORDATA - Catálogo Online de Reúso de Dados Abertos** é um site que lista
 	|   ├── curados             <- Metadados originados do form manualmente corrigidos
     |   └── limpos              <- Metadados limpos, corrigidos, padronizados
 	├── imagens                 <- Imagens representativas dos casos de uso
-    ├── analises                <- Código de limpeza dos dados (notebooks de python)
+    ├── analises                <- Códigos de análise e limpeza dos dados (notebooks de python)
     ├── scripts                 <- Rotinas auxiliares
     └── docs                    <- Documentos e registros
 
