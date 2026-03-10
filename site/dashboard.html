@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>CORDATA Dashboard POC</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/vendor/chart.js"></script>
+  <script type="module" src="js/dashboard.js" defer></script>
+</head>
+
+<body>
+
+<header>
+  <h1>CORDATA dashboard (POC)</h1>
+  <nav class="filters">
+    <h2 class="filters-title">Filtros</h2>
+  </nav>
+</header>
+
+  <main class="dashboard">
+    <!-- Usecase analysis -->
+    <section class="view" id="usecase-view">
+      <h2>Casos de uso</h2>
+      <!-- One view (we can create multiple views over the usecases) -->
+      <article>
+      <!-- Dashboard location -->
+      <canvas class="marginal-1d" id="usecases-chart-1d"></canvas>
+      <!-- Chart dimension selector -->
+      <select id="usecases-dimension-1">
+        <option value="geo_level">Nível de cobertura geográfica</option>
+        <option value="countries">País</option>
+        <option value="fed_units">UF</option>
+        <option value="type">Tipo</option>
+        <option value="topics">Tema</option>
+        <option value="datasets">Núm. de datasets utilizados</option>
+      </select>
+    </article>
+    </section>
+
+    <!-- Used Datasets analysis -->
+    <section class="view" id="dataset-view">
+      <h2>Conjuntos de dados utilizados</h2>
+      <!-- One view (we can create multiple views over the datasets) -->
+      <article>
+        <!-- Dashboard location -->
+      <canvas class="marginal-1d" id="datasets-chart-1d"></canvas>
+      <!-- Chart dimension -->
+      <select id="datasets-dimension-1">
+        <option value="data_institution">Instituição resp.</option>
+        <option value="data_url">Domínio</option>
+        <option value="data_license">Licença</option>
+      </select>
+    </article>
+    </section>
+  </main>
+</body>
+
+</html>

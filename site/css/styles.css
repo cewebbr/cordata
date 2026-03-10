@@ -1,0 +1,59 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+}
+
+/*.dashboard {
+  display: flex;
+}
+*/
+
+section {
+  margin: 10px;
+  padding: 10px;
+  border-width: 1px;
+  border-color: blueviolet;
+  border-style: solid;
+}
+
+article {
+  margin: 10px;
+  padding: 10px;
+  border-width: 1px;
+  border-color: aquamarine;
+  border-style: solid;
+  max-width: 800px;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+canvas {
+  /*max-width: 700px;*/
+  /*max-height: 700px;*/
+}
+
+/* Select styling */
+select {
+  padding: 0.4rem 0.6rem;
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+
+.filters {
+  margin: 10px;
+  padding: 10px;
+  border-width: 1px;
+  border-color: darkgoldenrod;
+  border-style: solid;
+}
