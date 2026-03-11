@@ -13,6 +13,7 @@ codigo/nohup.out
 codigo/data/trash
 analises/trash
 codigo/data/usecases_tests.json
+codigo/.ipynb_checkpoints/
 
 # Não inclusos
 codigo/env
@@ -32,3 +33,4 @@ codigo/.streamlit/secrets.toml
 keys
 resultados
 codigo/todo.md
+site.tar
