@@ -75,6 +75,7 @@ hash_id = ct.usecase_selector(data)
 
 # Add new usecase:
 st.sidebar.button('➕ Adicionar novo caso', on_click=io.add_usecase, args=(data,))
+st.sidebar.button('📚 Carregar do DSpace', on_click=io.load_from_dspace)
 
 
 ######################

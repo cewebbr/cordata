@@ -26,6 +26,8 @@ import streamlit as st
 from pathlib import Path
 from datetime import datetime
 from copy import deepcopy
+import csv
+import re
 
 import config as cf
 import auxiliar as aux
@@ -220,6 +222,19 @@ def erase_usecases():
 ### Operations to a single usecase ###
 ######################################
 
+
+def insert_usecase(uc: dict):
+    """
+    Load data from HD, insert usecase `uc` (dict) 
+    in position 0 and save data to HD.
+    """
+    data = load_data(cf.TEMP_FILE)
+    usecases = data['data']
+    usecases.insert(0, uc)
+    st.session_state['data'] = deepcopy(data)
+    save_data(data)
+
+
 @st.dialog('Adicionar novo caso')
 def add_usecase(data: dict):
     """
@@ -241,12 +256,8 @@ def add_usecase(data: dict):
         uc['hash_id'] = aux.hash_string(uc['name'] + uc['record_date'])
         
         # Insert in dataset:
-        data = load_data(cf.TEMP_FILE)
-        usecases = data['data']
-        usecases.insert(0, uc)
-        st.session_state['data'] = deepcopy(data)
-        save_data(data)
-        
+        insert_usecase(uc)
+
         # Set to show it:
         st.session_state['usecase_selectbox'] = uc['hash_id']
         st.rerun()
@@ -324,3 +335,380 @@ def reset_usecase(idx: int):
         st.session_state['usecase_status'] = uc.get('status', 'Em revisão')
         usecase_widgets = list(filter(lambda x: x[:8] == 'usecase_', st.session_state.keys()))
         st.rerun()
+
+
+########################################################
+### Methods for importing data from Dspace databases ###
+########################################################
+
+#@st.cache_data
+def read_csv_into_records(filename, filter_func=None):
+    """
+    Read CSV file into a list of dicts. 
+
+    Parameters
+    ----------
+    filename : str
+        Path to the CSV file.
+    filter_func : executable
+        A function that receives as input a CSV row 
+        (dict) and returns True if the row is to be
+        included in the output, and False otherwise.
+
+    Returns
+    -------
+    data : list of dicts
+        The data in the CSV file in the "list of 
+        dicts" format. All data is returned as str.
+    """
+    
+    # If no filtering is provided, return all rows:
+    if filter_func == None:
+        filter_func = (lambda x: True)        
+    
+    data = []
+    with open(filename, 'r', encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            if filter_func(row):
+                data.append(row)
+    
+    return data
+
+
+def value_not_in_set(row: dict, key: str, values):
+    """
+    Return True if row[key] is NOT in values.
+    Otherwise, return False.
+    """
+    if row[key] not in set(values):
+        return True
+    return False
+
+
+def use_public_data(row, key='y_pred'):
+    """
+    Return True if item under `key` (str) is 1.
+    Otherwise, return False.
+    """
+    if int(row[key]) == 1:
+        return True
+    return False
+
+    
+def normalize_name(name: str) -> str:
+    """
+    Standardize author names from SILVA, José dos Santos
+    and José dos Santos SILVA to José dos Santos Silva.
+    """
+
+    # Hard-coded:
+    LOWER_PARTICLES = {"da", "de", "do", "das", "dos", "e"}
+    name = name.strip()
+
+    # Remove stop:
+    if name[-1] == '.':
+        name = name[:-1]
+    
+    # Case 1: "SURNAME, Given names"
+    if "," in name:
+        last, first = [x.strip() for x in name.split(",", 1)]
+        name = f"{first} {last}"
+
+    # Normalize capitalization
+    parts = re.split(r"\s+", name)
+    normalized = []
+
+    for p in parts:
+        pl = p.lower()
+        if pl in LOWER_PARTICLES:
+            normalized.append(pl)
+        else:
+            normalized.append(pl.capitalize())
+
+    return " ".join(normalized)
+
+
+def parse_authors(authors_str: str, sep=";"):
+    """
+    Parse a string with multiple authors into 
+    a list of strings, with authors names in
+    standard format.
+    """
+    authors = [a.strip() for a in authors_str.split(sep) if a.strip()]
+    return [normalize_name(a) for a in authors]
+
+
+def normalize_title(title):
+    """
+    Standardize the title of an academic work.
+    """
+    # Remove last period:
+    if title[-1] == '.':
+        title = title[:-1]
+    # Remove space before colon:
+    title = re.sub('( +: +)', ': ', title)
+    # Avoid all caps titles:
+    if title.isupper():
+        title = title.capitalize()
+    # Remove double spacings:
+    title = ' '.join(title.split())
+    
+    return title
+
+    
+def normalize_date(date_str: str) -> str:
+    """
+    Normalize a date string to the format "MM/YYYY".
+
+    The input string may represent a date in one of the following formats:
+    - "YYYY"
+    - "YYYY-MM"
+    - "YYYY-MM-DD"
+
+    Missing components are filled with "01". For example, a missing month
+    defaults to January ("01").
+
+    The function validates the resulting date using ``datetime.strptime``.
+
+    Parameters
+    ----------
+    date_str : str
+        A string representing a date in the formats "YYYY", "YYYY-MM",
+        or "YYYY-MM-DD".
+
+    Returns
+    -------
+    str
+        A normalized date string in the format "MM/YYYY".
+
+    Raises
+    ------
+    ValueError
+        If the input string does not match one of the supported formats
+        or if the resulting date is not valid.
+    """
+    
+    parts = date_str.strip().split("-")
+
+    if len(parts) == 1:          # YYYY
+        parts += ["01"]
+    elif len(parts) == 3:        # YYYY-MM-DD
+        parts = parts[:-1]
+    elif len(parts) != 2:
+        raise ValueError("Invalid date format")
+
+    # Validate the date:
+    normalized = "/".join(parts[::-1])
+    datetime.strptime(normalized, "%m/%Y")
+
+    return normalized
+
+
+def university_acronym(name: str) -> str:
+    """
+    Build a likely acronym for a Brazilian university name.
+
+    The function generates an acronym by taking the first letter of each
+    relevant word in the name while ignoring common Portuguese
+    prepositions and conjunctions (e.g., "de", "da", "do", "dos", "das",
+    "e"). The result is returned in uppercase.
+
+    Parameters
+    ----------
+    name : str
+        Full name of a university (e.g., "Universidade Federal de Pernambuco").
+
+    Returns
+    -------
+    str
+        The inferred acronym (e.g., "UFPE").
+    """
+
+    # Hard-coded:
+    BRAZIL_STATES = {
+    "acre": "AC",
+    "alagoas": "AL",
+    "amapá": "AP",
+    "amazonas": "AM",
+    "bahia": "BA",
+    "ceará": "CE",
+    "distrito federal": "DF",
+    "espírito santo": "ES",
+    "goiás": "GO",
+    "maranhão": "MA",
+    "mato grosso": "MT",
+    "mato grosso do sul": "MS",
+    "minas gerais": "MG",
+    "pará": "PA",
+    "paraíba": "PB",
+    "paraná": "PR",
+    "pernambuco": "PE",
+    "piauí": "PI",
+    "rio de janeiro": "RJ",
+    "rio grande do norte": "RN",
+    "rio grande do sul": "RS",
+    "rondônia": "RO",
+    "roraima": "RR",
+    "santa catarina": "SC",
+    "são paulo": "SP",
+    "sergipe": "SE",
+    "tocantins": "TO",
+    }
+
+    STOPWORDS = {"de", "da", "do", "dos", "das", "e"}
+
+    normalized = name.lower().strip()
+
+    # Check if the name ends with a state name (longest match first)
+    for state in sorted(BRAZIL_STATES, key=len, reverse=True):
+        if normalized.endswith(state):
+            prefix = normalized[: -len(state)].strip()
+            words = re.findall(r"[a-zà-ÿ]+", prefix)
+            letters = [w[0] for w in words if w not in STOPWORDS]
+            return "".join(letters).upper() + BRAZIL_STATES[state]
+
+    # Default behavior if no state is detected
+    words = re.findall(r"[a-zà-ÿ]+", normalized)
+    letters = [w[0] for w in words if w not in STOPWORDS]
+
+    return "".join(letters).upper()
+    
+
+def ensure_university_acronym(name: str) -> str:
+    """
+    Ensure a Brazilian university name ends with its acronym.
+
+    If the last token of the string is an all-caps word (e.g., "UFRN"),
+    the function assumes the acronym is already present and returns the
+    input unchanged. Otherwise, it appends " - <ACRONYM>" to the name,
+    where <ACRONYM> is inferred using ``university_acronym()``.
+
+    Parameters
+    ----------
+    name : str
+        Full name of a Brazilian university.
+
+    Returns
+    -------
+    str
+        The university name followed by its acronym if it was not
+        already present.
+    """
+    name = name.strip()
+
+    # Get last token ignoring trailing punctuation
+    last_word = re.findall(r"[A-Za-z]+$", name)
+    if last_word and last_word[0].isupper():
+        return name
+
+    acronym = university_acronym(name)
+    return f"{name} - {acronym}"
+
+
+def normalize_keywords(keywords, sep=';'):
+    """
+    Normalize a semicolon-separated list of keywords.
+
+    The function converts the input string to lowercase, splits it on
+    semicolons (';'), strips surrounding whitespace from each keyword,
+    and returns the resulting list.
+
+    Parameters
+    ----------
+    keywords : str
+        A string containing keywords separated by semicolons.
+
+    Returns
+    -------
+    list[str]
+        A list of normalized keywords.
+    """
+    
+    if keywords == None or keywords == '':
+        return None
+        
+    keywords = keywords.lower()
+    keyword_list = keywords.split(sep)
+    keyword_list = list(set([k.strip() for k in keyword_list if k.strip()]))
+    return keyword_list
+
+
+def collect_usecase_info(record, usecase_data_model):
+    """
+    ETL for an usecase metadata: from Dspace data to CORDATA.
+
+    Parameters
+    ----------
+    record : dict
+        Standardized fields present in Dspace. Expecting:
+        'titulo', 'uri', 'resumo', 'data_publicacao', 
+        'autoria', 'publicador', 'palavras_chave'.
+    usecase_data_model : dict
+        JSON structure used for CORDATA's usecases.
+
+    Returns
+    -------
+    uc : dict
+        The CORDATA's JSON structure filled with processed
+        information drawn from `record`. Fields filled:
+        'hash_id', 'name', 'url', 'description', 'pub_date', 'authors', 
+        'type', 'tags', 'comment', 'record_date', 'modified_date'.
+    """
+
+    # Create a copy of the structure:
+    uc = deepcopy(usecase_data_model)
+
+    # Process fields:
+    uc['record_date'] = today()
+    uc['modified_date'] = today()
+    uc['name'] = normalize_title(record['titulo'])
+    uc['hash_id'] = aux.hash_string(uc['name'] + uc['record_date'])
+    uc['url']  = record['uri']
+    uc['description'] = record['resumo']
+    uc['pub_date'] = normalize_date(record['data_publicacao'])
+    uc['authors'] = parse_authors(record['autoria']) + [ensure_university_acronym(record['publicador'])]
+    uc['type'] = ['artigo científico ou publicação acadêmica']
+    uc['tags'] = normalize_keywords(record['palavras_chave'])
+    uc['comment'] = 'Pré-preenchido via Python a partir dos metadados do DSpace.'
+    
+    return uc
+
+
+@st.dialog('Carrega caso de uso de DSpace')
+def load_from_dspace():
+    """
+    Opens dialog that lists academic works in CSV databases
+    extracted from DSpace. The user can load some metadata 
+    about the work in the appropriate format. 
+    """
+    
+    # List Dspace datasets:
+    dspace_index = read_csv_into_records('data/dspaces/dspace_index.csv')
+    dspace_dict   = aux.to_dict(dspace_index, 'filename', 'label')
+    dspace_file   = st.selectbox(label='Selecione a fonte de trabalhos acadêmicos:', options=dspace_dict.keys(), 
+                                index=None, key='dspace_selector', format_func=(lambda x: dspace_dict[x])) 
+    if dspace_file != None:
+        # List academic works in the selected Dspace dataset:
+        current_ucs = aux.extract(st.session_state['data']['data'], 'name')
+        dspace_data = read_csv_into_records('data/dspaces/' + dspace_file, 
+                                            lambda row: (normalize_title(row['titulo']) not in current_ucs) and use_public_data(row))
+        titles = aux.extract(dspace_data, 'titulo')
+        title = st.selectbox(label='Selecione o trabalho acadêmico:', options=titles, index=None, key='academic_work_selector')
+        
+        if title != None:
+            if st.button('➕ Carregar como caso de uso'):        
+                # Parse data from the selected academic work:
+                work_data = aux.select(dspace_data, 'titulo', title)[0]
+                work_prep = collect_usecase_info(work_data, st.session_state['uc_defaults'])
+                
+                # Insert in dataset:
+                insert_usecase(work_prep)
+
+                # Set to show it:
+                st.session_state['usecase_selectbox'] = work_prep['hash_id']
+                st.rerun()
+
+            
+
+
