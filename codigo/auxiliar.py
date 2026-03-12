@@ -236,3 +236,47 @@ def select_usecase_by_id(data: dict, hash_id: int) -> dict:
     uc = selection[0]
 
     return uc
+
+
+def fillnone(entry, replacement):
+    """
+    Return `entry` if it is not None. Otherwise, return `replacement`.
+    """
+    if entry == None:
+        return replacement
+    else:
+        return entry
+
+
+def extract(records, key):
+    """
+    Given a list of dicts `records`, return a list of all properties 
+    of the dicts stored under `key`.
+    """
+    values = [r[key] for r in records]
+    return values
+
+
+def select(records, key, value, exact=True):
+    """
+    Return a subset of elements in list of dict `records` where 
+    property stored under `key` has `value`. If `exact` is False,
+    select elements whose value (str) has a substring given by
+    `value`.
+    """
+    if exact == True:
+        sel = list(filter(lambda r: r[key] == value, records))
+    else:
+        sel = list(filter(lambda r: fillnone(r[key], '').find(value) != -1, records))
+    return sel
+
+def to_dict(records: list, key: str, value: str):
+    """
+    Given a list of dicts `records`, create a dict that 
+    makes the correspondence from records' attributes `key` 
+    to records' attributes `value`.
+    """
+    keys   = extract(records, key)
+    values = extract(records, value)
+    correspondence_dict   = dict(zip(keys, values))
+    return correspondence_dict
