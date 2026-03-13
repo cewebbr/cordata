@@ -4,6 +4,7 @@ registros/
 imagens/*
 !imagens/hash_id_*
 !imagens/generic_usecase_banner.png
+codigo/prototyping.ipynb
 
 # Lixo 
 analises/__pycache__
@@ -14,6 +15,7 @@ codigo/data/trash
 analises/trash
 codigo/data/usecases_tests.json
 codigo/.ipynb_checkpoints/
+codigo/requirements.bkp
 
 # Não inclusos
 codigo/env
@@ -27,6 +29,8 @@ dados/*
 !dados/curados
 dados/limpos/*
 !dados/limpos/usecases_current.json
+codigo/data/dspaces/*
+!codigo/data/dspaces/.gitignore
 
 # Privados
 codigo/.streamlit/secrets.toml
