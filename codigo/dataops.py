@@ -348,7 +348,7 @@ def read_csv_into_records(filename, filter_func=None):
 
     Parameters
     ----------
-    filename : str
+    filename : str | Path
         Path to the CSV file.
     filter_func : executable
         A function that receives as input a CSV row 
@@ -455,6 +455,14 @@ def normalize_title(title):
     title = ' '.join(title.split())
     
     return title
+
+
+def normalize_url(url: str):
+    """
+    Function to normalize the academic work's URL.
+    Currently just replaces 'http://' with 'https://'
+    """
+    return url.replace('http://', 'https://')
 
     
 def normalize_date(date_str: str) -> str:
@@ -612,7 +620,7 @@ def normalize_keywords(keywords, sep=';'):
 
     The function converts the input string to lowercase, splits it on
     semicolons (';'), strips surrounding whitespace from each keyword,
-    and returns the resulting list.
+    and returns the sorted resulting list.
 
     Parameters
     ----------
@@ -630,7 +638,7 @@ def normalize_keywords(keywords, sep=';'):
         
     keywords = keywords.lower()
     keyword_list = keywords.split(sep)
-    keyword_list = list(set([k.strip() for k in keyword_list if k.strip()]))
+    keyword_list = sorted(list(set([k.strip() for k in keyword_list if k.strip()])))
     return keyword_list
 
 
@@ -664,7 +672,7 @@ def collect_usecase_info(record, usecase_data_model):
     uc['modified_date'] = today()
     uc['name'] = normalize_title(record['titulo'])
     uc['hash_id'] = aux.hash_string(uc['name'] + uc['record_date'])
-    uc['url']  = record['uri']
+    uc['url']  = normalize_url(record['uri'])
     uc['description'] = record['resumo']
     uc['pub_date'] = normalize_date(record['data_publicacao'])
     uc['authors'] = parse_authors(record['autoria']) + [ensure_university_acronym(record['publicador'])]
@@ -684,15 +692,15 @@ def load_from_dspace():
     """
     
     # List Dspace datasets:
-    dspace_index = read_csv_into_records('data/dspaces/dspace_index.csv')
+    dspace_index = read_csv_into_records(Path(cf.DSPACE_DIR) / Path(cf.DSPACE_INDEX_FILE))
     dspace_dict   = aux.to_dict(dspace_index, 'filename', 'label')
     dspace_file   = st.selectbox(label='Selecione a fonte de trabalhos acadêmicos:', options=dspace_dict.keys(), 
                                 index=None, key='dspace_selector', format_func=(lambda x: dspace_dict[x])) 
     if dspace_file != None:
         # List academic works in the selected Dspace dataset:
-        current_ucs = aux.extract(st.session_state['data']['data'], 'name')
-        dspace_data = read_csv_into_records('data/dspaces/' + dspace_file, 
-                                            lambda row: (normalize_title(row['titulo']) not in current_ucs) and use_public_data(row))
+        current_ucs = aux.extract(st.session_state['data']['data'], 'url')
+        dspace_data = read_csv_into_records(Path(cf.DSPACE_DIR) / Path(dspace_file), 
+                                            lambda row: (normalize_url(row['uri']) not in current_ucs) and use_public_data(row))
         titles = aux.extract(dspace_data, 'titulo')
         title = st.selectbox(label='Selecione o trabalho acadêmico:', options=titles, index=None, key='academic_work_selector')
         

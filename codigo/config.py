@@ -29,6 +29,8 @@ TEMP_FILE  = "data/usecases_temp.json"
 EMPTY_FILE = "data/usecases_empty.json"
 ENTRY_MODEL = "data/entry_model.json"
 DATASET_MODEL = "data/dataset_model.json"
+DSPACE_DIR = "data/dspaces/"
+DSPACE_INDEX_FILE = "dspace_index.csv"
 
 # Lists for controlled vocabularies
 TYPE_OPTIONS = [
