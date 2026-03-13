@@ -103,3 +103,6 @@ def init_session():
     # Initial local data load to memory:
     if 'data' not in st.session_state:
         st.session_state['data'] = deepcopy(io.load_data(cf.TEMP_FILE))
+        # Create a list of tags already used:
+        tags_list = list(filter(lambda x: x != None, aux.extract(st.session_state['data']['data'], 'tags')))
+        st.session_state['tags'] = sorted(list(set([tag.strip().lower() for tags in tags_list for tag in tags])))

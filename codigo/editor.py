@@ -103,8 +103,10 @@ def set_uc_widgets(uc: dict):
     """
 
     # Hard-coded:
-    tags = {'authors', 'email', 'tags'}
-    multiselect = {'type', 'topics', 'countries', 'fed_units', 'municipalities'}
+    #tags = {'authors', 'email', 'tags'}
+    #multiselect = {'type', 'topics', 'countries', 'fed_units', 'municipalities'}
+    tags = {'authors', 'email'}
+    multiselect = {'type', 'topics', 'countries', 'fed_units', 'municipalities', 'tags'}
     # Load default values:
     uc_v0 = st.session_state['uc_defaults']
 
@@ -243,7 +245,10 @@ def usecase_edit_form(uc: dict):
         uc[uckey] = st.multiselect(label=cf.WIDGET_LABEL[uckey], options=st.session_state['sel_opts'][uckey], 
                                 default=[], key=aux.gen_uckey(hash_id, uckey), help=cf.WIDGET_HELP[uckey])
     uckey = 'tags'                                     # Default based on usecase V
-    uc[uckey] = st_tags(label=cf.WIDGET_LABEL[uckey], value=aux.tags_fmt(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash_id, uckey))
+    #uc[uckey] = st_tags(label=cf.WIDGET_LABEL[uckey], value=aux.tags_fmt(uc.get(uckey, uc_v0[uckey])), key=aux.gen_uckey(hash_id, uckey))
+    uc[uckey] = st.multiselect(label=cf.WIDGET_LABEL[uckey], options=st.session_state['tags'], accept_new_options=True,
+                               default=[], key=aux.gen_uckey(hash_id, uckey), help=cf.WIDGET_HELP[uckey])
+
     for uckey in ['url_source', 'url_image']:
         uc[uckey] = st.text_input(label=cf.WIDGET_LABEL[uckey], value=uc_v0[uckey], key=aux.gen_uckey(hash_id, uckey), help=cf.WIDGET_HELP[uckey])
     st.image(uc['url_image'])
