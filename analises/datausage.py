@@ -32,6 +32,51 @@ import re
 from xavy.utils import load_env_vars
 
 
+def add_column_suffix(df, suffix, inplace=False, prefix=False):
+    """
+    Rename a DataFrame's columns by adding a suffix
+    to them.
+    
+    Parameters
+    ----------
+    df : DataFrame
+        The DataFrame to change its columns' names.
+    suffix : str
+        The suffix to be appended to `df`'s column
+        names.
+    inplace : bool
+        Whether to change the columns' names in place
+        and return None or to keep `df` as it is and
+        return the transformed DataFrame
+    prefix : bool
+        If True, add `suffix` as a prefix instead.
+        
+    Returns
+    -------
+    
+    new_df : DataFrame or None
+        If `inplace` is False, return the DataFrame
+        with the new column names. Otherwise, return
+        None.
+    """
+    # Build translator:
+    cols = df.columns
+    if prefix == True:
+        new_cols = [suffix + str(col) for col in cols]
+    else:
+        new_cols = [str(col) + suffix for col in cols]
+        
+    translator = dict(zip(cols, new_cols))
+    
+    # Rename columns:
+    if inplace == True:
+        df.rename(translator, axis=1, inplace=True)
+    else:
+        return df.rename(translator, axis=1)
+    
+    return None
+
+
 def csv2records(filename, records_cols=['titulo', 'resumo', 'palavras_chave']):
     """
     Load a file structured as CSV into a list of dicts.
@@ -137,6 +182,27 @@ def iskeyQ(df):
     """
     Q = len(df) == len(df.drop_duplicates())
     return Q
+
+
+def bold(text):
+    """
+    Takes a string and returns it bold.
+    """
+    return '\033[1m'+text+'\033[0m'
+
+    
+def print_teses(teses_df):
+    """
+    Print title, abstract and keywords for each academic work in DataFrame.
+    Expects columns 'titulo', 'resumo' and 'palavras_chave'.
+    """
+    for i in range(len(teses_df)):
+        r = teses_df.iloc[i]
+        print(bold(r['titulo']))
+        print(r['resumo'])
+        print('')
+        print('Palavras-chave:', r['palavras_chave'])
+        print('')
 
 
 class PublicDataUsageDetector:
@@ -664,7 +730,7 @@ def binary_encode(class_series):
         return y
     
 
-def build_results_csv(data_file, gpt_jsonl_in, gpt_jsonl_out, save_to=None):
+def build_results_csv(data_file, gpt_jsonl_in, gpt_jsonl_out, save_to=None, application='usecase_detection'):
     """
     Join GPT classification to original data file about academic 
     works.
@@ -685,6 +751,15 @@ def build_results_csv(data_file, gpt_jsonl_in, gpt_jsonl_out, save_to=None):
         If provided, save the original data with extra columns 
         'y_pred' and 'class', containing GPT's classification, 
         to a CSV file in the provided path.
+    application : str
+        Specifies what kind of output one expects in 
+        `gpt_jsonl_out`. The output reflects the LLM 
+        application specified through the prompt. It can be 
+        one of the following:
+        - 'usecase_detection': For detecting if a work used 
+          public datasets or not.
+        - 'metadata_collection': For collecting metadata about
+          the usecase.
 
     Returns
     -------
@@ -707,13 +782,19 @@ def build_results_csv(data_file, gpt_jsonl_in, gpt_jsonl_out, save_to=None):
     # Put GPT output into DataFrame:
     gpt_id_out = extract(gpt_output, 'custom_id')
     out_class  = pd.Series([g['response']['body']['choices'][0]['message']['content'] for g in gpt_output], index=gpt_id_out)
-    out_y_pred = binary_encode(out_class)
-    out_df = pd.DataFrame({'class': out_class, 'y_pred': out_y_pred}, index=gpt_id_out)
+    if application == 'usecase_detection':
+        out_y_pred = binary_encode(out_class)
+        out_df = pd.DataFrame({'class': out_class, 'y_pred': out_y_pred}, index=gpt_id_out)
+    elif application == 'metadata_collection':
+        out_df = out_class.apply(json.loads).apply(pd.Series)
+        add_column_suffix(out_df, '_pred', inplace=True)
+        
     # Join input and output:
     gpt_df = gpt_df.join(out_df, on='gpt_id_in')
 
-    # Make sure there are only two classes:
-    assert set(gpt_df['class']) == {'Uses public data', 'Does not use public data'}
+    if application == 'usecase_detection':
+        # Make sure there are only two classes:
+        assert set(gpt_df['class']) == {'Uses public data', 'Does not use public data'}
     # Consistency checks:
     assert len(gpt_input) == len(gpt_output) == len(gpt_df), 'GPT input and output should be the same size and have unique custom_ids.'
     assert gpt_df.isnull().sum().sum() == 0, 'There are missing elements in GPT DataFrame after outer join.'
@@ -722,8 +803,9 @@ def build_results_csv(data_file, gpt_jsonl_in, gpt_jsonl_out, save_to=None):
     classified_test_df = test_df.join(gpt_df)
     # Consistency checks:
     assert len(test_df) == len(gpt_df) == len(classified_test_df), 'Original data and GPT content should be the same size and have unique indices.'
-    assert classified_test_df[['class', 'y_pred']].isnull().sum().sum() == 0, 'There are academic works without GPT classification.'
     assert (classified_test_df['titulo'] == classified_test_df['gpt_titulo']).all(), 'Academic work order or titles got messed up.'
+    if application == 'usecase_detection':
+        assert classified_test_df[['class', 'y_pred']].isnull().sum().sum() == 0, 'There are academic works without GPT classification.'
 
     if save_to != None:
         classified_test_df.to_csv(save_to, index=False)
