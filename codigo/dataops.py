@@ -635,10 +635,14 @@ def normalize_keywords(keywords, sep=';'):
     
     if keywords == None or keywords == '':
         return None
-        
-    keywords = keywords.lower()
+
+    # Put all in lower-case:    
+    #keywords = keywords.lower()
     keyword_list = keywords.split(sep)
-    keyword_list = sorted(list(set([k.strip() for k in keyword_list if k.strip()])))
+    # Avoid empty keywords '':
+    keyword_list = [k.strip() for k in keyword_list if k.strip()]
+    # Remove duplicates:
+    keyword_list = aux.unique_preserve_order(keyword_list)
     return keyword_list
 
 
@@ -674,7 +678,7 @@ def collect_usecase_info(record, usecase_data_model):
     uc['hash_id'] = aux.hash_string(uc['name'] + uc['record_date'])
     uc['url']  = normalize_url(record['uri'])
     uc['description'] = record['resumo']
-    uc['pub_date'] = normalize_date(record['data_publicacao'])
+    #uc['pub_date'] = normalize_date(record['data_publicacao']) # data_publicacao se refere à entrega da tese, não à publicação no site.
     uc['authors'] = parse_authors(record['autoria']) + [ensure_university_acronym(record['publicador'])]
     uc['type'] = ['artigo científico ou publicação acadêmica']
     uc['tags'] = normalize_keywords(record['palavras_chave'])

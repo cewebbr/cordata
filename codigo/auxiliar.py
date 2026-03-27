@@ -280,3 +280,19 @@ def to_dict(records: list, key: str, value: str):
     values = extract(records, value)
     correspondence_dict   = dict(zip(keys, values))
     return correspondence_dict
+
+
+def unique_preserve_order(lst: list):
+    """
+    Create new list from `lst` by removing duplicated
+    entries while preserving their order.
+    """
+    seen = set()
+    result = []
+    
+    for item in lst:
+        if item not in seen:
+            seen.add(item)
+            result.append(item)
+            
+    return result
