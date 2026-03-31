@@ -1,12 +1,11 @@
 # CORDATA
 
-O **CORDATA - Catálogo Online de Reúso de Dados Abertos** é um site que lista casos de uso de dados abertos. Você pode acessá-lo aqui:
-<https://cordata.ceweb.br>. Nesta página disponibilizamos os dados brutos coletados e os dados disponibilizados no site do projeto, além 
-de códigos utilizados durante a catalogação ativa e algumas análises realizadas sobre os casos catalogados.
+O **CORDATA - Catálogo Online de Reúso de Dados Públicos** é um projeto que cataloga casos de uso de dados públicos, isto é, dados disponibilizados na Web, com livre acesso. 
+Você pode acessar a página oficial do projeto aqui: <https://cordata.ceweb.br>. Neste repositório, disponibilizamos 
+os dados coletados pelo projeto (ou seja, os [metadados a respeito dos reúsos](https://raw.githubusercontent.com/cewebbr/cordata/refs/heads/main/dados/limpos/usecases_current.json)), além de códigos utilizados durante a 
+catalogação ativa e algumas análises realizadas sobre os casos catalogados.
 
-**CORDATA - Catálogo Online de Reutilización de Datos Abiertos** _es un sitio web que enumera casos de uso de datos abiertos. Puedes acceder a él aquí:
-<https://cordata.ceweb.br>. En esta página ponemos a disposición los datos brutos recopilados y los datos disponibles en el sitio web del proyecto, así 
-como los códigos utilizados durante la catalogación activa y algunos análisis realizados en los casos catalogados._
+**CORDATA - Catálogo Online de Reutilización de Datos Públicos** _es un proyecto que cataloga casos de uso de datos públicos, es decir, datos disponibles en la web con acceso libre. Puedes acceder a la página oficial del proyecto aquí: <https://cordata.ceweb.br>. En este repositorio, proporcionamos los datos recopilados por el proyecto (es decir, [metadatos sobre reutilizaciones](https://raw.githubusercontent.com/cewebbr/cordata/refs/heads/main/dados/limpos/usecases_current.json)), así como los códigos utilizados durante la catalogación activa y algunos análisis realizados sobre los casos catalogados._
 
 ## Estrutura do projeto:
 
@@ -34,7 +33,6 @@ Outros metadados são registrados diretamente pela equipe do Ceweb.br. Nesses ca
 A versão limpa e enriquecida dos metadados coletados através do formulário, combinada com os registrados diretamente pela equipe do Ceweb.br, está em [dados/limpos](dados/limpos). São esses os dados que aparecem no [site do CORDATA](http://cordata.ceweb.br).
 
 O código que faz a limpeza dos dados coletados através do formulário encontra-se disponível na pasta [analises](analises).
-
 
 ## Contato
 
