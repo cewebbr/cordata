@@ -64,6 +64,78 @@ def http_get(url, max_retries=3, timeout=10):
     return response
 
 
+def standardize_image(img, output_path, target_height=293, target_width=523, grayband_factor=1):
+    """
+    Standardizes an image to a target aspect ratio and size.
+
+    Steps:
+    1. Input the PIL RGB image.
+    2. Computes current aspect ratio.
+    3. Crops or pads symmetrically based on deviation from target aspect ratio.
+    4. Scales image to target width while maintaining aspect ratio.
+    5. Saves output as PNG.
+
+    Parameters
+    ----------
+    img : PIL Image 
+        The image to be standardized, in RGB.
+    output_path : str 
+        Path to save transformed PNG image.
+    target_height : int
+        Target height in pixels.
+    target_width : int
+        Target width in pixels.
+    grayband_factor : float
+        Aspect ratio (width / height) factor between the current and target image 
+        up to which a gray band is added to it instead of cropping.  It must be
+        greater than or equal to one. If set to 1, the image is always cropped to 
+        reach the desired aspect ratio.
+    """
+    
+    # Compute image and target aspect ratios
+    width, height = img.size
+    aspect = width / height
+    target_aspect = target_width / target_height
+
+    # Step 3: If aspect ratio is more than the required on the target, crop horizontally:
+    if aspect > grayband_factor * target_aspect:
+        new_width = int(height * target_aspect)
+        left = (width - new_width) // 2
+        right = left + new_width
+        img = img.crop((left, 0, right, height))
+        width, height = img.size
+        aspect = width / height
+
+    # Step 4: If aspect ratio is less than required on the target, crop vertically:
+    elif aspect < target_aspect / grayband_factor:
+        new_height = int(width / target_aspect)
+        top = (height - new_height) // 2
+        bottom = top + new_height
+        img = img.crop((0, top, width, bottom))
+        width, height = img.size
+        aspect = width / height
+
+    # Step 5: If slightly wider, add gray bands on top/bottom:
+    elif aspect > target_aspect:
+        new_height = int(width / target_aspect)
+        padding = (new_height - height) // 2
+        img = ImageOps.expand(img, border=(0, padding, 0, padding), fill=(128, 128, 128))
+        width, height = img.size
+
+    # Step 6: If slightly narrower, add gray bands on left/right:
+    elif aspect < target_aspect:
+        new_width = int(height * target_aspect)
+        padding = (new_width - width) // 2
+        img = ImageOps.expand(img, border=(padding, 0, padding, 0), fill=(128, 128, 128))
+        width, height = img.size
+
+    # Step 7: Scale image to have target width (keeping aspect):
+    new_height = int((target_width / width) * height)
+    img = img.resize((target_width, new_height), Image.LANCZOS)
+
+    # Step 8: Save as PNG
+    img.save(output_path, format="PNG")
+
 def standardize_image_from_url(url, output_path, target_height=293, target_width=523, grayband_factor=1):
     """
     Downloads an image from the Web and standardizes it to a target aspect ratio and size.
@@ -98,55 +170,45 @@ def standardize_image_from_url(url, output_path, target_height=293, target_width
         #print(response.headers.get("Content-Type"))
         img = Image.open(BytesIO(response.content)).convert("RGB")
     
-        # Compute image and target aspect ratios
-        width, height = img.size
-        aspect = width / height
-        target_aspect = target_width / target_height
-    
-        # Step 3: If aspect ratio is more than the required on the target, crop horizontally:
-        if aspect > grayband_factor * target_aspect:
-            new_width = int(height * target_aspect)
-            left = (width - new_width) // 2
-            right = left + new_width
-            img = img.crop((left, 0, right, height))
-            width, height = img.size
-            aspect = width / height
-    
-        # Step 4: If aspect ratio is less than required on the target, crop vertically:
-        elif aspect < target_aspect / grayband_factor:
-            new_height = int(width / target_aspect)
-            top = (height - new_height) // 2
-            bottom = top + new_height
-            img = img.crop((0, top, width, bottom))
-            width, height = img.size
-            aspect = width / height
-    
-        # Step 5: If slightly wider, add gray bands on top/bottom:
-        elif aspect > target_aspect:
-            new_height = int(width / target_aspect)
-            padding = (new_height - height) // 2
-            img = ImageOps.expand(img, border=(0, padding, 0, padding), fill=(128, 128, 128))
-            width, height = img.size
-    
-        # Step 6: If slightly narrower, add gray bands on left/right:
-        elif aspect < target_aspect:
-            new_width = int(height * target_aspect)
-            padding = (new_width - width) // 2
-            img = ImageOps.expand(img, border=(padding, 0, padding, 0), fill=(128, 128, 128))
-            width, height = img.size
-    
-        # Step 7: Scale image to have target width (keeping aspect):
-        new_height = int((target_width / width) * height)
-        img = img.resize((target_width, new_height), Image.LANCZOS)
-    
-        # Step 8: Save as PNG
-        img.save(output_path, format="PNG")
+        standardize_image(img, output_path, target_height, target_width, grayband_factor)
 
         return True
         
     else:
         return False
-    
+
+
+def standardize_image_from_file(filename, output_path, target_height=293, target_width=523, grayband_factor=1):
+    """
+    Loads an image from a file and standardizes it to a target aspect ratio and size.
+
+    Steps:
+    1. Loads JPG, PNG, or GIF image from file.
+    2. Computes current aspect ratio.
+    3. Crops or pads symmetrically based on deviation from target aspect ratio.
+    4. Scales image to target width while maintaining aspect ratio.
+    5. Saves output as PNG.
+
+    Parameters
+    ----------
+    filename : str 
+        Path to the image.
+    output_path : str 
+        Path to save transformed PNG image.
+    target_height : int
+        Target height in pixels.
+    target_width : int
+        Target width in pixels.
+    grayband_factor : float
+        Aspect ratio (width / height) factor between the current and target image 
+        up to which a gray band is added to it instead of cropping.  It must be
+        greater than or equal to one. If set to 1, the image is always cropped to 
+        reach the desired aspect ratio.
+    """
+    img = Image.open(filename).convert("RGB")
+    standardize_image(img, output_path, target_height, target_width, grayband_factor)
+    return True        
+
 
 def etl_usecase_image(uc : dict, outfolder='../imagens/', outfile_template='hash_id_%(hash_id)s.png', 
                       url_path='https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/', 
