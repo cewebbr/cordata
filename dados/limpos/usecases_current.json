@@ -1,8 +1,2252 @@
 {
   "metadata": {
-    "last_update": "2026-08-31"
+    "last_update": "2026-10-05"
   },
   "data": [
+    {
+      "hash_id": 2242341856,
+      "name": "Análise das transições de cobertura e uso da terra no Bioma Pampa em áreas de supressão de floresta e vegetação herbácea e arbustiva de 2022 em relação a 1985",
+      "url": "https://lume.ufrgs.br/handle/10183/291086",
+      "url_archive": "https://",
+      "description": "Buscando colaborar com o entendimento acerca das transições de cobertura e uso da terra, esta pesquisa tem por objetivo entender como se deu as transições de cobertura e uso da terra em áreas de supressão de floresta e vegetação herbácea e arbustiva no Pampa de 2022 em relação a 1985. Os dados utilizados para a análise são provenientes da coleção 8 do projeto Mapbiomas de cobertura e uso da terra referentes aos anos de 1985, 1995, 2003, 2012 e 2022. A escolha de anos intermediários entre 1985 a 2022 deu a possibilidade de análise do comportamento das áreas de supressão de floresta e vegetação herbácea e arbustiva, pois se buscou neste trabalho o destino das supressões e também o seu ritmo. Para atingir os objetivos da pesquisa, foi feita revisão bibliográfica sobre os assuntos abordados no decorrer do trabalho. A metodologia do trabalho consistiu, em primeiro momento, na delimitação da área de supressão de vegetação nativa para assim, alicerçada pelas matrizes de transição referentes aos períodos temporais propostos, analisar o comportamento espaço temporal das supressões. Os resultados mostram que aproximadamente 532 mil ha do que era floresta em 1985 se transformaram em outro tipo de cobertura e uso da terra, sendo que o principal destino destas áreas foi a agropecuária com 319.841 ha (60%), com destaque para a silvicultura, a qual ocupou cerca de 34% da área de supressão de floresta com 183.862 ha. Sobre a vegetação herbácea e arbustiva, os resultados mostram que aproximadamente 3.946.582 ha. do que era vegetação herbácea e arbustiva em 1985 se transformou em outro tipo de cobertura e uso da terra, sendo que o principal destino desta área foi a agropecuária com 3.351.691 ha (85%), com destaque para a soja, a qual ocupou cerca de 31% da área de supressão de vegetação herbácea e arbustiva com 1.660.324 ha. Concluiu-se que a cobertura natural que mais sofreu supressão de área de 2022 em relação a 1985 foi a vegetação herbácea e arbustiva, onde sua supressão foi distribuída de maneira equilibrada entre 1985 e 2022, diferente da supressão de floresta que ocorreu por volta de 47,5% no primeiro período temporal. Os dados desta pesquisa importantes para subsidiar atividades de controle destas supressões.",
+      "pub_date": "05/2025",
+      "authors": [
+        "Angelo Del Mestre da Rocha",
+        "Universidade Federal do Rio Grande do Sul - UFRGS"
+      ],
+      "authors_id": [
+        null,
+        null
+      ],
+      "geo_level": null,
+      "countries": null,
+      "fed_units": null,
+      "municipalities": null,
+      "email": null,
+      "type": [
+        "artigo científico ou publicação acadêmica"
+      ],
+      "topics": null,
+      "tags": [
+        "Geoprocessamento",
+        "Sensoriamento remoto",
+        "Séries temporais",
+        "Vegetação nativa",
+        "Geografia",
+        "uso da terra",
+        "floresta e vegetação herbácea",
+        "agropecuária"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+      "comment": "Pré-preenchido via Python a partir dos metadados do DSpace.\n\nPreenchido por Guilherme ",
+      "datasets": [],
+      "record_date": "2026-09-30",
+      "modified_date": "2026-09-30",
+      "status_published": true,
+      "status_review": false,
+      "type_es": [
+        "artículo científico o publicación académica"
+      ],
+      "topics_es": null,
+      "countries_es": null
+    },
+    {
+      "hash_id": 81220120,
+      "name": "O Brasil mudou?",
+      "url": "https://nadamudou.com.br",
+      "url_archive": "https://arquivo.pt/wayback/20260924192205/https://nadamudou.com.br/",
+      "description": "Site com 447 comparações de indicadores econômicos e sociais entre os governos Bolsonaro (2019 a 2022) e Lula 3 (2023 a 2026), obtidos de documentos e conjuntos de dados governamentais, científicos e de organizações sociais.",
+      "pub_date": "09/2026",
+      "authors": null,
+      "authors_id": null,
+      "geo_level": "Países",
+      "countries": [
+        "Brasil"
+      ],
+      "fed_units": null,
+      "municipalities": null,
+      "email": null,
+      "type": [
+        "aplicativo ou plataforma",
+        "estudo independente",
+        "conjunto de dados"
+      ],
+      "topics": [
+        "Trabalho",
+        "Economia e Finanças",
+        "Assistência e Desenvolvimento Social",
+        "Saúde",
+        "Educação",
+        "Defesa e Segurança",
+        "Habitação, Saneamento e Urbanismo",
+        "Energia",
+        "Indústria",
+        "Dados Estratégicos",
+        "Relações Internacionais",
+        "Ciência, Informação e Comunicação",
+        "Agricultura, extrativismo e pesca",
+        "Meio Ambiente",
+        "Comércio, Serviços e Turismo",
+        "Gênero e Raça",
+        "Plano Plurianual",
+        "Transportes e Trânsito"
+      ],
+      "tags": null,
+      "url_source": "https://",
+      "url_image": "https://nadamudou.com.br/images/presidentes-cartoon.webp",
+      "comment": "Cadastrado por Xavier (Ceweb.br). Ainda falta tentar arquivar novamente (falhou nos dois principais sites), verificar autoria, adicionar conjuntos de dados e tags",
+      "datasets": [],
+      "record_date": "2026-09-24",
+      "modified_date": "2026-09-24",
+      "status_published": true,
+      "status_review": true,
+      "type_es": [
+        "aplicación o plataforma",
+        "estudio independiente",
+        "conjunto de datos"
+      ],
+      "topics_es": [
+        "Trabajo",
+        "Economía y Finanzas",
+        "Asistencia y Desarrollo Social",
+        "Salud",
+        "Educación",
+        "Defensa y Seguridad",
+        "Vivienda, Saneamiento y Urbanismo",
+        "Energía",
+        "Industria",
+        "Datos Estratégicos",
+        "Relaciones Internacionales",
+        "Ciencia, Información y Comunicación",
+        "Agricultura, Extractivismo y Pesca",
+        "Medio Ambiente",
+        "Comercio, Servicios y Turismo",
+        "Género y raza",
+        "Plan Plurianual",
+        "Transporte y Tráfico"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 3520506521,
+      "name": "Evolução da Geleira Ana, Ilha Rei George, Antártica e o ensino de Ciências da Natureza",
+      "url": "https://lume.ufrgs.br/handle/10183/237746",
+      "url_archive": "https://",
+      "description": "O presente estudo apresenta resultados da análise de mudanças ambientais na Geleira Ana Sul que se situa na Baía Rei George, localizada na ilha Rei George, Antártica, e disponibiliza um infográfico de divulgação científica sobre a pesquisa. Através de imagens SPOT e Landsat (1989), dados do GLIMS (2000) e duas imagens Planet Scope de 2020 foram gerados um Sistema de Informações Geográficas (SIG) e vetores de área da geleira para auxiliar na reconstrução do padrão e estilo de retração da geleira. Os dados de retração obtidos mostram que a geleira teve uma perda de 13,5% de área em 31 anos. A área glacial passou de 33,52 km² em 1989 para 28,97 km² em 2020. Os dados indicam que a geleira era de descarga com sua parte frontal fluindo diretamente para o ambiente marinho em 1989 e passou a ter um ambiente proglacial (emerso) a partir de 2000. Diversas alterações no ambiente são observadas desde 2000 e dentre as mais importantes feições no ambiente proglacial pode - se citar as morainas, lagos e canais de água de degelo. Foi elaborado um material educativo - informativo na forma de um infográfico visando a divulgação científica da temática no contexto não acadêmico e acadêmico visando a formação docente em cursos de Licenciatura em Ciências da Natureza.",
+      "pub_date": "04/2022",
+      "authors": [
+        "Everton Ludwig Neutzling",
+        "Universidade Federal do Rio Grande do Sul - UFRGS"
+      ],
+      "authors_id": [
+        null,
+        null
+      ],
+      "geo_level": "Países",
+      "countries": [
+        "Antártica"
+      ],
+      "fed_units": null,
+      "municipalities": null,
+      "email": null,
+      "type": [
+        "artigo científico ou publicação acadêmica"
+      ],
+      "topics": [
+        "Meio Ambiente",
+        "Educação",
+        "Geografia"
+      ],
+      "tags": [
+        "Ensino fundamental",
+        "Mudanças ambientais",
+        "Sistemas de Informação Geográfica (SIG)",
+        "Ciência",
+        "Antártica",
+        "Geleiras",
+        "sistema de informações geográficas",
+        "Glaciologia",
+        "ambiente marinho",
+        "ambiente proglacial",
+        "degelo",
+        "material educativo",
+        "divulgação científica",
+        "licenciatura"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+      "comment": "Pré-preenchido via Python a partir dos metadados do DSpace.\n\nPreenchido por Guilherme ",
+      "datasets": [
+        {
+          "data_name": " GLIMS: Global Land Ice Measurements from Space - Glacier Database",
+          "data_institution": "National Snow and Ice Data Center - NASA",
+          "data_url": "https://www.glims.org/glacierdata/index.php",
+          "data_license": "CC0",
+          "data_format": [
+            "Outro"
+          ],
+          "data_periodical": null
+        }
+      ],
+      "record_date": "2026-09-09",
+      "modified_date": "2026-09-29",
+      "status_published": true,
+      "status_review": false,
+      "type_es": [
+        "artículo científico o publicación académica"
+      ],
+      "topics_es": [
+        "Medio Ambiente",
+        "Educación",
+        "Geografía"
+      ],
+      "countries_es": [
+        "Antártida"
+      ]
+    },
+    {
+      "hash_id": 2282335596,
+      "name": "Diagnóstico e intervenções terapêuticas da anquiloglossia em recém-nascidos: uma revisão de literatura",
+      "url": "https://www.lume.ufrgs.br/handle/10183/298003",
+      "url_archive": "https://",
+      "description": "Introdução: A anquiloglossia é uma alteração congênita caracterizada pela restrição dos movimentos da língua devido à presença de um frênulo curto ou pouco elástico, podendo impactar na amamentação dos recém-nascidos, além de impactar o desenvolvimento das funções orais. Objetivo: Revisar a literatura científica sobre os métodos de diagnóstico e as indicações terapêuticas da anquiloglossia em recém- nascidos, com ênfase nas repercussões sobre o aleitamento materno. Metodologia: Trata-se de uma revisão narrativa da literatura, realizada nas bases eletrônicas PubMed, SciELO, Cochrane Library e LILACS, considerando publicações entre 2010 e 2025, nos idiomas português, inglês e espanhol. Foram selecionados 12 artigos após os critérios de elegibilidade. Resultados: As prevalências de anquiloglossia variaram entre 2% e 20%, diretamente relacionadas às diferenças nos critérios e protocolos de diagnóstico utilizados. Observou-se ausência de um protocolo diagnóstico padronizado, com predominância do uso dos métodos de Coryllos, Halzebaker, Bristol e do Protocolo de Avaliação do Frênulo Lingual para Bebês. A frenotomia foi identificada como a principal intervenção terapêutica indicada nos casos em que há comprometimento funcional da sucção. Embora os estudos relatem melhora imediata na dor mamilar materna e na eficácia da mamada após o procedimento da frenotomia, não há evidências consistentes que indiquem benefícios na manutenção do aleitamento a médios e longo prazo. Conclusão: O diagnóstico da anquiloglossia deve considerar, além dos critérios anatômicos, a repercussão funcional sobre a amamentação, sendo fundamental uma abordagem multiprofissional e individualizada, considerando a indicação da frenotomia apenas nos casos com comprometimento funcional, visto que faltam evidências robustas sobre seus efeitos prolongados na amamentação.",
+      "pub_date": "10/2025",
+      "authors": [
+        "Melissa Dadalt Knebel",
+        "Universidade Federal do Rio Grande do Sul - UFRGS"
+      ],
+      "authors_id": [
+        null,
+        null
+      ],
+      "geo_level": "Não se aplica",
+      "countries": null,
+      "fed_units": null,
+      "municipalities": null,
+      "email": null,
+      "type": [
+        "artigo científico ou publicação acadêmica"
+      ],
+      "topics": [
+        "Saúde"
+      ],
+      "tags": [
+        "Amamentação",
+        "Anquiloglossia",
+        "Diagnóstico",
+        "Intervenção",
+        "Recém-nascido",
+        "Odontologia",
+        "aleitamento materno",
+        "Bebês",
+        "infância",
+        "intervenções terapêuticas"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+      "comment": "Pré-preenchido via Python a partir dos metadados do DSpace.\n\nPreenchido por Guilherme",
+      "datasets": [
+        {
+          "data_name": "LILACS",
+          "data_institution": "Centro Latino-Americano e do Caribe de Informação em Ciências da Saúde - BIREME",
+          "data_url": "https://lilacs.bvsalud.org/ ",
+          "data_license": "Inexistente",
+          "data_format": [
+            "CSV"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "PubMed",
+          "data_institution": "National Center for Biotechnology Information - US government",
+          "data_url": "https://pubmed.ncbi.nlm.nih.gov/",
+          "data_license": "Inexistente",
+          "data_format": [
+            "CSV"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "SciELO",
+          "data_institution": "FAPESP, CNPq, CAPES",
+          "data_url": "https://www.scielo.br/",
+          "data_license": "CC-BY",
+          "data_format": [
+            "Outro"
+          ],
+          "data_periodical": null
+        }
+      ],
+      "record_date": "2026-09-09",
+      "modified_date": "2026-09-30",
+      "status_published": true,
+      "status_review": false,
+      "type_es": [
+        "artículo científico o publicación académica"
+      ],
+      "topics_es": [
+        "Salud"
+      ],
+      "countries_es": null
+    },
+    {
+      "hash_id": 2426183821,
+      "name": "O método pedagógico desenvolvido no movimento escoteiro",
+      "url": "https://lume.ufrgs.br/handle/10183/274092",
+      "url_archive": "https://",
+      "description": "O presente trabalho apresenta o método pedagógico desenvolvido no movimento escoteiro, apresentando-o como um método de educação não formal e o impacto na vida dos jovens que compõem o Movimento Escoteiro. Tendo como objetivo nesta pesquisa compreender como o método pedagógico desenvolvido dentro do movimento escoteiro influencia na formação dos jovens ao longo de sua história. Por meio de uma pesquisa bibliográfica no Biblioteca Digital Brasileira de Teses e Dissertações (BDTD), apresento diferentes categorias em que o método pedagógico desenvolvido no Movimento Escoteiro impacta em diferentes áreas da sociedade. Tendo como referencial teórico, o fundador do movimento escoteiro, Robert Baden-Powell e pensadores da área da educação não formal e culturas juvenis, como Carles Feixa (2018), Maria da Gloria Gohn (2006 2014) e Maurício Perondi (2013 2020 e 2021). Usando também o banco de dados da União dos Escoteiros do Brasil e seus documentos referentes ao seu programa educativo. Os resultados da pesquisa apontaram para quatro categorias de análise que foram elas: Educação não formal, Disciplina e Organização, Educação Ambiental e Constituição do Sujeito. Foi possível concluir que o método pedagógico desenvolvido no movimento escoteiro consegue gerar um impacto positivo na vida do jovem que participa e da sociedade ao seu redor.",
+      "pub_date": "03/2024",
+      "authors": [
+        "Alana dos Reis Lima",
+        "Universidade Federal do Rio Grande do Sul - UFRGS"
+      ],
+      "authors_id": [
+        null,
+        null
+      ],
+      "geo_level": "Países",
+      "countries": [
+        "Brasil"
+      ],
+      "fed_units": null,
+      "municipalities": null,
+      "email": null,
+      "type": [
+        "artigo científico ou publicação acadêmica"
+      ],
+      "topics": [
+        "Educação"
+      ],
+      "tags": [
+        "Educação não-formal",
+        "Ensino",
+        "Jovens",
+        "Pedagogia",
+        "Educação",
+        "Escotismo",
+        "Movimento Escoteiro",
+        "Educação Ambiental",
+        "Constituição do Sujeito",
+        "infância",
+        "culturas juvenis"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+      "comment": "Pré-preenchido via Python a partir dos metadados do DSpace.\n\nPreenchido por Guilherme",
+      "datasets": [
+        {
+          "data_name": "Biblioteca Digital Brasileira de Teses e Dissertações (BDTD)",
+          "data_institution": "Instituto Brasileiro de Informação em Ciência e Tecnologia - IBICT",
+          "data_url": "https://www.gov.br/pt-br/servicos/biblioteca-digital-brasileira-de-teses-e-dissertacoes",
+          "data_license": "CC BY-ND",
+          "data_format": [
+            "CSV"
+          ],
+          "data_periodical": null
+        }
+      ],
+      "record_date": "2026-09-09",
+      "modified_date": "2026-09-30",
+      "status_published": true,
+      "status_review": false,
+      "type_es": [
+        "artículo científico o publicación académica"
+      ],
+      "topics_es": [
+        "Educación"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 2383315440,
+      "name": "Cuidados de enfermagem na assistência a pacientes com úlceras venosas: revisão de escopo",
+      "url": "https://lume.ufrgs.br/handle/10183/296680",
+      "url_archive": "https://",
+      "description": "Introdução: A enfermagem desempenha papel essencial no manejo de úlceras venosas, sendo responsável desde a avaliação inicial até a implementação e o monitoramento dos cuidados. Objetivo: Identificar as evidências científicas acerca dos cuidados de enfermagem mais utilizados e eficazes para o tratamento de pacientes com úlceras venosas. Método: Revisão de escopo conduzida conforme as recomendações do Joanna Briggs Institute (JBI) e guiada pelo Preferred Reporting Items for Systematic Reviews and Meta-Analyses extension for Scoping Reviews (PRISMA-ScR). A pesquisa foi estruturada com base no acrônimo PCC (Problema: tratamento de úlceras venosas Conceito: cuidados de enfermagem Contexto: pacientes). Foram incluídos artigos de pesquisa original disponíveis na íntegra, sem restrição de idioma ou delimitação de tempo, focados nos cuidados de enfermagem no tratamento de úlceras venosas. As bases de dados consultadas foram Medline/PubMed, Embase e LILACS. A coleta de dados ocorreu entre fevereiro e março de 2025, utilizando descritores controlados e operadores booleanos. Os dados foram analisados de forma descritiva e organizados em quadros sinópticos contendo informações sobre título, autor, ano, periódico, método, objetivos, resultados (incluindo tipo de tecnologia utilizada), nível de evidência e conclusões sobre os cuidados de enfermagem. Conclusão: A revisão forneceu um mapeamento atualizado das principais práticas de enfermagem no cuidado de úlceras venosas, identificando intervenções eficazes e apontando lacunas na literatura para futuras investigações.",
+      "pub_date": "09/2025",
+      "authors": [
+        "Maitê Schultz",
+        "Universidade Federal do Rio Grande do Sul - UFRGS"
+      ],
+      "authors_id": [
+        null,
+        null
+      ],
+      "geo_level": "Não se aplica",
+      "countries": null,
+      "fed_units": null,
+      "municipalities": null,
+      "email": null,
+      "type": [
+        "artigo científico ou publicação acadêmica"
+      ],
+      "topics": [
+        "Saúde"
+      ],
+      "tags": [
+        "Cuidados de enfermagem",
+        "Enfermagem primária",
+        "Revisão de escopo",
+        "Úlcera varicosa",
+        "Enfermagem",
+        "cuidados de enfermagem",
+        "enfermagem primária",
+        "doenças vasculares",
+        "hipertensão venosa"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+      "comment": "Pré-preenchido via Python a partir dos metadados do DSpace.\n\nPreenchido por Guilherme",
+      "datasets": [
+        {
+          "data_name": "PubMed",
+          "data_institution": "National Center for Biotechnology Information - US government",
+          "data_url": "https://pubmed.ncbi.nlm.nih.gov/ ",
+          "data_license": "Inexistente",
+          "data_format": [
+            "CSV"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "LILACS",
+          "data_institution": "Centro Latino-Americano e do Caribe de Informação em Ciências da Saúde - BIREME",
+          "data_url": "https://lilacs.bvsalud.org/",
+          "data_license": "Inexistente",
+          "data_format": [
+            "CSV"
+          ],
+          "data_periodical": null
+        }
+      ],
+      "record_date": "2026-09-09",
+      "modified_date": "2026-09-30",
+      "status_published": true,
+      "status_review": false,
+      "type_es": [
+        "artículo científico o publicación académica"
+      ],
+      "topics_es": [
+        "Salud"
+      ],
+      "countries_es": null
+    },
+    {
+      "hash_id": 469732620,
+      "name": "Efeitos de diferentes estratégias de indução de fadiga em parâmetros neuromusculares avaliados em dinamômetro isocinético em atletas de futebol: uma revisão sistemática",
+      "url": "https://lume.ufrgs.br/handle/10183/238291?locale-attribute=pt_BR&show=full",
+      "url_archive": "https://",
+      "description": "A fadiga muscular tem sido relacionada com um maior risco para lesões de membros inferiores em jogadores de futebol. Estudos têm adotado a avaliação de parâmetros de desempenho antes e a após testes simuladores das demandas do jogo e a realização de partidas para indução de fadiga. No entanto, estas estratégias podem impactar de forma distinta os parâmetros de desempenho considerados também fatores de risco para lesões. A presente revisão teve como objetivo verificar os efeitos de diferentes estratégias de indução de fadiga (protocolos de simulação e jogos) em parâmetros neuromusculares associados com o risco de lesão (pico de torque concêntrico e excêntrico, taxa de produção de força de flexores e extensores de joelho, e razão de força Isquiotibiais:quadríceps convencional e funcional, e taxa de produção de força) em jogadores de futebol. Para isso, foi realizada uma busca por estudos na base de dados digital PubMed. Ao fim das etapas de seleção, 31 estudos foram analisados. Os principais achados desta revisão foram a) uma redução do desempenho na maioria dos estudos após os protocolos simuladores e jogos b) uma redução do pico de torque concêntrico de extensores do joelho especialmente quando avaliado sob velocidade lenta (60°/s) b) uma queda do pico de torque excêntrico de flexores do joelho, principalmente quando verificado em velocidades intermediárias (90, 120, 150, 160, 180 e 240°/s) c) um declínio da razão funcional isquiotibiais:quadríceps, sobretudo em velocidades intermediárias e rápidas (120, 180 e 300°/s) e d) uma redução da taxa de produção de força especialmente no estágio inicial da contração muscular (0-50 ms). Em conclusão, a presente revisão destaca uma redução não unânime de parâmetros de desempenho associados ao risco de lesão de membros inferiores após o uso de protocolos simuladores e jogos em atletas de futebol. Por fim, foi observado que alguns parâmetros de desempenho parecem ser afetados de forma específica.",
+      "pub_date": "05/2022",
+      "authors": [
+        "Raphael Pereira Fortes",
+        "Universidade Federal do Rio Grande do Sul - UFRGS"
+      ],
+      "authors_id": [
+        null,
+        null
+      ],
+      "geo_level": "Não se aplica",
+      "countries": null,
+      "fed_units": null,
+      "municipalities": null,
+      "email": null,
+      "type": [
+        "artigo científico ou publicação acadêmica"
+      ],
+      "topics": [
+        "Cultura, Lazer e Esporte",
+        "Saúde"
+      ],
+      "tags": [
+        "Fadiga muscular",
+        "Força",
+        "Lesões",
+        "Torque",
+        "Educação física",
+        "jogadores de futebol",
+        "parâmetros de desempenho",
+        "futebol",
+        "parâmetros neuromusculares",
+        "contração muscular",
+        "membros inferiores",
+        "atletas"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+      "comment": "Pré-preenchido via Python a partir dos metadados do DSpace.\n\nPreenchido por Guilherme ",
+      "datasets": [
+        {
+          "data_name": "PubMed",
+          "data_institution": "National Center for Biotechnology Information - US government",
+          "data_url": "https://pubmed.ncbi.nlm.nih.gov/",
+          "data_license": "Inexistente",
+          "data_format": [
+            "CSV"
+          ],
+          "data_periodical": null
+        }
+      ],
+      "record_date": "2026-09-09",
+      "modified_date": "2026-09-29",
+      "status_published": true,
+      "status_review": false,
+      "type_es": [
+        "artículo científico o publicación académica"
+      ],
+      "topics_es": [
+        "Cultura, Entretenimiento y Deporte",
+        "Salud"
+      ],
+      "countries_es": null
+    },
+    {
+      "hash_id": 2138666160,
+      "name": "Análise genômica e transcriptômica das rotas Argonauta e Piwi em Stenostomum leucops",
+      "url": "https://lume.ufrgs.br/handle/10183/276160?show=full",
+      "url_archive": "https://",
+      "description": "O gênero Stenostomum é composto por microturbelários de vida livre pertencentes a classe Catenulida, sendo este o grupo mais basal dos Platyhelminthes, são cosmopolitas, distribuídos globalmente. A maioria das espécies se reproduz assexuadamente por paratomia pela formação de zooides, novos vermes crescem a partir da extremidade posterior do animal, podendo formar uma cadeia de indivíduos. Esses animais podem ser apontados como potenciais organismos modelos devido a fácil manutenção em laboratório principalmente por apresentarem reprodu- ção assexuada e grande capacidade regenerativa. Os microRNAs são pequenos RNAs não co- dificantes que têm importantes funções na regulação gênica. Podem ser divididos em dois gru- pos dependo com a proteína com que interagem: siRNAS que interagem com Argonauta, silen- ciam gene-alvos em níveis transcricionais e pós-transcricionais e piRNAs que interagem com as proteínas da família Piwi, que protegem o genoma da atividade mutacional dos elementos transponíveis na linhagem germinativa em animais. Os microRNAs podem influenciar de dife- rentes formas durante o processo de regeneração em planárias e na manutenção da do estado de totipotência celular. Desta forma, uma análise detalhada da composição genômica, em Stenos- temum leucops, dos genes das famílias Argonauta e Piwi, podem contribuir para o entendimento do papel dos miRNA no estado de totipotência celular dos Platyhelminthes e se esta caracterís- tica já estava presente no grupo mais basal. Para o estudo foram obtidas sequências de proteínas Argonauta e Piwi de outros organismos do grupo de Platyhelminthes e grupos externos, para comparação com de S. leucops, essas foram obtidas através da revisão de literatura e bases de dados online (WormBase Parasite, NCBI e FlyBase). Os genomas e transcriptomas de S.leucops foram sequenciados pelo nosso grupo, o genoma através de long-reads (Nanopore) e short- reads(Ilumina). O transcriptoma para um e dois zooides (Iontorrent S5). Para predição dos genes foiutilizado software Augustus, com treinamento das respectivas sequências de proteínas para pos-terior localização no genoma de S.leucops. As sequências encontradas foram ainda anotadas manualmente utilizando o software Ugene e funcionalmente com eggNOG mapper. Para a iden-tificação de domínios conservados foi utilizado Batch-Web CDD-Search (NCBI). Para análises filogenéticas, as sequências foram alinhadas e refinadas, Mr. Bayes e IQTree foram utilizados para construção das árvores. Foram identificadas três sequências da família Argonauta, e duasda subfamília Piwi. Todas as sequências de Argonauta e Piwi revelaram a presença dos dominios proteicos característicos da família, nenhum splicing alternativo foi encontrado. No contexto filogenético, as sequências de Argonauta de S. leucops formaram um clado distintivo junto a representantes de planárias de vida livre, moluscos, trematódeos e cestodas, enquanto sequências de Piwi se agruparam de forma robusta com organismo que compartilham Piwi1. Não foi encontrada diferença na expressão dos genes argonauta e piwi em animais com I e II zooides em Stenostemum.",
+      "pub_date": "07/2024",
+      "authors": [
+        "Deborah Cristina Schoemberger",
+        "Universidade Federal do Rio Grande do Sul - UFRGS"
+      ],
+      "authors_id": [
+        null,
+        null
+      ],
+      "geo_level": "Não se aplica",
+      "countries": null,
+      "fed_units": null,
+      "municipalities": null,
+      "email": null,
+      "type": [
+        "artigo científico ou publicação acadêmica"
+      ],
+      "topics": [
+        "Saúde"
+      ],
+      "tags": [
+        "Genômica",
+        "Stenostomum leucops",
+        "Transcritômica",
+        "Genética",
+        "Catenulida",
+        "reprodução assexuada",
+        "microRNAs",
+        "predição de genes",
+        "análises filogenéticas"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+      "comment": "Pré-preenchido via Python a partir dos metadados do DSpace.\n\nPreenchido por Guilherme",
+      "datasets": [
+        {
+          "data_name": "Wormbase Parasite",
+          "data_institution": "UK Medical Research Council - MRC",
+          "data_url": "https://parasite.wormbase.org/ftp.html ",
+          "data_license": "Inexistente",
+          "data_format": [
+            "CSV",
+            "Outro"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "National Library of Medicine ",
+          "data_institution": "National Center for Biotechnology Information - NCBI",
+          "data_url": "https://www.ncbi.nlm.nih.gov/",
+          "data_license": "Inexistente",
+          "data_format": [
+            "PDF",
+            "XML",
+            "GZ",
+            "TXT"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "FlyBase",
+          "data_institution": "FlyBase",
+          "data_url": " https://flybase.org/",
+          "data_license": "CC-BY",
+          "data_format": [
+            "XML",
+            "GZ"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "UNIPROT",
+          "data_institution": "UniProt Consortium - European Bioinformatics Institute; Swiss Institute of Bioinformatics ; Protein Information Resource",
+          "data_url": "https://www.uniprot.org/",
+          "data_license": "CC-BY",
+          "data_format": [
+            "JSON",
+            "XML"
+          ],
+          "data_periodical": null
+        }
+      ],
+      "record_date": "2026-09-08",
+      "modified_date": "2026-09-29",
+      "status_published": true,
+      "status_review": false,
+      "type_es": [
+        "artículo científico o publicación académica"
+      ],
+      "topics_es": [
+        "Salud"
+      ],
+      "countries_es": null
+    },
+    {
+      "hash_id": 3367549826,
+      "name": "Exames de imagem odontológicos: estudos sobre aplicabilidade e limitações no diagnóstico e em tomadas de decisão",
+      "url": "https://repositorioceme.ufrgs.br/handle/10183/294354",
+      "url_archive": "https://",
+      "description": "Esta tese apresentou como objetivo investigar métodos de avaliação da saúde bucal por meio de exames de imagem, com foco na aplicabilidade clínica e validação como ferramenta epidemiológica. Foram desenvolvidos dois estudos centrados nessa temática. O primeiro deles consistiu em uma revisão sistemática com meta-análise avaliando o status radiográfico periapical pré-operatório como preditor de desfechos clínico- radiográficos de tratamentos pulpares conservadores. Foram incluídos ensaios clínicos e estudos observacionais, selecionados em quatro bases de dados (PubMed, EMBASE, LILACS, Web of Science) até novembro de 2024. Os resultados não demonstraram associação estatisticamente significativa entre o status radiográfico periapical pré- operatório e sucesso da pulpotomia total (OR = 0,75 IC 95%: 0,30 1,87 p = 0,54), observou-se heterogeneidade entre os estudos (I2 = 59%), risco de viés classificado como alto, e a certeza da evidência considerada baixa. Nesse sentido, destaca-se a necessidade de critérios diagnósticos mais objetivos e robustos para guiar decisões clínicas. O segundo estudo propôs e avaliou a aplicabilidade de um índice tomográfico para o histórico de saúde bucal. O índice foi baseado na análise de tomografias computadorizadas de feixe cônico (TCFC), sendo composto por critérios como perda dentária, experiência de cárie/restaurações, experiência de alterações periapicais e tratamentos endodônticos e perda óssea periodontal. Com base na avaliação de exames clínicos, radiografias panorâmicas e tomografias de feixe cônico de 10 pacientes, observou-se valores adequados na reprodutibilidade interna intra e inter examinador (Kappa &gt 0,90), e forte correlação entre os escores totais obtidos por meio do índice tomográfico proposto e a avaliação clínica e radiográfica na avaliação de 32 Cronbach = 0,994). A concordância entre os escores totais de TCFC e dados clínicos/radiográficos, avaliada pelo teste Kappa ponderado, foi de 0,479, provavelmente influenciado pela maior precisão das TCFC em detectar alterações periapicais e cáries incipientes e por dificuldades do método na presença de artefatos. Ainda assim, apresentou acurácia, especificidade e sensibilidade excelentes para a diferenciação de indivíduos com maior ou menor experiência de doença. A proposta demonstrou ser uma ferramenta válida, reprodutível e de baixo custo, com potencial aplicação em estudos epidemiológicos e no suporte ao planejamento individual e coletivo, especialmente em contextos com acesso limitado a dados clínicos. Os resultados desta tese contribuem para o avanço do uso de exames de imagem na avaliação da saúde bucal e apontam para a necessidade de investigações futuras com amostras ampliadas e metodologias padronizadas.",
+      "pub_date": "07/2025",
+      "authors": [
+        "Isadora de Souza Basso",
+        "Universidade Federal do Rio Grande do Sul - UFRGS"
+      ],
+      "authors_id": [
+        null,
+        null
+      ],
+      "geo_level": "Não se aplica",
+      "countries": null,
+      "fed_units": null,
+      "municipalities": null,
+      "email": null,
+      "type": [
+        "artigo científico ou publicação acadêmica"
+      ],
+      "topics": [
+        "Saúde"
+      ],
+      "tags": [
+        "Polpa dentária",
+        "Saúde bucal",
+        "Tomografia computadorizada de feixe cônico",
+        "Odontologia",
+        "exames de imagem",
+        "radiografia",
+        "tomografias computadorizadas",
+        "perda dentária",
+        "exames clínicos",
+        "experiência de cárie",
+        "epidemiologia",
+        "diagnóstico"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+      "comment": "Pré-preenchido via Python a partir dos metadados do DSpace.\n\nPreenchido por Guilherme",
+      "datasets": [
+        {
+          "data_name": "PubMed ",
+          "data_institution": "National Center for Biotechnology Information - US government",
+          "data_url": "https://pubmed.ncbi.nlm.nih.gov/ ",
+          "data_license": "Inexistente",
+          "data_format": [
+            "CSV"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "EMBASE",
+          "data_institution": "Elsevier",
+          "data_url": "https://www.embase.com/landing?status=grey",
+          "data_license": "Outra",
+          "data_format": [
+            "Outro"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "LILACS",
+          "data_institution": "Centro Latino-Americano e do Caribe de Informação em Ciências da Saúde - BIREME",
+          "data_url": "https://lilacs.bvsalud.org/ ",
+          "data_license": "Inexistente",
+          "data_format": [
+            "CSV"
+          ],
+          "data_periodical": null
+        }
+      ],
+      "record_date": "2026-09-08",
+      "modified_date": "2026-09-29",
+      "status_published": true,
+      "status_review": false,
+      "type_es": [
+        "artículo científico o publicación académica"
+      ],
+      "topics_es": [
+        "Salud"
+      ],
+      "countries_es": null
+    },
+    {
+      "hash_id": 4046046621,
+      "name": "Planejamento de linhas de energia e a mitigação de impactos sobre a biodiversidade",
+      "url": "https://www.lume.ufrgs.br/handle/10183/243313",
+      "url_archive": "https://",
+      "description": "Linhas de energia são infraestruturas necessárias para suprir a crescente demanda energética, sendo inúmeros os benefícios socioeconômicos gerados pela expansão desse sistema. Contudo, em decorrência da extensão e da heterogeneidade ambiental por onde passam, são responsáveis por gerar diferentes impactos no ambiente, representando uma ameaça à biodiversidade sobretudo quando os aspectos ambientais são negligenciados nas fases iniciais de planejamento. Considerando que grande parte dos impactos ambientais persiste ao longo da operação das linhas, é preciso dar atenção à malha energética em operação, promovendo ações adequadas de mitigação de seus impactos. Esta tese de doutorado foi elaborada com a intenção de qualificar o conhecimento e a pesquisa sobre a forma como as linhas de energia impactam o ambiente no qual estão inseridas, contribuindo para a melhor integração dos aspectos ambientais no seu planejamento e visando a mitigação de diferentes impactos. No capítulo 1 proponho uma abordagem para traçar rotas de linhas de transmissão que garantam o evitamento de impactos através da melhor incorporação de variáveis ambientais relacionadas à integridade da vegetação ainda na fase de planejamento de projeto. Também identifico segmentos de rota com consenso entre as perspectivas de engenharia e ambiental. A identificação dessas áreas de coincidência indica locais de menor conflito entre as duas perspectivas e tem potencial de otimizar a tomada de decisão de projetos individuais. No capítulo 2 proponho um modelo conceitual que permite uma avaliação preliminar do risco de eletrocussão de aves no Brasil, resultado da combinação da exposição (densidade de infraestruturas elétricas dentro da área de distribuição das espécies) e da suscetibilidade da avifauna (características morfológicas e comportamentais associadas a um maior risco de eletrocussão). Essa abordagem permite identificar áreas de alto risco de eletrocussão bem como espécies mais vulneráveis. No capítulo 3 apresento evidências de morte por eletrocussão em redes de média tensão da arara-azul-de-lear (Anodorhynchus leari), espécie indicada como prioritária em relação ao risco de eletrocussão no capítulo anterior. Ao descrever possíveis causas e padrões dos registros de fatalidades, promovo o reconhecimento das eletrocussões como uma nova ameaça à espécie e recomendo possíveis alternativas de mitigação. No capítulo 4, descrevo os principais aspectos estruturais e funcionais de estradas e linhas de energia, revisando brevemente as semelhanças e dissimilaridades nos tipos e magnitude de impactos dessas duas malhas sobre a biodiversidade. Adicionalmente, destaco algumas lacunas de conhecimento que, quando preenchidas, poderão fortalecer nossa capacidade de predizer, prevenir ou remediar os impactos dessas duas infraestruturas lineares que co-ocorrem regularmente. Essa tese explora abordagens que podem ser adaptadas e utilizadas em um contexto de tomada de decisão, referente tanto ao planejamento e expansão da malha quanto ao licenciamento ambiental dos projetos individuais. Essa tese também tem importantes contribuições sob a perspectiva da Hierarquia de Mitigação de impactos, com algumas de suas diferentes etapas contempladas nos capítulos aqui apresentados.",
+      "pub_date": "07/2022",
+      "authors": [
+        "Larissa Donida Biasotto",
+        "Universidade Federal do Rio Grande do Sul - UFRGS"
+      ],
+      "authors_id": [
+        null,
+        null
+      ],
+      "geo_level": "Países",
+      "countries": [
+        "Brasil"
+      ],
+      "fed_units": null,
+      "municipalities": null,
+      "email": null,
+      "type": [
+        "artigo científico ou publicação acadêmica"
+      ],
+      "topics": [
+        "Meio Ambiente",
+        "Agricultura, extrativismo e pesca"
+      ],
+      "tags": [
+        "Impacto ambiental",
+        "Linhas de transmissão",
+        "Ecologia",
+        "demanda energética",
+        "energia elétrica",
+        "ameaça à biodiversidade",
+        "planejamento ambiental",
+        "malha energética",
+        "vegetação",
+        "engenharia",
+        "aves",
+        "eletrocussão",
+        "estradas",
+        "proteção florestal"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+      "comment": "Pré-preenchido via Python a partir dos metadados do DSpace.\n\nPreenchido por Guilherme ",
+      "datasets": [
+        {
+          "data_name": "MapBiomas",
+          "data_institution": "MapBiomas",
+          "data_url": "https://brasil.mapbiomas.org/conheca-o-mapbiomas/",
+          "data_license": "CC-BY",
+          "data_format": [
+            "ZIP",
+            "PDF"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "Bases Cartográficas Contínuas",
+          "data_institution": "Instituto Brasileiro de Geografia e Estatística - IBGE",
+          "data_url": "https://www.ibge.gov.br/geociencias/cartas-e-mapas/basescartograficas-continuas/15807-estados.html?=&t=acesso-ao-produto",
+          "data_license": "Inexistente",
+          "data_format": [
+            "ZIP",
+            "PDF",
+            "TXT"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "Produção Agrícola Municipal ",
+          "data_institution": "Instituto Brasileiro de Geografia e Estatística - IBGE",
+          "data_url": "https://www.ibge.gov.br/estatisticas/economicas/agricultura-e-pecuaria/9117-producao-agricola-municipal-culturas-temporarias-e-permanentes.html",
+          "data_license": "Inexistente",
+          "data_format": [
+            "CSV",
+            "XLSX",
+            "JSON",
+            "ODS"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": null,
+          "data_institution": null,
+          "data_url": null,
+          "data_license": null,
+          "data_format": [],
+          "data_periodical": null
+        }
+      ],
+      "record_date": "2026-09-08",
+      "modified_date": "2026-09-29",
+      "status_published": true,
+      "status_review": false,
+      "type_es": [
+        "artículo científico o publicación académica"
+      ],
+      "topics_es": [
+        "Medio Ambiente",
+        "Agricultura, Extractivismo y Pesca"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 402915309,
+      "name": "Neofobia alimentar infantil: uma revisão narrativa",
+      "url": "https://lume.ufrgs.br/handle/10183/277621",
+      "url_archive": "https://",
+      "description": "Introdução: A neofobia alimentar é um distúrbio alimentar caracterizado por uma recusa alimentar de alimentos novos ou desconhecidos que acomete a fase da infância, principalmente nos primeiros anos de vida. Objetivos: Descrever os principais fatores que contribuem para o desenvolvimento de neofobia alimentar infantil. Metodologia: Revisão narrativa da literatura realizada por meio de seleção de artigos da base de dados PubMed. Foram incluídos estudos originais de trabalhos publicados entre os anos 2014 e 2024, que abordaram o tema neofobia alimentar em crianças e adolescentes de 0 a 19 anos, realizados em seres humanos, nos idiomas Português e Inglês. Resultados: Após a busca com os descritores: Comportamento Alimentar Transtorno Alimentar Restritivo Evitativo Neofobia Alimentar Criança e Pré-Escolar, foram encontrados 39 artigos e, após a leitura dos resumos, foram excluídos 18 que não contemplavam as palavras chaves. No total 21 artigos foram contemplados para a leitura integral e revisão. Conclusão: A influência familiar que os pais exercem sobre os hábitos alimentares da criança parecem ser um dos maiores fatores para aumento ou redução da neofobia, seguidos de fatores genéticos e psicológicos. A importância de abordagem com os familiares também é essencial para os profissionais que estiverem à frente de casos de recusa alimentar.",
+      "pub_date": null,
+      "authors": [
+        "Byanca Martins Balhejos",
+        "Universidade Federal do Rio Grande do Sul - UFRGS"
+      ],
+      "authors_id": [
+        null,
+        null
+      ],
+      "geo_level": "Não se aplica",
+      "countries": null,
+      "fed_units": null,
+      "municipalities": null,
+      "email": null,
+      "type": [
+        "artigo científico ou publicação acadêmica"
+      ],
+      "topics": [
+        "Saúde"
+      ],
+      "tags": [
+        "Comportamento alimentar",
+        "Criança",
+        "Pré-escolar",
+        "Transtorno alimentar restritivo evitativo",
+        "Nutrição",
+        "neofobia alimentar",
+        "distúrbio alimentar",
+        "infância",
+        "consequência da seletividade",
+        "fatores genéticos",
+        "psicologia"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+      "comment": "Pré-preenchido via Python a partir dos metadados do DSpace.\n\nPreenchido por Guilherme ",
+      "datasets": [
+        {
+          "data_name": "PubMed",
+          "data_institution": "National Center for Biotechnology Information - US government",
+          "data_url": "https://pubmed.ncbi.nlm.nih.gov/ ",
+          "data_license": "Inexistente",
+          "data_format": [
+            "CSV"
+          ],
+          "data_periodical": null
+        }
+      ],
+      "record_date": "2026-09-08",
+      "modified_date": "2026-09-29",
+      "status_published": true,
+      "status_review": false,
+      "type_es": [
+        "artículo científico o publicación académica"
+      ],
+      "topics_es": [
+        "Salud"
+      ],
+      "countries_es": null
+    },
+    {
+      "hash_id": 1081569485,
+      "name": "Análise do potencial fotovoltaico residencial em Porto Alegre",
+      "url": "https://www.lume.ufrgs.br/handle/10183/205828",
+      "url_archive": "https://",
+      "description": "O Rio Grande do Sul tem se destacado no mercado nacional de energia solar, apesar dos níveis de radiação solar serem menores que no restante do território brasileiro, o estado é atualmente o segundo maior em potência instalada de sistemas fotovoltaicos urbanos no país. Neste sentido, é importante conhecer a capacidade de geração da região. Esse estudo visa levantar as metodologias existentes para estimar o potencial de geração fotovoltaica em sistemas de geração distribuída de eletricidade e aplicar uma metodologia em regiões da cidade de Porto Alegre. Inicialmente, 30 bairros foram escolhidos por critério de renda e levantadas as áreas dos telhados de regiões por meio de inspeção visual de imagens de satélite da ferramenta virtual Google Earth. Posteriormente, foi estimado o potencial de geração de energia elétrica por conversão fotovoltaica. Na estimativa foi proposto um cenário prevendo ocupação de 70% das faces úteis das coberturas. Os resultados foram comparados com a estimativa de consumo residencial. Com o estudo é possível concluir que a geração distribuída de energia tem potencial para atender parcialmente a demanda da área analisada.",
+      "pub_date": "02/2020",
+      "authors": [
+        "Angélica Duarte Lima",
+        "Universidade Federal do Rio Grande do Sul - UFRGS"
+      ],
+      "authors_id": [
+        null,
+        null
+      ],
+      "geo_level": "Municípios",
+      "countries": [
+        "Brasil"
+      ],
+      "fed_units": [
+        "RS"
+      ],
+      "municipalities": [
+        "Porto Alegre (RS)"
+      ],
+      "email": null,
+      "type": [
+        "artigo científico ou publicação acadêmica"
+      ],
+      "topics": [
+        "Energia",
+        "Habitação, Saneamento e Urbanismo",
+        "Meio Ambiente"
+      ],
+      "tags": [
+        "Energia solar",
+        "Geração de energia",
+        "Sistemas fotovoltaicos",
+        "Energia",
+        "Engenharia de materiais",
+        "mercado nacional de energia solar",
+        "potencial de geração fotovoltaica",
+        "sistemas de geração distribuída de eletricidade",
+        "conversão fotovoltaica",
+        "consumo de energia"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+      "comment": "Pré-preenchido via Python a partir dos metadados do DSpace.\n\nPreenchido por Guilherme ",
+      "datasets": [
+        {
+          "data_name": "Oferta de energia elétrica por fonte",
+          "data_institution": "Agência Nacional de Energia Elétrica - ANEEL",
+          "data_url": "https://dadosabertos.aneel.gov.br/ ",
+          "data_license": "ODbL",
+          "data_format": [
+            "PDF",
+            "CSV",
+            "ZIP",
+            "Outro"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "Atlas Solar do Rio Grande do Sul",
+          "data_institution": "Universidade Estadual do Rio Grande do Sul - UERGS",
+          "data_url": "https://atlassolarrs.com/",
+          "data_license": "CC BY-NC-SA",
+          "data_format": [
+            "XLSX"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": " Cidades e Estados",
+          "data_institution": "Instituto Brasileiro de Geografia e Estatística - IBGE",
+          "data_url": "https://www.ibge.gov.br/cidades-e-estados",
+          "data_license": "Inexistente",
+          "data_format": [
+            "XLSX",
+            "ODS",
+            "CSV",
+            "Outro"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "Balanço Energético Nacional (BEN) - Anuário Estatístico de Energia Elétrica (2009-2018) ",
+          "data_institution": "Empresa de Pesquisa Energética - EPE",
+          "data_url": "https:///www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/anuario-estatistico-de-energia-eletrica",
+          "data_license": "CC-BY",
+          "data_format": [
+            "XLSX"
+          ],
+          "data_periodical": null
+        }
+      ],
+      "record_date": "2026-09-08",
+      "modified_date": "2026-09-29",
+      "status_published": true,
+      "status_review": false,
+      "type_es": [
+        "artículo científico o publicación académica"
+      ],
+      "topics_es": [
+        "Energía",
+        "Vivienda, Saneamiento y Urbanismo",
+        "Medio Ambiente"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 2860238260,
+      "name": "Impacto nas demonstrações financeiras do varejo a partir da Norma IFRS 16",
+      "url": "https://lume.ufrgs.br/handle/10183/273789",
+      "url_archive": "https://",
+      "description": "Em 1º de janeiro de 2019, entrou em vigor a IFRS 16 (IFRS, 2016), norma que determina novos critérios para o reconhecimento sobre os contratos de arrendamento. No Brasil, a convergência à IFRS 16 Leases se dá pelo cumprimento do Pronunciamento Técnico CPC 06 (R2). Este estudo tem por objetivo demonstrar os impactos causados pela implementação do IFRS 16 nas divulgações de empresas varejistas listadas no Novo Mercado da B3. Trata-se de uma pesquisa documental, descritiva e de natureza qualitativa. Foram analisadas as demonstrações financeiras de empresas varejistas do Novo Mercado da B3, para os exercícios findos dois anos antes da vigência da norma e dois anos após, sendo estes os anos de 2017 e 2018, 2019 e 2020. Verificou-se os impactos da adoção da IFRS 16 por meio da análise da representatividade percentual dos montantes gerados pela adoção à norma, nos ativos de direito de uso e passivos de arrendamento e na análise dos índices financeiros. Os resultados revelaram que as empresas tiveram impactos no seu patrimônio e resultado porém, apesar dos grandes valores de arrendamentos reconhecidos, houve baixa representatividade em relação aos seus ativos e passivos totais. Como consequência dessas alterações, foi identificado que os indicadores econômico-financeiros também sofreram variações. Os indicadores de liquidez reduziram, enquanto os indicadores de endividamento aumentaram.",
+      "pub_date": "03/2024",
+      "authors": [
+        "Juliana Garcia Soares",
+        "Universidade Federal do Rio Grande do Sul - UFRGS"
+      ],
+      "authors_id": [
+        null,
+        null
+      ],
+      "geo_level": "Países",
+      "countries": [
+        "Brasil"
+      ],
+      "fed_units": null,
+      "municipalities": null,
+      "email": null,
+      "type": [
+        "artigo científico ou publicação acadêmica"
+      ],
+      "topics": [
+        "Economia e Finanças",
+        "Comércio, Serviços e Turismo"
+      ],
+      "tags": [
+        "Demonstrações contábeis",
+        "Normas contábeis",
+        "Contabilidade",
+        "Norma IFRS 16",
+        "contratos de arrendamento",
+        "empresas varejistas",
+        "Novo Mercado da B3",
+        "índices financeiros",
+        "indicadores econômico-financeiros"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+      "comment": "Pré-preenchido via Python a partir dos metadados do DSpace.\n\nPreenchido por Guilherme",
+      "datasets": [
+        {
+          "data_name": "Demonstrações Financeiras Padronizadas (DFP)",
+          "data_institution": "Comissão de Valores Mobiliários - CVM",
+          "data_url": "https://dados.cvm.gov.br/dataset/cia_aberta-doc-dfp ",
+          "data_license": "ODbL",
+          "data_format": [
+            "ZIP"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "Classificação Setorial das Empresas negociadas na B3",
+          "data_institution": "B3",
+          "data_url": "https://www.b3.com.br/pt_br/produtos-e-servicos/negociacao/renda-variavel/acoes/consultas/classificacao-setorial/ ",
+          "data_license": "Inexistente",
+          "data_format": [
+            "XLSX"
+          ],
+          "data_periodical": null
+        }
+      ],
+      "record_date": "2026-09-08",
+      "modified_date": "2026-09-29",
+      "status_published": true,
+      "status_review": false,
+      "type_es": [
+        "artículo científico o publicación académica"
+      ],
+      "topics_es": [
+        "Economía y Finanzas",
+        "Comercio, Servicios y Turismo"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 2058402352,
+      "name": "Comparativo de métricas intrínsecas para avaliação do desempenho de modelos em open-ended tasks",
+      "url": "https://bibliotecadigital.ufrgs.br/handle/10183/257985?show=full",
+      "url_archive": "https://",
+      "description": "Open-Ended Tasks são tarefas que não possuem uma única solução específica. Elas possuem uma grande ligação com a área de Processamento de Linguagem Natural e são tópicos de pesquisa muito populares nos últimos anos. Contudo, a avaliação dessas tarefas é um processo muito complexo e muitas métricas já foram propostas ao longo dos anos em prol de solucionar esse problema. O presente trabalho tem como objetivo catalogar as métricas mais comumente utilizadas e analisar quais delas melhor se adéquam para as tarefas de Sumarização e Question-Answering. Ao mesmo tempo, busca-se correlacionar os valores gerados pelas métricas com a forma de avaliação humana. Para a realização dos testes foram utilizados datasets e modelos na linguagem portuguesa. As saídas obtidas foram avaliadas pelas métricas automatizadas selecionadas e por quatro participantes humanos diferentes. Finalmente, foi realizado o cálculo da correlação entre as avaliações humanas e automatizadas, e apontou-se que as métricas atuais possuem, no máximo, uma correlação mediana com a forma de julgamento humano. Fato esse que já havia sido apontado por outros trabalhos na área, contudo feito pela primeira vez em português. Esses resultados apontam para uma necessidade de novas métricas que melhor se correlacionem com a percepção humana. Ademais, é possível perceber que métricas baseadas em Modelos de Linguagem Pré-Treinados apresentam maior correlação com a forma de avaliação humana. Por fim, notamos a carência de bons datasets desenvolvidos diretamente para a língua portuguesa, o que pode ter impactado negativamente os resultados obtidos.",
+      "pub_date": "08/2025",
+      "authors": [
+        "Eduardo Dalmás Faé",
+        "Universidade Federal do Rio Grande do Sul - UFRGS"
+      ],
+      "authors_id": [
+        null,
+        null
+      ],
+      "geo_level": "Não se aplica",
+      "countries": null,
+      "fed_units": null,
+      "municipalities": null,
+      "email": null,
+      "type": [
+        "artigo científico ou publicação acadêmica"
+      ],
+      "topics": [
+        "Dados Estratégicos",
+        "Ciência, Informação e Comunicação"
+      ],
+      "tags": [
+        "Avaliação automática",
+        "Métricas",
+        "Processamento de linguagem natural",
+        "Aplicação dos computadores",
+        "modelos em open-ended tasks",
+        "datasets",
+        "modelos na linguagem portuguesa",
+        "percepção humana"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+      "comment": "Pré-preenchido via Python a partir dos metadados do DSpace.\n\nPreenchido por Guilherme",
+      "datasets": [
+        {
+          "data_name": "CNN Dailymail Azure Pt",
+          "data_institution": "HuggingFace",
+          "data_url": "https://huggingface.co/datasets/arubenruben/cnn_dailymail_azure_pt_pt ",
+          "data_license": "Outra",
+          "data_format": [
+            "CSV",
+            "JSON",
+            "Outro"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "FairytaleQA Translated Pt",
+          "data_institution": "HuggingFace",
+          "data_url": "https://huggingface.co/datasets/benjleite/FairytaleQA-translated-ptBR",
+          "data_license": "Outra",
+          "data_format": [
+            "JSON",
+            "CSV",
+            "Outro"
+          ],
+          "data_periodical": null
+        }
+      ],
+      "record_date": "2026-09-08",
+      "modified_date": "2026-09-29",
+      "status_published": true,
+      "status_review": false,
+      "type_es": [
+        "artículo científico o publicación académica"
+      ],
+      "topics_es": [
+        "Datos Estratégicos",
+        "Ciencia, Información y Comunicación"
+      ],
+      "countries_es": null
+    },
+    {
+      "hash_id": 2581916947,
+      "name": "Flexibilidade gerencial importa?: análise da capacidade de atendimento hospitalar e adoção de medidas de prevenção municipais durante a Covid-19",
+      "url": "https://bibliotecadigital.ufrgs.br/handle/10183/257985?show=full",
+      "url_archive": "https://",
+      "description": "No Brasil, as reformas na administração pública não significaram a transição completa de um modelo administrativo para outro. Atualmente, a gestão pública compõe-se da mescla de princípios institucionalizados resilientes às reformas e das mudanças experimentadas. O presente trabalho, concentra-se na análise específica de orientações associadas ao NPM, integrado ao contexto brasileiro por meio de ideais gerencialistas. O objetivo principal desta pesquisa centra-se na identificação de influências de elementos vinculados às gestões gerenciais em administrações municipais brasileiras. Para avaliar o impacto de reformas gerenciais foram consideradas as medidas de prevenção adotadas, bem como os impactos decorrentes da COVID-19 nos governos locais. Para concretização do objetivo, consideraram-se proxies do modelo gerencialista (1) dados referentes à presença de administrações indiretas  no âmbito da saúde , bem como sua natureza jurídica, (2) a proporção de servidores sem vínculo permanente (SVP), e (3) existência de Conselhos Municipais de Saúde. Por meio de estatística descritiva e regressão logística, mediu-se o impacto de gestões gerencialistas sobre indicadores de capacidade de atendimento hospitalar e adoção de medidas de prevenção durante a pandemia. Simultaneamente, cotejaram-se variáveis rivais e de controle. Dados secundários foram coletados da base MUNIC/IBGE, atualizada conforme bancos de 2018, 2020 e 2021. Concluiu-se, por fim, que gestões locais que contam com a terceirização de serviços de saúde, como também com a presença de servidores SVP, têm potencial de incremento da capacidade de atendimento hospitalar. Não obstante, esses resultados não se confirmam em todos os indicadores selecionados para medir a capacidade dos serviços. Ademais, expõe-se que não foi verificado impacto significativo de princípios gerencialistas sobre a implementação de medidas de prevenção à contaminação durante a pandemia. Como proposta de avanço à pesquisa, sugere-se desenvolvimento de novas inferências estatísticas, de modo a identificar indicadores que explicam as variações encontradas entre diferentes dados de capacidade hospitalar, assim como determinantes locais à adesão de medidas de prevenção.",
+      "pub_date": "05/2023",
+      "authors": [
+        "Marília Bruxel",
+        "Universidade Federal do Rio Grande do Sul - UFRGS"
+      ],
+      "authors_id": [
+        null,
+        null
+      ],
+      "geo_level": "Países",
+      "countries": [
+        "Brasil"
+      ],
+      "fed_units": null,
+      "municipalities": null,
+      "email": null,
+      "type": [
+        "artigo científico ou publicação acadêmica"
+      ],
+      "topics": [
+        "Saúde"
+      ],
+      "tags": [
+        "Administração municipal",
+        "COVID-19",
+        "Governo Municipal",
+        "Políticas públicas",
+        "Saúde pública",
+        "Ciência política",
+        "NPM",
+        "ideais gerencialistas",
+        "administrações municipais brasileiras",
+        "governos locais",
+        "Conselhos Municipais de Saúde",
+        "hospitais",
+        "capacidade de atendimento hospitalar",
+        "pandemia",
+        "medidas de prevenção"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+      "comment": "Pré-preenchido via Python a partir dos metadados do DSpace.\n\nPreenchido por Guilherme",
+      "datasets": [
+        {
+          "data_name": "Pesquisa de Informações Básicas Municipais (MUNIC)",
+          "data_institution": "Instituto Brasileiro de Geografia e Estatística - IBGE",
+          "data_url": "https://www.ibge.gov.br/estatisticas/sociais/educacao/10586-pesquisa-de-informacoes-basicas-municipais.html",
+          "data_license": "Inexistente",
+          "data_format": [
+            "XLSX",
+            "ODS"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "SciElo ",
+          "data_institution": "FAPESP, CNPq, CAPES",
+          "data_url": "https://www.scielo.br/",
+          "data_license": "CC-BY",
+          "data_format": [
+            "Outro"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "Sistema de Informações Contábeis e Fiscais do Setor Público Brasileiro (Siconfi)",
+          "data_institution": "Secretaria do Tesouro Nacional - STN",
+          "data_url": "https://www.tesourotransparente.gov.br/ckan/dataset?license_id=odc-odbl&tags=Siconfi&tags=Contabilidade+P%C3%BAblica ",
+          "data_license": "ODbL",
+          "data_format": [
+            "JSON"
+          ],
+          "data_periodical": null
+        }
+      ],
+      "record_date": "2026-09-08",
+      "modified_date": "2026-09-29",
+      "status_published": true,
+      "status_review": false,
+      "type_es": [
+        "artículo científico o publicación académica"
+      ],
+      "topics_es": [
+        "Salud"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 19288346,
+      "name": "Análise da Implantação do RPKI no Brasil",
+      "url": "https://lume.ufrgs.br/handle/10183/218635",
+      "url_archive": "https://",
+      "description": "Sequestro de prefixos é um problema que enfrentamos atualmente na internet que pode levar a indisponibilidade de um ASN ou roubo de informações. Existem diversas ferramentas para se proteger desse tipo de ataque, sendo o RPKI o mais promissor, onde é criado certificados digitais para autorizar um ASN a anunciar determinado prefixo e o Brasil está adotando esta solução. Neste trabalho de conclusão analisamos o crescimento da implantação do RPKI neste primeiro ano de adoção no Brasil. Também correlacionamos informações que mostram que os treinamentos para utilização dessa ferramenta têm impulsionado significativamente para o crescimento da adoção do RPKI.",
+      "pub_date": "03/2021",
+      "authors": [
+        "Bruno Rafael Lorensi",
+        "Universidade Federal do Rio Grande do Sul - UFRGS"
+      ],
+      "authors_id": [
+        null,
+        null
+      ],
+      "geo_level": "Países",
+      "countries": [
+        "Brasil"
+      ],
+      "fed_units": null,
+      "municipalities": null,
+      "email": null,
+      "type": [
+        "artigo científico ou publicação acadêmica"
+      ],
+      "topics": [
+        "Ciência, Informação e Comunicação",
+        "Dados Estratégicos"
+      ],
+      "tags": [
+        "Infraestrutura de chaves públicas",
+        "Roteamento",
+        "Seguranca",
+        "Trafego",
+        "Aplicação dos computadores",
+        "Sequestro de prefixos",
+        "roubo de informações",
+        "cibersegurança",
+        "RPKI",
+        "certificados digitais"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+      "comment": "Pré-preenchido via Python a partir dos metadados do DSpace.\n\nPreenchido por Guilherme",
+      "datasets": [
+        {
+          "data_name": "IX.br - Looking Glass - Tabela BGP",
+          "data_institution": "NIC.br",
+          "data_url": " https://lg.ix.br/ ",
+          "data_license": "CC BY-SA",
+          "data_format": [
+            "CSV",
+            "PDF"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "Repositório de ROAs do RPKI - RIPE NCC",
+          "data_institution": "RIPE Network Coordination Centre",
+          "data_url": "https://apps.db.ripe.net/db-web-ui/query ",
+          "data_license": "Inexistente",
+          "data_format": [
+            "XML",
+            "JSON"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "AFRINIC RPKI statistics",
+          "data_institution": "African Network Information Centre - AFRINIC",
+          "data_url": "https://stats.afrinic.net/rpki/ ",
+          "data_license": "Inexistente",
+          "data_format": [
+            "CSV"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "APNIC Labs Measurements and Data",
+          "data_institution": "Asia-Pacific Network Information Centre - APNIC",
+          "data_url": "https://www.apnic.net/statistics/ ",
+          "data_license": "Inexistente",
+          "data_format": [
+            "GZ"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "LACNICLabs OpenData",
+          "data_institution": "Registro de Direcciones de Internet de América Latina y Caribe - LACNIC",
+          "data_url": "https://opendata.labs.lacnic.net ",
+          "data_license": "Inexistente",
+          "data_format": [
+            "CSV",
+            "JSON"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "CAIDA - Center for applied Internet Data",
+          "data_institution": "University of California San Diego",
+          "data_url": "https://catalog.caida.org/search?query=types=dataset%20links=tag:caida%20",
+          "data_license": "Outra",
+          "data_format": [
+            "CSV"
+          ],
+          "data_periodical": null
+        }
+      ],
+      "record_date": "2026-09-08",
+      "modified_date": "2026-09-29",
+      "status_published": true,
+      "status_review": false,
+      "type_es": [
+        "artículo científico o publicación académica"
+      ],
+      "topics_es": [
+        "Ciencia, Información y Comunicación",
+        "Datos Estratégicos"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 2727004894,
+      "name": "Efeitos dos exercícios de pilates no tratamento da lombalgia em mulheres: uma revisão integrativa",
+      "url": "https://lume.ufrgs.br/handle/10183/248785",
+      "url_archive": "https://",
+      "description": "A dor lombar (DL), também conhecida como lombalgia, é uma das patologias que acomete uma grande parte da população neste sentido as evidências cientificas tem demonstrado que o método Pilates (MP) tem sido uma alternativa não medicamentosa eficaz para o tratamento da DL. O presente estudo trata-se de uma revisão integrativa, com o objetivo de identificar o que a literatura especializada no MP tem desenvolvido nos últimos dez anos no que se refere aos efeitos dos exercícios de Pilates no tratamento da Lombalgia no período de 2010 a 2020. A busca dos artigos ocorreu através do banco de dados do Portal do Periódico da CAPES/MEC e Google Acadêmico, refinado pelas fontes de dados Scopus (Elsevier), OneFile (GALE), Science Citation Indese, Expanded (Web of Science), MEDILINE / PUB/Med (NLM), Elsevier (CrossRef), participantes do sexo feminino, artigos em inglês. Foram encontrados 60 artigos referentes ao assunto abordado, após a leitura dos resumos e seguindo os critérios de exclusão 10 artigos foram selecionados. Os resultados demonstraram que interevenções com o MP, com o tempo mínimo de 6 semanas, em mulheres com DL atenuaram ou eliminaram as consequências dessa patologia além de melhorar a saúde física e mental desses indivíduos. O MP pode ser trabalhado por diversos profissionais da saúde para diversos fins, como no tratamento da dor lombar, trazendo assim benefícios na diminuição da dor, fortalecimento da musculatura, correções posturais além de reduzir sintomas psicológicos e melhora da qualidade de vida.",
+      "pub_date": "09/2022",
+      "authors": [
+        "Fernanda Oliveira de Souza do Amaral",
+        "Universidade Federal do Rio Grande do Sul - UFRGS"
+      ],
+      "authors_id": [
+        null,
+        null
+      ],
+      "geo_level": "Não se aplica",
+      "countries": null,
+      "fed_units": null,
+      "municipalities": null,
+      "email": null,
+      "type": [
+        "artigo científico ou publicação acadêmica"
+      ],
+      "topics": [
+        "Saúde",
+        "Gênero e Raça"
+      ],
+      "tags": [
+        "Dor lombar",
+        "Mulheres",
+        "Pilates",
+        "Terapêutica",
+        "Lombalgia",
+        "patologias",
+        "saúde física",
+        "saúde mental",
+        "diminuição da dor",
+        "qualidade de vida"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+      "comment": "Pré-preenchido via Python a partir dos metadados do DSpace.\n\nPreenchido por Guilherme",
+      "datasets": [
+        {
+          "data_name": "Periódicos Capes",
+          "data_institution": "Coordenação de Aperfeiçoamento de Pessoal de Nível Superior - CAPES/MEC",
+          "data_url": "https://www.periodicos.capes.gov.br/index.php/acervo/buscador.html ",
+          "data_license": "CC-BY",
+          "data_format": [
+            "CSV",
+            "XLSX",
+            "PDF"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "CrossRef",
+          "data_institution": "Elsevier",
+          "data_url": "https://www.crossref.org/",
+          "data_license": "CC0",
+          "data_format": [
+            "JSON",
+            "XML"
+          ],
+          "data_periodical": null
+        }
+      ],
+      "record_date": "2026-09-08",
+      "modified_date": "2026-09-29",
+      "status_published": true,
+      "status_review": false,
+      "type_es": [
+        "artículo científico o publicación académica"
+      ],
+      "topics_es": [
+        "Salud",
+        "Género y raza"
+      ],
+      "countries_es": null
+    },
+    {
+      "hash_id": 723668746,
+      "name": "An image classification approach based on graph convolutional networks and patch-based multiscale feature graphs",
+      "url": "https://lume.ufrgs.br/handle/10183/281672",
+      "url_archive": "https://",
+      "description": "As arquiteturas de aprendizado profundo demonstraram excelentes resultados na classificação de imagens nos últimos anos. No entanto, a aplicação de arquiteturas de redes neurais sofisticadas em pequenos conjuntos de dados continua sendo um desafio. Nesse contexto, a aprendizagem por transferência é uma abordagem promissora para lidar com esse cenário. Geralmente, as arquiteturas pré-treinadas disponíveis adotam uma entrada fixa padrão, o que geralmente implica em redimensionar e recortar as imagens de entrada na fase de pré-processamento, causando perda de informações. Além disso, no mundo real, as imagens apresentam características visuais em diferentes escalas, e as abordagens mais comuns não consideram esse fato. Neste trabalho, propomos uma abordagem que aplica transferência de conhecimento para lidar com pequenos conjuntos de dados e aproveita características visuais extraídas por modelos pré-treinados de diferentes escalas. Baseamos nossa abordagem em redes convolucionais de grafos (GCN) que recebem como entrada grafos que representam as imagens em diferentes escalas e cujos nós são caracterizados por características extraídas por modelos pré-treinados de partes regulares de imagens em diferentes escalas. Como o GCN pode lidar com grafos com diferentes números de nós, nossa abordagem pode lidar naturalmente com imagens de tamanhos he terogêneos sem descartar informações relevantes. Avaliamos nossa abordagem em dois conjuntos de dados: um conjunto de imagens geológicas e um conjunto de dados dis poníveis publicamente, ambos apresentando características que desafiam as abordagens tradicionais. Testamos nossa abordagem adotando três modelos pré-treinados diferentes como extratores de características: dois modelos eficientes de CNN pré-treinados (Den seNet e ResNeXt) e um Vision Transformer (CLIP). Comparamos nossa abordagem com duas abordagens convencionais para lidar com a classificação de imagens. Os experi mentos mostram que nossa abordagem alcança melhores resultados do que as abordagens convencionais para esta tarefa.",
+      "pub_date": "11/2024",
+      "authors": [
+        "Matheus Vinícius Todescato",
+        "Universidade Federal do Rio Grande do Sul - UFRGS"
+      ],
+      "authors_id": [
+        null,
+        null
+      ],
+      "geo_level": "Não se aplica",
+      "countries": null,
+      "fed_units": null,
+      "municipalities": null,
+      "email": null,
+      "type": [
+        "artigo científico ou publicação acadêmica"
+      ],
+      "topics": [
+        "Dados Estratégicos"
+      ],
+      "tags": [
+        "Aprendizado profundo",
+        "Imagem",
+        "Redes convolucionais de grafos",
+        "Redes neurais",
+        "Aplicação dos computadores",
+        "classificação de imagens",
+        "conjuntos de dados",
+        "imagens geológicas",
+        "dados públicos",
+        "Vision Transformer"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+      "comment": "Pré-preenchido via Python a partir dos metadados do DSpace.\n\nPreenchido por Guilherme",
+      "datasets": [
+        {
+          "data_name": "Stanford Cars Dataset",
+          "data_institution": "Stanford University",
+          "data_url": "https://www.kaggle.com/datasets/eduardo4jesus/stanford-cars-dataset ",
+          "data_license": "Inexistente",
+          "data_format": [
+            "ZIP"
+          ],
+          "data_periodical": null
+        }
+      ],
+      "record_date": "2026-09-08",
+      "modified_date": "2026-09-29",
+      "status_published": true,
+      "status_review": false,
+      "type_es": [
+        "artículo científico o publicación académica"
+      ],
+      "topics_es": [
+        "Datos Estratégicos"
+      ],
+      "countries_es": null
+    },
+    {
+      "hash_id": 3064362213,
+      "name": "Somatosensory pathways of genital hedonic tactile sense: a systematic review with potential clinical applications",
+      "url": "https://lume.ufrgs.br/handle/10183/288699",
+      "url_archive": "https://",
+      "description": "Introdução: o estudo da subcategoria tátil da somestesia hedônica genital é negligenciado frente aos outros componentes somatossensoriais a despeito de sua relevância para o entendimento da neurofisiologia humana e da disfunção sexual secundária a desordens neurológicas. Modelos funcionais e anatômicos destes circuitos ainda precisam ser elaborados. Motivo: esse estudo objetiva a descrição topográfica dos componentes das vias aferentes relacionadas à somestesia genital hedônica, bem como citar algumas de suas aplicações clínicas potenciais. Métodos: uma estratégia busca estruturada foi aplicada às databases do Pubmed, Embase e Web of Science, e estudos contemplando os aspectos anatomofuncionais das vias aferentes previamente mencionadas em humanos, ratos e camundongos foram selecionados e analisados criticamente. Resultados: os dados disponíveis dão suporte à elaboração de um modelo de circuitaria topograficamente organizado, das terminações nervosas até as estruturas corticais, que facilita nosso entendimento das vias aferentes relacionadas ao tato hedônico, concomitantemente identificando sítios que ainda requerem maiores esclarecimentos, e elaborando sobre exemplos de como este conhecimento é ou poderia ser aplicado clinicamente. Conclusões: prover informação estruturada neste tópico ainda negligenciado deve permitir um melhor entendimento neurocientífico de um dos aspectos mais básicos do comportamento humano, e também melhorar a qualidade das abordagens clínicas à disfunção sexual.",
+      "pub_date": "03/2025",
+      "authors": [
+        "Gabriel Carvalho Rodrigues",
+        "Hospital de Clínicas de Porto Alegre - HCPA"
+      ],
+      "authors_id": [
+        null,
+        null
+      ],
+      "geo_level": "Mundial",
+      "countries": null,
+      "fed_units": null,
+      "municipalities": null,
+      "email": null,
+      "type": [
+        "artigo científico ou publicação acadêmica"
+      ],
+      "topics": [
+        "Saúde"
+      ],
+      "tags": [
+        "Córtex somatossensorial",
+        "Estimulação física",
+        "Genitália",
+        "Neurofisiologia",
+        "Revisão sistemática",
+        "Terminações nervosas",
+        "Medicina",
+        "somestesia hedônica genital",
+        "neurofisiologia humana",
+        "disfunção sexual",
+        "desordens neurológicas"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+      "comment": "Pré-preenchido via Python a partir dos metadados do DSpace.\n\nPreenchido por Guilherme ",
+      "datasets": [
+        {
+          "data_name": "PubMed",
+          "data_institution": "National Center for Biotechnology Information - US government",
+          "data_url": "https://pubmed.ncbi.nlm.nih.gov/ ",
+          "data_license": "Inexistente",
+          "data_format": [
+            "CSV"
+          ],
+          "data_periodical": null
+        }
+      ],
+      "record_date": "2026-09-08",
+      "modified_date": "2026-09-29",
+      "status_published": true,
+      "status_review": false,
+      "type_es": [
+        "artículo científico o publicación académica"
+      ],
+      "topics_es": [
+        "Salud"
+      ],
+      "countries_es": null
+    },
+    {
+      "hash_id": 3534664347,
+      "name": "A deep learning framework for contingent liabilities risk management: predicting Brazilian labor court decisions",
+      "url": "https://www.bibliotecadigital.ufrgs.br/da.php?nrb=001129356&loc=2021&l=13c5aa5df505b5fa",
+      "url_archive": "https://",
+      "description": "Estimar o resultado de um processo em litígio é crucial para muitas organizações. Uma aplicação específica são os \"Passivos Contingenciais\", que se referem a passivos que podem ou não ocorrer dependendo do resultado de um processo judicial em litígio. A metodologia tradicional para estimar essa probabilidade baseia-se na opinião de um advogado quem determina a possibilidade de um processo judicial ser perdido a partir de uma avaliação quantitativa. Esta tese apresenta a um modelo matemático baseado numa arquitetura de Deep Learning cujo objetivo é estimar a probabilidade de ganho ou perda de um processo de litígio, principalmente para ser utilizada na estimação de Passivos Contingenciais. A arquitetura, diferentemente do método tradicional, oferece um maior grau de confiança ao prever o resultado de um processo legal em termos de probabilidade e com um tempo de processamento de segundos. Além do resultado primário, a arquitetura estima uma amostra dos casos mais semelhantes ao processo estimado, que servem de apoio para a realização de estratégias de litígio. Nossa arquitetura foi testada em duas bases de dados de processos legais: (1) o Tribunal Europeu de Direitos Humanos (ECHR) e (2) o 4º Tribunal Regional do Trabalho brasileiro (4TRT). Ela estimou de acordo com nosso conhecimento, o melhor desempenho já publicado (precisão = 0,906) na base de dados da ECHR, uma coleção amplamente utilizada de processos legais, e é o primeiro trabalho a aplicar essa metodologia em um tribunal de trabalho brasileiro. Os resultados mostram que a arquitetura é uma alternativa adequada a ser utilizada contra o método tradicional de estimação do desfecho de um processo em litígio realizado por advogados. Finalmente, validamos nossos resultados com especialistas que confirmaram as possibilidades promissoras da arquitetura. Assim, nos incentivamos os académicos a continuar desenvolvendo pesquisas sobre modelagem matemática na área jurídica, pois é um tema emergente com um futuro promissor e aos usuários a utilizar ferramentas baseadas como a desenvolvida em nosso trabalho, pois fornecem vantagens substanciais em termos de precisão e velocidade sobre os métodos convencionais.",
+      "pub_date": null,
+      "authors": [
+        "Alfredo Montelongo Flores",
+        "Universidade Federal do Rio Grande do Sul - UFRGS"
+      ],
+      "authors_id": [
+        null,
+        null
+      ],
+      "geo_level": "Países",
+      "countries": [
+        "Brasil"
+      ],
+      "fed_units": null,
+      "municipalities": null,
+      "email": null,
+      "type": [
+        "artigo científico ou publicação acadêmica"
+      ],
+      "topics": [
+        "Justiça e Legislação"
+      ],
+      "tags": [
+        "Métodos estatísticos",
+        "Probabilidade",
+        "Processo judiciário",
+        "Administração"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+      "comment": "Pré-preenchido via Python a partir dos metadados do DSpace.",
+      "datasets": [
+        {
+          "data_name": "Cases Judged as Human Rights Violated",
+          "data_institution": "European Court of Human Rights - ECHR",
+          "data_url": "https://hudoc.echr.coe.int/#{%22documentcollectionid2%22:[%22GRANDCHAMBER%22,%22CHAMBER%22",
+          "data_license": "Inexistente",
+          "data_format": [
+            "CSV"
+          ],
+          "data_periodical": null
+        }
+      ],
+      "record_date": "2026-09-08",
+      "modified_date": "2026-09-08",
+      "status_published": true,
+      "status_review": false,
+      "type_es": [
+        "artículo científico o publicación académica"
+      ],
+      "topics_es": [
+        "Justicia y Legislación"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 2589568176,
+      "name": "Identifying and assessing vegetation behaviour in riparian zones at large scale in the Brazilian Savannah",
+      "url": "https://lume.ufrgs.br/handle/10183/221892",
+      "url_archive": "https://",
+      "description": "Riparian zones (RZs) have a clear distinct behaviour than the rest of the landscape. Particularly in water-limited regions, such as the Brazilian Savannah (Cerrado biome), where dry season may extend 5 months, the difference between riparian and upland zones is highly pronounced due to vegetation water access to groundwater, and this can have implications on the climatic and hydrological cycles. In order to quantify this difference at large-scale, it was herein proposed to (1) map RZs using topographical information, (2) investigate how land cover is distributed among topographic gradients and (3) investigate vegetation behaviour through remote sensing vegetation measurements and evapotranspiration (ET) estimation. A 140,000 km² upland region inside the Cerrado biome, called the Urucuia aquifer system, was chosen as study site. The region has seen a huge agricultural expansion during the last decades, with mechanized and irrigated crops increasingly using water from its underground reserves, which associated with climate change can have a big impact on the ecosystem, and understanding the role of RZs can be essential to quantify this impact. The height above nearest drainage (HAND) index was used to map RZs, by visually assessing bellow which values the index provided a reasonable RZ buffer comparing with Google Earth imagery. We also used HAND to quantify across its values the historical land cover distribution obtained by the MapBiomas database, and analyse vegetation behaviour in RZs and upland zones (UZs) using remote sensing vegetation measurements of normalized difference vegetation index (NDVI) and normalized difference moisture index (NDMI) and ET estimation from the surface energy balance algorithm for land (SEBAL). A necessary step for HAND computation is a defined stream network, for which the main challenge is identifying channel heads. Herein it was developed an algorithm that produced a varying draining area threshold (vDAT) map for channel initiation, using the topographic position index (TPI) as an auxiliary variable. This algorithm was tested using MERIT-DEM. With the stream network, HAND values bellow 5 m provided the best RZ buffer. As for land cover distribution, we captured that forests naturally occur more densely in the extreme values of HAND (very shallow and very deep) and that farmland historical occupation in the Urucuia region occur more in the upper portions of the terrain, possibly due to soil conditions stablished during landscape formation and evolution. As for vegetation activity, the land cover class seems to have more influence on vegetation behaviour than topographic position, for all indicators computed. Yet, NDMI values in Riparian Forests are greater than in Upland Forests, particularly towards drier conditions, in terms of both seasonality (drier months) and inter-annual variability (drier years). Despite this indication of more water available in RZs than UZs, the ET estimation could not capture these differences, possibly due to difficulties in estimating this variable in natural vegetation with high degree of water stress.",
+      "pub_date": "06/2021",
+      "authors": [
+        "Rafael Barbedo Fontana",
+        "Universidade Federal do Rio Grande do Sul - UFRGS"
+      ],
+      "authors_id": [
+        null,
+        null
+      ],
+      "geo_level": "Países",
+      "countries": [
+        "Brasil"
+      ],
+      "fed_units": null,
+      "municipalities": null,
+      "email": null,
+      "type": [
+        "artigo científico ou publicação acadêmica"
+      ],
+      "topics": [
+        "Meio Ambiente",
+        "Agricultura, extrativismo e pesca"
+      ],
+      "tags": [
+        "Bioma Cerrado",
+        "Evapotranspiração",
+        "Sensoriamento remoto",
+        "Topografia",
+        "Zona ripária",
+        "Índice de vegetação",
+        "Hidrologia",
+        "Ciclos climáticos",
+        "Gradientes topográficos"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+      "comment": "Pré-preenchido via Python a partir dos metadados do DSpace.\n\nPreenchido por Guilherme",
+      "datasets": [
+        {
+          "data_name": "MapBiomas",
+          "data_institution": "MapBiomas",
+          "data_url": "https://brasil.mapbiomas.org/conheca-o-mapbiomas/",
+          "data_license": "CC-BY",
+          "data_format": [
+            "ZIP",
+            "PDF"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "U.S. Geological Survey (USGS) - Landsat 5",
+          "data_institution": "U.S. Department of the Interior",
+          "data_url": " https://geonarrative.usgs.gov/landsat-5/ ",
+          "data_license": "Inexistente",
+          "data_format": [
+            "TAR",
+            "TXT",
+            "XML",
+            "CSV"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "U.S Geological Survey (USGS) - Landsat 8",
+          "data_institution": "U.S Department of the Interior",
+          "data_url": "https://geonarrative.usgs.gov/landsat-8/ ",
+          "data_license": "Inexistente",
+          "data_format": [
+            "TAR",
+            "TXT",
+            "XML",
+            "CSV"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "Merit Hydro",
+          "data_institution": "Global Hydrodynamics Lab - Institute of Industrial Science, the University of Tokyo",
+          "data_url": "https://developers.google.com/earth-engine/datasets/catalog/MERIT_Hydro_v1_0_1?hl=pt-br ",
+          "data_license": "ODbL",
+          "data_format": [
+            "Outro"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "Global Land Data Assimilation System (GLDAS)",
+          "data_institution": "National Oceanic and Atmospheric Administration 9NS - NOAA and National Aeronautics and Space Administration - NASA",
+          "data_url": "https://disc.gsfc.nasa.gov/datasets?keywords=GLDAS",
+          "data_license": "CC0",
+          "data_format": [
+            "Outro"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "MERIT-DEM",
+          "data_institution": "Institute of Industrial Science - University of Tokyo",
+          "data_url": "https://developers.google.com/earth-engine/datasets/catalog/MERIT_DEM_v1_0_3?hl=pt-br",
+          "data_license": "CC-BY",
+          "data_format": [
+            "Outro"
+          ],
+          "data_periodical": null
+        }
+      ],
+      "record_date": "2026-09-08",
+      "modified_date": "2026-09-29",
+      "status_published": true,
+      "status_review": false,
+      "type_es": [
+        "artículo científico o publicación académica"
+      ],
+      "topics_es": [
+        "Medio Ambiente",
+        "Agricultura, Extractivismo y Pesca"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 1029256439,
+      "name": "Utilidade dos índices econômico-financeiros para criação de um portfólio de investimentos: uma análise dos ativos presentes no Ibovespa",
+      "url": "https://lume.ufrgs.br/handle/10183/271900",
+      "url_archive": "https://",
+      "description": "Devido ao aumento do número de investidores no mercado acionário brasileiro, a procura por ferramentas que auxiliem na escolha dos melhores ativos mostra-se mais relevante. Assim, o presente estudo tem objetivo a criação de uma carteira hipotética de investimentos utilizando os índices econômico-financeiros como principal ferramenta para tomada de decisão. Os ativos escolhidos como enfoque da análise foram as quarenta e cinco companhias presentes no índice Ibovespa entre o período de 31/12/2016 a 31/12/2019, as empresas foram separadas em seus respectivos setores, visando uma comparação equalitária. O portfólio foi gerado com as entidades de melhor pontuação em relação aos seus índices econômico-financeiros nos três anos analisados. Em seguida, comparou-se os rendimentos observados da carteira teórica com o Ibovespa e o CDI. Os resultados encontrados neste estudo demonstram que os índices econômico-financeiros podem ser utilizados como ferramenta na tomada de decisão, porém devem ser acompanhados de uma análise macroeconômica para obter melhores resultados.",
+      "pub_date": "02/2024",
+      "authors": [
+        "Arthur Faraon Dorn",
+        "Universidade Federal do Rio Grande do Sul - UFRGS"
+      ],
+      "authors_id": [
+        null,
+        null
+      ],
+      "geo_level": "Países",
+      "countries": [
+        "Brasil"
+      ],
+      "fed_units": null,
+      "municipalities": null,
+      "email": null,
+      "type": [
+        "artigo científico ou publicação acadêmica"
+      ],
+      "topics": [
+        "Economia e Finanças"
+      ],
+      "tags": [
+        "Investimento",
+        "Mercado de ações",
+        "Portfólio",
+        "Tomada de decisão",
+        "Contabilidade",
+        "ativos",
+        "índices econômico-financeiros",
+        "Ibovespa",
+        "CDI"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+      "comment": "Pré-preenchido via Python a partir dos metadados do DSpace.\n\nPreenchido por Guilherme ",
+      "datasets": [
+        {
+          "data_name": "Índice Bovespa (Ibovespa B3)",
+          "data_institution": "B3",
+          "data_url": "https://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-amplos/ibovespa.htm",
+          "data_license": "Inexistente",
+          "data_format": [
+            "CSV"
+          ],
+          "data_periodical": null
+        }
+      ],
+      "record_date": "2026-09-08",
+      "modified_date": "2026-09-29",
+      "status_published": true,
+      "status_review": false,
+      "type_es": [
+        "artículo científico o publicación académica"
+      ],
+      "topics_es": [
+        "Economía y Finanzas"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 2525606406,
+      "name": "Desenvolvimento e implementação de uma ferramenta de automação em Python para análise de Currículos Lattes no Núcleo de Bioinformática do Hospital de Clínicas de Porto Alegre",
+      "url": "https://lume.ufrgs.br/handle/10183/279775",
+      "url_archive": "https://",
+      "description": "O Currículo Lattes é crucial no meio acadêmico como ferramenta de avaliação, fornecendo uma visão padronizada e atualizada das atividades e produções dos pesquisadores. Utilizado por instituições e agências de fomento, o Lattes facilita a análise objetiva de publicações, orientações e outras contribuições, garantindo transparência e equidade na seleção e concessão de bolsas e promoções. O Hospital de Clínicas de Porto Alegre (HCPA), assim como outras instituições, utiliza o Lattes para validar a produção científica dos pesquisadores em diversos editais institucionais, como o Programa Institucional de Bolsas de Iniciação Científica (PIBIC). O desenvolvimento de ferramentas de suporte à pesquisa é essencial para acompanhar a inovação tecnológica e oferecer um suporte eficaz à tomada de decisão pela comissão de avaliação deste edital. Dada a necessidade de suporte tecnológico para a avaliação, este trabalho visou aprimorar o processo de análise dos currículos Lattes no HCPA, desenvolvido por meio do Núcleo de Bioinformática (NBioinfo). A aprimoração na avaliação foi alcançada por meio de um script de automação. Este código foi projetado para ler os currículos em formato XML, extraindo os arquivos diretamente da plataforma Lattes, e compilar de forma ágil as informações dos pesquisadores em um documento consolidado e fácil de manipular. Desenvolvido em linguagem Python e utilizando a biblioteca Pandas, o script é altamente eficiente para automação. O Python oferece uma base sólida para automação e manipulação de dados, enquanto a biblioteca Pandas facilita a leitura, transformação e análise de grandes volumes de informações, atendendo perfeitamente às necessidades do projeto. A aplicação prática deste código pelo NBioinfo foi implementada para o Edital nº 04/2024 PIBIC/HCPA. A ferramenta demonstrou eficiência para a comissão avaliadora, substituindo o processo manual de conferência de currículos.",
+      "pub_date": "10/2024",
+      "authors": [
+        "Laís Duarte Iesbich",
+        "Universidade Federal do Rio Grande do Sul - UFRGS"
+      ],
+      "authors_id": [
+        null,
+        null
+      ],
+      "geo_level": "Países",
+      "countries": [
+        "Brasil"
+      ],
+      "fed_units": null,
+      "municipalities": null,
+      "email": null,
+      "type": [
+        "artigo científico ou publicação acadêmica"
+      ],
+      "topics": [
+        "Saúde",
+        "Ciência, Informação e Comunicação"
+      ],
+      "tags": [
+        "Automação",
+        "Currículo Lattes",
+        "Python",
+        "Recuperação da informação",
+        "Sistemas de informação",
+        "Porto Alegre (RS)",
+        "Armazenamento da informação",
+        "bioinformática",
+        "biblioteca Pandas",
+        "produção científica",
+        "Suporte à pesquisa",
+        "Programação"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+      "comment": "Pré-preenchido via Python a partir dos metadados do DSpace.\nPreenchido por Guilherme",
+      "datasets": [
+        {
+          "data_name": "Lattes",
+          "data_institution": "Conselho Nacional de Desenvolvimento Científico e Tecnológico - CNPq",
+          "data_url": "https://lattes.cnpq.br ",
+          "data_license": "Inexistente",
+          "data_format": [
+            "XLSX",
+            "CSV"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "Qualis Periódicos - Plataforma Sucupira",
+          "data_institution": "Coordenação de Aperfeiçoamento de Pessoal de Nível Superior - CAPES",
+          "data_url": "https://sucupira.capes.gov.br/sucupira/public/index.jsf",
+          "data_license": "CC-BY",
+          "data_format": [
+            "CSV",
+            "PDF",
+            "XLSX",
+            "Outro"
+          ],
+          "data_periodical": null
+        }
+      ],
+      "record_date": "2026-09-02",
+      "modified_date": "2026-09-29",
+      "status_published": true,
+      "status_review": false,
+      "type_es": [
+        "artículo científico o publicación académica"
+      ],
+      "topics_es": [
+        "Salud",
+        "Ciencia, Información y Comunicación"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 1148509075,
+      "name": "Policiamento preditivo: pressupostos para a implantação de um sistema de gestão de recursos operacionais da Polícia Militar",
+      "url": "https://lume.ufrgs.br/handle/10183/233274",
+      "url_archive": "https://",
+      "description": "No Brasil, a segurança pública continua sendo um dos temas mais preocupantes e complexos, demonstrando que, apesar da evolução da sociedade, ainda existe um longo caminho para segurança preditiva e não reativa. O policiamento preditivo é uma ferramenta prática da segurança pública que utiliza dados estatísticos de séries temporais para criação de algoritmos e modelos de predição, subsidiando a geração de estratégias de segurança pública e alocação de recursos policiais. Neste sentido, o presente trabalho objetivou construir um modelo de predição (algoritmo) das ocorrências policiais no município de Porto Alegre, a partir de dados de uma série temporal de 2014-2018. Foi desenvolvido um design conceitual por meio da importância dos Batalhões de Polícia Militar (BPM) através da análise da estrutura e funcionamento da mesma. O design de pesquisa foi realizado a partir da análise de dados, escolha das variáveis relevantes ao cenário local, passando por validação interna e tratamento extensivo do banco de dados criado a partir dos dados recebidos da Segurança Pública do Estado, dados dos BPM, Metodologia SIGA e Observa POA e, finalmente, a proposição do algoritmo. Apresentou-se o Comando de Policiamento da Capital, composto por seis BPM e as características de eventos ocorridos, destacando-se as ocorrências, criminais e não criminais, e as estatísticas descritivas acerca de características sociológicas dos eventos. A partir destes resultados e de uma extensa revisão de literatura de policiamento preditivo, foram escolhidos os seguintes atributos para a construção do modelo: tempo de resposta aos atendimentos, distribuição equitativa da carga de trabalho e adequação da geometria. A partir do banco de dados, foi criado algoritmo preditivo, validado e elaborado mapas para visualização gráfica dos algoritmos. A representação gráfica auxilia no entendimento das informações e análises do policiamento preditivo e proporciona subsídios para implementação de um sistema de gestão de recursos operacionais da Polícia Militar",
+      "pub_date": "12/2021",
+      "authors": [
+        "Egon Marques Kvietinski",
+        "Universidade Federal do Rio Grande do Sul - UFRGS"
+      ],
+      "authors_id": [
+        null,
+        null
+      ],
+      "geo_level": "Municípios",
+      "countries": [
+        "Brasil"
+      ],
+      "fed_units": [
+        "RS"
+      ],
+      "municipalities": [
+        "Porto Alegre (RS)"
+      ],
+      "email": null,
+      "type": [
+        "artigo científico ou publicação acadêmica"
+      ],
+      "topics": [
+        "Defesa e Segurança"
+      ],
+      "tags": [
+        "Policiamento",
+        "Polícia militar",
+        "Prevenção",
+        "Segurança cidadã",
+        "Ciências sociais",
+        "homicídios",
+        "Polícia Militar",
+        "policiamento preditivo",
+        "segurança pública",
+        "Porto Alegre",
+        "gestão de recursos operacionais"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+      "comment": "Pré-preenchido via Python a partir dos metadados do DSpace.\n\nPreenchido por Guilherme ",
+      "datasets": [
+        {
+          "data_name": "Indicadores de atividade 2017 a 2024 - Brigada Militar",
+          "data_institution": "Secretaria da Segurança Pública do Rio Grande do Sul",
+          "data_url": "https://ssp.rs.gov.br/upload/arquivos/202511/28153655-indicadores-de-atividade-2017-a-2024-1.xlsx ",
+          "data_license": "Inexistente",
+          "data_format": [
+            "CSV",
+            "XLSX"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "Observatório da Cidade de Porto Alegre - Tema Violência e Criminalidade",
+          "data_institution": "Prefeitura Municipal de Porto Alegre",
+          "data_url": "https://portoalegreemanalise.procempa.com.br/?regiao=1_26_0 ",
+          "data_license": "Inexistente",
+          "data_format": [
+            "XLSX"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "Indicadores criminais geral e por municípios",
+          "data_institution": "Departamento de Comando e Controle Integrado da Secretaria de Segurança Pública do Rio Grande do Sul - DCCI/SSP/RS",
+          "data_url": "https://ssp.rs.gov.br/indicadores-criminais",
+          "data_license": "Inexistente",
+          "data_format": [
+            "XLSX"
+          ],
+          "data_periodical": null
+        }
+      ],
+      "record_date": "2026-09-02",
+      "modified_date": "2026-09-30",
+      "status_published": true,
+      "status_review": false,
+      "type_es": [
+        "artículo científico o publicación académica"
+      ],
+      "topics_es": [
+        "Defensa y Seguridad"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 3450881834,
+      "name": "Estado e tributos: análise da relevância do contador na apuração de receitas públicas",
+      "url": "https://lume.ufrgs.br/handle/10183/265575?show=full",
+      "url_archive": "https://",
+      "description": "Esse estudo teve por objetivo estabelecer a relevância da atuação do profissional contábil a partir da relação entre as receitas correntes da União que estão sob a sua responsabilidade a partir de pesquisa qualitativa, descritiva e documental. Para tanto, foi contextualizado o surgimento do Estado e a importância dos tributos para financiar e atingir os seus objetivos de estabelecimento do bem comum, além do surgimento da contabilidade pública e do papel do profissional contábil como indispensável para o registro e apuração dos dados que geram a obrigação tributária para contribuintes e receita pública para o ente estatal. Para estabelecer relação das receitas públicas com o exercício do profissional contábil foram efetuadas apurações de dados disponibilizados pelo governo federal, o que resultou na análise da representatividade das Receitas Tributárias e de Contribuições sobre o total de Receitas Correntes da União entre de 2000 e 2019, cujos dados apontaram para percentuais superiores a 80% para todo o período. Também foi analisada a representatividade das receitas da União de responsabilidade profissional do contador sobre o PIB, no período entre 2000 e 2019, sendo que as receitas tributárias e de contribuições apresentaram cerca de 20% do PIB, mostrando a menor relação de 18,10% em 2000 e a maior de 21,27% em 2005, evidenciando a importância do profissional contábil sobre a apuração das receitas da União e contribuindo para o fortalecimento da classe contábil. Como esse estudo tratou das receitas tributárias da União, estudos futuros podem ser efetuados sob a ótica dos Estados e/ou Municípios.",
+      "pub_date": "10/2023",
+      "authors": [
+        "Friedrich Renê Weber",
+        "Universidade Federal do Rio Grande do Sul - UFRGS"
+      ],
+      "authors_id": [
+        null,
+        null
+      ],
+      "geo_level": "Países",
+      "countries": [
+        "Brasil"
+      ],
+      "fed_units": null,
+      "municipalities": null,
+      "email": null,
+      "type": [
+        "artigo científico ou publicação acadêmica"
+      ],
+      "topics": [
+        "Economia e Finanças"
+      ],
+      "tags": [
+        "Contabilidade pública",
+        "Contadores",
+        "Receita tributária",
+        "Tributos",
+        "Contabilidade",
+        "Receitas Correntes da União",
+        "produto interno bruto",
+        "Ciências Contábeis"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+      "comment": "Pré-preenchido via Python a partir dos metadados do DSpace.\nPreenchido por Guilherme",
+      "datasets": [
+        {
+          "data_name": "Consulta de Receita Pública do Governo Federal",
+          "data_institution": "Secretaria do Tesouro Nacional - STN",
+          "data_url": "https://portaldatransparencia.gov.br/download-de-dados/receitas",
+          "data_license": "Inexistente",
+          "data_format": [
+            "CSV"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "Sistema de Contas Nacionais Trimestrais (SCNT)",
+          "data_institution": "Instituto Brasileiro de Geografia e Estatística - IBGE",
+          "data_url": "https://www.ibge.gov.br/estatisticas/economicas/contas-nacionais/9300-contas-nacionais-trimestrais.html?=&t=series-historicas&utm_source=landing&utm_medium=explica&utm_campaign=pib#evolucao-taxa",
+          "data_license": "Inexistente",
+          "data_format": [
+            "CSV",
+            "XLSX",
+            "ODS",
+            "JSON",
+            "Outro"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "Índice Nacional de Preços ao Consumidor Amplo (IPCA)",
+          "data_institution": "Instituto Brasileiro de Geografia e Estatística - IBGE",
+          "data_url": "https://www.ibge.gov.br/estatisticas/economicas/precos-e-custos/9256-indice-nacional-de-precos-ao-consumidor-amplo.html",
+          "data_license": "Inexistente",
+          "data_format": [
+            "CSV",
+            "XLSX",
+            "ODS",
+            "JSON",
+            "Outro"
+          ],
+          "data_periodical": null
+        }
+      ],
+      "record_date": "2026-09-02",
+      "modified_date": "2026-09-29",
+      "status_published": true,
+      "status_review": false,
+      "type_es": [
+        "artículo científico o publicación académica"
+      ],
+      "topics_es": [
+        "Economía y Finanzas"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 1089323941,
+      "name": "Disparidade na distribuição dos medicamentos para doença de Alzheimer pelo SUS no Rio Grande do Sul",
+      "url": "https://lume.ufrgs.br/handle/10183/255167?show=full",
+      "url_archive": "https://",
+      "description": "Base teórica: As transformações demográficas ocorridas nas últimas décadas determinaram um aumento significativo da proporção de idosos na população brasileira, e consequentemente, as doenças neurodegenerativas associadas com o envelhecimento também aumentaram em frequência, em particular as demências, cujo impacto pode ser considerado um problema de saúde pública. Dentre as possíveis etiologias de demência, a doença de Alzheimer (DA) é a forma mais comum, respondendo por 60 a 70% dos casos na maioria das séries. O tratamento farmacológico da DA inclui quatro fármacos que apresentam efeito sintomático modesto, aliviando os sintomas da doença: três Inibidores da acetilcolinesterase (IAChE), donepezila, rivastigmina e galantamina e um inibidor de receptores N-metil-D-aspartato (NMDA), memantina. Apesar de esses medicamentos estarem disponíveis gratuitamente para todos os pacientes com o diagnóstico de DA que preencham os critérios de inclusão preconizados no Protocolo Clínico e Diretrizes Terapêuticas do Ministério da Saúde (PCDT/MS), o acesso a esses medicamentos pode apresentar distribuição irregular. Dessa forma, realizou-se um estudo para avaliar a disparidade na distribuição de medicamentos para o tratamento da DA no estado do RS, e correlacionar quantidade de medicamentos dispensados em um determinado período de tempo com dados sociodemográficos. Objetivo: Avaliar o padrão de distribuição do fornecimento dos medicamentos do componente especial de assistência farmacêutica para DA no estado do Rio Grande do Sul (RS). Métodos: Realizou-se um estudo com dois delineamentos diferentes. O estudo transversal, o qual analisou o perfil dos pacientes que receberam medicamentos para DA em outubro de 2021 no Estado do RS, Brasil. Também se realizou-se um estudo ecológico, onde analisou-se o perfil de prescrição de medicamentos para DA em todos os municípios do RS neste período. Avaliamos as solicitações dos quatro medicamentos disponíveis na rede pública de saúde, em qualquer formulação ou dose: donepezila, rivastigmina, galantamina e memantina. No estado do RS, as solicitações de medicamentos para DA na rede pública são inicialmente realizadas pelo médico assistente por meio de um sistema web denominado AME (Administração de Medicamentos Especiais), administrado pela Secretaria Estadual 6 de Saúde (SES) do RS. Resultados: Em outubro de 2021, no estado do RS, Brasil, 2.382 pacientes com DA faziam uso de qualquer um dos quatro medicamentos fornecidos pelo sistema público de saúde brasileiro. A maioria, 65,6% (1.562), era do sexo feminino, com idade mediana de 79 [73-84] anos e 71,7% (1.036) com ensino fundamental incompleto. A mediana do MEEM foi de 15 [12-18] e a maioria apresentou CDR = 2 (55,2%, 1133). A medicação mais prescrita foi donepezila, 42,9% (1.014), de forma concomitante ou em combinação com memantina. Verificou-se que a distribuição da variável paciente/100.000/município teve distribuição em cluster, com I de Moran de 0,17562 (p&lt;0,001). Como a distribuição dessa variável não foi aleatória, correlacionou-se com as variáveis sociodemográficas dos municípios. Diversas variáveis tiveram correlação fraca com pacientes/100.000/município como IDH (Rho = 0,32), PIB (Rho = 0,21), médicos/100.000 (Rho = 0,17) e % de analfabetismo (Rho = - 0,16). Conclusão: Mostrou-se que a distribuição de medicamentos para DA pelo sistema público de saúde no estado do RS apresenta um padrão desigual e regiões mais desenvolvidas socioeconomicamente têm maior frequência de prescrições. Avaliar as raízes dessa disparidade pode levar a mudanças nas políticas públicas que levem a um melhor diagnóstico e tratamento de pacientes com doença de Alzheimer.",
+      "pub_date": "02/2023",
+      "authors": [
+        "Maísa de Marco",
+        "Universidade Federal do Rio Grande do Sul - UFRGS"
+      ],
+      "authors_id": [
+        null,
+        null
+      ],
+      "geo_level": "Unidades federativas",
+      "countries": [
+        "Brasil"
+      ],
+      "fed_units": [
+        "RS"
+      ],
+      "municipalities": null,
+      "email": null,
+      "type": [
+        "artigo científico ou publicação acadêmica"
+      ],
+      "topics": [
+        "Saúde"
+      ],
+      "tags": [
+        "Sistema Único de Saúde",
+        "Disparidades em assistência à saúde",
+        "Disparidades nos níveis de saúde",
+        "Doença de Alzheimer",
+        "Sistemas de medicação",
+        "Rio Grande do Sul",
+        "Medicina",
+        "sistema único de saúde",
+        "medicamentos",
+        "Idosos",
+        "Envelhecimento",
+        "Demência",
+        "Doenças neurodegenerativas",
+        "Assistência farmacêutica"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+      "comment": "Pré-preenchido via Python a partir dos metadados do DSpace.\n\nPreenchido por Guilherme",
+      "datasets": [
+        {
+          "data_name": "TABNET - DATASUS",
+          "data_institution": "Ministério da Saúde - MS",
+          "data_url": "https://datasus.saude.gov.br/informacoes-de-saude-tabnet/",
+          "data_license": "CC BY-ND",
+          "data_format": [
+            "CSV"
+          ],
+          "data_periodical": null
+        },
+        {
+          "data_name": "Médicos Ativos",
+          "data_institution": "Conselho Regional de Medicina do Rio Grande do Sul - CREMERS",
+          "data_url": "https://cremers.org.br/medicos-ativos/ ",
+          "data_license": "Inexistente",
+          "data_format": [
+            "CSV"
+          ],
+          "data_periodical": null
+        }
+      ],
+      "record_date": "2026-09-02",
+      "modified_date": "2026-09-29",
+      "status_published": true,
+      "status_review": false,
+      "type_es": [
+        "artículo científico o publicación académica"
+      ],
+      "topics_es": [
+        "Salud"
+      ],
+      "countries_es": [
+        "Brasil"
+      ]
+    },
+    {
+      "hash_id": 873330196,
+      "name": "Consultas de manutenção em prótese total e principais queixas dos pacientes: revisão de literatura",
+      "url": "https://lume.ufrgs.br/handle/10183/232171?show=full",
+      "url_archive": "https://",
+      "description": "A população brasileira encontra-se em processo de envelhecimento. Esse fato traz consigo uma demanda em relação às alterações odontológicas encontradas na faixa dos 65-74 anos. A consulta de proservação ou manutenção protética nas quais são realizados ajustes nas próteses é uma etapa determinante para que seja possível o uso das próteses totais a longo prazo. Dessa forma, para a realização desse estudo buscou-se dados em artigos publicados no PubMed, LILACS e Scielo, com o objetivo de realizar uma Revisão de Literatura sobre consultas de proservação em Prótese Total, assim como, as principais queixas associadas ao uso de Prótese Total relatadas pelos pacientes. Concluímos que o edentulismo está associado a questões culturais, socioeconômicas e sociais que as Próteses Totais configuram o tratamento básico para a reabilitação de edêntulos que consultas de proservação pós-instalação são essenciais para o uso adequado e adaptação do paciente a sua nova condição e que há escassez de estudos que avaliam os intervalos adequados para o retorno das consultas de proservação.",
+      "pub_date": "11/2021",
+      "authors": [
+        "Clarice Ferreira da Silva",
+        "Universidade Federal do Rio Grande do Sul - UFRGS"
+      ],
+      "authors_id": [
+        null,
+        null
+      ],
+      "geo_level": "Não se aplica",
+      "countries": null,
+      "fed_units": null,
+      "municipalities": null,
+      "email": null,
+      "type": [
+        "artigo científico ou publicação acadêmica"
+      ],
+      "topics": null,
+      "tags": [
+        "Prótese total",
+        "Reparação em prótese dentária",
+        "Retenção em Prótese Dentária",
+        "Odontologia",
+        "consultas de proservação",
+        "Idosos",
+        "Envelhecimento"
+      ],
+      "url_source": "https://",
+      "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
+      "comment": "Pré-preenchido via Python a partir dos metadados do DSpace.\nPreenchido por Guilherme ",
+      "datasets": [
+        {
+          "data_name": "Projeto SB Brasil",
+          "data_institution": "Ministério da Saúde - MS",
+          "data_url": " https://www.gov.br/saude/pt-br/composicao/saps/brasil-sorridente/sb-brasil/dados ",
+          "data_license": "CC0",
+          "data_format": [
+            "Outro"
+          ],
+          "data_periodical": null
+        }
+      ],
+      "record_date": "2026-09-02",
+      "modified_date": "2026-09-29",
+      "status_published": true,
+      "status_review": false,
+      "type_es": [
+        "artículo científico o publicación académica"
+      ],
+      "topics_es": null,
+      "countries_es": null
+    },
     {
       "hash_id": 2610048341,
       "name": "MT lidera queimadas no Brasil com 24 mil focos detectados em 2024, aponta Inpe",
@@ -11764,14 +14008,14 @@
         "Brasil"
       ],
       "fed_units": [
-        "AP",
-        "AC",
-        "PI",
-        "PR",
-        "GO",
-        "PE",
         "MA",
-        "SC"
+        "GO",
+        "AP",
+        "PI",
+        "PE",
+        "SC",
+        "AC",
+        "PR"
       ],
       "municipalities": [
         "São Luís (MA)",
@@ -13477,7 +15721,7 @@
       ],
       "url_source": "https://",
       "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
-      "comment": "Cadastrado por César Calafrioli.",
+      "comment": "Cadastrado por César Calafrioli.\n\nHenrique Xavier: cada Dataset catalogado aqui é um caso de uso no qual o tipo é \"conjunto de dados\" e ele faz uso de conjuntos de dados externos ao brasil.io. É preciso revisar esse caso.",
       "datasets": [
         {
           "data_name": "Coleção de CNPJs e CPFs brasileiros",
@@ -13581,9 +15825,9 @@
         }
       ],
       "record_date": "2026-04-22",
-      "modified_date": "2026-04-23",
+      "modified_date": "2026-08-31",
       "status_published": true,
-      "status_review": false,
+      "status_review": true,
       "type_es": [
         "aplicación o plataforma"
       ],
@@ -21129,8 +23373,8 @@
         "Brasil"
       ],
       "fed_units": [
-        "PB",
-        "PE"
+        "PE",
+        "PB"
       ],
       "municipalities": [
         "Patos (PB)",
@@ -23220,13 +25464,13 @@
       ],
       "url_source": "https://",
       "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
-      "comment": "Cadastrado por Jacqueline (Ceweb.br).",
+      "comment": "Cadastrado por Jacqueline (Ceweb.br).\nRevisado por Dayvid Pessôa (UFPE).",
       "datasets": [
         {
           "data_name": "CBF",
           "data_institution": "Naoki Saito",
           "data_url": "https://timeseriesclassification.com/description.php?Dataset=CBF",
-          "data_license": null,
+          "data_license": "Inexistente",
           "data_format": [
             "ZIP",
             "TXT",
@@ -23320,7 +25564,7 @@
         }
       ],
       "record_date": "2026-03-09",
-      "modified_date": "2026-03-09",
+      "modified_date": "2026-10-02",
       "status_published": true,
       "status_review": false,
       "type_es": [
@@ -26628,8 +28872,8 @@
       ],
       "fed_units": [
         "RN",
-        "AL",
-        "PB"
+        "PB",
+        "AL"
       ],
       "municipalities": [
         "Arapiraca (AL)",
@@ -42379,18 +44623,10 @@
             "Outro"
           ],
           "data_periodical": false
-        },
-        {
-          "data_name": null,
-          "data_institution": null,
-          "data_url": null,
-          "data_license": null,
-          "data_format": [],
-          "data_periodical": null
         }
       ],
       "record_date": "2025-12-09",
-      "modified_date": null,
+      "modified_date": "2026-10-02",
       "status_published": true,
       "status_review": false,
       "type_es": [
@@ -51628,10 +53864,10 @@
         "Brasil"
       ],
       "fed_units": [
-        "AM",
         "MA",
-        "AP",
-        "PA"
+        "AM",
+        "PA",
+        "AP"
       ],
       "municipalities": [
         "Serrano do Maranhão (MA)",
@@ -53075,8 +55311,8 @@
         "Brasil"
       ],
       "fed_units": [
-        "SP",
-        "MG"
+        "MG",
+        "SP"
       ],
       "municipalities": [
         "São Paulo (SP)",
