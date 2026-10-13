@@ -72,7 +72,7 @@ TOPIC_OPTIONS = [
     "Transportes e Trânsito"
 ]
 
-LICENSE_OPTIONS = ['Inexistente', 'CC0', 'CC-BY', 'CC BY-SA', 'CC BY-NC', 'CC BY-NC-SA', 'CC BY-ND', 'CC BY-NC-ND', 'AGPL', 'GPL', 'ODbL', 'Outra']
+LICENSE_OPTIONS = ['Inexistente/Proprietária', 'CC0', 'CC-BY', 'CC BY-SA', 'CC BY-NC', 'CC BY-NC-SA', 'CC BY-ND', 'CC BY-NC-ND', 'AGPL', 'GPL', 'ODbL', 'Outra aberta']
 
 FORMAT_OPTIONS = ['API', 'CSV', 'FEATHER', 'GIF', 'GPKG', 'GZ', 'HDF5', 'JPG', 'JSON', 'KML', 'KMZ', 'ODS', 'PDF', 'PNG', 'SHP', 'TAB', 'TAR', 'TXT', 'XLSX', 'XML', 'ZIP', 'Outro']
 
