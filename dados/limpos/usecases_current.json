@@ -1,6 +1,6 @@
 {
  "metadata": {
-  "last_update": "2026-10-15"
+  "last_update": "2026-10-16"
  },
  "data": [
   {
@@ -30,7 +30,9 @@
    "type": [
     "artigo científico ou publicação acadêmica"
    ],
-   "topics": null,
+   "topics": [
+    "Meio Ambiente"
+   ],
    "tags": [
     "Geoprocessamento",
     "Sensoriamento remoto",
@@ -44,7 +46,45 @@
    "url_source": "https://",
    "url_image": "https://raw.githubusercontent.com/cewebbr/cordata/main/imagens/generic_usecase_banner.png",
    "comment": "Pré-preenchido via Python a partir dos metadados do DSpace.\n\nPreenchido por Guilherme ",
-   "datasets": [],
+   "datasets": [
+    {
+     "data_name": "MapBiomas ",
+     "data_institution": "MapBiomas ",
+     "data_url": " https://brasil.mapbiomas.org/conheca-o-mapbiomas/ ",
+     "data_license": "CC-BY",
+     "data_format": [
+      "ZIP",
+      "PDF"
+     ],
+     "data_periodical": null
+    },
+    {
+     "data_name": "Bases Cartográficas Contínuas",
+     "data_institution": "Instituto Brasileiro de Geografia e Estatística  (IBGE)",
+     "data_url": "https://www.ibge.gov.br/geociencias/cartas-e-mapas/basescartograficas-continuas/15807-estados.html?=&t=acesso-ao-produto",
+     "data_license": "Inexistente/Proprietária",
+     "data_format": [
+      "ZIP",
+      "PDF",
+      "TXT"
+     ],
+     "data_periodical": null
+    },
+    {
+     "data_name": "Produção Agrícola Municipal",
+     "data_institution": "Instituto Brasileiro de Geografia e Estatística (IBGE)",
+     "data_url": "https://www.ibge.gov.br/estatisticas/economicas/agricultura-e-pecuaria/9117-producao-agricola-municipal-culturas-temporarias-e-permanentes.html",
+     "data_license": "Inexistente/Proprietária",
+     "data_format": [
+      "CSV",
+      "Outro",
+      "XLSX",
+      "JSON",
+      "ODS"
+     ],
+     "data_periodical": null
+    }
+   ],
    "record_date": "2026-09-30",
    "modified_date": "2026-10-15",
    "status_published": true,
@@ -52,7 +92,9 @@
    "type_es": [
     "artículo científico o publicación académica"
    ],
-   "topics_es": null,
+   "topics_es": [
+    "Medio Ambiente"
+   ],
    "countries_es": [
     "Brasil"
    ]
@@ -2210,7 +2252,9 @@
    "type": [
     "artigo científico ou publicação acadêmica"
    ],
-   "topics": null,
+   "topics": [
+    "Saúde"
+   ],
    "tags": [
     "Prótese total",
     "Reparação em prótese dentária",
@@ -2236,13 +2280,15 @@
     }
    ],
    "record_date": "2026-09-02",
-   "modified_date": "2026-09-29",
+   "modified_date": "2026-10-16",
    "status_published": true,
    "status_review": false,
    "type_es": [
     "artículo científico o publicación académica"
    ],
-   "topics_es": null,
+   "topics_es": [
+    "Salud"
+   ],
    "countries_es": null
   },
   {
@@ -20438,7 +20484,7 @@
      "data_name": "Votação Nominal",
      "data_institution": "Senado Federal - SF",
      "data_url": "https://www12.senado.leg.br/dados-abertos/conjuntos?portal=Legislativo&grupo=plenario",
-     "data_license": "Outra aberta",
+     "data_license": "Inexistente/Proprietária",
      "data_format": [
       "JSON",
       "XML",
@@ -20448,7 +20494,7 @@
     }
    ],
    "record_date": "2026-03-27",
-   "modified_date": "2026-10-06",
+   "modified_date": "2026-10-15",
    "status_published": true,
    "status_review": false,
    "type_es": [
